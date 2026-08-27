@@ -1,0 +1,29 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  width: 100%;
+  color: var(--text-muted);
+  background: repeating-linear-gradient(
+    135deg,
+    var(--surface-page),
+    var(--surface-page) 8px,
+    var(--surface-hover) 8px,
+    var(--surface-hover) 9px
+  );
+  border-radius: var(--radius-card);
+  border: 1px dashed var(--border-hairline-strong);
+}
+
+.message {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.detail {
+  font-size: 12px;
+  color: var(--text-muted);
+}

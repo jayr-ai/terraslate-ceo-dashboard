@@ -1,0 +1,126 @@
+/* TerraSlate CEO Dashboard — dark premium theme.
+   Deep navy/near-black surfaces with a luminous blue accent. Categorical
+   donut slots kept distinct in hue (blue/orange/green) for CVD-safety. */
+
+:root {
+  color-scheme: dark;
+
+  /* Brand */
+  --navy-950: #05070d;
+  --navy-900: #080b14;
+  --navy-800: #0d111c;
+  --navy-700: #141a2a;
+  --blue-500: #3b9eff;
+  --blue-400: #64b4ff;
+  --blue-300: #93cbff;
+  --blue-100: rgba(59, 158, 255, 0.14);
+  --blue-050: rgba(59, 158, 255, 0.07);
+
+  /* Luminous accent (glow effects) */
+  --glow-blue: #4fc3ff;
+  --glow-blue-strong: #7fd8ff;
+
+  /* Surfaces */
+  --surface-page: #05070d;
+  --surface-card: #0d1220;
+  --surface-card-hero: #101a30;
+  --surface-sidebar: #05070e;
+  --surface-hover: #171f33;
+
+  /* Ink */
+  --text-primary: #f3f6fc;
+  --text-secondary: #a7b2c8;
+  --text-muted: #6d7893;
+  --text-on-navy: #f3f6fc;
+  --text-on-navy-muted: #7c88a3;
+
+  /* Structure */
+  --border-hairline: rgba(255, 255, 255, 0.07);
+  --border-hairline-strong: rgba(255, 255, 255, 0.14);
+  --shadow-card:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 1px 2px rgba(0, 0, 0, 0.5),
+    0 8px 24px rgba(0, 0, 0, 0.35);
+
+  /* Trend colors (status palette — meaning is display-only, never "up is good") */
+  --trend-up: #fbbf24;
+  --trend-up-bg: rgba(251, 191, 36, 0.14);
+  --trend-down: #ff6b6b;
+  --trend-down-bg: rgba(255, 107, 107, 0.14);
+  --trend-na: #6d7893;
+
+  /* Categorical (donut) — distinct hues, tuned for dark surface contrast */
+  --series-1: #3b9eff; /* Shopify */
+  --series-2: #ff9052; /* Amazon */
+  --series-3: #3ddc97; /* Walmart */
+
+  --radius-card: 14px;
+  --radius-control: 9px;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(59, 158, 255, 0.08), transparent 60%),
+    radial-gradient(900px 500px at 100% 0%, rgba(59, 158, 255, 0.05), transparent 55%),
+    var(--surface-page);
+  background-attachment: fixed;
+  color: var(--text-primary);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+button {
+  font-family: inherit;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Scroll-triggered scorecard glow (see src/hooks/useGlowOnScroll.ts) */
+@keyframes glowPulse {
+  0% {
+    box-shadow: var(--shadow-card), 0 0 0 1px rgba(79, 195, 255, 0), 0 0 0 rgba(79, 195, 255, 0);
+  }
+  35% {
+    box-shadow:
+      var(--shadow-card),
+      0 0 0 1px rgba(79, 195, 255, 0.35),
+      0 0 22px 2px rgba(79, 195, 255, 0.35),
+      0 0 60px 12px rgba(79, 195, 255, 0.14);
+  }
+  100% {
+    box-shadow: var(--shadow-card), 0 0 0 1px rgba(79, 195, 255, 0), 0 0 0 rgba(79, 195, 255, 0);
+  }
+}
+
+.glow-pulse {
+  animation: glowPulse 1.4s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-pulse {
+    animation: none;
+  }
+}
