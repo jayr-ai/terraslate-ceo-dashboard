@@ -59,8 +59,15 @@ export { terraSlateTrackerSource };
 // ---------------------------------------------------------------------------
 // 5.3 Marketing Metrics (date-driven)
 // ---------------------------------------------------------------------------
+// Display order: Ad Spend, Purchase Value, CPA Combined, ROAS — independent
+// of whatever order fetch_data.py happens to emit the tiles in.
+const MARKETING_TILE_ORDER = ["ad-spend", "purchase-value", "cpa-combined", "roas"];
+
 export function buildMarketingMetricsTiles(window: MarketingWindow): StatTileDatum[] {
-  return window.tiles as StatTileDatum[];
+  const tiles = window.tiles as StatTileDatum[];
+  return MARKETING_TILE_ORDER.map((id) => tiles.find((t) => t.id === id)).filter(
+    (t): t is StatTileDatum => !!t,
+  );
 }
 export { marketingMetricsSource };
 

@@ -14,7 +14,7 @@ export function StatTileGrid({
 }) {
   return (
     <Section title={title} source={source}>
-      <div className={grid.statGrid2x2}>
+      <div className={grid.statGrid1x4}>
         {tiles.map((tile) => (
           <StatTile
             key={tile.id}
