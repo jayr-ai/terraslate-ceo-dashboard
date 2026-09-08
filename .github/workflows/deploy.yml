@@ -6,7 +6,7 @@ on:
   workflow_dispatch: {}
 
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -19,6 +19,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+
+      # Manual/button-triggered runs pull fresh data from the sheet first.
+      # Regular pushes (code changes) skip this and just deploy what's
+      # already committed.
+      - name: Refresh data from the source sheet
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          python3 scripts/fetch_data.py
+          if ! git diff --quiet -- src/data/ceoDashboardData.json; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add src/data/ceoDashboardData.json
+            git commit -m "Refresh dashboard data (automated)"
+            git push
+          else
+            echo "No data changes since last refresh."
+          fi
+
       - uses: actions/setup-node@v4
         with:
           node-version: 22

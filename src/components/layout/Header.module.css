@@ -20,6 +20,13 @@
   min-width: 0;
 }
 
+.right {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
 .menuButton {
   display: none;
   align-items: center;

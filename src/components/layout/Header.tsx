@@ -1,5 +1,6 @@
 import { Menu } from "lucide-react";
 import { DateRangePicker } from "./DateRangePicker";
+import { RefreshDataButton } from "./RefreshDataButton";
 import styles from "./Header.module.css";
 
 export function Header({ title, onMenuClick }: { title: string; onMenuClick: () => void }) {
@@ -17,7 +18,10 @@ export function Header({ title, onMenuClick }: { title: string; onMenuClick: () 
           <h1 className={styles.title}>{title}</h1>
         </div>
       </div>
-      <DateRangePicker />
+      <div className={styles.right}>
+        <RefreshDataButton />
+        <DateRangePicker />
+      </div>
     </header>
   );
 }

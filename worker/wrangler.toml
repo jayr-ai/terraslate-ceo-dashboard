@@ -1,0 +1,18 @@
+name = "terraslate-ceo-dashboard-refresh"
+main = "src/index.ts"
+compatibility_date = "2026-01-01"
+
+# Only holds a short-lived cooldown timestamp so the public "Refresh Data"
+# button can't be spammed — no user data, no secrets.
+[[kv_namespaces]]
+binding = "REFRESH_STATE"
+id = "5e4622238edc438998a49e145696a347"
+
+[vars]
+GITHUB_REPO = "jayr-ai/terraslate-ceo-dashboard"
+GITHUB_WORKFLOW_FILE = "deploy.yml"
+ALLOWED_ORIGIN = "https://jayr-ai.github.io"
+COOLDOWN_SECONDS = "180"
+
+# Set via: wrangler secret put GITHUB_TOKEN
+# (a token with `repo` + `workflow` scope — never exposed to the client)
