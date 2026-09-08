@@ -42,6 +42,13 @@
   }
 }
 
+.idle,
+.starting,
+.running {
+  /* no extra styling — base .button covers these; classes exist so the
+     component's `styles[state.kind]` lookup never resolves to undefined */
+}
+
 .success svg {
   color: var(--trend-up);
 }
