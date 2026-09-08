@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T14:58:09.403886Z",
+  "generatedAt": "2026-09-08T15:02:19.017489Z",
   "anchors": {
     "sales": "2026-09-07",
     "marketing": "2026-09-07",
@@ -10379,7 +10379,7 @@
       {
         "id": "printed-orders",
         "label": "Printed Orders",
-        "value": "1529",
+        "value": "1532",
         "trend": {
           "changePct": 0,
           "direction": "na"
@@ -10388,13 +10388,13 @@
       {
         "id": "blank-order-value",
         "label": "Blank Order Value",
-        "value": "$263,384.07",
+        "value": "$263,583.03",
         "empty": true
       },
       {
         "id": "blank-orders",
         "label": "Blank Orders",
-        "value": "1111",
+        "value": "1114",
         "trend": {
           "changePct": 0,
           "direction": "na"
@@ -10567,7 +10567,7 @@
         },
         {
           "person": "AJH",
-          "value": 128984.98
+          "value": 129205.78
         },
         {
           "person": "DM",
@@ -10575,7 +10575,7 @@
         },
         {
           "person": "PS",
-          "value": 109292.4
+          "value": 109474.24
         },
         {
           "person": "LG",
@@ -10606,12 +10606,12 @@
           "value": 3057.31
         },
         {
-          "person": "DG",
-          "value": 1350.79
+          "person": "In Progress",
+          "value": 1962.54
         },
         {
-          "person": "In Progress",
-          "value": 876.69
+          "person": "DG",
+          "value": 1350.79
         },
         {
           "person": "SPS",
