@@ -15,7 +15,7 @@ export function StatTile({
 }: {
   label: string;
   value: string;
-  trend?: Trend;
+  trend?: Trend | null;
   sparkline?: number[];
   empty?: boolean;
   hero?: boolean;

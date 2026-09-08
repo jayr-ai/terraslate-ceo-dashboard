@@ -53,7 +53,8 @@ export function buildSalesAcrossChannels(window: SalesWindow): { kpis: KpiCard[]
 // ---------------------------------------------------------------------------
 // 5.2 TerraSlate Tracker (all-time, static)
 // ---------------------------------------------------------------------------
-export const terraSlateTrackerTiles: StatTileDatum[] = raw.terraSlateTracker.tiles as StatTileDatum[];
+// `unknown` first — same JSON-boundary reasoning as DateRangeContext.tsx.
+export const terraSlateTrackerTiles: StatTileDatum[] = raw.terraSlateTracker.tiles as unknown as StatTileDatum[];
 export { terraSlateTrackerSource };
 
 // ---------------------------------------------------------------------------

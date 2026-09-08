@@ -35,7 +35,10 @@ export interface KpiCard {
   label: string;
   value: string;
   empty?: boolean;
-  trend?: Trend;
+  // `| null`, not just `| undefined`: fetch_data.py's trend() returns None
+  // (→ JSON null) when the prior period was zero — a real, expected case
+  // (e.g. a 1-day "Yesterday" window with no baseline), not missing data.
+  trend?: Trend | null;
   sparkline?: number[];
   hero?: boolean;
   source?: Source;
@@ -46,7 +49,7 @@ export interface StatTileDatum {
   label: string;
   value: string;
   empty?: boolean;
-  trend?: Trend;
+  trend?: Trend | null;
   source?: Source;
 }
 

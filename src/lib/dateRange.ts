@@ -127,7 +127,11 @@ export interface SalesKpiRaw {
   value: string;
   empty?: boolean;
   hero?: boolean;
-  trend?: Trend;
+  // `| null`, not just `| undefined`: a zero-baseline prior period (e.g. a
+  // 1-day window with no prior data) legitimately has no trend to show —
+  // both fetch_data.py's trend() and the trend() helper below return that
+  // as null/undefined interchangeably, and JSON.parse preserves null as-is.
+  trend?: Trend | null;
   sparkline?: number[];
 }
 export interface SalesWindow {
@@ -214,7 +218,11 @@ export interface MarketingTileRaw {
   id: string;
   label: string;
   value: string;
-  trend?: Trend;
+  // `| null`, not just `| undefined`: a zero-baseline prior period (e.g. a
+  // 1-day window with no prior data) legitimately has no trend to show —
+  // both fetch_data.py's trend() and the trend() helper below return that
+  // as null/undefined interchangeably, and JSON.parse preserves null as-is.
+  trend?: Trend | null;
 }
 export interface MarketingWindow {
   tiles: MarketingTileRaw[];
@@ -297,7 +305,11 @@ export function computeCustomStaffWindows(
 
 export interface GraphicDesignWindow {
   value: number;
-  trend?: Trend;
+  // `| null`, not just `| undefined`: a zero-baseline prior period (e.g. a
+  // 1-day window with no prior data) legitimately has no trend to show —
+  // both fetch_data.py's trend() and the trend() helper below return that
+  // as null/undefined interchangeably, and JSON.parse preserves null as-is.
+  trend?: Trend | null;
 }
 
 export function computeCustomGraphicDesignWindow(start: string, end: string): GraphicDesignWindow {

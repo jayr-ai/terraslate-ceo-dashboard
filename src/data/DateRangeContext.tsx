@@ -39,13 +39,23 @@ interface DateRangeContextValue {
 
 const DateRangeContext = createContext<DateRangeContextValue | null>(null);
 
-const salesWindows = raw.salesAcrossChannels.windows as Record<PresetKey, SalesWindow>;
-const marketingWindows = raw.marketingMetrics.windows as Record<PresetKey, MarketingWindow>;
-const breadwinnazWindows = raw.breadwinnaz.windows as Record<PresetKey, StaffWindow>;
-const proofWindows = raw.proofTeamSales.windows as Record<PresetKey, StaffWindow>;
-const graphicSalesWindows = raw.graphicTeamSales.windows as Record<PresetKey, StaffWindow>;
-const graphicDesignWindows = raw.graphicDesignValue.windows as Record<PresetKey, GraphicDesignWindow>;
-const graphicsHoursWindows = raw.graphicsTeamHours.windows as Record<PresetKey, HoursWindow>;
+// `as unknown as X` (not a direct `as X`) deliberately: TypeScript infers the
+// *exact* literal shape of whatever numbers happened to come back from the
+// sheet on the last refresh (e.g. a particular preset's trend being `null`
+// vs. present varies run to run), so a direct structural cast here is
+// fragile by construction — it can pass or fail purely based on which real
+// data got committed, unrelated to any actual code change. This is the
+// system boundary between "loosely-shaped external JSON" and "our typed
+// interfaces"; asserting through `unknown` is the intentional, idiomatic
+// escape hatch for that, not a shortcut. (We got bitten by the direct-cast
+// version of this exact line failing CI on real data — see git history.)
+const salesWindows = raw.salesAcrossChannels.windows as unknown as Record<PresetKey, SalesWindow>;
+const marketingWindows = raw.marketingMetrics.windows as unknown as Record<PresetKey, MarketingWindow>;
+const breadwinnazWindows = raw.breadwinnaz.windows as unknown as Record<PresetKey, StaffWindow>;
+const proofWindows = raw.proofTeamSales.windows as unknown as Record<PresetKey, StaffWindow>;
+const graphicSalesWindows = raw.graphicTeamSales.windows as unknown as Record<PresetKey, StaffWindow>;
+const graphicDesignWindows = raw.graphicDesignValue.windows as unknown as Record<PresetKey, GraphicDesignWindow>;
+const graphicsHoursWindows = raw.graphicsTeamHours.windows as unknown as Record<PresetKey, HoursWindow>;
 
 export function DateRangeProvider({ children }: { children: ReactNode }) {
   const [selection, setSelection] = useState<DateRangeSelection>(DEFAULT_SELECTION);
