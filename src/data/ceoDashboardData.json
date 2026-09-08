@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-08T02:52:26.149757Z",
+  "generatedAt": "2026-09-08T03:49:51.120815Z",
   "anchors": {
     "sales": "2026-08-30",
     "marketing": "2026-09-07",
@@ -27619,7 +27619,7 @@
       {
         "id": "production-order-value",
         "label": "Production Order Value",
-        "value": "$846,402.10",
+        "value": "$846,795.88",
         "empty": true
       },
       {
