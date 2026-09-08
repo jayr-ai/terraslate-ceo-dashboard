@@ -5,11 +5,14 @@ Studio report got too slow to load. This covers **only the CEO Dashboard
 page** — later phases will add the other 8 sidebar pages (currently disabled
 placeholders).
 
-**Status: live data, functional date-range picker, dark premium theme.** Every
-number on the page is pulled from the real source Google Sheet (not mock
-data) via a Python fetch script, the date-range picker in the header actually
-filters that data (presets and custom ranges both), and the UI has a dark,
-glass-and-glow visual treatment on top of the original functional layout.
+**Status: deployed, live data, on-demand refresh, functional date-range
+picker, dark premium theme.** Live at
+**https://jayr-ai.github.io/terraslate-ceo-dashboard/**. Every number on the
+page is pulled from the real source Google Sheet (not mock data), a
+"Refresh Data" button in the header pulls current numbers on demand, the
+date-range picker actually filters that data (presets and custom ranges
+both), and the UI has a dark, glass-and-glow visual treatment on top of the
+original functional layout.
 
 ## Stack
 
@@ -51,6 +54,17 @@ Open a new terminal (or `source ~/.zshrc`) and `node -v` / `npm -v` should work.
 
 ## Refreshing the data
 
+**On the live site:** click the **Refresh Data** button in the header. It
+calls a small Cloudflare Worker relay (see below), which triggers the
+`deploy.yml` GitHub Actions workflow with `workflow_dispatch`. That run pulls
+fresh data, commits it, rebuilds, and redeploys — the button polls the public
+Actions API and reloads the page automatically once it's done (typically
+1–2 minutes; the button shows "1–5 min" as a safe estimate). It's cooldown-
+limited to one trigger per 3 minutes to prevent accidental double-clicks or
+abuse.
+
+**Locally:**
+
 ```bash
 python3 scripts/fetch_data.py
 ```
@@ -59,12 +73,64 @@ Pulls every relevant tab from the source Google Sheet ("DailyDashRaw_TerraSlate"
 link-accessible, no auth needed) via CSV export, computes every date-range
 preset (see below), leaderboards, per-state shipping totals, etc., and writes
 `src/data/ceoDashboardData.json`. Re-run any time you want current numbers —
-the dev server hot-reloads the new JSON automatically.
+the dev server hot-reloads the new JSON automatically. Commit + push the
+result to deploy it (or just use the button once it's live).
 
 The script's own docstring documents every assumption it makes (trend window
 length, Proof/Graphic team roster since the sheet has no team column, the
 Walmart-feed staleness workaround, etc.) — read it before changing any
 calculation.
+
+## Deployment
+
+Hosted on **GitHub Pages** (repo `jayr-ai/terraslate-ceo-dashboard`), built
+and deployed by [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml):
+
+- **Push to `main`** → build + deploy only (whatever data is already
+  committed — no sheet fetch).
+- **`workflow_dispatch`** (manually, via `gh workflow run deploy.yml`, the
+  GitHub Actions UI, or the site's Refresh Data button) → first runs
+  `fetch_data.py` and commits the result *if it changed*, then builds and
+  deploys. This is the one place `contents: write` permission is used —
+  the job pushes back to `main` with the default `GITHUB_TOKEN` (which
+  intentionally does *not* re-trigger the `push` trigger on this same
+  workflow, avoiding an infinite loop).
+
+### The Refresh Data button's relay (`worker/`)
+
+A public static site can't safely hold a GitHub token to call
+`workflow_dispatch` itself — anyone could read it out of the page source.
+[`worker/`](worker/) is a minimal Cloudflare Worker that holds the token as a
+Worker secret (`GITHUB_TOKEN`, never sent to the browser) and exposes two
+plain endpoints the button calls:
+
+- `POST /trigger` — checks a KV-backed cooldown, then calls GitHub's
+  `workflow_dispatch` API server-side.
+- `GET /status` — lets the button check the cooldown without triggering
+  anything.
+
+CORS is locked to the production origin (`https://jayr-ai.github.io`) via the
+`ALLOWED_ORIGIN` var in [`worker/wrangler.toml`](worker/wrangler.toml), so
+local dev builds can't call it (by design — test the button on the deployed
+site).
+
+To redeploy the Worker after changing `worker/src/index.ts`:
+
+```bash
+cd worker
+npx wrangler deploy
+```
+
+The `GITHUB_TOKEN` secret only needs to be set once (or re-set if it's
+rotated):
+
+```bash
+gh auth token | npx wrangler secret put GITHUB_TOKEN
+```
+
+(Currently using the local `gh` CLI session's token, which has broader scopes
+than strictly needed — swap in a fine-grained PAT scoped to just this repo's
+`actions: write` if tightening this further.)
 
 ## How the data flows
 
@@ -193,6 +259,11 @@ horizontal page overflow at either size.
 ## Project structure
 
 ```
+.github/workflows/deploy.yml # build+deploy (push); +fetch/commit (dispatch)
+worker/                    # Cloudflare Worker relay for the Refresh Data
+                            # button — see "Deployment" above
+  wrangler.toml
+  src/index.ts
 scripts/
   fetch_data.py             # pulls the sheet, computes preset windows + raw
                              # daily data, writes JSON
@@ -209,7 +280,8 @@ src/
     DateRangeContext.tsx    # selection state + resolves the active window
                              # (preset lookup or custom computation)
   components/
-    layout/                # Sidebar, Header, DateRangePicker
+    layout/                # Sidebar, Header, DateRangePicker,
+                             # RefreshDataButton
     shared/                 # StatTile, DataTable, DonutChart, Sparkline,
                              # TrendIndicator, EmptyState, UsChoropleth, Section
   sections/                 # one component per report section (5.1–5.9)
