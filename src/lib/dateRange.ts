@@ -32,8 +32,16 @@ export const DEFAULT_SELECTION: DateRangeSelection = { kind: "preset", key: "las
 // sorts correctly for this format, and it sidesteps timezone footguns).
 // ---------------------------------------------------------------------------
 
+// All parsed/mutated/serialized in UTC deliberately — mixing local-time
+// parsing (`new Date(iso)`, `.setDate`/`.getDate`) with UTC serialization
+// (`.toISOString()`) makes `addDays` a no-op (or worse) for any viewer in a
+// positive-UTC-offset timezone: local midnight rolls back to the *previous*
+// UTC day, so the returned date string doesn't advance. That turned the
+// `while (d <= end) d = addDays(d, 1)` loop in sparkFromRows() into an
+// infinite loop — the actual cause of the custom-range Apply button
+// appearing to hang/do nothing for anyone browsing from e.g. Asia/Manila.
 function toDate(iso: string): Date {
-  return new Date(`${iso}T00:00:00`);
+  return new Date(`${iso}T00:00:00Z`);
 }
 
 function toIso(d: Date): string {
@@ -42,7 +50,7 @@ function toIso(d: Date): string {
 
 function addDays(iso: string, days: number): string {
   const d = toDate(iso);
-  d.setDate(d.getDate() + days);
+  d.setUTCDate(d.getUTCDate() + days);
   return toIso(d);
 }
 
