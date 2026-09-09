@@ -1,12 +1,12 @@
 {
-  "generatedAt": "2026-09-09T00:44:44.155260Z",
+  "generatedAt": "2026-09-09T02:08:57.460304Z",
   "anchors": {
     "sales": "2026-09-07",
     "marketing": "2026-09-08",
     "staffSales": "2026-09-07",
     "graphicDesign": "2026-09-07",
     "graphicsHours": "2028-07-08",
-    "terraSlateTracker": "2026-09-08"
+    "terraSlateTracker": "2026-10-08"
   },
   "salesAcrossChannels": {
     "windows": {
@@ -1509,31 +1509,25 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$41,576.21",
-            "trend": {
-              "changePct": 694.6,
-              "direction": "up"
-            }
+            "value": "$171.52",
+            "trend": null
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "39",
-            "trend": {
-              "changePct": 225.0,
-              "direction": "up"
-            }
+            "value": "2",
+            "trend": null
           },
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$11,251.37",
-            "trend": null
+            "value": "No data",
+            "empty": true
           },
           {
             "id": "blank-orders",
             "label": "Blank Orders",
-            "value": "77",
+            "value": "0",
             "trend": null
           }
         ]
@@ -1543,20 +1537,14 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$5,232.34",
-            "trend": {
-              "changePct": 589.5,
-              "direction": "up"
-            }
+            "value": "No data",
+            "empty": true
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "12",
-            "trend": {
-              "changePct": 500.0,
-              "direction": "up"
-            }
+            "value": "0",
+            "trend": null
           },
           {
             "id": "blank-order-value",
@@ -1577,38 +1565,26 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$136,246.71",
-            "trend": {
-              "changePct": 6.5,
-              "direction": "up"
-            }
+            "value": "$171.52",
+            "trend": null
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "213",
-            "trend": {
-              "changePct": -32.6,
-              "direction": "down"
-            }
+            "value": "2",
+            "trend": null
           },
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$29,303.55",
-            "trend": {
-              "changePct": -49.0,
-              "direction": "down"
-            }
+            "value": "No data",
+            "empty": true
           },
           {
             "id": "blank-orders",
             "label": "Blank Orders",
-            "value": "235",
-            "trend": {
-              "changePct": 25.7,
-              "direction": "up"
-            }
+            "value": "0",
+            "trend": null
           }
         ]
       },
@@ -1617,37 +1593,34 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$689,557.46",
+            "value": "$15,147.27",
             "trend": {
-              "changePct": 255.0,
-              "direction": "up"
+              "changePct": -97.8,
+              "direction": "down"
             }
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "1244",
+            "value": "25",
             "trend": {
-              "changePct": 277.0,
-              "direction": "up"
+              "changePct": -98.1,
+              "direction": "down"
             }
           },
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$215,744.55",
-            "trend": {
-              "changePct": 352.1,
-              "direction": "up"
-            }
+            "value": "No data",
+            "empty": true
           },
           {
             "id": "blank-orders",
             "label": "Blank Orders",
-            "value": "902",
+            "value": "0",
             "trend": {
-              "changePct": 272.7,
-              "direction": "up"
+              "changePct": -100.0,
+              "direction": "down"
             }
           }
         ]
@@ -1657,38 +1630,26 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$162,910.84",
-            "trend": {
-              "changePct": 3.1,
-              "direction": "up"
-            }
+            "value": "$171.52",
+            "trend": null
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "274",
-            "trend": {
-              "changePct": -26.9,
-              "direction": "down"
-            }
+            "value": "2",
+            "trend": null
           },
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$36,577.54",
-            "trend": {
-              "changePct": -49.4,
-              "direction": "down"
-            }
+            "value": "No data",
+            "empty": true
           },
           {
             "id": "blank-orders",
             "label": "Blank Orders",
-            "value": "283",
-            "trend": {
-              "changePct": 5.6,
-              "direction": "up"
-            }
+            "value": "0",
+            "trend": null
           }
         ]
       },
@@ -1697,32 +1658,38 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$677,288.74",
+            "value": "$154,103.42",
             "trend": {
-              "changePct": 1414.7,
-              "direction": "up"
+              "changePct": -77.4,
+              "direction": "down"
             }
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "1247",
+            "value": "352",
             "trend": {
-              "changePct": 2209.3,
-              "direction": "up"
+              "changePct": -71.4,
+              "direction": "down"
             }
           },
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$226,891.83",
-            "trend": null
+            "value": "$36,577.54",
+            "trend": {
+              "changePct": -83.9,
+              "direction": "down"
+            }
           },
           {
             "id": "blank-orders",
             "label": "Blank Orders",
-            "value": "861",
-            "trend": null
+            "value": "283",
+            "trend": {
+              "changePct": -67.1,
+              "direction": "down"
+            }
           }
         ]
       }
@@ -10596,216 +10563,6 @@
     ],
     "terraSlateTracker": [
       {
-        "date": "2026-03-13",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-14",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-15",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-16",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-17",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-18",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-19",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-20",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-21",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-22",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-23",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-24",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-25",
-        "prodValue": 599.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-26",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-27",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-28",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-29",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-30",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-03-31",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-01",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-02",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-03",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-04",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-05",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-06",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-07",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-08",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-09",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-10",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
-        "date": "2026-04-11",
-        "prodValue": 0.0,
-        "printedOrders": 0,
-        "blankValue": 0.0,
-        "blankOrders": 0
-      },
-      {
         "date": "2026-04-12",
         "prodValue": 0.0,
         "printedOrders": 0,
@@ -11073,15 +10830,15 @@
       },
       {
         "date": "2026-05-20",
-        "prodValue": 533.55,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-05-21",
-        "prodValue": 1991.0,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11101,8 +10858,8 @@
       },
       {
         "date": "2026-05-24",
-        "prodValue": 145.73,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11318,8 +11075,8 @@
       },
       {
         "date": "2026-06-24",
-        "prodValue": 647.06,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11423,8 +11180,8 @@
       },
       {
         "date": "2026-07-09",
-        "prodValue": 1112.62,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11458,15 +11215,15 @@
       },
       {
         "date": "2026-07-14",
-        "prodValue": 172.67,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-15",
-        "prodValue": 278.78,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11500,43 +11257,43 @@
       },
       {
         "date": "2026-07-20",
-        "prodValue": 852.93,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-21",
-        "prodValue": 64.42,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-22",
-        "prodValue": 94.16,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-23",
-        "prodValue": 12700.2,
-        "printedOrders": 3,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-24",
-        "prodValue": 3863.14,
-        "printedOrders": 2,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-25",
-        "prodValue": 186.19,
-        "printedOrders": 1,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11549,311 +11306,521 @@
       },
       {
         "date": "2026-07-27",
-        "prodValue": 3710.36,
-        "printedOrders": 3,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-28",
-        "prodValue": 2470.82,
-        "printedOrders": 4,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-29",
-        "prodValue": 1728.06,
-        "printedOrders": 2,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-30",
-        "prodValue": 6861.28,
-        "printedOrders": 11,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-07-31",
-        "prodValue": 10617.79,
-        "printedOrders": 22,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-01",
-        "prodValue": 2817.18,
-        "printedOrders": 8,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-02",
-        "prodValue": 2440.72,
-        "printedOrders": 8,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-03",
-        "prodValue": 19644.59,
-        "printedOrders": 49,
+        "prodValue": 18030.49,
+        "printedOrders": 47,
         "blankValue": 8947.31,
         "blankOrders": 30
       },
       {
         "date": "2026-08-04",
-        "prodValue": 31651.23,
-        "printedOrders": 51,
+        "prodValue": 22369.46,
+        "printedOrders": 54,
         "blankValue": 9865.65,
         "blankOrders": 43
       },
       {
         "date": "2026-08-05",
-        "prodValue": 30733.31,
-        "printedOrders": 58,
+        "prodValue": 54369.77,
+        "printedOrders": 62,
         "blankValue": 6368.07,
         "blankOrders": 63
       },
       {
         "date": "2026-08-06",
-        "prodValue": 28874.82,
-        "printedOrders": 53,
+        "prodValue": 26028.43,
+        "printedOrders": 59,
         "blankValue": 11560.55,
         "blankOrders": 84
       },
       {
         "date": "2026-08-07",
-        "prodValue": 29384.53,
-        "printedOrders": 36,
+        "prodValue": 22485.57,
+        "printedOrders": 39,
         "blankValue": 7173.6,
         "blankOrders": 21
       },
       {
         "date": "2026-08-08",
-        "prodValue": 3068.58,
-        "printedOrders": 6,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-09",
-        "prodValue": 2027.16,
-        "printedOrders": 8,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 3809.64,
         "blankOrders": 1
       },
       {
         "date": "2026-08-10",
-        "prodValue": 44379.05,
-        "printedOrders": 54,
+        "prodValue": 19190.01,
+        "printedOrders": 47,
         "blankValue": 8129.19,
         "blankOrders": 30
       },
       {
         "date": "2026-08-11",
-        "prodValue": 44193.61,
-        "printedOrders": 73,
+        "prodValue": 22500.67,
+        "printedOrders": 66,
         "blankValue": 7623.54,
         "blankOrders": 26
       },
       {
         "date": "2026-08-12",
-        "prodValue": 25272.82,
-        "printedOrders": 56,
+        "prodValue": 55752.32,
+        "printedOrders": 67,
         "blankValue": 5185.21,
         "blankOrders": 28
       },
       {
         "date": "2026-08-13",
-        "prodValue": 25632.97,
-        "printedOrders": 65,
+        "prodValue": 39344.66,
+        "printedOrders": 66,
         "blankValue": 2830.16,
         "blankOrders": 131
       },
       {
         "date": "2026-08-14",
-        "prodValue": 38097.65,
-        "printedOrders": 48,
+        "prodValue": 21593.71,
+        "printedOrders": 53,
         "blankValue": 4079.62,
         "blankOrders": 14
       },
       {
         "date": "2026-08-15",
-        "prodValue": 3117.27,
-        "printedOrders": 8,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-16",
-        "prodValue": 2992.14,
-        "printedOrders": 7,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-17",
-        "prodValue": 41743.25,
-        "printedOrders": 55,
+        "prodValue": 44630.7,
+        "printedOrders": 70,
         "blankValue": 12514.68,
         "blankOrders": 35
       },
       {
         "date": "2026-08-18",
-        "prodValue": 57336.98,
-        "printedOrders": 62,
+        "prodValue": 38190.73,
+        "printedOrders": 64,
         "blankValue": 12151.71,
         "blankOrders": 27
       },
       {
         "date": "2026-08-19",
-        "prodValue": 29411.55,
-        "printedOrders": 59,
+        "prodValue": 22531.62,
+        "printedOrders": 50,
         "blankValue": 2934.34,
         "blankOrders": 21
       },
       {
         "date": "2026-08-20",
-        "prodValue": 37698.65,
-        "printedOrders": 55,
+        "prodValue": 58566.67,
+        "printedOrders": 60,
         "blankValue": 11099.04,
         "blankOrders": 19
       },
       {
         "date": "2026-08-21",
-        "prodValue": 12025.58,
-        "printedOrders": 40,
+        "prodValue": 33274.2,
+        "printedOrders": 52,
         "blankValue": 40319.07,
         "blankOrders": 20
       },
       {
         "date": "2026-08-22",
-        "prodValue": 5638.27,
-        "printedOrders": 9,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-23",
-        "prodValue": 1071.99,
-        "printedOrders": 4,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-24",
-        "prodValue": 25792.26,
-        "printedOrders": 64,
+        "prodValue": 24965.2,
+        "printedOrders": 60,
         "blankValue": 16804.73,
         "blankOrders": 68
       },
       {
         "date": "2026-08-25",
-        "prodValue": 31021.97,
-        "printedOrders": 56,
+        "prodValue": 26676.15,
+        "printedOrders": 69,
         "blankValue": 5293.42,
         "blankOrders": 61
       },
       {
         "date": "2026-08-26",
-        "prodValue": 34793.16,
-        "printedOrders": 79,
+        "prodValue": 40904.79,
+        "printedOrders": 58,
         "blankValue": 22204.03,
         "blankOrders": 20
       },
       {
         "date": "2026-08-27",
-        "prodValue": 18721.23,
-        "printedOrders": 56,
+        "prodValue": 22953.77,
+        "printedOrders": 75,
         "blankValue": 9173.31,
         "blankOrders": 29
       },
       {
         "date": "2026-08-28",
-        "prodValue": 12510.12,
-        "printedOrders": 38,
+        "prodValue": 38891.29,
+        "printedOrders": 50,
         "blankValue": 8645.82,
         "blankOrders": 31
       },
       {
         "date": "2026-08-29",
-        "prodValue": 2150.29,
-        "printedOrders": 8,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-30",
-        "prodValue": 3705.12,
-        "printedOrders": 7,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-08-31",
-        "prodValue": 29340.69,
-        "printedOrders": 67,
+        "prodValue": 28309.19,
+        "printedOrders": 62,
         "blankValue": 10179.14,
         "blankOrders": 59
       },
       {
         "date": "2026-09-01",
-        "prodValue": 26664.13,
-        "printedOrders": 61,
+        "prodValue": 22466.69,
+        "printedOrders": 62,
         "blankValue": 7273.99,
         "blankOrders": 48
       },
       {
         "date": "2026-09-02",
-        "prodValue": 28977.74,
-        "printedOrders": 53,
+        "prodValue": 24870.22,
+        "printedOrders": 55,
         "blankValue": 7081.1,
         "blankOrders": 41
       },
       {
         "date": "2026-09-03",
-        "prodValue": 39956.1,
-        "printedOrders": 61,
+        "prodValue": 32573.93,
+        "printedOrders": 62,
         "blankValue": 7174.62,
         "blankOrders": 103
       },
       {
         "date": "2026-09-04",
-        "prodValue": 16917.34,
-        "printedOrders": 39,
+        "prodValue": 33070.41,
+        "printedOrders": 69,
         "blankValue": 3796.46,
         "blankOrders": 14
       },
       {
         "date": "2026-09-05",
-        "prodValue": 2828.16,
-        "printedOrders": 7,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-09-06",
-        "prodValue": 758.82,
-        "printedOrders": 2,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-09-07",
-        "prodValue": 5232.34,
-        "printedOrders": 12,
+        "prodValue": 0.0,
+        "printedOrders": 0,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-09-08",
-        "prodValue": 41576.21,
-        "printedOrders": 39,
+        "prodValue": 26146.42,
+        "printedOrders": 81,
         "blankValue": 11251.37,
         "blankOrders": 77
+      },
+      {
+        "date": "2026-09-09",
+        "prodValue": 14492.93,
+        "printedOrders": 21,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-10",
+        "prodValue": 482.82,
+        "printedOrders": 2,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-11",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-12",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-13",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-14",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-15",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-16",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-17",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-18",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-19",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-20",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-21",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-22",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-23",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-24",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-25",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-26",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-27",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-28",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-29",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-09-30",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-01",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-02",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-03",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-04",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-05",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-06",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-07",
+        "prodValue": 0.0,
+        "printedOrders": 0,
+        "blankValue": 0.0,
+        "blankOrders": 0
+      },
+      {
+        "date": "2026-10-08",
+        "prodValue": 171.52,
+        "printedOrders": 2,
+        "blankValue": 0.0,
+        "blankOrders": 0
       }
     ]
   },
@@ -11876,7 +11843,7 @@
       },
       {
         "assignee": "LF",
-        "allTime": 212,
+        "allTime": 214,
         "allTimePct": 18.0
       },
       {
@@ -11916,8 +11883,8 @@
       },
       {
         "assignee": "LF",
-        "t": 11,
-        "tPct": 13.0,
+        "t": 12,
+        "tPct": 14.0,
         "y": 0,
         "yPct": 0.0
       }
@@ -11955,7 +11922,7 @@
         },
         {
           "person": "LF",
-          "value": 78180.86
+          "value": 78270.74
         },
         {
           "person": "CA",
@@ -12022,7 +11989,7 @@
       "rows": [
         {
           "person": "WW",
-          "value": 239164.09
+          "value": 241719.31
         },
         {
           "person": "CA",
@@ -12034,7 +12001,7 @@
         },
         {
           "person": "DM",
-          "value": 124565.63
+          "value": 127487.93
         },
         {
           "person": "PS",
@@ -12042,15 +12009,11 @@
         },
         {
           "person": "$75,559",
-          "value": 34264.0
+          "value": 34354.0
         },
         {
           "person": "LG",
           "value": 26947.9
-        },
-        {
-          "person": "In Progress",
-          "value": 9458.28
         },
         {
           "person": "F",
@@ -12071,6 +12034,10 @@
         {
           "person": "JMS",
           "value": 5821.29
+        },
+        {
+          "person": "In Progress",
+          "value": 5748.1
         },
         {
           "person": "X",
@@ -12133,11 +12100,11 @@
         },
         {
           "person": "DO",
-          "value": 46083.45
+          "value": 46340.98
         },
         {
           "person": "VM",
-          "value": 35960.03
+          "value": 39424.67
         },
         {
           "person": "AO",
@@ -12216,11 +12183,11 @@
         },
         {
           "person": "CK",
-          "value": 178383.55
+          "value": 179337.12
         },
         {
           "person": "DO",
-          "value": 50546.85
+          "value": 50804.38
         },
         {
           "person": "Not Coated",
@@ -12315,7 +12282,7 @@
         },
         {
           "person": "VM",
-          "value": 102884.93
+          "value": 104538.45
         },
         {
           "person": "AO",
@@ -12323,7 +12290,7 @@
         },
         {
           "person": "20",
-          "value": 34264.0
+          "value": 34354.0
         },
         {
           "person": "In Progress",
@@ -12358,8 +12325,8 @@
           "value": 6042.96
         },
         {
-          "person": "212",
-          "value": 4615.0
+          "person": "214",
+          "value": 4705.0
         },
         {
           "person": "DG",
@@ -12446,7 +12413,7 @@
         },
         {
           "person": "F",
-          "value": 34264.0
+          "value": 34354.0
         },
         {
           "person": "X",
@@ -12470,7 +12437,7 @@
         },
         {
           "person": "M",
-          "value": 4615.0
+          "value": 4705.0
         },
         {
           "person": "SMC",

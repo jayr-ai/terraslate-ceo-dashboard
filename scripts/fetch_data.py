@@ -341,7 +341,7 @@ def load_terraslate_tracker_daily() -> tuple[dict[date, dict], date]:
     for r in prod_rows:
         if not (r.get("Order Number") or "").strip():
             continue
-        d = parse_date(r.get("Date & Time Info Received"), year=this_year)
+        d = parse_date(r.get("SHIP DATE FINAL"), year=this_year)
         if not d:
             continue
         daily[d]["prodValue"] += money(r.get("Order Value"))
