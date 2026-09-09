@@ -9,6 +9,7 @@ import {
   computeCustomStaffWindows,
   computeCustomGraphicDesignWindow,
   computeCustomGraphicsHoursWindow,
+  computeCustomTerraSlateTrackerWindow,
   type DateRangeSelection,
   type PresetKey,
   type SalesWindow,
@@ -16,6 +17,7 @@ import {
   type StaffWindow,
   type GraphicDesignWindow,
   type HoursWindow,
+  type TerraSlateTrackerWindow,
 } from "../lib/dateRange";
 
 interface ResolvedWindows {
@@ -26,6 +28,7 @@ interface ResolvedWindows {
   graphicSales: StaffWindow;
   graphicDesign: GraphicDesignWindow;
   graphicsHours: HoursWindow;
+  terraSlateTracker: TerraSlateTrackerWindow;
   displayStart: string;
   displayEnd: string;
 }
@@ -56,6 +59,7 @@ const proofWindows = raw.proofTeamSales.windows as unknown as Record<PresetKey, 
 const graphicSalesWindows = raw.graphicTeamSales.windows as unknown as Record<PresetKey, StaffWindow>;
 const graphicDesignWindows = raw.graphicDesignValue.windows as unknown as Record<PresetKey, GraphicDesignWindow>;
 const graphicsHoursWindows = raw.graphicsTeamHours.windows as unknown as Record<PresetKey, HoursWindow>;
+const terraSlateTrackerWindows = raw.terraSlateTracker.windows as unknown as Record<PresetKey, TerraSlateTrackerWindow>;
 
 export function DateRangeProvider({ children }: { children: ReactNode }) {
   const [selection, setSelection] = useState<DateRangeSelection>(DEFAULT_SELECTION);
@@ -71,6 +75,7 @@ export function DateRangeProvider({ children }: { children: ReactNode }) {
         graphicSales: graphicSalesWindows[key],
         graphicDesign: graphicDesignWindows[key],
         graphicsHours: graphicsHoursWindows[key],
+        terraSlateTracker: terraSlateTrackerWindows[key],
         displayStart: resolvePresetRange(ANCHORS.sales, key)[0],
         displayEnd: resolvePresetRange(ANCHORS.sales, key)[1],
       };
@@ -85,6 +90,7 @@ export function DateRangeProvider({ children }: { children: ReactNode }) {
       graphicSales: staff.graphic,
       graphicDesign: computeCustomGraphicDesignWindow(start, end),
       graphicsHours: computeCustomGraphicsHoursWindow(start, end),
+      terraSlateTracker: computeCustomTerraSlateTrackerWindow(start, end),
       displayStart: start,
       displayEnd: end,
     };

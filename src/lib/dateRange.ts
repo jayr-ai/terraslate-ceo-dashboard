@@ -109,6 +109,7 @@ type MarketingRow = { date: string; spend: number; purchaseValue: number; conver
 type StaffRow = { date: string; name: string; sales: number };
 type GraphicDesignRow = { date: string; value: number };
 type HoursRow = { date: string; name: string; hours: number };
+type TerraSlateTrackerRow = { date: string; prodValue: number; printedOrders: number; blankValue: number; blankOrders: number };
 
 const dailyRaw = raw.dailyRaw as {
   sales: SalesRow[];
@@ -116,6 +117,7 @@ const dailyRaw = raw.dailyRaw as {
   staffSales: StaffRow[];
   graphicDesign: GraphicDesignRow[];
   graphicsHours: HoursRow[];
+  terraSlateTracker: TerraSlateTrackerRow[];
 };
 
 export const ANCHORS = raw.anchors;
@@ -341,4 +343,51 @@ export function computeCustomGraphicsHoursWindow(start: string, end: string): Ho
   }
   const ranked = [...totals.entries()].sort((a, b) => b[1] - a[1]);
   return { rows: ranked.filter(([, h]) => h > 0).map(([name, hours]) => ({ name, hours: Math.round(hours * 100) / 100 })) };
+}
+
+export interface TerraSlateTrackerTileRaw {
+  id: string;
+  label: string;
+  value: string;
+  empty?: boolean;
+  // `| null`, not just `| undefined`: a zero-baseline prior period (e.g. a
+  // 1-day window with no prior data) legitimately has no trend to show —
+  // both fetch_data.py's trend() and the trend() helper above return that
+  // as null/undefined interchangeably, and JSON.parse preserves null as-is.
+  trend?: Trend | null;
+}
+export interface TerraSlateTrackerWindow {
+  tiles: TerraSlateTrackerTileRaw[];
+}
+
+export function computeCustomTerraSlateTrackerWindow(start: string, end: string): TerraSlateTrackerWindow {
+  const [prevStart, prevEnd] = prevPeriod(start, end);
+  const sum = (pick: (r: TerraSlateTrackerRow) => number, s: string, e: string) =>
+    dailyRaw.terraSlateTracker.filter((r) => inRange(r.date, s, e)).reduce((a, r) => a + pick(r), 0);
+
+  const prodCur = sum((r) => r.prodValue, start, end);
+  const prodPrev = sum((r) => r.prodValue, prevStart, prevEnd);
+  const printedCur = sum((r) => r.printedOrders, start, end);
+  const printedPrev = sum((r) => r.printedOrders, prevStart, prevEnd);
+  const blankValCur = sum((r) => r.blankValue, start, end);
+  const blankValPrev = sum((r) => r.blankValue, prevStart, prevEnd);
+  const blankOrdCur = sum((r) => r.blankOrders, start, end);
+  const blankOrdPrev = sum((r) => r.blankOrders, prevStart, prevEnd);
+
+  function moneyTile(id: string, label: string, curV: number, prevV: number): TerraSlateTrackerTileRaw {
+    if (curV === 0) return { id, label, value: "No data", empty: true };
+    return { id, label, value: fmtMoney(curV), trend: trend(curV, prevV) };
+  }
+  function countTile(id: string, label: string, curV: number, prevV: number): TerraSlateTrackerTileRaw {
+    return { id, label, value: String(Math.round(curV)), trend: trend(curV, prevV) };
+  }
+
+  return {
+    tiles: [
+      moneyTile("production-order-value", "Production Order Value", prodCur, prodPrev),
+      countTile("printed-orders", "Printed Orders", printedCur, printedPrev),
+      moneyTile("blank-order-value", "Blank Order Value", blankValCur, blankValPrev),
+      countTile("blank-orders", "Blank Orders", blankOrdCur, blankOrdPrev),
+    ],
+  };
 }

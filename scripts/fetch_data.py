@@ -132,7 +132,7 @@ _DATE_FORMATS = [
 ]
 
 
-def parse_date(s: str | None) -> date | None:
+def parse_date(s: str | None, year: int | None = None) -> date | None:
     if not s:
         return None
     s = s.strip()
@@ -143,6 +143,16 @@ def parse_date(s: str | None) -> date | None:
             return datetime.strptime(s, fmt).date()
         except ValueError:
             continue
+    if year is not None:
+        # ProductionRaw's "Date & Time Info Received" omits the year and
+        # sometimes appends a time-of-day, e.g. "9/8 3:44 PM" — strip the
+        # time and assume the given (current) year. Safe here since the
+        # 180-day trailing window never crosses a year boundary in practice.
+        date_part = s.split(" ")[0]
+        try:
+            return datetime.strptime(f"{date_part}/{year}", "%m/%d/%Y").date()
+        except ValueError:
+            return None
     return None
 
 
@@ -315,41 +325,95 @@ def build_sales_daily_raw(by_channel_daily: dict[str, dict[date, float]], anchor
 
 
 # ---------------------------------------------------------------------------
-# 5.2 TerraSlate Tracker (all-time, not date-ranged)
+# 5.2 TerraSlate Tracker (date-ranged)
 # ---------------------------------------------------------------------------
 
+_EMPTY_TRACKER_DAY = {"prodValue": 0.0, "printedOrders": 0, "blankValue": 0.0, "blankOrders": 0}
 
-def build_terraslate_tracker() -> dict:
+
+def load_terraslate_tracker_daily() -> tuple[dict[date, dict], date]:
     prod_rows = fetch_csv_rows("ProductionRaw")
     blank_rows = fetch_csv_rows("BlankOrders")
+    this_year = date.today().year
 
-    prod_value = 0.0
-    printed_orders = 0
+    daily: dict[date, dict] = defaultdict(lambda: dict(_EMPTY_TRACKER_DAY))
+
     for r in prod_rows:
-        ov = money(r.get("Order Value"))
         if not (r.get("Order Number") or "").strip():
             continue
-        prod_value += ov
+        d = parse_date(r.get("Date & Time Info Received"), year=this_year)
+        if not d:
+            continue
+        daily[d]["prodValue"] += money(r.get("Order Value"))
         if (r.get("Printed By") or "").strip():
-            printed_orders += 1
+            daily[d]["printedOrders"] += 1
 
-    blank_value = 0.0
-    blank_orders = 0
     for r in blank_rows:
         order_num = (r.get("ORDER NUMBER") or "").strip()
         if not order_num or order_num.lower() == "total":
             continue
-        blank_value += money(r.get("ORDER VALUE"))
-        blank_orders += 1
+        d = parse_date(r.get("DATE"))
+        if not d:
+            continue
+        daily[d]["blankValue"] += money(r.get("ORDER VALUE"))
+        daily[d]["blankOrders"] += 1
+
+    if not daily:
+        raise RuntimeError("TerraSlate Tracker: no parseable dates found")
+
+    activity = {d: v["prodValue"] + v["printedOrders"] + v["blankValue"] + v["blankOrders"] for d, v in daily.items()}
+    anchor = latest_active_date(activity, fallback=max(daily.keys()))
+    return daily, anchor
+
+
+def terraslate_tracker_window(daily: dict[date, dict], start: date, end: date) -> dict:
+    prev_start, prev_end = prev_period(start, end)
+
+    def window_sum(key: str, s: date, e: date) -> float:
+        return sum(v[key] for d, v in daily.items() if s <= d <= e)
+
+    prod_cur, prod_prev = window_sum("prodValue", start, end), window_sum("prodValue", prev_start, prev_end)
+    printed_cur, printed_prev = window_sum("printedOrders", start, end), window_sum("printedOrders", prev_start, prev_end)
+    blank_val_cur, blank_val_prev = window_sum("blankValue", start, end), window_sum("blankValue", prev_start, prev_end)
+    blank_ord_cur, blank_ord_prev = window_sum("blankOrders", start, end), window_sum("blankOrders", prev_start, prev_end)
+
+    def money_tile(id_: str, label: str, cur: float, prev: float) -> dict:
+        if cur == 0:
+            return {"id": id_, "label": label, "value": "No data", "empty": True}
+        return {"id": id_, "label": label, "value": fmt_money(cur), "trend": trend(cur, prev)}
+
+    def count_tile(id_: str, label: str, cur: float, prev: float) -> dict:
+        return {"id": id_, "label": label, "value": str(int(cur)), "trend": trend(cur, prev)}
 
     return {
         "tiles": [
-            {"id": "production-order-value", "label": "Production Order Value", "value": fmt_money(prod_value), "empty": True},
-            {"id": "printed-orders", "label": "Printed Orders", "value": str(printed_orders), "trend": {"changePct": 0, "direction": "na"}},
-            {"id": "blank-order-value", "label": "Blank Order Value", "value": fmt_money(blank_value), "empty": True},
-            {"id": "blank-orders", "label": "Blank Orders", "value": str(blank_orders), "trend": {"changePct": 0, "direction": "na"}},
+            money_tile("production-order-value", "Production Order Value", prod_cur, prod_prev),
+            count_tile("printed-orders", "Printed Orders", printed_cur, printed_prev),
+            money_tile("blank-order-value", "Blank Order Value", blank_val_cur, blank_val_prev),
+            count_tile("blank-orders", "Blank Orders", blank_ord_cur, blank_ord_prev),
         ]
     }
+
+
+def build_terraslate_tracker_windows(daily: dict[date, dict], anchor: date) -> dict:
+    return {key: terraslate_tracker_window(daily, *resolve_preset(anchor, key)) for key in PRESET_KEYS}
+
+
+def build_terraslate_tracker_daily_raw(daily: dict[date, dict], anchor: date) -> list[dict]:
+    start = anchor - timedelta(days=RAW_WINDOW_DAYS - 1)
+    out = []
+    d = start
+    while d <= anchor:
+        v = daily.get(d, _EMPTY_TRACKER_DAY)
+        out.append({
+            "date": date_key(d),
+            "prodValue": round(v["prodValue"], 2),
+            "printedOrders": v["printedOrders"],
+            "blankValue": round(v["blankValue"], 2),
+            "blankOrders": v["blankOrders"],
+        })
+        d += timedelta(days=1)
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -761,7 +825,9 @@ def main():
     sales_raw = build_sales_daily_raw(sales_daily, sales_anchor)
 
     print("Fetching ProductionRaw / BlankOrders (tracker) ...")
-    tracker = build_terraslate_tracker()
+    tracker_daily, tracker_anchor = load_terraslate_tracker_daily()
+    tracker_windows = build_terraslate_tracker_windows(tracker_daily, tracker_anchor)
+    tracker_raw = build_terraslate_tracker_daily_raw(tracker_daily, tracker_anchor)
 
     print("Fetching ADS ...")
     marketing_dated, _, marketing_anchor = load_marketing_daily()
@@ -803,6 +869,7 @@ def main():
             "staffSales": staff_anchor.isoformat(),
             "graphicDesign": gd_anchor.isoformat(),
             "graphicsHours": hours_anchor.isoformat(),
+            "terraSlateTracker": tracker_anchor.isoformat(),
         },
         # Date-range-driven sections: one object per preset key, plus capped
         # raw daily data for client-computed custom ranges.
@@ -813,15 +880,16 @@ def main():
         "graphicTeamSales": {"windows": graphic_sales_windows},
         "graphicDesignValue": {"windows": graphic_design_windows},
         "graphicsTeamHours": {"windows": graphics_hours_windows},
+        "terraSlateTracker": {"windows": tracker_windows},
         "dailyRaw": {
             "sales": sales_raw,
             "marketing": marketing_raw,
             "staffSales": staff_raw,
             "graphicDesign": graphic_design_raw,
             "graphicsHours": graphics_hours_raw,
+            "terraSlateTracker": tracker_raw,
         },
         # All-time / snapshot sections — not affected by the date-range picker.
-        "terraSlateTracker": tracker,
         "prePress": prepress,
         "productionTeams": production_teams,
         "shippingByState": shipping,

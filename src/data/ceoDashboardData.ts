@@ -5,13 +5,13 @@
 // sheet-row-derived.
 //
 // Sections here split into two groups:
-//   - All-time/snapshot sections (Tracker, Pre-Press, Production Teams,
-//     Shipping by State, Traffic) are static exports, unaffected by the
-//     date-range picker — see fetch_data.py's docstring for why.
-//   - Date-driven sections (Sales, Marketing, Breadwinnaz, Proof/Graphic
-//     Team) are exposed as `build*` functions that take a resolved window
-//     (from DateRangeContext) and attach types + Source. See
-//     src/lib/dateRange.ts for how that window gets resolved.
+//   - All-time/snapshot sections (Pre-Press, Production Teams, Shipping by
+//     State, Traffic) are static exports, unaffected by the date-range
+//     picker — see fetch_data.py's docstring for why.
+//   - Date-driven sections (Sales, TerraSlate Tracker, Marketing,
+//     Breadwinnaz, Proof/Graphic Team) are exposed as `build*` functions
+//     that take a resolved window (from DateRangeContext) and attach types
+//     + Source. See src/lib/dateRange.ts for how that window gets resolved.
 //
 // To refresh with current numbers: `python3 scripts/fetch_data.py`.
 
@@ -33,7 +33,7 @@ import {
   walmartSalesSource,
   overallSalesSource,
 } from "./ceoDashboardMockData";
-import type { SalesWindow, MarketingWindow, StaffWindow, GraphicDesignWindow, HoursWindow } from "../lib/dateRange";
+import type { SalesWindow, MarketingWindow, StaffWindow, GraphicDesignWindow, HoursWindow, TerraSlateTrackerWindow } from "../lib/dateRange";
 
 // ---------------------------------------------------------------------------
 // 5.1 Sales Across Channels (date-driven)
@@ -51,10 +51,11 @@ export function buildSalesAcrossChannels(window: SalesWindow): { kpis: KpiCard[]
 }
 
 // ---------------------------------------------------------------------------
-// 5.2 TerraSlate Tracker (all-time, static)
+// 5.2 TerraSlate Tracker (date-driven)
 // ---------------------------------------------------------------------------
-// `unknown` first — same JSON-boundary reasoning as DateRangeContext.tsx.
-export const terraSlateTrackerTiles: StatTileDatum[] = raw.terraSlateTracker.tiles as unknown as StatTileDatum[];
+export function buildTerraSlateTrackerTiles(window: TerraSlateTrackerWindow): StatTileDatum[] {
+  return window.tiles as unknown as StatTileDatum[];
+}
 export { terraSlateTrackerSource };
 
 // ---------------------------------------------------------------------------
