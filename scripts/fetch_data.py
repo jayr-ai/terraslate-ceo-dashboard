@@ -504,6 +504,14 @@ def build_marketing_daily_raw(dated: list[tuple[date, dict]], anchor: date) -> l
 
 PROOF_TEAM = {"Jose Soto", "Dakota George"}
 GRAPHIC_TEAM = {"Steven Peralta Cornejo", "Bailey Pixton", "Luke Bosick", "Steven Cornejo"}
+ACCOUNT_MANAGERS = {
+    "Mark Ruiz",
+    "Ian Gindhart",
+    "Maralisa Dictor",
+    "Sean Detschermitsch",
+    "Julian Meisner",
+    "Bikus Rodriguez",
+}
 
 
 def load_staff_daily() -> tuple[list[tuple[date, str, float]], date]:
@@ -542,7 +550,7 @@ def staff_window(dated: list[tuple[date, str, float]], start: date, end: date) -
             items = items[:top_n]
         return [{"name": n, "sales": round(v, 2)} for n, v in items]
 
-    breadwinnaz_rows = rows_for(top_n=15)
+    breadwinnaz_rows = rows_for(names_filter=ACCOUNT_MANAGERS)
     return (
         {"rows": [{"rank": i + 1, **row} for i, row in enumerate(breadwinnaz_rows)]},
         {"rows": rows_for(names_filter=PROOF_TEAM)},

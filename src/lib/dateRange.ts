@@ -299,6 +299,14 @@ export function computeCustomStaffWindows(
   const ranked = [...totals.entries()].sort((a, b) => b[1] - a[1]);
   const PROOF_TEAM = new Set(["Jose Soto", "Dakota George"]);
   const GRAPHIC_TEAM = new Set(["Steven Peralta Cornejo", "Bailey Pixton", "Luke Bosick", "Steven Cornejo"]);
+  const ACCOUNT_MANAGERS = new Set([
+    "Mark Ruiz",
+    "Ian Gindhart",
+    "Maralisa Dictor",
+    "Sean Detschermitsch",
+    "Julian Meisner",
+    "Bikus Rodriguez",
+  ]);
 
   const toRows = (filter?: Set<string>, topN?: number): StaffRowRaw[] => {
     let items = filter ? ranked.filter(([n]) => filter.has(n)) : ranked;
@@ -307,7 +315,7 @@ export function computeCustomStaffWindows(
   };
 
   return {
-    breadwinnaz: { rows: toRows(undefined, 15).map((r, i) => ({ rank: i + 1, ...r })) },
+    breadwinnaz: { rows: toRows(ACCOUNT_MANAGERS).map((r, i) => ({ rank: i + 1, ...r })) },
     proof: { rows: toRows(PROOF_TEAM) },
     graphic: { rows: toRows(GRAPHIC_TEAM) },
   };

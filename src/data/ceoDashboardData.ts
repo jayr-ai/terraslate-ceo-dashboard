@@ -79,7 +79,7 @@ export { marketingMetricsSource };
 export function buildBreadwinnazTable(window: StaffWindow): TableSection {
   return {
     id: "breadwinnaz",
-    title: "Breadwinnaz",
+    title: "Account Managers",
     columns: [
       { key: "rank", label: "Rank", align: "left" },
       { key: "name", label: "Name", align: "left", sortable: true },
@@ -87,7 +87,7 @@ export function buildBreadwinnazTable(window: StaffWindow): TableSection {
     ],
     rows: window.rows as unknown as TableRow[],
     source: breadwinnazSource,
-    pageSize: 5,
+    pageSize: 6,
     defaultSortKey: "sales",
     defaultSortDir: "desc",
   };

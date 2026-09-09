@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-09T02:08:57.460304Z",
+  "generatedAt": "2026-09-09T02:17:41.371858Z",
   "anchors": {
     "sales": "2026-09-07",
     "marketing": "2026-09-08",
@@ -983,58 +983,13 @@
           },
           {
             "rank": 5,
-            "name": "Bailey Pixton",
-            "sales": 6414.25
-          },
-          {
-            "rank": 6,
             "name": "Maralisa Dictor",
             "sales": 4689.31
           },
           {
-            "rank": 7,
+            "rank": 6,
             "name": "Sean Detschermitsch",
             "sales": 4273.64
-          },
-          {
-            "rank": 8,
-            "name": "Luke Bosick",
-            "sales": 3044.56
-          },
-          {
-            "rank": 9,
-            "name": "Angelique Cervera",
-            "sales": 2529.51
-          },
-          {
-            "rank": 10,
-            "name": "Steven Peralta Cornejo",
-            "sales": 1347.35
-          },
-          {
-            "rank": 11,
-            "name": "Jose Soto",
-            "sales": 146.25
-          },
-          {
-            "rank": 12,
-            "name": "Claudia Aculteco",
-            "sales": 0.0
-          },
-          {
-            "rank": 13,
-            "name": "James Hayden",
-            "sales": 0.0
-          },
-          {
-            "rank": 14,
-            "name": "Rachelle Miller",
-            "sales": 0.0
-          },
-          {
-            "rank": 15,
-            "name": "Ryan Smith",
-            "sales": 0.0
           }
         ]
       },
@@ -1062,58 +1017,13 @@
           },
           {
             "rank": 5,
-            "name": "Steven Peralta Cornejo",
-            "sales": 40666.17
-          },
-          {
-            "rank": 6,
             "name": "Maralisa Dictor",
             "sales": 29556.68
           },
           {
-            "rank": 7,
+            "rank": 6,
             "name": "Sean Detschermitsch",
             "sales": 26261.23
-          },
-          {
-            "rank": 8,
-            "name": "Bailey Pixton",
-            "sales": 24476.99
-          },
-          {
-            "rank": 9,
-            "name": "Angelique Cervera",
-            "sales": 22306.55
-          },
-          {
-            "rank": 10,
-            "name": "Luke Bosick",
-            "sales": 12038.18
-          },
-          {
-            "rank": 11,
-            "name": "Jose Soto",
-            "sales": 6377.85
-          },
-          {
-            "rank": 12,
-            "name": "Ryan Smith",
-            "sales": 5189.49
-          },
-          {
-            "rank": 13,
-            "name": "Claudia Aculteco",
-            "sales": 749.06
-          },
-          {
-            "rank": 14,
-            "name": "Dakota George",
-            "sales": 597.6
-          },
-          {
-            "rank": 15,
-            "name": "James Hayden",
-            "sales": 0.0
           }
         ]
       },
@@ -1141,58 +1051,13 @@
           },
           {
             "rank": 5,
-            "name": "Bailey Pixton",
-            "sales": 6414.25
-          },
-          {
-            "rank": 6,
             "name": "Maralisa Dictor",
             "sales": 4689.31
           },
           {
-            "rank": 7,
+            "rank": 6,
             "name": "Sean Detschermitsch",
             "sales": 4273.64
-          },
-          {
-            "rank": 8,
-            "name": "Luke Bosick",
-            "sales": 3044.56
-          },
-          {
-            "rank": 9,
-            "name": "Angelique Cervera",
-            "sales": 2529.51
-          },
-          {
-            "rank": 10,
-            "name": "Steven Peralta Cornejo",
-            "sales": 1347.35
-          },
-          {
-            "rank": 11,
-            "name": "Jose Soto",
-            "sales": 146.25
-          },
-          {
-            "rank": 12,
-            "name": "Claudia Aculteco",
-            "sales": 0.0
-          },
-          {
-            "rank": 13,
-            "name": "James Hayden",
-            "sales": 0.0
-          },
-          {
-            "rank": 14,
-            "name": "Rachelle Miller",
-            "sales": 0.0
-          },
-          {
-            "rank": 15,
-            "name": "Ryan Smith",
-            "sales": 0.0
           }
         ]
       },
@@ -1220,58 +1085,13 @@
           },
           {
             "rank": 5,
-            "name": "Steven Peralta Cornejo",
-            "sales": 42973.67
-          },
-          {
-            "rank": 6,
             "name": "Maralisa Dictor",
             "sales": 31288.8
           },
           {
-            "rank": 7,
-            "name": "Bailey Pixton",
-            "sales": 25343.04
-          },
-          {
-            "rank": 8,
-            "name": "Angelique Cervera",
-            "sales": 24296.57
-          },
-          {
-            "rank": 9,
+            "rank": 6,
             "name": "Sean Detschermitsch",
             "sales": 23077.41
-          },
-          {
-            "rank": 10,
-            "name": "Luke Bosick",
-            "sales": 12363.11
-          },
-          {
-            "rank": 11,
-            "name": "Jose Soto",
-            "sales": 11511.45
-          },
-          {
-            "rank": 12,
-            "name": "Ryan Smith",
-            "sales": 5189.49
-          },
-          {
-            "rank": 13,
-            "name": "Dakota George",
-            "sales": 1399.54
-          },
-          {
-            "rank": 14,
-            "name": "Claudia Aculteco",
-            "sales": 749.06
-          },
-          {
-            "rank": 15,
-            "name": "Kyle Ewing",
-            "sales": 0.0
           }
         ]
       }
@@ -1602,9 +1422,9 @@
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "25",
+            "value": "26",
             "trend": {
-              "changePct": -98.1,
+              "changePct": -98.0,
               "direction": "down"
             }
           },
@@ -1667,9 +1487,9 @@
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "352",
+            "value": "353",
             "trend": {
-              "changePct": -71.4,
+              "changePct": -71.3,
               "direction": "down"
             }
           },
@@ -11615,7 +11435,7 @@
       {
         "date": "2026-09-09",
         "prodValue": 14492.93,
-        "printedOrders": 21,
+        "printedOrders": 22,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -12001,7 +11821,7 @@
         },
         {
           "person": "DM",
-          "value": 127487.93
+          "value": 127788.65
         },
         {
           "person": "PS",
@@ -12037,7 +11857,7 @@
         },
         {
           "person": "In Progress",
-          "value": 5748.1
+          "value": 5632.59
         },
         {
           "person": "X",
@@ -12104,7 +11924,7 @@
         },
         {
           "person": "VM",
-          "value": 39424.67
+          "value": 39725.39
         },
         {
           "person": "AO",
@@ -12183,7 +12003,7 @@
         },
         {
           "person": "CK",
-          "value": 179337.12
+          "value": 179819.94
         },
         {
           "person": "DO",
@@ -12298,7 +12118,7 @@
         },
         {
           "person": "CK",
-          "value": 19802.2
+          "value": 19984.3
         },
         {
           "person": "JMS",

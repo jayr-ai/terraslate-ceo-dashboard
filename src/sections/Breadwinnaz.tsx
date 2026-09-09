@@ -8,7 +8,7 @@ export function Breadwinnaz() {
   const { windows } = useDateRange();
   const table = buildBreadwinnazTable(windows.breadwinnaz);
   return (
-    <Section title="Breadwinnaz">
+    <Section title="Account Managers">
       <div className={styles.wrap}>
         <DataTable table={table} hideTitle />
       </div>
