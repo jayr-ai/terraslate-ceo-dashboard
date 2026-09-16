@@ -29,10 +29,11 @@ jobs:
           pip install --quiet openpyxl
           python3 scripts/fetch_data.py
           python3 scripts/fetch_aircall_data.py
-          if ! git diff --quiet -- src/data/ceoDashboardData.json src/data/aircallDashboardData.json; then
+          python3 scripts/fetch_ar_data.py
+          if ! git diff --quiet -- src/data/ceoDashboardData.json src/data/aircallDashboardData.json src/data/arDashboardData.json; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"
-            git add src/data/ceoDashboardData.json src/data/aircallDashboardData.json
+            git add src/data/ceoDashboardData.json src/data/aircallDashboardData.json src/data/arDashboardData.json
             git commit -m "Refresh dashboard data (automated)"
             git push
           else

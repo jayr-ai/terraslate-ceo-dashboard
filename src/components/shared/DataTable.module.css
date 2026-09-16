@@ -49,6 +49,23 @@
   white-space: nowrap;
 }
 
+.dense .table {
+  font-size: 11px;
+}
+
+.dense .table th,
+.dense .table td {
+  padding: 7px 8px;
+}
+
+.dense .header {
+  padding: 12px 12px 2px;
+}
+
+.dense .footer {
+  padding: 8px 12px;
+}
+
 .table tbody tr:last-child td {
   border-bottom: none;
 }
@@ -59,6 +76,12 @@
 
 .alignRight {
   text-align: right;
+}
+
+.emptyCell {
+  text-align: center;
+  color: var(--text-muted);
+  padding: 20px 16px;
 }
 
 .sortButton {

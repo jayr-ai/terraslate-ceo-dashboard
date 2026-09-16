@@ -4,6 +4,26 @@
   gap: 14px;
 }
 
+.statGrid1x8 {
+  display: grid;
+  grid-template-columns: repeat(8, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.tableGrid4 {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  align-items: start;
+}
+
+.tableGrid1x3 {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  gap: 14px;
+  align-items: start;
+}
+
 .kpiRow {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.2fr);
@@ -39,19 +59,28 @@
   .kpiRow > :last-child {
     grid-column: 1 / -1;
   }
-  .tableGrid3 {
+  .tableGrid3,
+  .tableGrid4 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-  .statGrid1x4 {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+  .statGrid1x4,
+  .statGrid1x8 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+  .tableGrid1x3 {
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 
 @media (max-width: 720px) {
+  .statGrid1x8 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
   .statGrid1x4,
   .kpiRow,
   .tableGrid2,
   .tableGrid3,
+  .tableGrid4,
   .tableGrid1x2 {
     grid-template-columns: minmax(0, 1fr);
   }

@@ -6,7 +6,17 @@ import { useGlowOnScroll } from "../../hooks/useGlowOnScroll";
 import { formatCellValue } from "../../lib/format";
 import styles from "./DataTable.module.css";
 
-export function DataTable({ table, hideTitle = false }: { table: TableSection; hideTitle?: boolean }) {
+export function DataTable({
+  table,
+  hideTitle = false,
+  dense = false,
+}: {
+  table: TableSection;
+  hideTitle?: boolean;
+  // Smaller font/padding — for layouts narrower than the usual 2/3-wide
+  // table grid (e.g. the AR dashboard's 4-across aging tables).
+  dense?: boolean;
+}) {
   const glowRef = useGlowOnScroll<HTMLDivElement>();
   const pageSize = table.pageSize ?? 5;
   const [sortKey, setSortKey] = useState<string | undefined>(table.defaultSortKey);
@@ -49,7 +59,7 @@ export function DataTable({ table, hideTitle = false }: { table: TableSection; h
   }
 
   return (
-    <div className={styles.card} ref={glowRef}>
+    <div className={`${styles.card} ${dense ? styles.dense : ""}`} ref={glowRef}>
       {!hideTitle && (
         <div className={styles.header}>
           <h3 className={styles.title}>{table.title}</h3>
@@ -116,6 +126,13 @@ export function DataTable({ table, hideTitle = false }: { table: TableSection; h
                 })}
               </tr>
             ))}
+            {visibleRows.length === 0 && (
+              <tr>
+                <td className={styles.emptyCell} colSpan={table.columns.length}>
+                  No data
+                </td>
+              </tr>
+            )}
           </tbody>
         </table>
       </div>

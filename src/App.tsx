@@ -5,6 +5,7 @@ import { DateRangePicker } from "./components/layout/DateRangePicker";
 import { RefreshDataButton } from "./components/layout/RefreshDataButton";
 import { CeoDashboard } from "./pages/CeoDashboard";
 import { AirCallDashboard } from "./pages/AirCallDashboard";
+import { AccountsReceivable } from "./pages/AccountsReceivable";
 import { DateRangeProvider, useDateRange } from "./data/DateRangeContext";
 import { AircallDateRangeProvider, useAircallDateRange } from "./data/AircallDateRangeContext";
 import type { NavItem } from "./data/ceoDashboardMockData";
@@ -42,9 +43,32 @@ function AirCallDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
   );
 }
 
+function AccountsReceivableHeader({ onMenuClick }: { onMenuClick: () => void }) {
+  // No date-range picker here, deliberately — the aging buckets are always
+  // today-relative, so there's no meaningful custom range to layer on top.
+  return (
+    <Header title="Accounts Receivable" subtitle="Source: TerraSlate Shopify" onMenuClick={onMenuClick}>
+      <RefreshDataButton />
+    </Header>
+  );
+}
+
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   const [activePage, setActivePage] = useState<NavItem["id"]>("ceo-dashboard");
+
+  let headerEl;
+  let contentEl;
+  if (activePage === "aircall-dashboard") {
+    headerEl = <AirCallDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
+    contentEl = <AirCallDashboard />;
+  } else if (activePage === "accounts-receivable") {
+    headerEl = <AccountsReceivableHeader onMenuClick={() => setNavOpen((v) => !v)} />;
+    contentEl = <AccountsReceivable />;
+  } else {
+    headerEl = <CeoDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
+    contentEl = <CeoDashboard />;
+  }
 
   return (
     <DateRangeProvider>
@@ -57,14 +81,8 @@ function App() {
             onSelectPage={setActivePage}
           />
           <div className={styles.main}>
-            {activePage === "aircall-dashboard" ? (
-              <AirCallDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />
-            ) : (
-              <CeoDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />
-            )}
-            <div className={styles.content}>
-              {activePage === "aircall-dashboard" ? <AirCallDashboard /> : <CeoDashboard />}
-            </div>
+            {headerEl}
+            <div className={styles.content}>{contentEl}</div>
           </div>
         </div>
       </AircallDateRangeProvider>

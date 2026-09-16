@@ -1,0 +1,350 @@
+{
+  "generatedAt": "2026-09-16T15:05:57.022437Z",
+  "anchor": "2026-09-16",
+  "buckets": {
+    "last30": {
+      "label": "Last 30 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 51435.31,
+      "count": 32,
+      "trend": {
+        "changePct": 31.0,
+        "direction": "up"
+      },
+      "countTrend": {
+        "changePct": 52.4,
+        "direction": "up"
+      },
+      "rows": [
+        {
+          "date": "Sep 10, 2026",
+          "order": "#13125341",
+          "total": 2218.41
+        },
+        {
+          "date": "Sep 9, 2026",
+          "order": "#13125224",
+          "total": 680.98
+        },
+        {
+          "date": "Sep 4, 2026",
+          "order": "#13124960",
+          "total": 297.02
+        },
+        {
+          "date": "Sep 4, 2026",
+          "order": "#13124959",
+          "total": 296.61
+        },
+        {
+          "date": "Sep 4, 2026",
+          "order": "#13124958",
+          "total": 871.01
+        },
+        {
+          "date": "Sep 4, 2026",
+          "order": "#13124936",
+          "total": 1375.67
+        },
+        {
+          "date": "Sep 2, 2026",
+          "order": "#13124792",
+          "total": 1492.4
+        },
+        {
+          "date": "Sep 2, 2026",
+          "order": "#13124750",
+          "total": 430.75
+        },
+        {
+          "date": "Sep 2, 2026",
+          "order": "#13124746",
+          "total": 1295.86
+        },
+        {
+          "date": "Sep 2, 2026",
+          "order": "#13124743",
+          "total": 432.38
+        },
+        {
+          "date": "Aug 31, 2026",
+          "order": "#13124535",
+          "total": 109.91
+        },
+        {
+          "date": "Aug 31, 2026",
+          "order": "#13124518",
+          "total": 477.54
+        },
+        {
+          "date": "Aug 27, 2026",
+          "order": "#13124295",
+          "total": 516.0
+        },
+        {
+          "date": "Aug 26, 2026",
+          "order": "#13124266",
+          "total": 4401.69
+        },
+        {
+          "date": "Aug 25, 2026",
+          "order": "#13124142",
+          "total": 129.0
+        },
+        {
+          "date": "Aug 21, 2026",
+          "order": "#13123781",
+          "total": 2363.03
+        },
+        {
+          "date": "Aug 20, 2026",
+          "order": "#13123652",
+          "total": 1416.0
+        },
+        {
+          "date": "Aug 19, 2026",
+          "order": "#13123616",
+          "total": 1369.2
+        },
+        {
+          "date": "Aug 19, 2026",
+          "order": "#13123610",
+          "total": 1264.2
+        },
+        {
+          "date": "Aug 19, 2026",
+          "order": "#13123583",
+          "total": 9281.0
+        },
+        {
+          "date": "Aug 19, 2026",
+          "order": "#13123568",
+          "total": 187.2
+        },
+        {
+          "date": "Aug 18, 2026",
+          "order": "#13123545",
+          "total": 179.19
+        },
+        {
+          "date": "Aug 18, 2026",
+          "order": "#13123510",
+          "total": 4180.0
+        },
+        {
+          "date": "Aug 18, 2026",
+          "order": "#13123506",
+          "total": 5276.76
+        },
+        {
+          "date": "Aug 18, 2026",
+          "order": "#13123503",
+          "total": 190.75
+        },
+        {
+          "date": "Aug 18, 2026",
+          "order": "#13123489",
+          "total": 233.75
+        },
+        {
+          "date": "Aug 18, 2026",
+          "order": "#13123485",
+          "total": 233.75
+        },
+        {
+          "date": "Aug 18, 2026",
+          "order": "#13123480",
+          "total": 247.5
+        },
+        {
+          "date": "Aug 17, 2026",
+          "order": "#13123417",
+          "total": 233.75
+        },
+        {
+          "date": "Aug 17, 2026",
+          "order": "#13123401",
+          "total": 1394.0
+        },
+        {
+          "date": "Aug 17, 2026",
+          "order": "#13123395",
+          "total": 2090.0
+        },
+        {
+          "date": "Aug 17, 2026",
+          "order": "#13123392",
+          "total": 6270.0
+        }
+      ]
+    },
+    "d31to60": {
+      "label": "31-60 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 29285.3,
+      "count": 17,
+      "trend": {
+        "changePct": 72.5,
+        "direction": "up"
+      },
+      "countTrend": {
+        "changePct": 183.3,
+        "direction": "up"
+      },
+      "rows": [
+        {
+          "date": "Aug 14, 2026",
+          "order": "#13123329",
+          "total": 5671.2
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122978",
+          "total": 148.99
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122912",
+          "total": 23.4
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122910",
+          "total": 23.4
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122907",
+          "total": 23.4
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122904",
+          "total": 23.4
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122903",
+          "total": 23.4
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122902",
+          "total": 23.4
+        },
+        {
+          "date": "Aug 11, 2026",
+          "order": "#13122900",
+          "total": 23.4
+        },
+        {
+          "date": "Aug 10, 2026",
+          "order": "#13122837",
+          "total": 3931.26
+        },
+        {
+          "date": "Aug 10, 2026",
+          "order": "#13122826",
+          "total": 3763.0
+        },
+        {
+          "date": "Aug 5, 2026",
+          "order": "#13122569",
+          "total": 2259.65
+        },
+        {
+          "date": "Aug 5, 2026",
+          "order": "#13122567",
+          "total": 438.0
+        },
+        {
+          "date": "Jul 23, 2026",
+          "order": "#13121698",
+          "total": 6652.2
+        },
+        {
+          "date": "Jul 23, 2026",
+          "order": "#13121680",
+          "total": 6132.0
+        },
+        {
+          "date": "Jul 18, 2026",
+          "order": "#13121398",
+          "total": 22.0
+        },
+        {
+          "date": "Jul 18, 2026",
+          "order": "#13121397",
+          "total": 103.2
+        }
+      ]
+    },
+    "d61to90": {
+      "label": "61-90 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 16975.1,
+      "count": 6,
+      "trend": null,
+      "countTrend": null,
+      "rows": [
+        {
+          "date": "Jul 17, 2026",
+          "order": "#13121319",
+          "total": 5208.5
+        },
+        {
+          "date": "Jul 16, 2026",
+          "order": "#13121252",
+          "total": 1290.0
+        },
+        {
+          "date": "Jul 16, 2026",
+          "order": "#13121246",
+          "total": 2786.4
+        },
+        {
+          "date": "Jul 16, 2026",
+          "order": "#13121234",
+          "total": 1290.0
+        },
+        {
+          "date": "Jul 14, 2026",
+          "order": "#13121100",
+          "total": 778.2
+        },
+        {
+          "date": "Jul 2, 2026",
+          "order": "#13120408",
+          "total": 5622.0
+        }
+      ]
+    },
+    "d90plus": {
+      "label": "90+ Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 0,
+      "count": 0,
+      "trend": null,
+      "countTrend": null,
+      "rows": []
+    }
+  },
+  "allTimeReceivable": 97695.71,
+  "monthly": [
+    {
+      "month": "2026-07",
+      "label": "Jul",
+      "total": 29884.5
+    },
+    {
+      "month": "2026-08",
+      "label": "Aug",
+      "total": 58420.12
+    },
+    {
+      "month": "2026-09",
+      "label": "Sep",
+      "total": 9391.09
+    }
+  ]
+}

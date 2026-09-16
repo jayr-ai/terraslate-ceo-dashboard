@@ -1,0 +1,8 @@
+.chartCard {
+  background: var(--surface-card);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 12px 12px 8px;
+  min-width: 0;
+}
