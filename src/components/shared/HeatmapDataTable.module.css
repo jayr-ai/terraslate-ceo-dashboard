@@ -10,38 +10,39 @@
 }
 
 /* Denser than the default DataTable: up to 5 columns share a 1/3-width
-   card, so headers wrap to 2 lines (matches the source report) and
-   padding is tightened to fit without horizontal scroll. */
+   card, so headers wrap to 2 lines (matches the source report), fonts run
+   smaller than the rest of the app, and padding is tightened — all so the
+   Employee column can stay on one line without truncating or forcing the
+   table wider than its card. */
 .table {
-  font-size: 11.5px;
+  font-size: 10.5px;
+}
+
+.table th {
+  font-size: 9.5px;
 }
 
 .table th,
 .table td {
-  padding: 8px 7px;
+  padding: 7px 5px;
 }
 
 .table th:first-child,
 .table td:first-child {
-  padding-left: 12px;
+  padding-left: 10px;
 }
 
 .table th:last-child,
 .table td:last-child {
-  padding-right: 12px;
+  padding-right: 10px;
 }
 
 .wrapHeader {
   white-space: normal !important;
-  line-height: 1.25;
+  line-height: 1.2;
   vertical-align: bottom;
 }
 
-/* First column (Employee/Main Tag) wraps onto multiple lines rather than
-   truncating or forcing the table wider — full names stay readable at the
-   card's fixed 1/3-row width. */
 .table td:first-child {
-  white-space: normal;
-  line-height: 1.3;
-  min-width: 92px;
+  white-space: nowrap;
 }
