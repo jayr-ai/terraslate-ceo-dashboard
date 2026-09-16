@@ -12,6 +12,7 @@ import {
   type LucideIcon,
 } from "lucide-react";
 import { navItems } from "../../data/ceoDashboardMockData";
+import terraslateLogo from "../../assets/terraslate-logo.avif";
 import styles from "./Sidebar.module.css";
 
 const ICONS: Record<string, LucideIcon> = {
@@ -43,8 +44,7 @@ export function Sidebar({
       <aside className={`${styles.sidebar} ${open ? styles.sidebarOpen : ""}`}>
         <div className={styles.topRow}>
           <div className={styles.brand}>
-            <div className={styles.brandMark}>TS</div>
-            <span className={styles.brandWord}>TerraSlate</span>
+            <img src={terraslateLogo} alt="TerraSlate" className={styles.brandLogo} />
           </div>
           <button type="button" className={styles.closeButton} onClick={onClose} aria-label="Close menu">
             <X size={20} strokeWidth={2} />

@@ -48,26 +48,9 @@
   padding: 4px 10px 24px;
 }
 
-.brandMark {
-  width: 32px;
-  height: 32px;
-  border-radius: 8px;
-  background: linear-gradient(155deg, var(--blue-400), var(--blue-500) 70%);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13px;
-  letter-spacing: 0.02em;
-  box-shadow: 0 0 16px 1px rgba(59, 158, 255, 0.45);
-  flex-shrink: 0;
-}
-
-.brandWord {
-  font-weight: 700;
-  font-size: 15px;
-  letter-spacing: -0.01em;
+.brandLogo {
+  height: 52px;
+  width: auto;
 }
 
 .nav {
