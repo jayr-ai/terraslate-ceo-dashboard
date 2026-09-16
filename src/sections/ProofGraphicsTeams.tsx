@@ -1,7 +1,6 @@
 import { Section } from "../components/shared/Section";
 import { DataTable } from "../components/shared/DataTable";
 import { StatTile } from "../components/shared/StatTile";
-import grid from "../components/shared/Grid.module.css";
 import { useDateRange } from "../data/DateRangeContext";
 import {
   buildBreadwinnazTable,
@@ -22,12 +21,14 @@ export function ProofGraphicsTeams() {
 
   return (
     <Section title="Account Managers / Proof Team / Graphic Team">
-      <div className={`${grid.tableGrid3} ${styles.topRow}`}>
-        <DataTable table={accountManagersTable} />
-        <DataTable table={proofTeamSalesTable} />
-        <DataTable table={graphicTeamSalesTable} />
-      </div>
-      <div className={styles.row}>
+      <div className={styles.grid3}>
+        <div className={styles.col}>
+          <DataTable table={accountManagersTable} />
+        </div>
+        <div className={styles.col}>
+          <DataTable table={proofTeamSalesTable} />
+          <DataTable table={graphicTeamSalesTable} />
+        </div>
         <div className={styles.col}>
           <StatTile
             label={graphicDesignValueTile.label}
@@ -35,8 +36,6 @@ export function ProofGraphicsTeams() {
             trend={graphicDesignValueTile.trend}
             source={graphicDesignValueTile.source}
           />
-        </div>
-        <div className={styles.col}>
           <DataTable table={graphicsTeamHoursTable} />
         </div>
       </div>
