@@ -1,3 +1,13 @@
-.tablesRow {
-  margin-top: 14px;
+.bucketColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 0;
+}
+
+/* The table (last child) grows to fill leftover column height, so a
+   short/empty table (e.g. 90+ Days Rec.) still bottoms out level with its
+   taller siblings instead of shrink-wrapping to its own row count. */
+.bucketColumn > :last-child {
+  flex: 1;
 }
