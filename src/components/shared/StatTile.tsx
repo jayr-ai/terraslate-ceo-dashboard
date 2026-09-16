@@ -11,7 +11,6 @@ export function StatTile({
   sparkline,
   empty,
   hero,
-  compact,
   source,
 }: {
   label: string;
@@ -20,17 +19,11 @@ export function StatTile({
   sparkline?: number[];
   empty?: boolean;
   hero?: boolean;
-  // Smaller padding/value font — for layouts denser than the usual 4/5-wide
-  // KPI row (e.g. the AR dashboard's 8-across aging scorecards).
-  compact?: boolean;
   source?: Source;
 }) {
   const glowRef = useGlowOnScroll<HTMLDivElement>();
   return (
-    <div
-      ref={glowRef}
-      className={`${styles.tile} ${hero ? styles.hero : ""} ${empty ? styles.empty : ""} ${compact ? styles.compact : ""}`}
-    >
+    <div ref={glowRef} className={`${styles.tile} ${hero ? styles.hero : ""} ${empty ? styles.empty : ""}`}>
       <div className={styles.topRow}>
         <span className={styles.label}>{label}</span>
         {!empty && trend && <TrendIndicator trend={trend} />}

@@ -19,23 +19,6 @@
   background: var(--surface-page);
 }
 
-.compact {
-  padding: 12px 12px;
-  gap: 6px;
-}
-
-.compact .label {
-  font-size: 11px;
-}
-
-.compact .value {
-  font-size: 17px;
-}
-
-.compact.empty .value {
-  font-size: 13px;
-}
-
 .topRow {
   display: flex;
   align-items: center;
