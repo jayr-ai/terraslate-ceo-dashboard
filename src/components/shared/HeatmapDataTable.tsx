@@ -5,7 +5,7 @@ import { useGlowOnScroll } from "../../hooks/useGlowOnScroll";
 import styles from "./DataTable.module.css";
 import heatStyles from "./HeatmapDataTable.module.css";
 
-export type HeatmapFormat = "hours" | "number" | "percent" | "text";
+export type HeatmapFormat = "hours" | "number" | "percent" | "currency" | "text";
 export type HeatColor = "blue" | "green" | "cyan";
 
 export interface HeatmapColumn {
@@ -202,5 +202,10 @@ function formatCell(value: string | number | null, format?: HeatmapFormat): stri
   if (format === "hours") return typeof value === "number" ? value.toFixed(2) : String(value);
   if (format === "percent") return typeof value === "number" ? `${value.toFixed(1)}%` : String(value);
   if (format === "number") return typeof value === "number" ? value.toLocaleString("en-US") : String(value);
+  if (format === "currency") {
+    return typeof value === "number"
+      ? `$${value.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+      : String(value);
+  }
   return String(value);
 }

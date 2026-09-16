@@ -1,6 +1,6 @@
 import { Fragment } from "react";
 import { StatTile } from "../../components/shared/StatTile";
-import { DataTable } from "../../components/shared/DataTable";
+import { HeatmapDataTable } from "../../components/shared/HeatmapDataTable";
 import { Section } from "../../components/shared/Section";
 import { arBuckets, arSource } from "../../data/arDashboardData";
 import styles from "./AgingSection.module.css";
@@ -31,7 +31,7 @@ export function AgingSection() {
               trend={b.countTile.trend}
               empty={b.countTile.empty}
             />
-            <DataTable table={b.table} dense />
+            <HeatmapDataTable table={b.table} />
           </Fragment>
         ))}
       </div>

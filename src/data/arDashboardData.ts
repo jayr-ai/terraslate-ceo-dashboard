@@ -8,8 +8,9 @@
 // To refresh with current numbers: `python3 scripts/fetch_ar_data.py`.
 
 import raw from "./arDashboardData.json";
-import type { Source, StatTileDatum, TableSection, Trend } from "./ceoDashboardMockData";
+import type { Source, StatTileDatum, Trend } from "./ceoDashboardMockData";
 import type { MonthlyBarPoint } from "../components/shared/MonthlyBarChart";
+import type { HeatmapTableData } from "../components/shared/HeatmapDataTable";
 
 const arSource: Source = { label: "TerraSlate Shopify > Unpaid tab", confirmed: true };
 export { arSource };
@@ -31,7 +32,7 @@ const buckets = raw.buckets as unknown as Record<(typeof BUCKET_ORDER)[number], 
 export interface ArBucket {
   moneyTile: StatTileDatum;
   countTile: StatTileDatum;
-  table: TableSection;
+  table: HeatmapTableData;
 }
 
 function fmtMoney(v: number): string {
@@ -62,7 +63,7 @@ export const arBuckets: ArBucket[] = BUCKET_ORDER.map((key) => {
       columns: [
         { key: "date", label: "Date", align: "left" },
         { key: "order", label: "Order", align: "left", sortable: true },
-        { key: "total", label: "Total", align: "right", sortable: true, format: "currency" },
+        { key: "total", label: "Total", align: "right", sortable: true, format: "currency", heat: "blue" },
       ],
       rows: b.rows,
       source: arSource,
