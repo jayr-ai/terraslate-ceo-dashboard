@@ -14,9 +14,9 @@ export function CeoDashboard() {
       <SalesAcrossChannels />
       <TerraSlateTracker />
       <MarketingMetrics />
+      <ProofGraphicsTeams />
       <PrePress />
       <ProductionTeams />
-      <ProofGraphicsTeams />
       <ShippingByState />
       <TrafficTable />
     </div>
