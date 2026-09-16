@@ -30,7 +30,7 @@ function buildDurationTable(id: string, title: string, table: CallsDurationTable
     id,
     title,
     columns: [
-      { key: "employee", label: "Employee", align: "left", truncate: true },
+      { key: "employee", label: "Employee", align: "left" },
       { key: "durationTotal", label: "Duration (total)", align: "right", format: "hours", heat: "blue" },
       { key: "durationInCall", label: "Duration (in call)", align: "right", format: "hours", heat: "green" },
       { key: "count", label: table.countLabel, align: "right", format: "number", heat: "cyan" },

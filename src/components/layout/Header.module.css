@@ -45,21 +45,6 @@
   background: var(--surface-hover);
 }
 
-.logo {
-  width: 34px;
-  height: 34px;
-  border-radius: 9px;
-  background: linear-gradient(155deg, var(--blue-400), var(--navy-900) 85%);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: 700;
-  font-size: 13px;
-  box-shadow: 0 0 14px 0 rgba(59, 158, 255, 0.35);
-  flex-shrink: 0;
-}
-
 .titleGroup {
   display: flex;
   flex-direction: column;
@@ -100,10 +85,6 @@
   .header {
     padding: 12px 14px;
     gap: 8px;
-  }
-
-  .logo {
-    display: none;
   }
 
   .wordmark {

@@ -19,9 +19,6 @@ export function Header({
         <button type="button" className={styles.menuButton} onClick={onMenuClick} aria-label="Open menu">
           <Menu size={20} strokeWidth={2} />
         </button>
-        <div className={styles.logo} aria-hidden="true">
-          TS
-        </div>
         <div className={styles.titleGroup}>
           <span className={styles.wordmark}>TerraSlate</span>
           <h1 className={styles.title}>{title}</h1>

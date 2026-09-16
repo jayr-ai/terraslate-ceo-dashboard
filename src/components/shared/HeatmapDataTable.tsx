@@ -106,7 +106,7 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
               style={cellStyle(col, raw)}
             >
               {col.truncate && typeof raw === "string" ? (
-                <span className={`${styles.truncateCell} ${heatStyles.employeeCell}`} title={raw}>
+                <span className={styles.truncateCell} title={raw}>
                   {display}
                 </span>
               ) : (

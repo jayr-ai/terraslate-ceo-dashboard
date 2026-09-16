@@ -37,6 +37,11 @@
   vertical-align: bottom;
 }
 
-.employeeCell {
-  max-width: 78px !important;
+/* First column (Employee/Main Tag) wraps onto multiple lines rather than
+   truncating or forcing the table wider — full names stay readable at the
+   card's fixed 1/3-row width. */
+.table td:first-child {
+  white-space: normal;
+  line-height: 1.3;
+  min-width: 92px;
 }
