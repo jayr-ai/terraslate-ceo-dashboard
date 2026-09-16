@@ -1,4 +1,5 @@
 .card {
+  height: 100%;
   background: var(--surface-card);
   border: 1px solid var(--border-hairline);
   border-radius: var(--radius-card);
@@ -20,6 +21,7 @@
 }
 
 .scrollWrap {
+  flex: 1;
   overflow-x: auto;
 }
 
