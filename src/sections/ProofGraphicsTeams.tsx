@@ -1,8 +1,10 @@
 import { Section } from "../components/shared/Section";
 import { DataTable } from "../components/shared/DataTable";
 import { StatTile } from "../components/shared/StatTile";
+import grid from "../components/shared/Grid.module.css";
 import { useDateRange } from "../data/DateRangeContext";
 import {
+  buildBreadwinnazTable,
   buildProofTeamSalesTable,
   buildGraphicDesignValueTile,
   buildGraphicTeamSalesTable,
@@ -12,17 +14,20 @@ import styles from "./ProofGraphicsTeams.module.css";
 
 export function ProofGraphicsTeams() {
   const { windows } = useDateRange();
+  const accountManagersTable = buildBreadwinnazTable(windows.breadwinnaz);
   const proofTeamSalesTable = buildProofTeamSalesTable(windows.proofSales);
   const graphicDesignValueTile = buildGraphicDesignValueTile(windows.graphicDesign);
   const graphicTeamSalesTable = buildGraphicTeamSalesTable(windows.graphicSales);
   const graphicsTeamHoursTable = buildGraphicsTeamHoursTable(windows.graphicsHours);
 
   return (
-    <Section title="Proof Team / Graphic Team">
+    <Section title="Account Managers / Proof Team / Graphic Team">
+      <div className={`${grid.tableGrid3} ${styles.topRow}`}>
+        <DataTable table={accountManagersTable} />
+        <DataTable table={proofTeamSalesTable} />
+        <DataTable table={graphicTeamSalesTable} />
+      </div>
       <div className={styles.row}>
-        <div className={styles.col}>
-          <DataTable table={proofTeamSalesTable} />
-        </div>
         <div className={styles.col}>
           <StatTile
             label={graphicDesignValueTile.label}
@@ -30,11 +35,6 @@ export function ProofGraphicsTeams() {
             trend={graphicDesignValueTile.trend}
             source={graphicDesignValueTile.source}
           />
-        </div>
-      </div>
-      <div className={styles.row}>
-        <div className={styles.col}>
-          <DataTable table={graphicTeamSalesTable} />
         </div>
         <div className={styles.col}>
           <DataTable table={graphicsTeamHoursTable} />

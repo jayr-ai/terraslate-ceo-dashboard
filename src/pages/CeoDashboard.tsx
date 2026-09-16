@@ -1,7 +1,6 @@
 import { SalesAcrossChannels } from "../sections/SalesAcrossChannels";
 import { TerraSlateTracker } from "../sections/TerraSlateTracker";
 import { MarketingMetrics } from "../sections/MarketingMetrics";
-import { Breadwinnaz } from "../sections/Breadwinnaz";
 import { PrePress } from "../sections/PrePress";
 import { ProductionTeams } from "../sections/ProductionTeams";
 import { ProofGraphicsTeams } from "../sections/ProofGraphicsTeams";
@@ -15,7 +14,6 @@ export function CeoDashboard() {
       <SalesAcrossChannels />
       <TerraSlateTracker />
       <MarketingMetrics />
-      <Breadwinnaz />
       <PrePress />
       <ProductionTeams />
       <ProofGraphicsTeams />
