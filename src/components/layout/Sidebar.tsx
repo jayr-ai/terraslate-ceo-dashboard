@@ -26,7 +26,17 @@ const ICONS: Record<string, LucideIcon> = {
   "book-open": BookOpen,
 };
 
-export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void }) {
+export function Sidebar({
+  open,
+  onClose,
+  activePage,
+  onSelectPage,
+}: {
+  open: boolean;
+  onClose: () => void;
+  activePage: string;
+  onSelectPage: (id: string) => void;
+}) {
   return (
     <>
       {open && <div className={styles.backdrop} onClick={onClose} aria-hidden="true" />}
@@ -43,15 +53,23 @@ export function Sidebar({ open, onClose }: { open: boolean; onClose: () => void 
         <nav className={styles.nav} aria-label="Dashboard pages">
           {navItems.map((item) => {
             const Icon = ICONS[item.icon];
+            const isCurrent = item.active && item.id === activePage;
             return (
               <button
                 key={item.id}
                 type="button"
-                className={`${styles.navItem} ${item.active ? styles.navItemActive : ""}`}
+                className={`${styles.navItem} ${isCurrent ? styles.navItemActive : ""}`}
                 disabled={!item.active}
-                aria-current={item.active ? "page" : undefined}
+                aria-current={isCurrent ? "page" : undefined}
                 title={item.active ? undefined : `${item.label} — coming in a later phase`}
-                onClick={item.active ? onClose : undefined}
+                onClick={
+                  item.active
+                    ? () => {
+                        onSelectPage(item.id);
+                        onClose();
+                      }
+                    : undefined
+                }
               >
                 <Icon size={18} strokeWidth={2} aria-hidden="true" />
                 <span>{item.label}</span>

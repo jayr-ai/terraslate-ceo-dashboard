@@ -54,6 +54,14 @@
   --series-2: #ff9052; /* Amazon */
   --series-3: #3ddc97; /* Walmart */
 
+  /* Heatmap cell fills (AirCall Dashboard tables) — base brand hues blended
+     over --surface-card at a value-proportional opacity, so "0" fades to
+     the plain card background and the max value in a column reads as a
+     fully saturated fill, matching the source report's per-column heatmap. */
+  --heat-blue: 59, 158, 255;
+  --heat-green: 61, 220, 151;
+  --heat-cyan: 34, 211, 238;
+
   --radius-card: 14px;
   --radius-control: 9px;
 

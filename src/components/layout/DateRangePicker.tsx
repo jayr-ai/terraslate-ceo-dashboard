@@ -1,14 +1,24 @@
 import { useEffect, useRef, useState } from "react";
 import { Calendar, Check, ChevronDown } from "lucide-react";
-import { useDateRange } from "../../data/DateRangeContext";
-import { PRESET_KEYS, PRESET_LABELS, type PresetKey } from "../../lib/dateRange";
+import { PRESET_KEYS, PRESET_LABELS, type PresetKey, type DateRangeSelection } from "../../lib/dateRange";
 import styles from "./DateRangePicker.module.css";
 
-export function DateRangePicker() {
-  const { selection, setPreset, setCustom, windows } = useDateRange();
+// Deliberately decoupled from any specific date-range context: the CEO
+// Dashboard and AirCall Dashboard each have their own (different sections,
+// different underlying data), so this component takes whichever one's
+// hook result the caller passes in, rather than importing one directly.
+export interface DateRangePickerProps {
+  selection: DateRangeSelection;
+  setPreset: (key: PresetKey) => void;
+  setCustom: (start: string, end: string) => void;
+  displayStart: string;
+  displayEnd: string;
+}
+
+export function DateRangePicker({ selection, setPreset, setCustom, displayStart, displayEnd }: DateRangePickerProps) {
   const [open, setOpen] = useState(false);
-  const [customStart, setCustomStart] = useState(windows.displayStart);
-  const [customEnd, setCustomEnd] = useState(windows.displayEnd);
+  const [customStart, setCustomStart] = useState(displayStart);
+  const [customEnd, setCustomEnd] = useState(displayEnd);
   const rootRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -31,8 +41,8 @@ export function DateRangePicker() {
   function openPanel() {
     // Seed the custom-range inputs from whatever's currently showing, so
     // switching to "Custom" starts from something sensible.
-    setCustomStart(windows.displayStart);
-    setCustomEnd(windows.displayEnd);
+    setCustomStart(displayStart);
+    setCustomEnd(displayEnd);
     setOpen((v) => !v);
   }
 
@@ -50,7 +60,7 @@ export function DateRangePicker() {
   const label =
     selection.kind === "preset"
       ? PRESET_LABELS[selection.key]
-      : `${formatDisplay(windows.displayStart)} – ${formatDisplay(windows.displayEnd)}`;
+      : `${formatDisplay(displayStart)} – ${formatDisplay(displayEnd)}`;
 
   return (
     <div className={styles.root} ref={rootRef}>

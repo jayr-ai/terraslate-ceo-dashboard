@@ -517,7 +517,7 @@ export interface NavItem {
 
 export const navItems: NavItem[] = [
   { id: "ceo-dashboard", label: "CEO Dashboard", icon: "layout-dashboard", active: true },
-  { id: "aircall-dashboard", label: "AirCall Dashboard", icon: "phone-call", active: false },
+  { id: "aircall-dashboard", label: "AirCall Dashboard", icon: "phone-call", active: true },
   { id: "amazon-restock", label: "Amazon Restock Report", icon: "package", active: false },
   { id: "accounts-receivable", label: "Accounts Receivable", icon: "file-text", active: false },
   { id: "google-ads", label: "Google Ads", icon: "search", active: false },

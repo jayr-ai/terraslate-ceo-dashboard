@@ -1,0 +1,21 @@
+.cornerRow {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 16px;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.grandTotalRow td {
+  font-weight: 700;
+  background: var(--surface-hover);
+}
+
+.caption {
+  font-size: 11.5px;
+  color: var(--text-muted);
+  margin-top: 2px;
+}

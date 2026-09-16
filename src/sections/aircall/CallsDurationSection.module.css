@@ -1,0 +1,12 @@
+.chartRow {
+  margin-top: 14px;
+}
+
+.chartCard {
+  background: var(--surface-card);
+  border: 1px solid var(--border-hairline);
+  border-radius: var(--radius-card);
+  box-shadow: var(--shadow-card);
+  padding: 10px 6px 6px;
+  min-width: 0;
+}

@@ -48,7 +48,7 @@ function toIso(d: Date): string {
   return d.toISOString().slice(0, 10);
 }
 
-function addDays(iso: string, days: number): string {
+export function addDays(iso: string, days: number): string {
   const d = toDate(iso);
   d.setUTCDate(d.getUTCDate() + days);
   return toIso(d);
