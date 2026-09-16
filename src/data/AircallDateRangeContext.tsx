@@ -6,15 +6,21 @@ import {
   resolvePresetRange,
   computeCustomCallsWindow,
   computeCustomChartWindow,
+  computeCustomCallsByTagWindow,
+  computeCustomCallsByTagByUserWindow,
   type DateRangeSelection,
   type PresetKey,
   type CallsDurationWindow,
   type ChartWindow,
+  type CallsByTagWindow,
+  type CallsByTagByUserWindow,
 } from "../lib/aircallDateRange";
 
 interface ResolvedWindows {
   calls: CallsDurationWindow;
   chart: ChartWindow;
+  callsByTag: CallsByTagWindow;
+  callsByTagByUser: CallsByTagByUserWindow;
   displayStart: string;
   displayEnd: string;
 }
@@ -33,6 +39,8 @@ const AircallDateRangeContext = createContext<AircallDateRangeContextValue | nul
 // back on the last refresh, which is fragile by construction.
 const callsWindows = raw.callsDuration.windows as unknown as Record<PresetKey, CallsDurationWindow>;
 const chartWindows = raw.callsCharts.windows as unknown as Record<PresetKey, ChartWindow>;
+const callsByTagWindows = raw.callsByTag.windows as unknown as Record<PresetKey, CallsByTagWindow>;
+const callsByTagByUserWindows = raw.callsByTagByUser.windows as unknown as Record<PresetKey, CallsByTagByUserWindow>;
 
 export function AircallDateRangeProvider({ children }: { children: ReactNode }) {
   const [selection, setSelection] = useState<DateRangeSelection>(DEFAULT_SELECTION);
@@ -43,6 +51,8 @@ export function AircallDateRangeProvider({ children }: { children: ReactNode }) 
       return {
         calls: callsWindows[key],
         chart: chartWindows[key],
+        callsByTag: callsByTagWindows[key],
+        callsByTagByUser: callsByTagByUserWindows[key],
         displayStart: resolvePresetRange(ANCHOR, key)[0],
         displayEnd: resolvePresetRange(ANCHOR, key)[1],
       };
@@ -51,6 +61,8 @@ export function AircallDateRangeProvider({ children }: { children: ReactNode }) 
     return {
       calls: computeCustomCallsWindow(start, end),
       chart: computeCustomChartWindow(start, end),
+      callsByTag: computeCustomCallsByTagWindow(start, end),
+      callsByTagByUser: computeCustomCallsByTagByUserWindow(start, end),
       displayStart: start,
       displayEnd: end,
     };

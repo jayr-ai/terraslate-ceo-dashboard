@@ -12,17 +12,18 @@ XLSX export doesn't have that cap. Re-run this any time to refresh:
 
     python3 scripts/fetch_aircall_data.py
 
-## What's date-driven vs all-time (verified against the reference report)
+## What's date-driven
 
   - Inbound/Outbound/Total Calls Duration tables, and their 3 line charts,
     ARE bound to the date-range picker (verified: recomputing the Aug 19 -
     Sep 15, 2026 window from raw rows reproduces the reference screenshot's
     numbers exactly, e.g. Bikus Rodriguez 18.46h / 17.98h / 216 inbound calls).
-  - Calls by Tag and Calls by Tag by User are ALL-TIME totals, NOT filtered
-    by the date-range picker — verified the same way (only matches the
-    reference when computed over the full history, not the displayed
-    window). This mirrors how the original report was actually built, not
-    an oversight: replicate it as-is rather than "fixing" it.
+  - Calls by Tag and Calls by Tag by User are ALSO bound to the date-range
+    picker (per JV, 2026-09-17). In the *original* Looker report these were
+    all-time totals regardless of the page's date filter — verified against
+    the reference screenshot at the time — but that was a deliberate
+    divergence from this rebuild's intent, not something to preserve, so
+    both tables now use the same picker/anchor as the duration tables.
   - The 3 line charts plot the raw `duration (total)` / `duration (in call)`
     fields UNCONVERTED (seconds, matching the Y-axis scale in the reference
     screenshot, e.g. peaks in the 15-20K range) — a different unit than the
@@ -286,17 +287,21 @@ def build_chart_windows(daily: dict, anchor: date) -> dict:
 
 
 # ---------------------------------------------------------------------------
-# 2. Tags_Data — Calls by Tag / Calls by Tag by User (all-time, not date-ranged)
+# 2. Tags_Data — Calls by Tag / Calls by Tag by User (date-driven)
 # ---------------------------------------------------------------------------
 
 HEADER_ARTIFACT_TAGS = {"MAIN TAG"}
 BLANK_INITIALS = {"", "-NA-", "Initial"}
 
 
-def build_calls_by_tag(wb: openpyxl.Workbook) -> dict:
+def load_tags_daily(wb: openpyxl.Workbook) -> dict[tuple[date, str, str], int]:
+    """Returns {(date, tag, initial): count}. `tag` is "-" for a blank Main
+    Tag (Calls by Tag counts that as its own category); `initial` is "" when
+    blank/invalid — kept (not dropped) so it still counts toward Calls by
+    Tag's totals, and only excluded when building the by-user pivot, which
+    needs a real employee to attribute the call to."""
     idx, rows_iter = sheet_rows(wb, TAGS_DATA_TAB)
-    totals: dict[str, int] = defaultdict(int)
-    grand = 0
+    daily: dict[tuple[date, str, str], int] = defaultdict(int)
     for row in rows_iter:
         d = as_date(row[idx["Date"]])
         if d is None:
@@ -304,9 +309,22 @@ def build_calls_by_tag(wb: openpyxl.Workbook) -> dict:
         main_tag = row[idx["Main Tag"]]
         if main_tag in HEADER_ARTIFACT_TAGS:
             continue
-        main_tag = (main_tag or "").strip() or "-"
-        totals[main_tag] += 1
-        grand += 1
+        tag = (main_tag or "").strip() or "-"
+        initial = (row[idx["initial"]] or "").strip()
+        if initial in BLANK_INITIALS:
+            initial = ""
+        daily[(d, tag, initial)] += 1
+    return daily
+
+
+def calls_by_tag_window(daily: dict[tuple[date, str, str], int], start: date, end: date) -> dict:
+    totals: dict[str, int] = defaultdict(int)
+    grand = 0
+    for (d, tag, _initial), c in daily.items():
+        if not (start <= d <= end):
+            continue
+        totals[tag] += c
+        grand += c
 
     rows = [
         {"tag": t, "total": c, "pctOfTotal": round(c / grand * 100, 2) if grand else 0}
@@ -315,30 +333,19 @@ def build_calls_by_tag(wb: openpyxl.Workbook) -> dict:
     return {"rows": rows, "grandTotal": grand}
 
 
-def build_calls_by_tag_by_user(wb: openpyxl.Workbook) -> dict:
-    idx, rows_iter = sheet_rows(wb, TAGS_DATA_TAB)
+def calls_by_tag_by_user_window(daily: dict[tuple[date, str, str], int], start: date, end: date) -> dict:
     matrix: dict[str, dict[str, int]] = defaultdict(lambda: defaultdict(int))
     row_totals: dict[str, int] = defaultdict(int)
     col_totals: dict[str, int] = defaultdict(int)
     grand = 0
 
-    for row in rows_iter:
-        d = as_date(row[idx["Date"]])
-        if d is None:
+    for (d, tag, initial), c in daily.items():
+        if not (start <= d <= end) or tag == "-" or not initial:
             continue
-        main_tag = row[idx["Main Tag"]]
-        if main_tag in HEADER_ARTIFACT_TAGS:
-            continue
-        main_tag = (main_tag or "").strip()
-        if not main_tag:
-            continue  # blank/"-" tag rows are excluded from the pivot (verified vs reference)
-        initial = (row[idx["initial"]] or "").strip()
-        if initial in BLANK_INITIALS:
-            continue
-        matrix[main_tag][initial] += 1
-        row_totals[main_tag] += 1
-        col_totals[initial] += 1
-        grand += 1
+        matrix[tag][initial] += c
+        row_totals[tag] += c
+        col_totals[initial] += c
+        grand += c
 
     row_order = sorted(row_totals.keys(), key=lambda t: -row_totals[t])
     col_order = sorted(col_totals.keys(), key=lambda c: -col_totals[c])
@@ -348,11 +355,28 @@ def build_calls_by_tag_by_user(wb: openpyxl.Workbook) -> dict:
         "rowOrder": row_order,
         "colOrder": col_order,
         "matrix": {t: {c: matrix[t].get(c, 0) for c in col_order} for t in row_order},
-        "rowTotals": {t: row_totals[t] for t in row_order},
         "colTotals": {c: col_totals[c] for c in col_order},
         "grandTotal": grand,
         "maxCell": max_cell,
     }
+
+
+def build_calls_by_tag_windows(daily: dict, anchor: date) -> dict:
+    return {key: calls_by_tag_window(daily, *resolve_preset(anchor, key)) for key in PRESET_KEYS}
+
+
+def build_calls_by_tag_by_user_windows(daily: dict, anchor: date) -> dict:
+    return {key: calls_by_tag_by_user_window(daily, *resolve_preset(anchor, key)) for key in PRESET_KEYS}
+
+
+def build_tags_daily_raw(daily: dict[tuple[date, str, str], int], anchor: date) -> list[dict]:
+    start = anchor - timedelta(days=RAW_WINDOW_DAYS - 1)
+    out = []
+    for (d, tag, initial), c in daily.items():
+        if not (start <= d <= anchor):
+            continue
+        out.append({"date": date_key(d), "tag": tag, "initial": initial, "count": c})
+    return out
 
 
 # ---------------------------------------------------------------------------
@@ -370,18 +394,20 @@ def main():
     chart_windows = build_chart_windows(calls_daily, anchor)
     calls_raw = build_calls_daily_raw(calls_daily, anchor)
 
-    print("Building Calls by Tag / Calls by Tag by User (all-time) ...")
-    calls_by_tag = build_calls_by_tag(wb)
-    calls_by_tag_by_user = build_calls_by_tag_by_user(wb)
+    print("Building Calls by Tag / Calls by Tag by User (date-driven) ...")
+    tags_daily = load_tags_daily(wb)
+    tag_windows = build_calls_by_tag_windows(tags_daily, anchor)
+    tag_by_user_windows = build_calls_by_tag_by_user_windows(tags_daily, anchor)
+    tags_raw = build_tags_daily_raw(tags_daily, anchor)
 
     data = {
         "generatedAt": datetime.utcnow().isoformat() + "Z",
         "anchor": anchor.isoformat(),
         "callsDuration": {"windows": calls_windows},
         "callsCharts": {"windows": chart_windows},
-        "dailyRaw": {"calls": calls_raw},
-        "callsByTag": calls_by_tag,
-        "callsByTagByUser": calls_by_tag_by_user,
+        "callsByTag": {"windows": tag_windows},
+        "callsByTagByUser": {"windows": tag_by_user_windows},
+        "dailyRaw": {"calls": calls_raw, "tags": tags_raw},
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

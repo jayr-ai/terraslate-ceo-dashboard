@@ -3,11 +3,9 @@
 // Python, "Custom range" computed here over a capped dailyRaw feed), but
 // reads its own aircallDashboardData.json rather than the CEO Dashboard's.
 //
-// Only the Inbound/Outbound/Total Calls Duration tables + charts are
-// date-driven — Calls by Tag and Calls by Tag by User are all-time totals
-// in the source report too (verified against it), so they're plain static
-// exports with no window concept at all. See scripts/fetch_aircall_data.py's
-// docstring for the verification details.
+// Every section on this page is date-driven: Inbound/Outbound/Total Calls
+// Duration + their charts, and Calls by Tag / Calls by Tag by User. See
+// scripts/fetch_aircall_data.py's docstring for what changed and why.
 
 import raw from "../data/aircallDashboardData.json";
 import { PRESET_KEYS, PRESET_LABELS, DEFAULT_SELECTION, resolvePresetRange, addDays, type PresetKey, type DateRangeSelection } from "./dateRange";
@@ -26,7 +24,9 @@ type CallRow = {
   count: number;
 };
 
-const dailyRaw = raw.dailyRaw as { calls: CallRow[] };
+type TagRow = { date: string; tag: string; initial: string; count: number };
+
+const dailyRaw = raw.dailyRaw as { calls: CallRow[]; tags: TagRow[] };
 
 function inRange(date: string, start: string, end: string): boolean {
   return date >= start && date <= end;
@@ -157,4 +157,75 @@ export function computeCustomChartWindow(start: string, end: string): ChartWindo
     pt.totalDurationInCall = pt.inboundDurationInCall + pt.outboundDurationInCall;
   }
   return { points: [...byDate.values()] };
+}
+
+// ---------------------------------------------------------------------------
+// Calls by Tag / Calls by Tag by User
+// ---------------------------------------------------------------------------
+
+export interface CallsByTagRow {
+  tag: string;
+  total: number;
+  pctOfTotal: number;
+}
+export interface CallsByTagWindow {
+  rows: CallsByTagRow[];
+  grandTotal: number;
+}
+
+export function computeCustomCallsByTagWindow(start: string, end: string): CallsByTagWindow {
+  const totals = new Map<string, number>();
+  let grand = 0;
+  for (const r of dailyRaw.tags) {
+    if (!inRange(r.date, start, end)) continue;
+    totals.set(r.tag, (totals.get(r.tag) ?? 0) + r.count);
+    grand += r.count;
+  }
+  const rows = [...totals.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .map(([tag, total]) => ({ tag, total, pctOfTotal: grand ? Math.round((total / grand) * 10000) / 100 : 0 }));
+  return { rows, grandTotal: grand };
+}
+
+export interface CallsByTagByUserWindow {
+  rowOrder: string[];
+  colOrder: string[];
+  matrix: Record<string, Record<string, number>>;
+  colTotals: Record<string, number>;
+  grandTotal: number;
+  maxCell: number;
+}
+
+export function computeCustomCallsByTagByUserWindow(start: string, end: string): CallsByTagByUserWindow {
+  const matrix = new Map<string, Map<string, number>>();
+  const rowTotals = new Map<string, number>();
+  const colTotals = new Map<string, number>();
+  let grand = 0;
+  let maxCell = 0;
+
+  for (const r of dailyRaw.tags) {
+    if (!inRange(r.date, start, end) || r.tag === "-" || !r.initial) continue;
+    const row = matrix.get(r.tag) ?? new Map<string, number>();
+    const cell = (row.get(r.initial) ?? 0) + r.count;
+    row.set(r.initial, cell);
+    matrix.set(r.tag, row);
+    rowTotals.set(r.tag, (rowTotals.get(r.tag) ?? 0) + r.count);
+    colTotals.set(r.initial, (colTotals.get(r.initial) ?? 0) + r.count);
+    grand += r.count;
+    if (cell > maxCell) maxCell = cell;
+  }
+
+  const rowOrder = [...rowTotals.entries()].sort((a, b) => b[1] - a[1]).map(([t]) => t);
+  const colOrder = [...colTotals.entries()].sort((a, b) => b[1] - a[1]).map(([c]) => c);
+
+  return {
+    rowOrder,
+    colOrder,
+    matrix: Object.fromEntries(
+      rowOrder.map((t) => [t, Object.fromEntries(colOrder.map((c) => [c, matrix.get(t)?.get(c) ?? 0]))]),
+    ),
+    colTotals: Object.fromEntries(colOrder.map((c) => [c, colTotals.get(c) ?? 0])),
+    grandTotal: grand,
+    maxCell,
+  };
 }

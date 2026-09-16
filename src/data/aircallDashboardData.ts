@@ -1,22 +1,22 @@
 // Real data adapter — reads scripts/fetch_aircall_data.py's output
 // (aircallDashboardData.json) and reshapes it into the typed constants the
-// UI components consume.
-//
-//   - Inbound/Outbound/Total Calls Duration tables + their 3 line charts are
-//     date-driven (build* functions taking a resolved window from
-//     AircallDateRangeContext).
-//   - Calls by Tag and Calls by Tag by User are all-time, static exports —
-//     verified against the source report, not an oversight. See
-//     scripts/fetch_aircall_data.py's docstring for the verification.
+// UI components consume. Every section here is date-driven (build*
+// functions taking a resolved window from AircallDateRangeContext).
 //
 // To refresh with current numbers: `python3 scripts/fetch_aircall_data.py`.
 
-import raw from "./aircallDashboardData.json";
 import type { Source } from "./ceoDashboardMockData";
 import type { HeatmapTableData } from "../components/shared/HeatmapDataTable";
 import type { PivotHeatmapData } from "../components/shared/PivotHeatmapTable";
 import type { DualLineChartPoint } from "../components/shared/DualLineChart";
-import type { CallsDurationTable, CallsDurationWindow, ChartWindow } from "../lib/aircallDateRange";
+import type {
+  CallsDurationTable,
+  CallsDurationWindow,
+  ChartWindow,
+  CallsByTagWindow,
+  CallsByTagByUserWindow,
+} from "../lib/aircallDateRange";
+import raw from "./aircallDashboardData.json";
 
 const rawDataSource: Source = { label: "AirCall Data - Raw Data 4-24", confirmed: true };
 const tagsDataSource: Source = { label: "AirCall Data - Tags_Data", confirmed: true };
@@ -80,39 +80,43 @@ export function buildTotalChartData(window: ChartWindow): DualLineChartPoint[] {
 }
 
 // ---------------------------------------------------------------------------
-// Calls by Tag (all-time, static)
+// Calls by Tag (date-driven)
 // ---------------------------------------------------------------------------
 
-export const callsByTagTable: HeatmapTableData = {
-  id: "calls-by-tag",
-  title: "Calls by Tag",
-  caption: "Tags are consolidated to six main tags.",
-  columns: [
-    { key: "tag", label: "Main Tag", align: "left" },
-    { key: "total", label: "Total", align: "right", format: "number", heat: "blue" },
-    { key: "pctOfTotal", label: "% of Total", align: "right", format: "percent", heat: "green" },
-  ],
-  rows: raw.callsByTag.rows as unknown as { tag: string; total: number; pctOfTotal: number }[],
-  source: tagsDataSource,
-  pageSize: raw.callsByTag.rows.length,
-};
+export function buildCallsByTagTable(window: CallsByTagWindow): HeatmapTableData {
+  return {
+    id: "calls-by-tag",
+    title: "Calls by Tag",
+    caption: "Tags are consolidated to six main tags.",
+    columns: [
+      { key: "tag", label: "Main Tag", align: "left" },
+      { key: "total", label: "Total", align: "right", format: "number", heat: "blue" },
+      { key: "pctOfTotal", label: "% of Total", align: "right", format: "percent", heat: "green" },
+    ],
+    rows: window.rows as unknown as Record<string, string | number | null>[],
+    source: tagsDataSource,
+    pageSize: Math.max(window.rows.length, 1),
+  };
+}
 
 // ---------------------------------------------------------------------------
-// Calls by Tag by User (all-time, static, pivot)
+// Calls by Tag by User (date-driven, pivot)
 // ---------------------------------------------------------------------------
 
-export const callsByTagByUserTable: PivotHeatmapData = {
-  title: "Calls by Tag by User",
-  caption: "Tags are consolidated to six main tags.",
-  cornerLabel: "Employee / Main Tag",
-  rowLabel: "Main Tag",
-  rowOrder: raw.callsByTagByUser.rowOrder,
-  colOrder: raw.callsByTagByUser.colOrder,
-  matrix: raw.callsByTagByUser.matrix,
-  colTotals: raw.callsByTagByUser.colTotals,
-  grandTotal: raw.callsByTagByUser.grandTotal,
-  maxCell: raw.callsByTagByUser.maxCell,
-  source: tagsDataSource,
-};
+export function buildCallsByTagByUserTable(window: CallsByTagByUserWindow): PivotHeatmapData {
+  return {
+    title: "Calls by Tag by User",
+    caption: "Tags are consolidated to six main tags.",
+    cornerLabel: "Employee / Main Tag",
+    rowLabel: "Main Tag",
+    rowOrder: window.rowOrder,
+    colOrder: window.colOrder,
+    matrix: window.matrix,
+    colTotals: window.colTotals,
+    grandTotal: window.grandTotal,
+    maxCell: window.maxCell,
+    source: tagsDataSource,
+  };
+}
 
 export const aircallDataGeneratedAt: string = raw.generatedAt;
