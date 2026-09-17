@@ -55,9 +55,8 @@
   --trend-good: #16a34a;
   --trend-good-bg: rgba(22, 163, 74, 0.14);
 
-  /* Warning/alert accent (AirCall tag-coverage callout, drop-flag cells) */
+  /* Warning/alert accent (AirCall tag-coverage callout) */
   --warning: #f59e0b;
-  --warning-bg: rgba(245, 158, 11, 0.16);
 
   /* Categorical (donut) — distinct hues, tuned for dark surface contrast */
   --series-1: #3b9eff; /* Shopify */

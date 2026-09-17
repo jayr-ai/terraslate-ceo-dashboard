@@ -4,14 +4,14 @@ import {
   ANCHOR,
   DEFAULT_SELECTION,
   resolvePresetRange,
-  computeCustomConsolidatedCallsWindow,
+  computeCustomCallsWindow,
   computeCustomChartWindow,
   computeCustomCallsByTagWindow,
   computeCustomCallsByTagByUserWindow,
   computeCustomSummaryWindow,
   type DateRangeSelection,
   type PresetKey,
-  type ConsolidatedCallsTable,
+  type CallsDurationWindow,
   type ChartWindow,
   type CallsByTagWindow,
   type CallsByTagByUserWindow,
@@ -20,7 +20,7 @@ import {
 
 interface ResolvedWindows {
   summary: SummaryWindow;
-  consolidated: ConsolidatedCallsTable;
+  calls: CallsDurationWindow;
   chart: ChartWindow;
   callsByTag: CallsByTagWindow;
   callsByTagByUser: CallsByTagByUserWindow;
@@ -41,7 +41,7 @@ const AircallDateRangeContext = createContext<AircallDateRangeContextValue | nul
 // TS would otherwise infer the exact literal shape of whatever numbers came
 // back on the last refresh, which is fragile by construction.
 const summaryWindows = raw.summary.windows as unknown as Record<PresetKey, SummaryWindow>;
-const consolidatedWindows = raw.consolidatedDuration.windows as unknown as Record<PresetKey, ConsolidatedCallsTable>;
+const callsWindows = raw.callsDuration.windows as unknown as Record<PresetKey, CallsDurationWindow>;
 const chartWindows = raw.callsCharts.windows as unknown as Record<PresetKey, ChartWindow>;
 const callsByTagWindows = raw.callsByTag.windows as unknown as Record<PresetKey, CallsByTagWindow>;
 const callsByTagByUserWindows = raw.callsByTagByUser.windows as unknown as Record<PresetKey, CallsByTagByUserWindow>;
@@ -54,7 +54,7 @@ export function AircallDateRangeProvider({ children }: { children: ReactNode }) 
       const { key } = selection;
       return {
         summary: summaryWindows[key],
-        consolidated: consolidatedWindows[key],
+        calls: callsWindows[key],
         chart: chartWindows[key],
         callsByTag: callsByTagWindows[key],
         callsByTagByUser: callsByTagByUserWindows[key],
@@ -65,7 +65,7 @@ export function AircallDateRangeProvider({ children }: { children: ReactNode }) 
     const { start, end } = selection;
     return {
       summary: computeCustomSummaryWindow(start, end),
-      consolidated: computeCustomConsolidatedCallsWindow(start, end),
+      calls: computeCustomCallsWindow(start, end),
       chart: computeCustomChartWindow(start, end),
       callsByTag: computeCustomCallsByTagWindow(start, end),
       callsByTagByUser: computeCustomCallsByTagByUserWindow(start, end),

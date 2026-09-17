@@ -58,89 +58,82 @@ function inRange(date: string, start: string, end: string): boolean {
 }
 
 // ---------------------------------------------------------------------------
-// Consolidated Calls Duration table (Priority 2, brief 2026-09-17) — one
-// per-employee row (replaces the old separate Inbound/Outbound/Total
-// tables), sorted by Total Duration descending. `callsDropFlag` mirrors
-// fetch_aircall_data.py's build_consolidated_table(): true when that
-// employee's Total Calls fell >20% vs. the immediately-prior period.
+// Inbound / Outbound / Total Calls Duration tables — the original 3-table
+// layout (manager-approved design; a single consolidated table was tried
+// and reverted per JV, 2026-09-17).
 // ---------------------------------------------------------------------------
 
-export interface ConsolidatedCallsRow {
+export interface CallsDurationRow {
   employee: string;
-  inboundHours: number;
-  outboundHours: number;
-  totalHours: number;
-  totalCalls: number;
-  splitLabel: string;
-  callsDropFlag: boolean;
+  durationTotal: number;
+  durationInCall: number | null;
+  count: number;
+  countPct: number;
 }
-export interface ConsolidatedCallsTable {
-  rows: ConsolidatedCallsRow[];
-  grandTotal: ConsolidatedCallsRow;
+export interface CallsDurationTable {
+  rows: CallsDurationRow[];
+  grandTotal: { durationTotal: number; durationInCall: number; count: number; countPct: number };
+  countLabel: string;
+  countPctLabel: string;
+}
+export interface CallsDurationWindow {
+  inbound: CallsDurationTable;
+  outbound: CallsDurationTable;
+  total: CallsDurationTable;
 }
 
-function perEmployeeDirectionTotals(rows: CallRow[]): Map<string, { ib: number; ob: number; ibCount: number; obCount: number }> {
-  const per = new Map<string, { ib: number; ob: number; ibCount: number; obCount: number }>();
+function buildTable(
+  rows: CallRow[],
+  directions: Set<string>,
+  countLabel: string,
+  countPctLabel: string,
+): CallsDurationTable {
+  const perEmp = new Map<string, { durTotal: number; durCall: number; count: number }>();
   for (const r of rows) {
-    const cur = per.get(r.employee) ?? { ib: 0, ob: 0, ibCount: 0, obCount: 0 };
-    if (r.direction === "inbound") {
-      cur.ib += r.durationTotal;
-      cur.ibCount += r.count;
-    } else {
-      cur.ob += r.durationTotal;
-      cur.obCount += r.count;
-    }
-    per.set(r.employee, cur);
+    if (!directions.has(r.direction)) continue;
+    const cur = perEmp.get(r.employee) ?? { durTotal: 0, durCall: 0, count: 0 };
+    cur.durTotal += r.durationTotal;
+    cur.durCall += r.durationInCall;
+    cur.count += r.count;
+    perEmp.set(r.employee, cur);
   }
-  return per;
-}
-
-export function computeCustomConsolidatedCallsWindow(start: string, end: string): ConsolidatedCallsTable {
-  const [prevStart, prevEnd] = prevPeriod(start, end);
-  const cur = perEmployeeDirectionTotals(dailyRaw.calls.filter((r) => inRange(r.date, start, end)));
-  const priorCoverage = hasFullPriorCoverage(prevStart);
-  const prev = priorCoverage ? perEmployeeDirectionTotals(dailyRaw.calls.filter((r) => inRange(r.date, prevStart, prevEnd))) : new Map();
-
-  const splitLabel = (ibCount: number, obCount: number, total: number): string =>
-    total ? `${Math.round((ibCount / total) * 100)}% / ${Math.round((obCount / total) * 100)}%` : "-";
-
-  const rows: ConsolidatedCallsRow[] = [...cur.entries()].map(([employee, v]) => {
-    const totalCalls = v.ibCount + v.obCount;
-    const prevV = prev.get(employee);
-    const prevTotalCalls = prevV ? prevV.ibCount + prevV.obCount : 0;
-    const callsDropFlag = prevTotalCalls > 0 && (totalCalls - prevTotalCalls) / prevTotalCalls <= -0.2;
-    return {
-      employee,
-      inboundHours: Math.round((v.ib / 3600) * 100) / 100,
-      outboundHours: Math.round((v.ob / 3600) * 100) / 100,
-      totalHours: Math.round(((v.ib + v.ob) / 3600) * 100) / 100,
-      totalCalls,
-      splitLabel: splitLabel(v.ibCount, v.obCount, totalCalls),
-      callsDropFlag,
-    };
-  });
-  rows.sort((a, b) => b.totalHours - a.totalHours);
-
-  let grandIb = 0, grandOb = 0, grandIbCount = 0, grandObCount = 0;
-  for (const v of cur.values()) {
-    grandIb += v.ib;
-    grandOb += v.ob;
-    grandIbCount += v.ibCount;
-    grandObCount += v.obCount;
+  let grandCount = 0;
+  let grandDurTotal = 0;
+  let grandDurCall = 0;
+  for (const v of perEmp.values()) {
+    grandCount += v.count;
+    grandDurTotal += v.durTotal;
+    grandDurCall += v.durCall;
   }
-  const grandCalls = grandIbCount + grandObCount;
+
+  const tableRows: CallsDurationRow[] = [...perEmp.entries()].map(([employee, v]) => ({
+    employee,
+    durationTotal: Math.round((v.durTotal / 3600) * 100) / 100,
+    durationInCall: v.count ? Math.round((v.durCall / 3600) * 100) / 100 : null,
+    count: v.count,
+    countPct: grandCount ? Math.round((v.count / grandCount) * 1000) / 10 : 0,
+  }));
+  tableRows.sort((a, b) => b.count - a.count);
 
   return {
-    rows,
+    rows: tableRows,
     grandTotal: {
-      employee: "Grand total",
-      inboundHours: Math.round((grandIb / 3600) * 100) / 100,
-      outboundHours: Math.round((grandOb / 3600) * 100) / 100,
-      totalHours: Math.round(((grandIb + grandOb) / 3600) * 100) / 100,
-      totalCalls: grandCalls,
-      splitLabel: splitLabel(grandIbCount, grandObCount, grandCalls),
-      callsDropFlag: false,
+      durationTotal: Math.round((grandDurTotal / 3600) * 100) / 100,
+      durationInCall: Math.round((grandDurCall / 3600) * 100) / 100,
+      count: grandCount,
+      countPct: grandCount ? 100 : 0,
     },
+    countLabel,
+    countPctLabel,
+  };
+}
+
+export function computeCustomCallsWindow(start: string, end: string): CallsDurationWindow {
+  const rows = dailyRaw.calls.filter((r) => inRange(r.date, start, end));
+  return {
+    inbound: buildTable(rows, new Set(["inbound"]), "IB (total)", "IB %"),
+    outbound: buildTable(rows, new Set(["outbound"]), "OB (total)", "OB %"),
+    total: buildTable(rows, new Set(["inbound", "outbound"]), "Total Calls", "IB/OB %"),
   };
 }
 

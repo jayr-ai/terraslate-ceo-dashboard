@@ -10,7 +10,8 @@ import type { HeatmapTableData } from "../components/shared/HeatmapDataTable";
 import type { PivotHeatmapData } from "../components/shared/PivotHeatmapTable";
 import type { DualLineChartPoint } from "../components/shared/DualLineChart";
 import type {
-  ConsolidatedCallsTable,
+  CallsDurationTable,
+  CallsDurationWindow,
   ChartWindow,
   CallsByTagWindow,
   CallsByTagByUserWindow,
@@ -91,52 +92,49 @@ export function buildSummaryKpis(summary: SummaryWindow): StatTileDatum[] {
 export const summaryNarrative = (summary: SummaryWindow): string => summary.narrative;
 
 // ---------------------------------------------------------------------------
-// Consolidated Calls Duration table (Priority 2, brief 2026-09-17) — one
-// per-employee row (Inbound/Outbound/Total hrs, Total Calls, IB/OB split),
-// sorted by Total Duration descending. No decorative per-column heatmap —
-// the only color left is the amber `callsDropFlag` on Total Calls.
+// Inbound / Outbound / Total Calls Duration (date-driven) — the original
+// 3-table layout (manager-approved design; a single consolidated table was
+// tried and reverted per JV, 2026-09-17).
 // ---------------------------------------------------------------------------
 
-export function buildConsolidatedCallsTable(table: ConsolidatedCallsTable): HeatmapTableData {
+function buildDurationTable(id: string, title: string, table: CallsDurationTable): HeatmapTableData {
   return {
-    id: "consolidated-calls-duration",
-    title: "Call Duration by Employee",
+    id,
+    title,
     columns: [
       { key: "employee", label: "Employee", align: "left" },
-      { key: "inboundHours", label: "Inbound Duration (hrs)", align: "right", format: "hours", sortable: true },
-      { key: "outboundHours", label: "Outbound Duration (hrs)", align: "right", format: "hours", sortable: true },
-      { key: "totalHours", label: "Total Duration (hrs)", align: "right", format: "hours", sortable: true },
-      {
-        key: "totalCalls",
-        label: "Total Calls",
-        align: "right",
-        format: "number",
-        sortable: true,
-        flagKey: "callsDropFlag",
-      },
-      { key: "splitLabel", label: "IB/OB Split", align: "right", format: "text" },
+      { key: "durationTotal", label: "Duration (total)", align: "right", format: "hours", heat: "blue" },
+      { key: "durationInCall", label: "Duration (in call)", align: "right", format: "hours", heat: "green" },
+      { key: "count", label: table.countLabel, align: "right", format: "number", heat: "cyan" },
+      { key: "countPct", label: table.countPctLabel, align: "right", format: "percent", heat: "cyan" },
     ],
     rows: table.rows.map((r) => ({
       employee: r.employee,
-      inboundHours: r.inboundHours,
-      outboundHours: r.outboundHours,
-      totalHours: r.totalHours,
-      totalCalls: r.totalCalls,
-      splitLabel: r.splitLabel,
-      callsDropFlag: r.callsDropFlag,
+      durationTotal: r.durationTotal,
+      durationInCall: r.durationInCall,
+      count: r.count,
+      countPct: r.countPct,
     })),
     grandTotalRow: {
-      employee: table.grandTotal.employee,
-      inboundHours: table.grandTotal.inboundHours,
-      outboundHours: table.grandTotal.outboundHours,
-      totalHours: table.grandTotal.totalHours,
-      totalCalls: table.grandTotal.totalCalls,
-      splitLabel: table.grandTotal.splitLabel,
+      employee: "Grand total",
+      durationTotal: table.grandTotal.durationTotal,
+      durationInCall: table.grandTotal.durationInCall,
+      count: table.grandTotal.count,
+      countPct: table.grandTotal.countPct,
     },
-    grandTotalStyle: "border",
     source: rawDataSource,
     pageSize: Math.max(table.rows.length, 1),
   };
+}
+
+export function buildInboundCallsTable(window: CallsDurationWindow): HeatmapTableData {
+  return buildDurationTable("inbound-calls-duration", "Inbound Calls Duration", window.inbound);
+}
+export function buildOutboundCallsTable(window: CallsDurationWindow): HeatmapTableData {
+  return buildDurationTable("outbound-calls-duration", "Outbound Calls Duration", window.outbound);
+}
+export function buildTotalCallsTable(window: CallsDurationWindow): HeatmapTableData {
+  return buildDurationTable("total-calls-duration", "Total Calls Duration", window.total);
 }
 
 // ---------------------------------------------------------------------------

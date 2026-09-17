@@ -41,13 +41,10 @@ XLSX export doesn't have that cap. Re-run this any time to refresh:
     one period further back for every preset, so the brief's Priority 5
     ("fast-follow, scope as phase 2 if data isn't available") ships now
     instead of being deferred.
-  - **Consolidated duration table** (`consolidatedDuration.windows`) replaces
-    the old 3-table (Inbound/Outbound/Total) layout with one per-employee
-    table — Inbound/Outbound/Total hours, Total Calls, IB/OB split — sorted
-    by Total Duration descending. The decorative per-column heatmap is gone;
-    the only color left is a `callsDropFlag` (amber) on any employee whose
-    Total Calls fell >20% vs. the prior period of equal length, using the
-    same period-over-period machinery as the summary.
+  - The brief's Priority 2 (consolidate the 3 duration tables into one) was
+    tried and then reverted per JV, 2026-09-17 — the 3-table layout is the
+    manager-approved design and stays as-is. `calls_window()` below is the
+    original per-direction table builder, unchanged.
   - `trend()` / `prev_period()` below are a direct port of the same-named
     helpers in scripts/fetch_data.py (CEO Dashboard) — this script never
     needed period-over-period before now.
@@ -211,77 +208,59 @@ def load_calls_daily(wb: openpyxl.Workbook) -> tuple[dict, date]:
     return daily, anchor
 
 
-def per_employee_direction_totals(daily: dict, start: date, end: date) -> dict[str, dict]:
-    """{employee: {ib, ob, ibCount, obCount}} — durations in raw seconds."""
-    per: dict[str, dict] = defaultdict(lambda: {"ib": 0.0, "ob": 0.0, "ibCount": 0, "obCount": 0})
-    for (d, user, direction), v in daily.items():
-        if not (start <= d <= end):
-            continue
-        key = "ib" if direction == "inbound" else "ob"
-        per[user][key] += v["durTotal"]
-        per[user][f"{key}Count"] += v["count"]
-    return per
+def calls_window(daily: dict, start: date, end: date) -> dict:
+    """Builds the Inbound/Outbound/Total table rows for one window. No trend
+    column here — verified against the reference report, which shows just
+    Duration (total), Duration (in call), count, and % of total per table."""
 
+    def totals_for(direction_filter: set[str], s: date, e: date) -> dict[str, dict]:
+        per_emp: dict[str, dict] = defaultdict(lambda: {"durTotal": 0.0, "durCall": 0.0, "count": 0})
+        for (d, user, direction), v in daily.items():
+            if direction not in direction_filter or not (s <= d <= e):
+                continue
+            per_emp[user]["durTotal"] += v["durTotal"]
+            per_emp[user]["durCall"] += v["durCall"]
+            per_emp[user]["count"] += v["count"]
+        return per_emp
 
-def build_consolidated_table(daily: dict, start: date, end: date, prev_start: date, prev_end: date) -> dict:
-    """Priority 2 (brief) — replaces the old 3-table (Inbound/Outbound/Total)
-    layout with one per-employee table, sorted by Total Duration descending.
-    `callsDropFlag` is the brief's amber conditional-format: True when that
-    employee's Total Calls fell >20% vs. the immediately-prior period of
-    equal length (None/0 prior => no flag, nothing to compare against)."""
-    cur = per_employee_direction_totals(daily, start, end)
-    prev = per_employee_direction_totals(daily, prev_start, prev_end)
+    def build_table(direction_filter: set[str], count_label: str, count_pct_label: str) -> dict:
+        cur = totals_for(direction_filter, start, end)
+        grand_count = sum(v["count"] for v in cur.values())
+        grand_dur_total = sum(v["durTotal"] for v in cur.values())
+        grand_dur_call = sum(v["durCall"] for v in cur.values())
 
-    rows = []
-    for user, v in cur.items():
-        total_calls = v["ibCount"] + v["obCount"]
-        prev_v = prev.get(user)
-        prev_total_calls = (prev_v["ibCount"] + prev_v["obCount"]) if prev_v else 0
-        calls_drop_flag = bool(prev_total_calls) and (total_calls - prev_total_calls) / prev_total_calls <= -0.2
-        rows.append({
-            "employee": user,
-            "inboundHours": round(v["ib"] / 3600, 2),
-            "outboundHours": round(v["ob"] / 3600, 2),
-            "totalHours": round((v["ib"] + v["ob"]) / 3600, 2),
-            "totalCalls": total_calls,
-            "splitLabel": (
-                f"{round(v['ibCount'] / total_calls * 100)}% / {round(v['obCount'] / total_calls * 100)}%"
-                if total_calls else "-"
-            ),
-            "callsDropFlag": calls_drop_flag,
-        })
-    rows.sort(key=lambda r: -r["totalHours"])
+        rows = []
+        for user, v in cur.items():
+            rows.append({
+                "employee": user,
+                "durationTotal": round(v["durTotal"] / 3600, 2),
+                "durationInCall": round(v["durCall"] / 3600, 2) if v["count"] else None,
+                "count": v["count"],
+                "countPct": round(v["count"] / grand_count * 100, 1) if grand_count else 0,
+            })
+        rows.sort(key=lambda r: -r["count"])
 
-    grand_ib = sum(v["ib"] for v in cur.values())
-    grand_ob = sum(v["ob"] for v in cur.values())
-    grand_ib_count = sum(v["ibCount"] for v in cur.values())
-    grand_ob_count = sum(v["obCount"] for v in cur.values())
-    grand_calls = grand_ib_count + grand_ob_count
+        return {
+            "rows": rows,
+            "grandTotal": {
+                "durationTotal": round(grand_dur_total / 3600, 2),
+                "durationInCall": round(grand_dur_call / 3600, 2),
+                "count": grand_count,
+                "countPct": 100.0 if grand_count else 0,
+            },
+            "countLabel": count_label,
+            "countPctLabel": count_pct_label,
+        }
 
     return {
-        "rows": rows,
-        "grandTotal": {
-            "employee": "Grand total",
-            "inboundHours": round(grand_ib / 3600, 2),
-            "outboundHours": round(grand_ob / 3600, 2),
-            "totalHours": round((grand_ib + grand_ob) / 3600, 2),
-            "totalCalls": grand_calls,
-            "splitLabel": (
-                f"{round(grand_ib_count / grand_calls * 100)}% / {round(grand_ob_count / grand_calls * 100)}%"
-                if grand_calls else "-"
-            ),
-            "callsDropFlag": False,
-        },
+        "inbound": build_table({"inbound"}, "IB (total)", "IB %"),
+        "outbound": build_table({"outbound"}, "OB (total)", "OB %"),
+        "total": build_table({"inbound", "outbound"}, "Total Calls", "IB/OB %"),
     }
 
 
-def build_consolidated_windows(daily: dict, anchor: date) -> dict:
-    out = {}
-    for key in PRESET_KEYS:
-        start, end = resolve_preset(anchor, key)
-        prev_start, prev_end = prev_period(start, end)
-        out[key] = build_consolidated_table(daily, start, end, prev_start, prev_end)
-    return out
+def build_calls_windows(daily: dict, anchor: date) -> dict:
+    return {key: calls_window(daily, *resolve_preset(anchor, key)) for key in PRESET_KEYS}
 
 
 def build_calls_daily_raw(daily: dict, anchor: date) -> list[dict]:
@@ -539,9 +518,9 @@ def main():
     print("Downloading AirCall Data workbook (Raw Data 4-24 + Tags_Data) ...")
     wb = download_workbook()
 
-    print("Building consolidated Calls Duration table + charts ...")
+    print("Building Inbound/Outbound/Total Calls Duration tables + charts ...")
     calls_daily, anchor = load_calls_daily(wb)
-    consolidated_windows = build_consolidated_windows(calls_daily, anchor)
+    calls_windows = build_calls_windows(calls_daily, anchor)
     chart_windows = build_chart_windows(calls_daily, anchor)
     calls_raw = build_calls_daily_raw(calls_daily, anchor)
 
@@ -558,7 +537,7 @@ def main():
         "generatedAt": datetime.utcnow().isoformat() + "Z",
         "anchor": anchor.isoformat(),
         "summary": {"windows": summary_windows},
-        "consolidatedDuration": {"windows": consolidated_windows},
+        "callsDuration": {"windows": calls_windows},
         "callsCharts": {"windows": chart_windows},
         "callsByTag": {"windows": tag_windows},
         "callsByTagByUser": {"windows": tag_by_user_windows},
