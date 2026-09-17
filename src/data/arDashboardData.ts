@@ -165,4 +165,31 @@ export const dsoKpi: StatTileDatum = {
 
 export const arNarrative: string = raw.narrative;
 
+// ---------------------------------------------------------------------------
+// Fix 7 — Top 10 Customers by Outstanding AR (2026-09-18). Grouped by email
+// (from the AR tab join — see fetch_ar_data.py's docstring for why Unpaid's
+// own Customer column can't be used directly), displayed by Billing Name.
+// ---------------------------------------------------------------------------
+
+export interface TopCustomerBar {
+  id: string;
+  label: string;
+  value: number;
+  flagged: boolean;
+}
+
+const topCustomersRaw = raw.topCustomers as unknown as {
+  rows: { name: string; total: number; pct: number; orderCount: number; flagged: boolean }[];
+  concentrationPct: number;
+};
+
+export const topCustomerBars: TopCustomerBar[] = topCustomersRaw.rows.map((r, i) => ({
+  id: `top-customer-${i}`,
+  label: r.name,
+  value: r.total,
+  flagged: r.flagged,
+}));
+
+export const topCustomersConcentrationPct: number = topCustomersRaw.concentrationPct;
+
 export const arDataGeneratedAt: string = raw.generatedAt;

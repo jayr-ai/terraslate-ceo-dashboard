@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T04:48:28.091364Z",
+  "generatedAt": "2026-09-17T06:29:34.486359Z",
   "anchor": "2026-09-17",
   "buckets": {
     "last30": {
@@ -389,5 +389,80 @@
     },
     "salesWindowLabel": "(all sales)"
   },
-  "narrative": "AR grew 46.3% vs. the prior 30 days, driven mainly by a 128.9% jump in 31-60 Days receivables \u2014 prioritize collection on the 19 unpaid orders in that bucket before they roll into the next aging tier."
+  "narrative": "AR grew 46.3% vs. the prior 30 days, driven mainly by a 128.9% jump in 31-60 Days receivables \u2014 prioritize collection on the 19 unpaid orders in that bucket before they roll into the next aging tier.",
+  "topCustomers": {
+    "rows": [
+      {
+        "name": "DCL Development Company",
+        "total": 56546.76,
+        "pct": 57.9,
+        "orderCount": 32,
+        "flagged": true
+      },
+      {
+        "name": "Yesenia Rubio",
+        "total": 9281.0,
+        "pct": 9.5,
+        "orderCount": 1,
+        "flagged": false
+      },
+      {
+        "name": "ATTN: Justin Sapir",
+        "total": 5276.76,
+        "pct": 5.4,
+        "orderCount": 1,
+        "flagged": false
+      },
+      {
+        "name": "ATTN: Rick Cano",
+        "total": 5264.82,
+        "pct": 5.4,
+        "orderCount": 3,
+        "flagged": false
+      },
+      {
+        "name": "Derrick Carter",
+        "total": 3931.26,
+        "pct": 4.0,
+        "orderCount": 1,
+        "flagged": false
+      },
+      {
+        "name": "NVU Vegas, LLC",
+        "total": 2737.19,
+        "pct": 2.8,
+        "orderCount": 2,
+        "flagged": false
+      },
+      {
+        "name": "Tyler Alford",
+        "total": 2363.03,
+        "pct": 2.4,
+        "orderCount": 1,
+        "flagged": false
+      },
+      {
+        "name": "Kyle Hanner",
+        "total": 2218.41,
+        "pct": 2.3,
+        "orderCount": 1,
+        "flagged": false
+      },
+      {
+        "name": "Bobby Zaph",
+        "total": 1792.82,
+        "pct": 1.8,
+        "orderCount": 5,
+        "flagged": false
+      },
+      {
+        "name": "ATTN: Tanya Kishan",
+        "total": 1492.4,
+        "pct": 1.5,
+        "orderCount": 1,
+        "flagged": false
+      }
+    ],
+    "concentrationPct": 93.0
+  }
 }

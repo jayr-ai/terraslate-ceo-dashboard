@@ -2,12 +2,16 @@
 """
 Pulls the real Accounts Receivable data from the "TerraSlate Shopify" Google
 Sheet's "Unpaid" tab and writes src/data/arDashboardData.json in the shape
-the UI components expect. Only columns A (Date), C (Order), and H (Total)
-matter — confirmed by the build instructions and by every other column
-being genuinely blank in the sheet (Channel, Customer, Payment status, etc).
+the UI components expect. From the Unpaid tab itself, only columns A (Date),
+C (Order), and H (Total) matter — confirmed by the build instructions and by
+every other column being genuinely blank in that tab (Channel, Customer,
+Payment status, etc). Fix 7 (below) additionally reads the same workbook's
+"AR" tab for customer identity, since Unpaid's own Customer column is blank.
 
-Sheet is link-accessible (no auth needed) — pulled via CSV export (small tab,
-~50 rows, no truncation risk like AirCall's 56k-row tabs). Re-run any time:
+Sheet is link-accessible (no auth needed) — pulled via **XLSX export** (via
+openpyxl, mirroring scripts/fetch_aircall_data.py) rather than per-tab CSV,
+since Fix 7 needs two tabs (Unpaid + AR) out of the same workbook. Re-run
+any time:
 
     python3 scripts/fetch_ar_data.py
 
@@ -59,6 +63,33 @@ self-contained second pull, not a dependency on the CEO Dashboard's own
 output. Per the brief, this doesn't separate credit vs. cash sales, so the
 DSO tile is captioned "(all sales)" rather than implying more precision than
 the data supports.
+
+## Fix 7 additions (per JV's shared doc, 2026-09-18) — Top 10 Customers
+
+The brief's own "Data note" flags a prerequisite: this needs a clean
+customer identifier per order, which the Unpaid tab doesn't have (its
+Customer column is blank on all 55 rows, verified again just now). BUT the
+same workbook's "AR" tab is a full native Shopify order export (Name =
+order #, Email, Billing Name, Billing Company) covering the same orders —
+checked, and all 55 Unpaid orders resolve cleanly to an AR-tab row. That's
+the join this uses:
+
+  - Group by **Email** (from the AR tab), not display name — a few of this
+    dataset's biggest accounts (e.g. one $56K+ enterprise account) place
+    orders under slightly different billing-name/company text per PO, so
+    grouping by name text alone would fragment one real customer into
+    several rows. Email is the reliable unique key.
+  - Display label = that email's **Billing Name**, with any trailing
+    `" | PO ..."` reference-number suffix stripped (Shopify's billing-name
+    field often carries a PO number appended, e.g.
+    "DCL Development Company | PO 4507552645" -> "DCL Development Company").
+    Billing Name is populated on every order (unlike Billing Company, which
+    is sparse and — checked — has at least one row where it wrongly holds a
+    VAT ID instead of a company name), so it's the more reliable label.
+  - "Flagged" (single-customer concentration risk, brief's 15-20% band) uses
+    **15%** of Total Outstanding AR (Fix 1) as the threshold — the
+    lower/more-sensitive end of that range, since this is a risk flag, not
+    a hard cutoff.
 """
 
 from __future__ import annotations
@@ -71,8 +102,11 @@ from collections import defaultdict
 from datetime import date, datetime, timedelta
 from pathlib import Path
 
+import openpyxl
+
 SHEET_ID = "13DQSWYiyHiLqMJqEoOgbUtrXoHsz4mmcbENO1LMES68"
-UNPAID_GID = "1213849811"
+UNPAID_TAB = "Unpaid"
+AR_TAB = "AR"
 
 # For DSO's sales denominator — same sheet scripts/fetch_data.py pulls for
 # the CEO Dashboard's "Shopify Sales" figure: CombinedSales filtered to the
@@ -100,8 +134,72 @@ def fetch_csv(sheet_id: str, gid: str) -> list[dict[str, str]]:
     return list(csv.DictReader(io.StringIO(raw)))
 
 
-def fetch_rows() -> list[dict[str, str]]:
-    return fetch_csv(SHEET_ID, UNPAID_GID)
+def download_workbook(sheet_id: str) -> openpyxl.Workbook:
+    url = f"https://docs.google.com/spreadsheets/d/{sheet_id}/export?format=xlsx"
+    with urllib.request.urlopen(url, timeout=60) as resp:
+        raw = resp.read()
+    tmp_path = Path("/tmp/ar_sheet.xlsx")
+    tmp_path.write_bytes(raw)
+    return openpyxl.load_workbook(tmp_path, read_only=True, data_only=True)
+
+
+def sheet_rows(wb: openpyxl.Workbook, tab: str):
+    ws = wb[tab]
+    rows_iter = ws.iter_rows(values_only=True)
+    header = next(rows_iter)
+    idx = {h: i for i, h in enumerate(header) if h}
+    return idx, rows_iter
+
+
+def as_date(v) -> date | None:
+    if isinstance(v, datetime):
+        return v.date()
+    if isinstance(v, date):
+        return v
+    return None
+
+
+def load_unpaid_rows(wb: openpyxl.Workbook) -> list[tuple[date, str, float]]:
+    idx, rows_iter = sheet_rows(wb, UNPAID_TAB)
+    rows = []
+    for row in rows_iter:
+        order = row[idx["Order"]]
+        if not order:
+            continue
+        d = as_date(row[idx["DATE"]])
+        if not d:
+            continue
+        total = row[idx["Total"]]
+        rows.append((d, str(order).strip(), float(total) if isinstance(total, (int, float)) else money(total)))
+    return rows
+
+
+def clean_billing_name(name: str | None) -> str | None:
+    """Strips a trailing '| PO ...' (or similar) reference-number suffix
+    Shopify's Billing Name export often carries — see module docstring."""
+    if not name:
+        return None
+    return name.split("|")[0].strip()
+
+
+def load_customer_lookup(wb: openpyxl.Workbook) -> dict[str, dict]:
+    """order# -> {email, billingName} from the AR tab — see module docstring
+    for why (Unpaid's own Customer column is blank on every row)."""
+    idx, rows_iter = sheet_rows(wb, AR_TAB)
+    lookup: dict[str, dict] = {}
+    for row in rows_iter:
+        name = row[idx.get("Name", -1)] if "Name" in idx else None
+        if not name:
+            continue
+        order = str(name).strip()
+        entry = lookup.setdefault(order, {"email": None, "billingName": None})
+        email = row[idx["Email"]] if "Email" in idx else None
+        billing = row[idx["Billing Name"]] if "Billing Name" in idx else None
+        if not entry["email"] and email:
+            entry["email"] = str(email).strip()
+        if not entry["billingName"] and billing:
+            entry["billingName"] = clean_billing_name(str(billing))
+    return lookup
 
 
 def load_daily_sales() -> dict[date, float]:
@@ -217,17 +315,49 @@ def build_narrative(buckets: dict, total_trend: dict | None) -> str:
     )
 
 
-def main():
-    print("Fetching Unpaid tab ...")
-    raw_rows = fetch_rows()
+# Fix 7 — Top 10 Customers by Outstanding AR. Single-customer concentration
+# flag uses the lower/more-sensitive end of the brief's stated 15-20% band.
+CONCENTRATION_FLAG_PCT = 15.0
 
-    rows: list[tuple[date, str, float]] = []
-    for r in raw_rows:
-        d = parse_date(r.get("DATE"))
-        order = (r.get("Order") or "").strip()
-        if not d or not order:
-            continue
-        rows.append((d, order, money(r.get("Total"))))
+
+def build_top_customers(
+    rows: list[tuple[date, str, float]],
+    customer_lookup: dict[str, dict],
+    total_outstanding: float,
+) -> dict:
+    per_email: dict[str, dict] = defaultdict(lambda: {"total": 0.0, "count": 0, "name": None})
+    for _d, order, total in rows:
+        c = customer_lookup.get(order, {})
+        key = c.get("email") or order  # order# fallback if the AR-tab join ever misses
+        entry = per_email[key]
+        entry["total"] += total
+        entry["count"] += 1
+        if not entry["name"]:
+            entry["name"] = c.get("billingName") or c.get("email") or order
+
+    ranked = sorted(per_email.values(), key=lambda v: -v["total"])
+    top10 = ranked[:10]
+
+    customer_rows = [
+        {
+            "name": v["name"],
+            "total": round(v["total"], 2),
+            "pct": round(v["total"] / total_outstanding * 100, 1) if total_outstanding else 0,
+            "orderCount": v["count"],
+            "flagged": bool(total_outstanding) and (v["total"] / total_outstanding * 100) >= CONCENTRATION_FLAG_PCT,
+        }
+        for v in top10
+    ]
+    top10_total = sum(v["total"] for v in top10)
+    concentration_pct = round(top10_total / total_outstanding * 100, 1) if total_outstanding else 0
+
+    return {"rows": customer_rows, "concentrationPct": concentration_pct}
+
+
+def main():
+    print("Downloading AR workbook (Unpaid + AR tabs) ...")
+    wb = download_workbook(SHEET_ID)
+    rows = load_unpaid_rows(wb)
 
     anchor = date.today()
     prev_anchor = anchor - timedelta(days=30)
@@ -298,6 +428,12 @@ def main():
     # Fix 5 — one-line narrative.
     narrative = build_narrative(buckets, total_outstanding_trend)
 
+    # Fix 7 — Top 10 Customers by Outstanding AR (see module docstring for
+    # the AR-tab join this depends on).
+    print("Building Top 10 Customers (AR tab join) ...")
+    customer_lookup = load_customer_lookup(wb)
+    top_customers = build_top_customers(rows, customer_lookup, total_outstanding_cur)
+
     data = {
         "generatedAt": datetime.utcnow().isoformat() + "Z",
         "anchor": anchor.isoformat(),
@@ -317,6 +453,7 @@ def main():
             "salesWindowLabel": "(all sales)",
         },
         "narrative": narrative,
+        "topCustomers": top_customers,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)
