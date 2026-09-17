@@ -633,7 +633,10 @@ def build_production_teams() -> list[dict]:
             if not person or not (r.get("Order Number") or "").strip():
                 continue
             totals[person] += money(r.get("Order Value"))
-        ranked = sorted(totals.items(), key=lambda kv: kv[1], reverse=True)
+        # Drop $0 rows — mostly stray/misaligned sheet values (e.g. a lone
+        # "x" or a Miles/CA column bleeding into this one) rather than real
+        # people with genuinely zero order value, per JV.
+        ranked = sorted(((p, v) for p, v in totals.items() if v != 0), key=lambda kv: kv[1], reverse=True)
         tables.append({
             "id": id_,
             "title": title,

@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-16T11:19:24.944296Z",
+  "generatedAt": "2026-09-17T03:04:32.952966Z",
   "anchors": {
     "sales": "2026-09-13",
-    "marketing": "2026-09-15",
+    "marketing": "2026-09-16",
     "staffSales": "2026-09-13",
     "graphicDesign": "2026-09-11",
     "graphicsHours": "2028-07-08",
@@ -748,36 +748,78 @@
           {
             "id": "roas",
             "label": "ROAS [FB/GA]",
-            "value": "2.04",
+            "value": "3.22",
             "trend": {
-              "changePct": -70.8,
+              "changePct": -28.8,
               "direction": "down"
             }
           },
           {
             "id": "ad-spend",
             "label": "Ad Spend",
-            "value": "$1.32K",
+            "value": "$1.12K",
             "trend": {
-              "changePct": -46.3,
+              "changePct": -45.9,
               "direction": "down"
             }
           },
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$73.24",
+            "value": "$39.92",
             "trend": {
-              "changePct": 52.1,
+              "changePct": 37.2,
               "direction": "up"
             }
           },
           {
             "id": "purchase-value",
             "label": "Purchase Value",
-            "value": "$2.69K",
+            "value": "$3.59K",
             "trend": {
-              "changePct": -84.3,
+              "changePct": -61.5,
+              "direction": "down"
+            }
+          }
+        ],
+        "windowStart": "2026-09-16",
+        "windowEnd": "2026-09-16"
+      },
+      "yesterday": {
+        "tiles": [
+          {
+            "id": "roas",
+            "label": "ROAS [FB/GA]",
+            "value": "4.52",
+            "trend": {
+              "changePct": -38.9,
+              "direction": "down"
+            }
+          },
+          {
+            "id": "ad-spend",
+            "label": "Ad Spend",
+            "value": "$2.06K",
+            "trend": {
+              "changePct": -15.9,
+              "direction": "down"
+            }
+          },
+          {
+            "id": "cpa-combined",
+            "label": "CPA Combined",
+            "value": "$29.08",
+            "trend": {
+              "changePct": -39.6,
+              "direction": "down"
+            }
+          },
+          {
+            "id": "purchase-value",
+            "label": "Purchase Value",
+            "value": "$9.33K",
+            "trend": {
+              "changePct": -48.6,
               "direction": "down"
             }
           }
@@ -785,182 +827,140 @@
         "windowStart": "2026-09-15",
         "windowEnd": "2026-09-15"
       },
-      "yesterday": {
-        "tiles": [
-          {
-            "id": "roas",
-            "label": "ROAS [FB/GA]",
-            "value": "6.98",
-            "trend": {
-              "changePct": 72.3,
-              "direction": "up"
-            }
-          },
-          {
-            "id": "ad-spend",
-            "label": "Ad Spend",
-            "value": "$2.46K",
-            "trend": {
-              "changePct": 146.0,
-              "direction": "up"
-            }
-          },
-          {
-            "id": "cpa-combined",
-            "label": "CPA Combined",
-            "value": "$48.16",
-            "trend": {
-              "changePct": -75.9,
-              "direction": "down"
-            }
-          },
-          {
-            "id": "purchase-value",
-            "label": "Purchase Value",
-            "value": "$17.14K",
-            "trend": {
-              "changePct": 323.9,
-              "direction": "up"
-            }
-          }
-        ],
-        "windowStart": "2026-09-14",
-        "windowEnd": "2026-09-14"
-      },
       "last7": {
         "tiles": [
           {
             "id": "roas",
             "label": "ROAS [FB/GA]",
-            "value": "4.65",
+            "value": "4.94",
             "trend": {
-              "changePct": 74.5,
+              "changePct": 83.1,
               "direction": "up"
             }
           },
           {
             "id": "ad-spend",
             "label": "Ad Spend",
-            "value": "$12.08K",
+            "value": "$11.66K",
             "trend": {
-              "changePct": -25.4,
+              "changePct": -28.0,
               "direction": "down"
             }
           },
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$82.15",
+            "value": "$57.73",
             "trend": {
-              "changePct": -68.0,
+              "changePct": -72.2,
               "direction": "down"
             }
           },
           {
             "id": "purchase-value",
             "label": "Purchase Value",
-            "value": "$56.18K",
+            "value": "$57.62K",
             "trend": {
-              "changePct": 30.3,
+              "changePct": 31.9,
               "direction": "up"
             }
           }
         ],
-        "windowStart": "2026-09-09",
-        "windowEnd": "2026-09-15"
+        "windowStart": "2026-09-10",
+        "windowEnd": "2026-09-16"
       },
       "last30": {
         "tiles": [
           {
             "id": "roas",
             "label": "ROAS [FB/GA]",
-            "value": "3.75",
+            "value": "3.82",
             "trend": {
-              "changePct": -34.3,
+              "changePct": -32.9,
               "direction": "down"
             }
           },
           {
             "id": "ad-spend",
             "label": "Ad Spend",
-            "value": "$60.33K",
+            "value": "$59.58K",
             "trend": {
-              "changePct": 34.2,
+              "changePct": 26.4,
               "direction": "up"
             }
           },
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$140.63",
+            "value": "$120.60",
             "trend": {
-              "changePct": 1330.0,
+              "changePct": 1041.8,
               "direction": "up"
             }
           },
           {
             "id": "purchase-value",
             "label": "Purchase Value",
-            "value": "$226.23K",
+            "value": "$227.45K",
             "trend": {
-              "changePct": -11.9,
+              "changePct": -15.3,
               "direction": "down"
             }
           }
         ],
-        "windowStart": "2026-08-17",
-        "windowEnd": "2026-09-15"
+        "windowStart": "2026-08-18",
+        "windowEnd": "2026-09-16"
       },
       "thisMonth": {
         "tiles": [
           {
             "id": "roas",
             "label": "ROAS [FB/GA]",
-            "value": "3.62",
+            "value": "3.82",
             "trend": {
-              "changePct": -6.7,
-              "direction": "down"
+              "changePct": 1.7,
+              "direction": "up"
             }
           },
           {
             "id": "ad-spend",
             "label": "Ad Spend",
-            "value": "$30.94K",
+            "value": "$32.80K",
             "trend": {
-              "changePct": 5.2,
+              "changePct": 6.0,
               "direction": "up"
             }
           },
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$136.28",
+            "value": "$106.15",
             "trend": {
-              "changePct": -6.4,
+              "changePct": -29.0,
               "direction": "down"
             }
           },
           {
             "id": "purchase-value",
             "label": "Purchase Value",
-            "value": "$112.10K",
+            "value": "$125.27K",
             "trend": {
-              "changePct": -1.8,
-              "direction": "down"
+              "changePct": 7.9,
+              "direction": "up"
             }
           }
         ],
         "windowStart": "2026-09-01",
-        "windowEnd": "2026-09-15"
+        "windowEnd": "2026-09-16"
       },
       "lastMonth": {
         "tiles": [
           {
             "id": "roas",
             "label": "ROAS [FB/GA]",
-            "value": "4.49",
+            "value": "4.50",
             "trend": {
-              "changePct": -36.5,
+              "changePct": -36.4,
               "direction": "down"
             }
           },
@@ -985,9 +985,9 @@
           {
             "id": "purchase-value",
             "label": "Purchase Value",
-            "value": "$258.68K",
+            "value": "$259.05K",
             "trend": {
-              "changePct": 5.3,
+              "changePct": 5.5,
               "direction": "up"
             }
           }
@@ -1473,36 +1473,36 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$207,461.87",
+            "value": "$232,799.05",
             "trend": {
-              "changePct": 49.1,
+              "changePct": 49.7,
               "direction": "up"
             }
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "386",
+            "value": "460",
             "trend": {
-              "changePct": 17.7,
+              "changePct": 40.2,
               "direction": "up"
             }
           },
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$44,262.05",
+            "value": "$53,890.44",
             "trend": {
-              "changePct": 21.3,
+              "changePct": 47.7,
               "direction": "up"
             }
           },
           {
             "id": "blank-orders",
             "label": "Blank Orders",
-            "value": "207",
+            "value": "256",
             "trend": {
-              "changePct": -26.6,
+              "changePct": -9.2,
               "direction": "down"
             }
           }
@@ -1514,13 +1514,19 @@
             "id": "production-order-value",
             "label": "Production Order Value",
             "value": "$171.52",
-            "trend": null
+            "trend": {
+              "changePct": 60.3,
+              "direction": "up"
+            }
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
             "value": "2",
-            "trend": null
+            "trend": {
+              "changePct": 100.0,
+              "direction": "up"
+            }
           },
           {
             "id": "blank-order-value",
@@ -1541,30 +1547,30 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$346,418.02",
+            "value": "$388,092.06",
             "trend": null
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "712",
+            "value": "786",
             "trend": null
           },
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$80,748.64",
+            "value": "$90,377.03",
             "trend": {
-              "changePct": 2019.6,
+              "changePct": 2272.3,
               "direction": "up"
             }
           },
           {
             "id": "blank-orders",
             "label": "Blank Orders",
-            "value": "489",
+            "value": "538",
             "trend": {
-              "changePct": 48800.0,
+              "changePct": 53700.0,
               "direction": "up"
             }
           }
@@ -2657,12 +2663,6 @@
     ],
     "marketing": [
       {
-        "date": "2026-03-20",
-        "spend": 1076.67,
-        "purchaseValue": 7546.72,
-        "conversions": 125.0
-      },
-      {
         "date": "2026-03-21",
         "spend": 443.06,
         "purchaseValue": 448.46,
@@ -3607,7 +3607,7 @@
       {
         "date": "2026-08-25",
         "spend": 2438.73,
-        "purchaseValue": 8979.19,
+        "purchaseValue": 9277.31,
         "conversions": 22.0
       },
       {
@@ -3625,7 +3625,7 @@
       {
         "date": "2026-08-28",
         "spend": 2182.26,
-        "purchaseValue": 5129.89,
+        "purchaseValue": 5205.49,
         "conversions": 14.0
       },
       {
@@ -3649,13 +3649,13 @@
       {
         "date": "2026-09-01",
         "spend": 2679.42,
-        "purchaseValue": 12798.34,
+        "purchaseValue": 13143.99,
         "conversions": 17.0
       },
       {
         "date": "2026-09-02",
         "spend": 2270.54,
-        "purchaseValue": 10275.89,
+        "purchaseValue": 10814.83,
         "conversions": 12.0
       },
       {
@@ -3703,7 +3703,7 @@
       {
         "date": "2026-09-10",
         "spend": 2031.62,
-        "purchaseValue": 11052.03,
+        "purchaseValue": 11900.19,
         "conversions": 25.0
       },
       {
@@ -3715,26 +3715,32 @@
       {
         "date": "2026-09-12",
         "spend": 1351.12,
-        "purchaseValue": 1985.96,
+        "purchaseValue": 2182.84,
         "conversions": 6.0
       },
       {
         "date": "2026-09-13",
         "spend": 998.6,
         "purchaseValue": 4044.56,
-        "conversions": 5.0
+        "conversions": 6.0
       },
       {
         "date": "2026-09-14",
-        "spend": 2456.13,
-        "purchaseValue": 17142.91,
+        "spend": 2456.38,
+        "purchaseValue": 18153.71,
         "conversions": 51.0
       },
       {
         "date": "2026-09-15",
-        "spend": 1318.28,
-        "purchaseValue": 2690.52,
-        "conversions": 18.0
+        "spend": 2064.96,
+        "purchaseValue": 9331.78,
+        "conversions": 71.0
+      },
+      {
+        "date": "2026-09-16",
+        "spend": 1117.64,
+        "purchaseValue": 3594.56,
+        "conversions": 28.0
       }
     ],
     "staffSales": [
@@ -11435,28 +11441,28 @@
       },
       {
         "date": "2026-09-01",
-        "prodValue": 22466.69,
+        "prodValue": 27626.1,
         "printedOrders": 62,
         "blankValue": 7273.99,
         "blankOrders": 48
       },
       {
         "date": "2026-09-02",
-        "prodValue": 24870.22,
+        "prodValue": 30639.88,
         "printedOrders": 55,
         "blankValue": 7081.1,
         "blankOrders": 41
       },
       {
         "date": "2026-09-03",
-        "prodValue": 32573.93,
+        "prodValue": 34983.55,
         "printedOrders": 61,
         "blankValue": 7174.62,
         "blankOrders": 103
       },
       {
         "date": "2026-09-04",
-        "prodValue": 33070.41,
+        "prodValue": 33332.67,
         "printedOrders": 69,
         "blankValue": 3705.51,
         "blankOrders": 13
@@ -11484,21 +11490,21 @@
       },
       {
         "date": "2026-09-08",
-        "prodValue": 26146.42,
+        "prodValue": 28882.33,
         "printedOrders": 81,
         "blankValue": 11251.37,
         "blankOrders": 77
       },
       {
         "date": "2026-09-09",
-        "prodValue": 43188.59,
+        "prodValue": 43626.99,
         "printedOrders": 80,
         "blankValue": 14162.66,
         "blankOrders": 43
       },
       {
         "date": "2026-09-10",
-        "prodValue": 32641.57,
+        "prodValue": 34016.98,
         "printedOrders": 76,
         "blankValue": 10409.62,
         "blankOrders": 58
@@ -11533,29 +11539,29 @@
       },
       {
         "date": "2026-09-15",
-        "prodValue": 36207.1,
+        "prodValue": 32760.84,
         "printedOrders": 68,
         "blankValue": 8407.96,
         "blankOrders": 36
       },
       {
         "date": "2026-09-16",
-        "prodValue": 12964.31,
-        "printedOrders": 22,
-        "blankValue": 0.0,
-        "blankOrders": 0
+        "prodValue": 31078.94,
+        "printedOrders": 73,
+        "blankValue": 9628.39,
+        "blankOrders": 49
       },
       {
         "date": "2026-09-17",
-        "prodValue": 0.0,
-        "printedOrders": 0,
+        "prodValue": 8510.0,
+        "printedOrders": 19,
         "blankValue": 0.0,
         "blankOrders": 0
       },
       {
         "date": "2026-09-18",
-        "prodValue": 0.0,
-        "printedOrders": 0,
+        "prodValue": 238.0,
+        "printedOrders": 2,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11576,7 +11582,7 @@
       {
         "date": "2026-09-21",
         "prodValue": 0.0,
-        "printedOrders": 0,
+        "printedOrders": 1,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11589,8 +11595,8 @@
       },
       {
         "date": "2026-09-23",
-        "prodValue": 0.0,
-        "printedOrders": 0,
+        "prodValue": 107.0,
+        "printedOrders": 1,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11705,23 +11711,23 @@
     "allTime": [
       {
         "assignee": "RM",
-        "allTime": 184,
-        "allTimePct": 32.0
+        "allTime": 198,
+        "allTimePct": 31.0
       },
       {
         "assignee": "RFM",
-        "allTime": 152,
+        "allTime": 168,
         "allTimePct": 26.0
       },
       {
         "assignee": "RQ",
-        "allTime": 138,
+        "allTime": 153,
         "allTimePct": 24.0
       },
       {
         "assignee": "LF",
-        "allTime": 107,
-        "allTimePct": 18.0
+        "allTime": 120,
+        "allTimePct": 19.0
       },
       {
         "assignee": "SN",
@@ -11732,31 +11738,31 @@
     "todayYesterday": [
       {
         "assignee": "RFM",
-        "t": 0,
-        "tPct": 0.0,
-        "y": 27,
-        "yPct": 37.0
-      },
-      {
-        "assignee": "LF",
-        "t": 0,
-        "tPct": 0.0,
-        "y": 19,
-        "yPct": 26.0
+        "t": 19,
+        "tPct": 28.0,
+        "y": 22,
+        "yPct": 36.0
       },
       {
         "assignee": "RQ",
-        "t": 0,
-        "tPct": 0.0,
-        "y": 16,
-        "yPct": 22.0
+        "t": 17,
+        "tPct": 25.0,
+        "y": 15,
+        "yPct": 25.0
+      },
+      {
+        "assignee": "LF",
+        "t": 14,
+        "tPct": 21.0,
+        "y": 14,
+        "yPct": 23.0
       },
       {
         "assignee": "RM",
-        "t": 0,
-        "tPct": 0.0,
-        "y": 11,
-        "yPct": 15.0
+        "t": 17,
+        "tPct": 25.0,
+        "y": 10,
+        "yPct": 16.0
       },
       {
         "assignee": "SN",
@@ -11775,39 +11781,43 @@
       "rows": [
         {
           "person": "RM",
-          "value": 81578.66
+          "value": 87575.0
         },
         {
           "person": "MQ",
-          "value": 61669.05
-        },
-        {
-          "person": "RFM",
-          "value": 48334.54
+          "value": 74063.85
         },
         {
           "person": "RQ",
-          "value": 46773.73
+          "value": 53550.59
+        },
+        {
+          "person": "RFM",
+          "value": 52537.66
         },
         {
           "person": "DG",
-          "value": 42270.89
+          "value": 48566.95
         },
         {
           "person": "JS",
-          "value": 34733.44
+          "value": 38831.26
         },
         {
           "person": "LF",
-          "value": 32297.92
+          "value": 35149.25
         },
         {
           "person": "CA",
-          "value": 26097.77
+          "value": 33619.48
         },
         {
           "person": "X",
-          "value": 7021.93
+          "value": 6395.39
+        },
+        {
+          "person": "T",
+          "value": 4922.0
         },
         {
           "person": "JMH",
@@ -11816,30 +11826,6 @@
         {
           "person": "x",
           "value": 2274.37
-        },
-        {
-          "person": "T",
-          "value": 0.0
-        },
-        {
-          "person": "71",
-          "value": 0.0
-        },
-        {
-          "person": "$36,207",
-          "value": 0.0
-        },
-        {
-          "person": "0",
-          "value": 0.0
-        },
-        {
-          "person": "$0",
-          "value": 0.0
-        },
-        {
-          "person": "$12,964",
-          "value": 0.0
         }
       ]
     },
@@ -11850,71 +11836,59 @@
       "rows": [
         {
           "person": "WW",
-          "value": 109535.59
+          "value": 118028.94
         },
         {
           "person": "DM",
-          "value": 53041.91
+          "value": 62857.84
         },
         {
           "person": "AJH",
-          "value": 50985.22
+          "value": 61879.17
         },
         {
           "person": "LG",
-          "value": 41883.31
+          "value": 50070.09
         },
         {
           "person": "PS",
-          "value": 40422.83
+          "value": 48076.21
         },
         {
           "person": "CA",
-          "value": 31977.64
+          "value": 38245.38
+        },
+        {
+          "person": "$75,559",
+          "value": 20104.0
+        },
+        {
+          "person": "F",
+          "value": 4922.0
+        },
+        {
+          "person": "JMS",
+          "value": 3418.27
         },
         {
           "person": "JMH",
           "value": 3040.0
         },
         {
-          "person": "JMS",
-          "value": 2768.12
+          "person": "96",
+          "value": 2617.0
         },
         {
           "person": "In Progress",
-          "value": 1174.24
+          "value": 1548.73
         },
         {
           "person": "DG",
-          "value": 490.43
+          "value": 556.1
         },
         {
           "person": "JS",
-          "value": 86.56
-        },
-        {
-          "person": "F",
-          "value": 0.0
-        },
-        {
-          "person": "96",
-          "value": 0.0
-        },
-        {
-          "person": "$75,559",
-          "value": 0.0
-        },
-        {
-          "person": "0",
-          "value": 0.0
-        },
-        {
-          "person": "$0",
-          "value": 0.0
-        },
-        {
-          "person": "$12,964",
-          "value": 0.0
+          "value": 107.96
         }
       ]
     },
@@ -11925,43 +11899,43 @@
       "rows": [
         {
           "person": "RK",
-          "value": 96197.58
-        },
-        {
-          "person": "CK",
-          "value": 39736.23
+          "value": 114121.2
         },
         {
           "person": "RP",
-          "value": 37523.7
+          "value": 49212.71
+        },
+        {
+          "person": "CK",
+          "value": 47339.13
         },
         {
           "person": "VC",
-          "value": 34818.02
+          "value": 41632.36
         },
         {
           "person": "DO",
-          "value": 24292.71
-        },
-        {
-          "person": "VM",
-          "value": 20583.73
+          "value": 22475.62
         },
         {
           "person": "X",
-          "value": 17720.9
+          "value": 21159.68
+        },
+        {
+          "person": "VM",
+          "value": 20930.92
         },
         {
           "person": "SPS",
-          "value": 17203.02
+          "value": 18811.6
         },
         {
           "person": "In Progress",
-          "value": 10140.95
+          "value": 8334.55
         },
         {
           "person": "LG",
-          "value": 7751.08
+          "value": 8242.13
         },
         {
           "person": "PS",
@@ -11973,19 +11947,23 @@
         },
         {
           "person": "AO",
-          "value": 3544.92
+          "value": 3732.17
+        },
+        {
+          "person": "DM",
+          "value": 3388.88
         },
         {
           "person": "x",
           "value": 3040.0
         },
         {
-          "person": "DM",
-          "value": 2517.87
+          "person": "JMS",
+          "value": 2775.7
         },
         {
-          "person": "JMS",
-          "value": 2125.55
+          "person": "4/28/25",
+          "value": 2617.0
         },
         {
           "person": "JB",
@@ -11993,7 +11971,7 @@
         },
         {
           "person": "DG",
-          "value": 490.43
+          "value": 556.1
         },
         {
           "person": "AH",
@@ -12005,15 +11983,11 @@
         },
         {
           "person": "JS",
-          "value": 86.56
-        },
-        {
-          "person": "4/28/25",
-          "value": 0.0
+          "value": 107.96
         },
         {
           "person": "CA",
-          "value": 0.0
+          "value": 10.6
         }
       ]
     },
@@ -12024,63 +11998,63 @@
       "rows": [
         {
           "person": "RP",
-          "value": 98272.43
+          "value": 105363.21
         },
         {
           "person": "VC",
-          "value": 57925.45
+          "value": 68719.95
         },
         {
           "person": "CK",
-          "value": 47980.0
+          "value": 55794.05
         },
         {
           "person": "DO",
-          "value": 42976.67
+          "value": 43283.95
         },
         {
           "person": "Not Coated",
-          "value": 21105.32
-        },
-        {
-          "person": "RK",
-          "value": 16665.66
-        },
-        {
-          "person": "In Progress",
-          "value": 13613.39
+          "value": 25081.31
         },
         {
           "person": "JB",
-          "value": 11054.14
+          "value": 23722.86
         },
         {
-          "person": "AO",
-          "value": 6297.15
+          "person": "RK",
+          "value": 19676.05
+        },
+        {
+          "person": "In Progress",
+          "value": 13725.59
         },
         {
           "person": "X",
-          "value": 5689.38
+          "value": 7921.71
+        },
+        {
+          "person": "AO",
+          "value": 6800.33
+        },
+        {
+          "person": "SPS",
+          "value": 3399.55
         },
         {
           "person": "x",
           "value": 3040.0
         },
         {
-          "person": "SPS",
-          "value": 2167.27
-        },
-        {
           "person": "41",
           "value": 950.82
         },
         {
-          "person": "VM",
-          "value": 503.01
+          "person": "DG",
+          "value": 545.63
         },
         {
-          "person": "DG",
-          "value": 479.96
+          "person": "VM",
+          "value": 503.01
         },
         {
           "person": "(blank)",
@@ -12096,31 +12070,11 @@
         },
         {
           "person": "JS",
-          "value": 86.56
-        },
-        {
-          "person": "Pre Press Stats",
-          "value": 0.0
-        },
-        {
-          "person": "Count",
-          "value": 0.0
-        },
-        {
-          "person": "Value",
-          "value": 0.0
-        },
-        {
-          "person": "Production Record",
-          "value": 0.0
-        },
-        {
-          "person": "Miles",
-          "value": 0.0
+          "value": 107.96
         },
         {
           "person": "CA",
-          "value": 0.0
+          "value": 10.6
         }
       ]
     },
@@ -12131,51 +12085,67 @@
       "rows": [
         {
           "person": "AH",
-          "value": 133176.2
+          "value": 162382.09
         },
         {
           "person": "VC",
-          "value": 101945.96
+          "value": 112601.06
         },
         {
           "person": "VM",
-          "value": 37610.3
+          "value": 40183.95
+        },
+        {
+          "person": "19",
+          "value": 20104.0
         },
         {
           "person": "CK",
-          "value": 16637.99
+          "value": 18586.98
         },
         {
           "person": "AO",
-          "value": 12962.58
+          "value": 14470.35
         },
         {
           "person": "JMS",
-          "value": 8925.51
+          "value": 9979.89
         },
         {
           "person": "SPS",
-          "value": 5389.05
+          "value": 5909.07
+        },
+        {
+          "person": "168",
+          "value": 4922.0
+        },
+        {
+          "person": "DO",
+          "value": 4261.24
+        },
+        {
+          "person": "No Cuts",
+          "value": 3088.41
         },
         {
           "person": "x",
           "value": 3040.0
         },
         {
-          "person": "No Cuts",
-          "value": 2608.41
+          "person": "17",
+          "value": 2617.0
+        },
+        {
+          "person": "120",
+          "value": 2459.0
         },
         {
           "person": "RK",
-          "value": 2234.07
-        },
-        {
-          "person": "DO",
-          "value": 2221.42
+          "value": 2333.78
         },
         {
           "person": "In Progress",
-          "value": 1564.31
+          "value": 1975.38
         },
         {
           "person": "JMH",
@@ -12183,59 +12153,15 @@
         },
         {
           "person": "DG",
-          "value": 490.43
+          "value": 556.1
         },
         {
           "person": "JS",
-          "value": 86.56
-        },
-        {
-          "person": "184",
-          "value": 0.0
-        },
-        {
-          "person": "107",
-          "value": 0.0
-        },
-        {
-          "person": "152",
-          "value": 0.0
-        },
-        {
-          "person": "0",
-          "value": 0.0
-        },
-        {
-          "person": "on 8/8/24",
-          "value": 0.0
-        },
-        {
-          "person": "on 4/22/24",
-          "value": 0.0
-        },
-        {
-          "person": "05/04/26",
-          "value": 0.0
-        },
-        {
-          "person": "5/18/26",
-          "value": 0.0
-        },
-        {
-          "person": "Last Wk",
-          "value": 0.0
-        },
-        {
-          "person": "7",
-          "value": 0.0
-        },
-        {
-          "person": "$2,265",
-          "value": 0.0
+          "value": 107.96
         },
         {
           "person": "CA",
-          "value": 0.0
+          "value": 10.6
         }
       ]
     },
@@ -12246,67 +12172,47 @@
       "rows": [
         {
           "person": "DJ",
-          "value": 223247.56
+          "value": 253122.39
         },
         {
           "person": "AM",
-          "value": 88838.84
+          "value": 108959.48
+        },
+        {
+          "person": "F",
+          "value": 20104.0
         },
         {
           "person": "VM",
-          "value": 8667.45
+          "value": 9105.85
+        },
+        {
+          "person": "T",
+          "value": 4922.0
+        },
+        {
+          "person": "TH",
+          "value": 2617.0
+        },
+        {
+          "person": "M",
+          "value": 2459.0
         },
         {
           "person": "R2Ship",
-          "value": 3794.52
+          "value": 2348.38
         },
         {
           "person": "REPRNT",
-          "value": 1918.6
+          "value": 2332.4
         },
         {
           "person": "JMH",
-          "value": 930.64
+          "value": 2092.66
         },
         {
           "person": "SMC",
           "value": 342.67
-        },
-        {
-          "person": "Orders Ready to Ship",
-          "value": 0.0
-        },
-        {
-          "person": "M",
-          "value": 0.0
-        },
-        {
-          "person": "T",
-          "value": 0.0
-        },
-        {
-          "person": "TH",
-          "value": 0.0
-        },
-        {
-          "person": "F",
-          "value": 0.0
-        },
-        {
-          "person": "Printed",
-          "value": 0.0
-        },
-        {
-          "person": "95.3%",
-          "value": 0.0
-        },
-        {
-          "person": "97.2%",
-          "value": 0.0
-        },
-        {
-          "person": "96.2%",
-          "value": 0.0
         }
       ]
     }
