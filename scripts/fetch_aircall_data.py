@@ -27,9 +27,30 @@ XLSX export doesn't have that cap. Re-run this any time to refresh:
   - The 3 line charts plot the raw `duration (total)` / `duration (in call)`
     fields UNCONVERTED (seconds, matching the Y-axis scale in the reference
     screenshot, e.g. peaks in the 15-20K range) — a different unit than the
-    duration TABLES, which convert the same underlying seconds to hours for
+    duration TABLE, which converts the same underlying seconds to hours for
     display. Both are correct; they're just two different fields/formats
     applied to the same raw numbers, matching the source report exactly.
+
+## Upgrade brief additions (per JV's shared doc, 2026-09-17)
+
+  - **Executive Summary** (`summary.windows`) — 5 headline KPIs (total calls,
+    talk time, avg call duration, IB/OB split, tag coverage) plus an
+    auto-generated narrative sentence, all with real period-over-period
+    deltas. This only works because `dailyRaw` already carries a 180-day
+    trailing window (see RAW_WINDOW_DAYS below) — comfortably enough to look
+    one period further back for every preset, so the brief's Priority 5
+    ("fast-follow, scope as phase 2 if data isn't available") ships now
+    instead of being deferred.
+  - **Consolidated duration table** (`consolidatedDuration.windows`) replaces
+    the old 3-table (Inbound/Outbound/Total) layout with one per-employee
+    table — Inbound/Outbound/Total hours, Total Calls, IB/OB split — sorted
+    by Total Duration descending. The decorative per-column heatmap is gone;
+    the only color left is a `callsDropFlag` (amber) on any employee whose
+    Total Calls fell >20% vs. the prior period of equal length, using the
+    same period-over-period machinery as the summary.
+  - `trend()` / `prev_period()` below are a direct port of the same-named
+    helpers in scripts/fetch_data.py (CEO Dashboard) — this script never
+    needed period-over-period before now.
 
 ## Date-range picker architecture (mirrors scripts/fetch_data.py)
 
@@ -94,6 +115,21 @@ def sheet_rows(wb: openpyxl.Workbook, tab: str) -> tuple[dict[str, int], "Iterat
 def latest_active_date(daily: dict[date, float], fallback: date) -> date:
     active = [d for d, v in daily.items() if v != 0]
     return max(active) if active else fallback
+
+
+def trend(curr: float, prev: float) -> dict | None:
+    if prev == 0:
+        return None
+    pct = round((curr - prev) / prev * 100, 1)
+    direction = "up" if pct > 0 else "down" if pct < 0 else "na"
+    return {"changePct": pct, "direction": direction}
+
+
+def prev_period(start: date, end: date) -> tuple[date, date]:
+    length = (end - start).days + 1
+    prev_end = start - timedelta(days=1)
+    prev_start = prev_end - timedelta(days=length - 1)
+    return prev_start, prev_end
 
 
 def resolve_preset(anchor: date, key: str) -> tuple[date, date]:
@@ -175,59 +211,77 @@ def load_calls_daily(wb: openpyxl.Workbook) -> tuple[dict, date]:
     return daily, anchor
 
 
-def calls_window(daily: dict, start: date, end: date) -> dict:
-    """Builds the Inbound/Outbound/Total table rows for one window. No trend
-    column here — verified against the reference report, which shows just
-    Duration (total), Duration (in call), count, and % of total per table."""
+def per_employee_direction_totals(daily: dict, start: date, end: date) -> dict[str, dict]:
+    """{employee: {ib, ob, ibCount, obCount}} — durations in raw seconds."""
+    per: dict[str, dict] = defaultdict(lambda: {"ib": 0.0, "ob": 0.0, "ibCount": 0, "obCount": 0})
+    for (d, user, direction), v in daily.items():
+        if not (start <= d <= end):
+            continue
+        key = "ib" if direction == "inbound" else "ob"
+        per[user][key] += v["durTotal"]
+        per[user][f"{key}Count"] += v["count"]
+    return per
 
-    def totals_for(direction_filter: set[str], s: date, e: date) -> dict[str, dict]:
-        per_emp: dict[str, dict] = defaultdict(lambda: {"durTotal": 0.0, "durCall": 0.0, "count": 0})
-        for (d, user, direction), v in daily.items():
-            if direction not in direction_filter or not (s <= d <= e):
-                continue
-            per_emp[user]["durTotal"] += v["durTotal"]
-            per_emp[user]["durCall"] += v["durCall"]
-            per_emp[user]["count"] += v["count"]
-        return per_emp
 
-    def build_table(direction_filter: set[str], count_label: str, count_pct_label: str) -> dict:
-        cur = totals_for(direction_filter, start, end)
-        grand_count = sum(v["count"] for v in cur.values())
-        grand_dur_total = sum(v["durTotal"] for v in cur.values())
-        grand_dur_call = sum(v["durCall"] for v in cur.values())
+def build_consolidated_table(daily: dict, start: date, end: date, prev_start: date, prev_end: date) -> dict:
+    """Priority 2 (brief) — replaces the old 3-table (Inbound/Outbound/Total)
+    layout with one per-employee table, sorted by Total Duration descending.
+    `callsDropFlag` is the brief's amber conditional-format: True when that
+    employee's Total Calls fell >20% vs. the immediately-prior period of
+    equal length (None/0 prior => no flag, nothing to compare against)."""
+    cur = per_employee_direction_totals(daily, start, end)
+    prev = per_employee_direction_totals(daily, prev_start, prev_end)
 
-        rows = []
-        for user, v in cur.items():
-            rows.append({
-                "employee": user,
-                "durationTotal": round(v["durTotal"] / 3600, 2),
-                "durationInCall": round(v["durCall"] / 3600, 2) if v["count"] else None,
-                "count": v["count"],
-                "countPct": round(v["count"] / grand_count * 100, 1) if grand_count else 0,
-            })
-        rows.sort(key=lambda r: -r["count"])
+    rows = []
+    for user, v in cur.items():
+        total_calls = v["ibCount"] + v["obCount"]
+        prev_v = prev.get(user)
+        prev_total_calls = (prev_v["ibCount"] + prev_v["obCount"]) if prev_v else 0
+        calls_drop_flag = bool(prev_total_calls) and (total_calls - prev_total_calls) / prev_total_calls <= -0.2
+        rows.append({
+            "employee": user,
+            "inboundHours": round(v["ib"] / 3600, 2),
+            "outboundHours": round(v["ob"] / 3600, 2),
+            "totalHours": round((v["ib"] + v["ob"]) / 3600, 2),
+            "totalCalls": total_calls,
+            "splitLabel": (
+                f"{round(v['ibCount'] / total_calls * 100)}% / {round(v['obCount'] / total_calls * 100)}%"
+                if total_calls else "-"
+            ),
+            "callsDropFlag": calls_drop_flag,
+        })
+    rows.sort(key=lambda r: -r["totalHours"])
 
-        return {
-            "rows": rows,
-            "grandTotal": {
-                "durationTotal": round(grand_dur_total / 3600, 2),
-                "durationInCall": round(grand_dur_call / 3600, 2),
-                "count": grand_count,
-                "countPct": 100.0 if grand_count else 0,
-            },
-            "countLabel": count_label,
-            "countPctLabel": count_pct_label,
-        }
+    grand_ib = sum(v["ib"] for v in cur.values())
+    grand_ob = sum(v["ob"] for v in cur.values())
+    grand_ib_count = sum(v["ibCount"] for v in cur.values())
+    grand_ob_count = sum(v["obCount"] for v in cur.values())
+    grand_calls = grand_ib_count + grand_ob_count
 
     return {
-        "inbound": build_table({"inbound"}, "IB (total)", "IB %"),
-        "outbound": build_table({"outbound"}, "OB (total)", "OB %"),
-        "total": build_table({"inbound", "outbound"}, "Total Calls", "IB/OB %"),
+        "rows": rows,
+        "grandTotal": {
+            "employee": "Grand total",
+            "inboundHours": round(grand_ib / 3600, 2),
+            "outboundHours": round(grand_ob / 3600, 2),
+            "totalHours": round((grand_ib + grand_ob) / 3600, 2),
+            "totalCalls": grand_calls,
+            "splitLabel": (
+                f"{round(grand_ib_count / grand_calls * 100)}% / {round(grand_ob_count / grand_calls * 100)}%"
+                if grand_calls else "-"
+            ),
+            "callsDropFlag": False,
+        },
     }
 
 
-def build_calls_windows(daily: dict, anchor: date) -> dict:
-    return {key: calls_window(daily, *resolve_preset(anchor, key)) for key in PRESET_KEYS}
+def build_consolidated_windows(daily: dict, anchor: date) -> dict:
+    out = {}
+    for key in PRESET_KEYS:
+        start, end = resolve_preset(anchor, key)
+        prev_start, prev_end = prev_period(start, end)
+        out[key] = build_consolidated_table(daily, start, end, prev_start, prev_end)
+    return out
 
 
 def build_calls_daily_raw(daily: dict, anchor: date) -> list[dict]:
@@ -380,6 +434,103 @@ def build_tags_daily_raw(daily: dict[tuple[date, str, str], int], anchor: date) 
 
 
 # ---------------------------------------------------------------------------
+# 3. Executive Summary (Priority 1 + 5, brief 2026-09-17)
+# ---------------------------------------------------------------------------
+
+
+def calls_totals(daily: dict, start: date, end: date, directions: set[str]) -> tuple[float, int]:
+    """(total duration in seconds, call count) across all employees."""
+    dur_total = 0.0
+    count = 0
+    for (d, _user, direction), v in daily.items():
+        if direction not in directions or not (start <= d <= end):
+            continue
+        dur_total += v["durTotal"]
+        count += v["count"]
+    return dur_total, count
+
+
+def tag_totals(daily: dict[tuple[date, str, str], int], start: date, end: date) -> tuple[int, int]:
+    """(tagged count, grand count) — 'tagged' excludes the blank/'-' Main Tag."""
+    grand = 0
+    untagged = 0
+    for (d, tag, _initial), c in daily.items():
+        if not (start <= d <= end):
+            continue
+        grand += c
+        if tag == "-":
+            untagged += c
+    return grand - untagged, grand
+
+
+def build_summary_narrative(total_calls: int, calls_trend: dict | None, talk_hours: float, ib_pct: float, ob_pct: float, tag_pct: float) -> str:
+    if calls_trend:
+        verb = "up" if calls_trend["direction"] == "up" else "down" if calls_trend["direction"] == "down" else "flat"
+        delta_clause = f", {verb} {abs(calls_trend['changePct'])}% vs. the prior period"
+    else:
+        delta_clause = ""
+    lead = f"Team handled {total_calls:,} calls totaling {talk_hours} hours this period{delta_clause}."
+
+    if ob_pct > ib_pct:
+        split = f"Outbound activity ({ob_pct}% of calls) continues to outpace inbound."
+    elif ib_pct > ob_pct:
+        split = f"Inbound activity ({ib_pct}% of calls) continues to outpace outbound."
+    else:
+        split = "Inbound and outbound activity are evenly split this period."
+
+    if tag_pct < 60:
+        tag_line = f"Tag coverage remains a gap at {tag_pct}% of calls categorized."
+    elif tag_pct >= 85:
+        tag_line = f"Tag coverage is strong at {tag_pct}% of calls categorized."
+    else:
+        tag_line = f"Tag coverage stands at {tag_pct}% of calls categorized."
+
+    return f"{lead} {split} {tag_line}"
+
+
+def build_summary_window(calls_daily: dict, tags_daily: dict, start: date, end: date, prev_start: date, prev_end: date) -> dict:
+    dur_total_s, count = calls_totals(calls_daily, start, end, {"inbound", "outbound"})
+    dur_total_s_prev, count_prev = calls_totals(calls_daily, prev_start, prev_end, {"inbound", "outbound"})
+    _, ib_count = calls_totals(calls_daily, start, end, {"inbound"})
+    _, ob_count = calls_totals(calls_daily, start, end, {"outbound"})
+    tagged, tag_grand = tag_totals(tags_daily, start, end)
+    tagged_prev, tag_grand_prev = tag_totals(tags_daily, prev_start, prev_end)
+
+    talk_hours = round(dur_total_s / 3600, 1)
+    talk_hours_prev = round(dur_total_s_prev / 3600, 1)
+    avg_seconds = round(dur_total_s / count, 1) if count else None
+    avg_seconds_prev = round(dur_total_s_prev / count_prev, 1) if count_prev else None
+    ib_pct = round(ib_count / count * 100, 1) if count else 0
+    ob_pct = round(ob_count / count * 100, 1) if count else 0
+    tag_coverage_pct = round(tagged / tag_grand * 100, 1) if tag_grand else 0
+    tag_coverage_pct_prev = round(tagged_prev / tag_grand_prev * 100, 1) if tag_grand_prev else 0
+
+    calls_trend = trend(count, count_prev)
+
+    return {
+        "totalCalls": {"value": count, "trend": calls_trend},
+        "totalTalkTimeHours": {"value": talk_hours, "trend": trend(talk_hours, talk_hours_prev)},
+        "avgCallDurationSeconds": {
+            "value": avg_seconds,
+            "trend": trend(avg_seconds, avg_seconds_prev) if avg_seconds is not None and avg_seconds_prev is not None else None,
+        },
+        "inboundPct": ib_pct,
+        "outboundPct": ob_pct,
+        "tagCoveragePct": {"value": tag_coverage_pct, "trend": trend(tag_coverage_pct, tag_coverage_pct_prev)},
+        "narrative": build_summary_narrative(count, calls_trend, talk_hours, ib_pct, ob_pct, tag_coverage_pct),
+    }
+
+
+def build_summary_windows(calls_daily: dict, tags_daily: dict, anchor: date) -> dict:
+    out = {}
+    for key in PRESET_KEYS:
+        start, end = resolve_preset(anchor, key)
+        prev_start, prev_end = prev_period(start, end)
+        out[key] = build_summary_window(calls_daily, tags_daily, start, end, prev_start, prev_end)
+    return out
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -388,9 +539,9 @@ def main():
     print("Downloading AirCall Data workbook (Raw Data 4-24 + Tags_Data) ...")
     wb = download_workbook()
 
-    print("Building Inbound/Outbound/Total Calls Duration tables + charts ...")
+    print("Building consolidated Calls Duration table + charts ...")
     calls_daily, anchor = load_calls_daily(wb)
-    calls_windows = build_calls_windows(calls_daily, anchor)
+    consolidated_windows = build_consolidated_windows(calls_daily, anchor)
     chart_windows = build_chart_windows(calls_daily, anchor)
     calls_raw = build_calls_daily_raw(calls_daily, anchor)
 
@@ -400,10 +551,14 @@ def main():
     tag_by_user_windows = build_calls_by_tag_by_user_windows(tags_daily, anchor)
     tags_raw = build_tags_daily_raw(tags_daily, anchor)
 
+    print("Building Executive Summary (period-over-period) ...")
+    summary_windows = build_summary_windows(calls_daily, tags_daily, anchor)
+
     data = {
         "generatedAt": datetime.utcnow().isoformat() + "Z",
         "anchor": anchor.isoformat(),
-        "callsDuration": {"windows": calls_windows},
+        "summary": {"windows": summary_windows},
+        "consolidatedDuration": {"windows": consolidated_windows},
         "callsCharts": {"windows": chart_windows},
         "callsByTag": {"windows": tag_windows},
         "callsByTagByUser": {"windows": tag_by_user_windows},

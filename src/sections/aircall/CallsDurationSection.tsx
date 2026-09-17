@@ -4,9 +4,7 @@ import { Section } from "../../components/shared/Section";
 import grid from "../../components/shared/Grid.module.css";
 import { useAircallDateRange } from "../../data/AircallDateRangeContext";
 import {
-  buildInboundCallsTable,
-  buildOutboundCallsTable,
-  buildTotalCallsTable,
+  buildConsolidatedCallsTable,
   buildInboundChartData,
   buildOutboundChartData,
   buildTotalChartData,
@@ -15,29 +13,23 @@ import styles from "./CallsDurationSection.module.css";
 
 export function CallsDurationSection() {
   const { windows } = useAircallDateRange();
-  const inboundTable = buildInboundCallsTable(windows.calls);
-  const outboundTable = buildOutboundCallsTable(windows.calls);
-  const totalTable = buildTotalCallsTable(windows.calls);
+  const consolidatedTable = buildConsolidatedCallsTable(windows.consolidated);
   const inboundChart = buildInboundChartData(windows.chart);
   const outboundChart = buildOutboundChartData(windows.chart);
   const totalChart = buildTotalChartData(windows.chart);
 
   return (
     <Section title="Call Duration">
-      <div className={grid.tableGrid3}>
-        <HeatmapDataTable table={inboundTable} />
-        <HeatmapDataTable table={outboundTable} />
-        <HeatmapDataTable table={totalTable} />
-      </div>
+      <HeatmapDataTable table={consolidatedTable} />
       <div className={`${grid.tableGrid3} ${styles.chartRow}`}>
         <div className={styles.chartCard}>
-          <DualLineChart data={inboundChart} />
+          <DualLineChart data={inboundChart} title="Inbound Call Duration — Daily Trend" yAxisUnit="seconds" />
         </div>
         <div className={styles.chartCard}>
-          <DualLineChart data={outboundChart} />
+          <DualLineChart data={outboundChart} title="Outbound Call Duration — Daily Trend" yAxisUnit="seconds" />
         </div>
         <div className={styles.chartCard}>
-          <DualLineChart data={totalChart} />
+          <DualLineChart data={totalChart} title="Total Call Duration — Daily Trend" yAxisUnit="seconds" />
         </div>
       </div>
     </Section>

@@ -1,0 +1,19 @@
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 0 6px;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.unit {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}

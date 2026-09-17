@@ -4,20 +4,23 @@ import {
   ANCHOR,
   DEFAULT_SELECTION,
   resolvePresetRange,
-  computeCustomCallsWindow,
+  computeCustomConsolidatedCallsWindow,
   computeCustomChartWindow,
   computeCustomCallsByTagWindow,
   computeCustomCallsByTagByUserWindow,
+  computeCustomSummaryWindow,
   type DateRangeSelection,
   type PresetKey,
-  type CallsDurationWindow,
+  type ConsolidatedCallsTable,
   type ChartWindow,
   type CallsByTagWindow,
   type CallsByTagByUserWindow,
+  type SummaryWindow,
 } from "../lib/aircallDateRange";
 
 interface ResolvedWindows {
-  calls: CallsDurationWindow;
+  summary: SummaryWindow;
+  consolidated: ConsolidatedCallsTable;
   chart: ChartWindow;
   callsByTag: CallsByTagWindow;
   callsByTagByUser: CallsByTagByUserWindow;
@@ -37,7 +40,8 @@ const AircallDateRangeContext = createContext<AircallDateRangeContextValue | nul
 // `as unknown as X` — same JSON-boundary reasoning as DateRangeContext.tsx:
 // TS would otherwise infer the exact literal shape of whatever numbers came
 // back on the last refresh, which is fragile by construction.
-const callsWindows = raw.callsDuration.windows as unknown as Record<PresetKey, CallsDurationWindow>;
+const summaryWindows = raw.summary.windows as unknown as Record<PresetKey, SummaryWindow>;
+const consolidatedWindows = raw.consolidatedDuration.windows as unknown as Record<PresetKey, ConsolidatedCallsTable>;
 const chartWindows = raw.callsCharts.windows as unknown as Record<PresetKey, ChartWindow>;
 const callsByTagWindows = raw.callsByTag.windows as unknown as Record<PresetKey, CallsByTagWindow>;
 const callsByTagByUserWindows = raw.callsByTagByUser.windows as unknown as Record<PresetKey, CallsByTagByUserWindow>;
@@ -49,7 +53,8 @@ export function AircallDateRangeProvider({ children }: { children: ReactNode }) 
     if (selection.kind === "preset") {
       const { key } = selection;
       return {
-        calls: callsWindows[key],
+        summary: summaryWindows[key],
+        consolidated: consolidatedWindows[key],
         chart: chartWindows[key],
         callsByTag: callsByTagWindows[key],
         callsByTagByUser: callsByTagByUserWindows[key],
@@ -59,7 +64,8 @@ export function AircallDateRangeProvider({ children }: { children: ReactNode }) 
     }
     const { start, end } = selection;
     return {
-      calls: computeCustomCallsWindow(start, end),
+      summary: computeCustomSummaryWindow(start, end),
+      consolidated: computeCustomConsolidatedCallsWindow(start, end),
       chart: computeCustomChartWindow(start, end),
       callsByTag: computeCustomCallsByTagWindow(start, end),
       callsByTagByUser: computeCustomCallsByTagByUserWindow(start, end),

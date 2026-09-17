@@ -1,4 +1,5 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Legend, ResponsiveContainer } from "recharts";
+import styles from "./DualLineChart.module.css";
 
 const TOTAL_COLOR = "var(--glow-blue)";
 const INCALL_COLOR = "var(--series-3)";
@@ -9,12 +10,31 @@ export interface DualLineChartPoint {
   inCall: number;
 }
 
-export function DualLineChart({ data, height = 220 }: { data: DualLineChartPoint[]; height?: number }) {
+export function DualLineChart({
+  data,
+  height = 220,
+  title,
+  yAxisUnit,
+}: {
+  data: DualLineChartPoint[];
+  height?: number;
+  title?: string;
+  // Small muted caption next to the title clarifying what the Y-axis scale
+  // means, e.g. "seconds" — the axis ticks alone (e.g. "18K") are ambiguous.
+  yAxisUnit?: string;
+}) {
   const uid = `${data.length}-${data[0]?.date ?? ""}`;
   const glowId = `dual-line-glow-${uid}`;
 
   return (
-    <div style={{ width: "100%", height }}>
+    <div>
+      {title && (
+        <div className={styles.header}>
+          <h4 className={styles.title}>{title}</h4>
+          {yAxisUnit && <span className={styles.unit}>Y-axis: {yAxisUnit}</span>}
+        </div>
+      )}
+      <div style={{ width: "100%", height }}>
       <ResponsiveContainer width="100%" height="100%">
         <LineChart data={data} margin={{ top: 8, right: 12, bottom: 0, left: 0 }}>
           <defs>
@@ -83,6 +103,7 @@ export function DualLineChart({ data, height = 220 }: { data: DualLineChartPoint
           />
         </LineChart>
       </ResponsiveContainer>
+      </div>
     </div>
   );
 }
