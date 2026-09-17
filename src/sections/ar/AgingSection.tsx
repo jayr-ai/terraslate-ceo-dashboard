@@ -23,12 +23,16 @@ export function AgingSection() {
               label={b.moneyTile.label}
               value={b.moneyTile.value}
               trend={b.moneyTile.trend}
+              trendSemantic={b.moneyTile.trendSemantic}
+              trendCaption={b.moneyTile.trendCaption}
               empty={b.moneyTile.empty}
             />
             <StatTile
               label={b.countTile.label}
               value={b.countTile.value}
               trend={b.countTile.trend}
+              trendSemantic={b.countTile.trendSemantic}
+              trendCaption={b.countTile.trendCaption}
               empty={b.countTile.empty}
             />
             <HeatmapDataTable table={b.table} />

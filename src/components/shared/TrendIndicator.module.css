@@ -24,3 +24,13 @@
   color: var(--trend-na);
   background: var(--surface-hover);
 }
+
+.bad {
+  color: var(--trend-bad);
+  background: var(--trend-bad-bg);
+}
+
+.good {
+  color: var(--trend-good);
+  background: var(--trend-good-bg);
+}

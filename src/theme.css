@@ -48,6 +48,12 @@
   --trend-down: #ff6b6b;
   --trend-down-bg: rgba(255, 107, 107, 0.14);
   --trend-na: #6d7893;
+  /* Semantic (not just up/down) trend colors — for contexts where the
+     direction's real-world meaning isn't neutral, e.g. AR aging buckets. */
+  --trend-bad: #dc2626;
+  --trend-bad-bg: rgba(220, 38, 38, 0.14);
+  --trend-good: #16a34a;
+  --trend-good-bg: rgba(22, 163, 74, 0.14);
 
   /* Categorical (donut) — distinct hues, tuned for dark surface contrast */
   --series-1: #3b9eff; /* Shopify */

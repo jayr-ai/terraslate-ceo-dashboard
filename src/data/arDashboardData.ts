@@ -39,6 +39,20 @@ function fmtMoney(v: number): string {
   return `$${v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
 }
 
+// Fix 2 (implementation brief, 2026-09-17): a rising 31-60/61-90/90+ balance
+// means collections are slowing — a bad signal, not the neutral "up" this
+// app's other dashboards use trend color for. "Last 30 Days" growing is
+// expected (it's mostly just new sales landing in the bucket), so it stays
+// neutral regardless of direction.
+function bucketSemantic(bucketKey: string, direction: string): "bad" | "good" | "neutral" | undefined {
+  if (bucketKey === "last30") return "neutral";
+  if (direction === "up") return "bad";
+  if (direction === "down") return "good";
+  return undefined;
+}
+
+const TREND_CAPTION = "vs. prior 30 days";
+
 export const arBuckets: ArBucket[] = BUCKET_ORDER.map((key) => {
   const b = buckets[key];
   const empty = b.count === 0;
@@ -49,6 +63,8 @@ export const arBuckets: ArBucket[] = BUCKET_ORDER.map((key) => {
       value: empty ? "No data" : fmtMoney(b.total),
       empty,
       trend: b.trend,
+      trendSemantic: b.trend ? bucketSemantic(key, b.trend.direction) : undefined,
+      trendCaption: b.trend ? TREND_CAPTION : undefined,
     },
     countTile: {
       id: `${key}-count`,
@@ -56,6 +72,8 @@ export const arBuckets: ArBucket[] = BUCKET_ORDER.map((key) => {
       value: empty ? "No data" : String(b.count),
       empty,
       trend: b.countTrend,
+      trendSemantic: b.countTrend ? bucketSemantic(key, b.countTrend.direction) : undefined,
+      trendCaption: b.countTrend ? TREND_CAPTION : undefined,
     },
     table: {
       id: `${key}-table`,
@@ -79,5 +97,74 @@ export const allTimeReceivableTile: StatTileDatum = {
 };
 
 export const monthlyChartData: MonthlyBarPoint[] = raw.monthly.map((m) => ({ label: m.label, total: m.total }));
+
+// ---------------------------------------------------------------------------
+// Fix 1 — Total Outstanding AR headline KPI (sum of the 4 buckets — NOT
+// allTimeReceivable, which is a different, cumulative-forever metric)
+// ---------------------------------------------------------------------------
+
+export interface TotalOutstandingKpi {
+  label: string;
+  value: string;
+  subLabel: string;
+  trend: Trend | null;
+  trendSemantic: "bad" | "good" | undefined;
+}
+
+const totalOutstandingRaw = raw.totalOutstanding as unknown as { total: number; count: number; trend: Trend | null };
+
+export const totalOutstandingKpi: TotalOutstandingKpi = {
+  label: "Total Outstanding AR",
+  value: fmtMoney(totalOutstandingRaw.total),
+  subLabel: `${totalOutstandingRaw.count} unpaid order${totalOutstandingRaw.count === 1 ? "" : "s"}`,
+  trend: totalOutstandingRaw.trend,
+  trendSemantic: totalOutstandingRaw.trend
+    ? totalOutstandingRaw.trend.direction === "up"
+      ? "bad"
+      : totalOutstandingRaw.trend.direction === "down"
+        ? "good"
+        : undefined
+    : undefined,
+};
+
+// ---------------------------------------------------------------------------
+// Fix 3 — Aging mix (% of Total Outstanding AR per bucket)
+// ---------------------------------------------------------------------------
+
+export interface AgingMixSegment {
+  key: string;
+  label: string;
+  pct: number;
+}
+
+export const agingMixData: AgingMixSegment[] = raw.agingMix;
+
+// ---------------------------------------------------------------------------
+// Fix 4 — DSO (Days Sales Outstanding), 30-day rolling
+// ---------------------------------------------------------------------------
+
+const dsoRaw = raw.dso as unknown as { value: number | null; trend: Trend | null; salesWindowLabel: string };
+
+export const dsoKpi: StatTileDatum = {
+  id: "dso",
+  label: `DSO (30-day rolling, ${dsoRaw.salesWindowLabel.replace(/[()]/g, "")})`,
+  value: dsoRaw.value !== null ? `${dsoRaw.value} days` : "No data",
+  empty: dsoRaw.value === null,
+  trend: dsoRaw.trend,
+  trendSemantic: dsoRaw.trend
+    ? dsoRaw.trend.direction === "up"
+      ? "bad"
+      : dsoRaw.trend.direction === "down"
+        ? "good"
+        : undefined
+    : undefined,
+  trendCaption: dsoRaw.trend ? TREND_CAPTION : undefined,
+};
+
+// ---------------------------------------------------------------------------
+// Fix 5 — auto-generated one-line narrative
+// ---------------------------------------------------------------------------
+
+export const arNarrative: string = raw.narrative;
 
 export const arDataGeneratedAt: string = raw.generatedAt;

@@ -50,6 +50,10 @@ export interface StatTileDatum {
   value: string;
   empty?: boolean;
   trend?: Trend | null;
+  // See StatTile/TrendIndicator — both optional, used only where up/down
+  // isn't meaning-neutral (e.g. AR aging). Everywhere else stays untouched.
+  trendSemantic?: "bad" | "good" | "neutral";
+  trendCaption?: string;
   source?: Source;
 }
 

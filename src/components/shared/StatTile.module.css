@@ -49,6 +49,13 @@
   margin-top: -4px;
 }
 
+.trendCaption {
+  font-size: 10.5px;
+  color: var(--text-muted);
+  margin-top: -8px;
+  align-self: flex-end;
+}
+
 .source {
   font-size: 10.5px;
   color: var(--text-muted);
