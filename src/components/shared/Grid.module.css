@@ -11,13 +11,6 @@
   align-items: stretch;
 }
 
-.tableGrid1x3 {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
-  gap: 14px;
-  align-items: start;
-}
-
 .kpiRow {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr)) minmax(0, 1.2fr);
@@ -59,9 +52,6 @@
   }
   .statGrid1x4 {
     grid-template-columns: repeat(4, minmax(0, 1fr));
-  }
-  .tableGrid1x3 {
-    grid-template-columns: minmax(0, 1fr);
   }
 }
 

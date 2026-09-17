@@ -90,41 +90,45 @@ export const arBuckets: ArBucket[] = BUCKET_ORDER.map((key) => {
   };
 });
 
-export const allTimeReceivableTile: StatTileDatum = {
-  id: "all-time-receivable",
-  label: "All Time Receivable",
-  value: fmtMoney(raw.allTimeReceivable),
-};
-
 export const monthlyChartData: MonthlyBarPoint[] = raw.monthly.map((m) => ({ label: m.label, total: m.total }));
 
-// ---------------------------------------------------------------------------
-// Fix 1 — Total Outstanding AR headline KPI (sum of the 4 buckets — NOT
-// allTimeReceivable, which is a different, cumulative-forever metric)
-// ---------------------------------------------------------------------------
-
-export interface TotalOutstandingKpi {
-  label: string;
-  value: string;
-  subLabel: string;
-  trend: Trend | null;
-  trendSemantic: "bad" | "good" | undefined;
+function upDownSemantic(t: Trend | null): "bad" | "good" | undefined {
+  if (!t) return undefined;
+  if (t.direction === "up") return "bad";
+  if (t.direction === "down") return "good";
+  return undefined;
 }
 
-const totalOutstandingRaw = raw.totalOutstanding as unknown as { total: number; count: number; trend: Trend | null };
+// ---------------------------------------------------------------------------
+// Fix 1 — Total Outstanding AR + Total Unpaid Orders headline KPIs (sum of
+// the 4 buckets — NOT allTimeReceivable, which is a different,
+// cumulative-forever metric). Two separate tiles (not one tile + a
+// sub-label) so they sit evenly alongside DSO in a 3-across row.
+// ---------------------------------------------------------------------------
 
-export const totalOutstandingKpi: TotalOutstandingKpi = {
+const totalOutstandingRaw = raw.totalOutstanding as unknown as {
+  total: number;
+  count: number;
+  trend: Trend | null;
+  countTrend: Trend | null;
+};
+
+export const totalOutstandingKpi: StatTileDatum = {
+  id: "total-outstanding-ar",
   label: "Total Outstanding AR",
   value: fmtMoney(totalOutstandingRaw.total),
-  subLabel: `${totalOutstandingRaw.count} unpaid order${totalOutstandingRaw.count === 1 ? "" : "s"}`,
   trend: totalOutstandingRaw.trend,
-  trendSemantic: totalOutstandingRaw.trend
-    ? totalOutstandingRaw.trend.direction === "up"
-      ? "bad"
-      : totalOutstandingRaw.trend.direction === "down"
-        ? "good"
-        : undefined
-    : undefined,
+  trendSemantic: upDownSemantic(totalOutstandingRaw.trend),
+  trendCaption: totalOutstandingRaw.trend ? TREND_CAPTION : undefined,
+};
+
+export const totalUnpaidOrdersKpi: StatTileDatum = {
+  id: "total-unpaid-orders",
+  label: "Total Unpaid Orders",
+  value: String(totalOutstandingRaw.count),
+  trend: totalOutstandingRaw.countTrend,
+  trendSemantic: upDownSemantic(totalOutstandingRaw.countTrend),
+  trendCaption: totalOutstandingRaw.countTrend ? TREND_CAPTION : undefined,
 };
 
 // ---------------------------------------------------------------------------
@@ -151,13 +155,7 @@ export const dsoKpi: StatTileDatum = {
   value: dsoRaw.value !== null ? `${dsoRaw.value} days` : "No data",
   empty: dsoRaw.value === null,
   trend: dsoRaw.trend,
-  trendSemantic: dsoRaw.trend
-    ? dsoRaw.trend.direction === "up"
-      ? "bad"
-      : dsoRaw.trend.direction === "down"
-        ? "good"
-        : undefined
-    : undefined,
+  trendSemantic: upDownSemantic(dsoRaw.trend),
   trendCaption: dsoRaw.trend ? TREND_CAPTION : undefined,
 };
 

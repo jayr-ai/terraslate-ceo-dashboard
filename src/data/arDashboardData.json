@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-17T04:28:28.598876Z",
+  "generatedAt": "2026-09-17T04:48:28.091364Z",
   "anchor": "2026-09-17",
   "buckets": {
     "last30": {
@@ -352,6 +352,10 @@
     "count": 55,
     "trend": {
       "changePct": 46.3,
+      "direction": "up"
+    },
+    "countTrend": {
+      "changePct": 61.8,
       "direction": "up"
     }
   },

@@ -267,7 +267,9 @@ def main():
     total_outstanding_cur = round(sum(cur[k]["total"] for k in BUCKET_KEYS), 2)
     total_outstanding_prev = round(sum(prev[k]["total"] for k in BUCKET_KEYS), 2)
     total_outstanding_count = sum(cur[k]["count"] for k in BUCKET_KEYS)
+    total_outstanding_count_prev = sum(prev[k]["count"] for k in BUCKET_KEYS)
     total_outstanding_trend = trend(total_outstanding_cur, total_outstanding_prev)
+    total_outstanding_count_trend = trend(total_outstanding_count, total_outstanding_count_prev)
 
     # Fix 3 — aging mix as % of Total Outstanding AR.
     aging_mix = [
@@ -306,6 +308,7 @@ def main():
             "total": total_outstanding_cur,
             "count": total_outstanding_count,
             "trend": total_outstanding_trend,
+            "countTrend": total_outstanding_count_trend,
         },
         "agingMix": aging_mix,
         "dso": {

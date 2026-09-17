@@ -3,16 +3,3 @@
   flex-direction: column;
   gap: 14px;
 }
-
-.topRow {
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 14px;
-  align-items: stretch;
-}
-
-@media (max-width: 720px) {
-  .topRow {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
