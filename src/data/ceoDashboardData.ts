@@ -17,6 +17,7 @@
 
 import raw from "./ceoDashboardData.json";
 import type { KpiCard, StatTileDatum, TableSection, TableRow } from "./ceoDashboardMockData";
+import type { HeatmapTableData } from "../components/shared/HeatmapDataTable";
 import {
   terraSlateTrackerSource,
   marketingMetricsSource,
@@ -131,16 +132,16 @@ export const prePressTodayYesterdayTable: TableSection = {
 // ---------------------------------------------------------------------------
 // 5.6 Production team tables (all-time, static)
 // ---------------------------------------------------------------------------
-export const productionTeamTables: TableSection[] = raw.productionTeams.map((t) => ({
+export const productionTeamTables: HeatmapTableData[] = raw.productionTeams.map((t) => ({
   id: t.id,
   title: t.title,
   columns: [
     { key: "person", label: t.personLabel, align: "left" as const, sortable: true, truncate: true },
-    { key: "value", label: "Order Value", align: "right" as const, sortable: true, format: "currency" as const },
+    { key: "value", label: "Order Value", align: "right" as const, sortable: true, format: "currency" as const, heat: "blue" as const },
   ],
-  rows: t.rows,
+  rows: t.rows as unknown as Record<string, string | number | null>[],
   source: productionTeamSource,
-  pageSize: 5,
+  pageSize: 10,
   defaultSortKey: "value",
   defaultSortDir: "desc" as const,
 }));

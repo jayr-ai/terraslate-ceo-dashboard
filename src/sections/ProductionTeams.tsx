@@ -1,5 +1,5 @@
 import { Section } from "../components/shared/Section";
-import { DataTable } from "../components/shared/DataTable";
+import { HeatmapDataTable } from "../components/shared/HeatmapDataTable";
 import grid from "../components/shared/Grid.module.css";
 import { productionTeamTables } from "../data/ceoDashboardData";
 
@@ -8,7 +8,7 @@ export function ProductionTeams() {
     <Section title="Production Teams">
       <div className={grid.tableGrid3}>
         {productionTeamTables.map((table) => (
-          <DataTable key={table.id} table={table} />
+          <HeatmapDataTable key={table.id} table={table} />
         ))}
       </div>
     </Section>
