@@ -1,21 +1,101 @@
 {
-  "generatedAt": "2026-09-17T06:29:34.486359Z",
-  "anchor": "2026-09-17",
+  "generatedAt": "2026-09-21T13:19:28.563253Z",
+  "anchor": "2026-09-21",
   "buckets": {
     "last30": {
       "label": "Last 30 Days Rec.",
       "unpaidLabel": "Unpaid",
-      "total": 41447.56,
+      "total": 58163.19,
       "count": 28,
       "trend": {
-        "changePct": -16.6,
-        "direction": "down"
+        "changePct": 5.1,
+        "direction": "up"
       },
       "countTrend": {
-        "changePct": 7.7,
+        "changePct": 3.7,
         "direction": "up"
       },
       "rows": [
+        {
+          "date": "Sep 18, 2026",
+          "order": "#13126085",
+          "total": 1647.83
+        },
+        {
+          "date": "Sep 18, 2026",
+          "order": "#13126007",
+          "total": 235.02
+        },
+        {
+          "date": "Sep 17, 2026",
+          "order": "#13125926",
+          "total": 15039.06
+        },
+        {
+          "date": "Sep 17, 2026",
+          "order": "#13125893",
+          "total": 103.2
+        },
+        {
+          "date": "Sep 17, 2026",
+          "order": "#13125884",
+          "total": 289.0
+        },
+        {
+          "date": "Sep 16, 2026",
+          "order": "#13125806",
+          "total": 1584.0
+        },
+        {
+          "date": "Sep 15, 2026",
+          "order": "#13125737",
+          "total": 9281.0
+        },
+        {
+          "date": "Sep 15, 2026",
+          "order": "#13125675",
+          "total": 115.5
+        },
+        {
+          "date": "Sep 15, 2026",
+          "order": "#13125673",
+          "total": 1308.0
+        },
+        {
+          "date": "Sep 14, 2026",
+          "order": "#13125590",
+          "total": 1939.04
+        },
+        {
+          "date": "Sep 14, 2026",
+          "order": "#13125571",
+          "total": 370.95
+        },
+        {
+          "date": "Sep 14, 2026",
+          "order": "#13125569",
+          "total": 7102.36
+        },
+        {
+          "date": "Sep 14, 2026",
+          "order": "#13125565",
+          "total": 2161.07
+        },
+        {
+          "date": "Sep 14, 2026",
+          "order": "#13125560",
+          "total": 4811.24
+        },
+        {
+          "date": "Sep 14, 2026",
+          "order": "#13125548",
+          "total": 2034.38
+        },
+        {
+          "date": "Sep 14, 2026",
+          "order": "#13125539",
+          "total": 381.13
+        },
         {
           "date": "Sep 10, 2026",
           "order": "#13125341",
@@ -53,18 +133,8 @@
         },
         {
           "date": "Sep 2, 2026",
-          "order": "#13124750",
-          "total": 430.75
-        },
-        {
-          "date": "Sep 2, 2026",
           "order": "#13124746",
           "total": 1295.86
-        },
-        {
-          "date": "Sep 2, 2026",
-          "order": "#13124743",
-          "total": 432.38
         },
         {
           "date": "Aug 31, 2026",
@@ -82,20 +152,26 @@
           "total": 516.0
         },
         {
-          "date": "Aug 26, 2026",
-          "order": "#13124266",
-          "total": 4401.69
-        },
-        {
           "date": "Aug 25, 2026",
           "order": "#13124142",
           "total": 129.0
-        },
-        {
-          "date": "Aug 21, 2026",
-          "order": "#13123781",
-          "total": 2363.03
-        },
+        }
+      ]
+    },
+    "d31to60": {
+      "label": "31-60 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 55331.0,
+      "count": 27,
+      "trend": {
+        "changePct": 365.3,
+        "direction": "up"
+      },
+      "countTrend": {
+        "changePct": 285.7,
+        "direction": "up"
+      },
+      "rows": [
         {
           "date": "Aug 20, 2026",
           "order": "#13123652",
@@ -133,16 +209,6 @@
         },
         {
           "date": "Aug 18, 2026",
-          "order": "#13123506",
-          "total": 5276.76
-        },
-        {
-          "date": "Aug 18, 2026",
-          "order": "#13123503",
-          "total": 190.75
-        },
-        {
-          "date": "Aug 18, 2026",
           "order": "#13123489",
           "total": 233.75
         },
@@ -155,23 +221,7 @@
           "date": "Aug 18, 2026",
           "order": "#13123480",
           "total": 247.5
-        }
-      ]
-    },
-    "d31to60": {
-      "label": "31-60 Days Rec.",
-      "unpaidLabel": "Unpaid",
-      "total": 39147.85,
-      "count": 19,
-      "trend": {
-        "changePct": 128.9,
-        "direction": "up"
-      },
-      "countTrend": {
-        "changePct": 137.5,
-        "direction": "up"
-      },
-      "rows": [
+        },
         {
           "date": "Aug 17, 2026",
           "order": "#13123417",
@@ -196,11 +246,6 @@
           "date": "Aug 14, 2026",
           "order": "#13123329",
           "total": 5671.2
-        },
-        {
-          "date": "Aug 11, 2026",
-          "order": "#13122978",
-          "total": 148.99
         },
         {
           "date": "Aug 11, 2026",
@@ -249,11 +294,6 @@
         },
         {
           "date": "Aug 5, 2026",
-          "order": "#13122569",
-          "total": 2259.65
-        },
-        {
-          "date": "Aug 5, 2026",
           "order": "#13122567",
           "total": 438.0
         },
@@ -272,8 +312,8 @@
     "d61to90": {
       "label": "61-90 Days Rec.",
       "unpaidLabel": "Unpaid",
-      "total": 17100.3,
-      "count": 8,
+      "total": 11891.8,
+      "count": 7,
       "trend": null,
       "countTrend": null,
       "rows": [
@@ -286,11 +326,6 @@
           "date": "Jul 18, 2026",
           "order": "#13121397",
           "total": 103.2
-        },
-        {
-          "date": "Jul 17, 2026",
-          "order": "#13121319",
-          "total": 5208.5
         },
         {
           "date": "Jul 16, 2026",
@@ -329,33 +364,33 @@
       "rows": []
     }
   },
-  "allTimeReceivable": 97695.71,
+  "allTimeReceivable": 125385.99,
   "monthly": [
     {
       "month": "2026-07",
       "label": "Jul",
-      "total": 29884.5
+      "total": 24676.0
     },
     {
       "month": "2026-08",
       "label": "Aug",
-      "total": 58420.12
+      "total": 43779.25
     },
     {
       "month": "2026-09",
       "label": "Sep",
-      "total": 9391.09
+      "total": 56930.74
     }
   ],
   "totalOutstanding": {
-    "total": 97695.71,
-    "count": 55,
+    "total": 125385.99,
+    "count": 62,
     "trend": {
-      "changePct": 46.3,
+      "changePct": 86.5,
       "direction": "up"
     },
     "countTrend": {
-      "changePct": 61.8,
+      "changePct": 82.4,
       "direction": "up"
     }
   },
@@ -363,17 +398,17 @@
     {
       "key": "last30",
       "label": "Last 30 Days",
-      "pct": 42.4
+      "pct": 46.4
     },
     {
       "key": "d31to60",
       "label": "31-60 Days",
-      "pct": 40.1
+      "pct": 44.1
     },
     {
       "key": "d61to90",
       "label": "61-90 Days",
-      "pct": 17.5
+      "pct": 9.5
     },
     {
       "key": "d90plus",
@@ -382,87 +417,87 @@
     }
   ],
   "dso": {
-    "value": 4.2,
+    "value": 4.6,
     "trend": {
-      "changePct": 75.0,
+      "changePct": 84.0,
       "direction": "up"
     },
     "salesWindowLabel": "(all sales)"
   },
-  "narrative": "AR grew 46.3% vs. the prior 30 days, driven mainly by a 128.9% jump in 31-60 Days receivables \u2014 prioritize collection on the 19 unpaid orders in that bucket before they roll into the next aging tier.",
+  "narrative": "AR grew 86.5% vs. the prior 30 days, driven mainly by a 365.3% jump in 31-60 Days receivables \u2014 prioritize collection on the 27 unpaid orders in that bucket before they roll into the next aging tier.",
   "topCustomers": {
     "rows": [
       {
         "name": "DCL Development Company",
-        "total": 56546.76,
-        "pct": 57.9,
-        "orderCount": 32,
+        "total": 51556.96,
+        "pct": 41.1,
+        "orderCount": 33,
         "flagged": true
       },
       {
         "name": "Yesenia Rubio",
-        "total": 9281.0,
-        "pct": 9.5,
-        "orderCount": 1,
+        "total": 18562.0,
+        "pct": 14.8,
+        "orderCount": 2,
         "flagged": false
       },
       {
-        "name": "ATTN: Justin Sapir",
-        "total": 5276.76,
-        "pct": 5.4,
-        "orderCount": 1,
+        "name": "Jesse Freeman",
+        "total": 18419.04,
+        "pct": 14.7,
+        "orderCount": 6,
         "flagged": false
       },
       {
-        "name": "ATTN: Rick Cano",
-        "total": 5264.82,
-        "pct": 5.4,
-        "orderCount": 3,
+        "name": "Bobby Zaph",
+        "total": 17064.02,
+        "pct": 13.6,
+        "orderCount": 6,
         "flagged": false
       },
       {
         "name": "Derrick Carter",
         "total": 3931.26,
-        "pct": 4.0,
+        "pct": 3.1,
         "orderCount": 1,
         "flagged": false
       },
       {
-        "name": "NVU Vegas, LLC",
-        "total": 2737.19,
-        "pct": 2.8,
+        "name": "ATTN: Liam McPhail",
+        "total": 3140.23,
+        "pct": 2.5,
         "orderCount": 2,
-        "flagged": false
-      },
-      {
-        "name": "Tyler Alford",
-        "total": 2363.03,
-        "pct": 2.4,
-        "orderCount": 1,
         "flagged": false
       },
       {
         "name": "Kyle Hanner",
         "total": 2218.41,
-        "pct": 2.3,
+        "pct": 1.8,
         "orderCount": 1,
         "flagged": false
       },
       {
-        "name": "Bobby Zaph",
-        "total": 1792.82,
-        "pct": 1.8,
-        "orderCount": 5,
+        "name": "ATTN: Tropical",
+        "total": 1873.0,
+        "pct": 1.5,
+        "orderCount": 2,
         "flagged": false
       },
       {
-        "name": "ATTN: Tanya Kishan",
-        "total": 1492.4,
-        "pct": 1.5,
+        "name": "Adaiah Hope",
+        "total": 1416.0,
+        "pct": 1.1,
+        "orderCount": 1,
+        "flagged": false
+      },
+      {
+        "name": "Latesha Neymour",
+        "total": 1394.0,
+        "pct": 1.1,
         "orderCount": 1,
         "flagged": false
       }
     ],
-    "concentrationPct": 93.0
+    "concentrationPct": 95.4
   }
 }
