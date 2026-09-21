@@ -345,8 +345,13 @@ def load_terraslate_tracker_daily() -> tuple[dict[date, dict], date]:
         if not d:
             continue
         daily[d]["prodValue"] += money(r.get("Order Value"))
-        if (r.get("Printed By") or "").strip():
-            daily[d]["printedOrders"] += 1
+        # Counts every row with this ship date, regardless of whether
+        # "Printed By" is filled in yet (per JV, 2026-09-18) — on an
+        # in-progress day the sheet legitimately has ship-dated rows whose
+        # print step hasn't been logged, but Printed Orders should still
+        # match the raw per-day row count, not just the subset already
+        # marked printed.
+        daily[d]["printedOrders"] += 1
 
     for r in blank_rows:
         order_num = (r.get("ORDER NUMBER") or "").strip()

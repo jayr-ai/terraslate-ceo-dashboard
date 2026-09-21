@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-21T13:18:35.410732Z",
+  "generatedAt": "2026-09-21T13:47:55.833846Z",
   "anchors": {
     "sales": "2026-09-20",
     "marketing": "2026-09-20",
@@ -1556,9 +1556,9 @@
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "598",
+            "value": "610",
             "trend": {
-              "changePct": 82.3,
+              "changePct": 86.0,
               "direction": "up"
             }
           },
@@ -1627,7 +1627,7 @@
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "924",
+            "value": "936",
             "trend": null
           },
           {
@@ -11672,7 +11672,7 @@
       {
         "date": "2026-09-14",
         "prodValue": 41229.6,
-        "printedOrders": 84,
+        "printedOrders": 85,
         "blankValue": 4912.92,
         "blankOrders": 26
       },
@@ -11700,7 +11700,7 @@
       {
         "date": "2026-09-18",
         "prodValue": 34577.44,
-        "printedOrders": 61,
+        "printedOrders": 62,
         "blankValue": 3402.73,
         "blankOrders": 54
       },
@@ -11721,7 +11721,7 @@
       {
         "date": "2026-09-21",
         "prodValue": 20506.22,
-        "printedOrders": 25,
+        "printedOrders": 35,
         "blankValue": 0.0,
         "blankOrders": 0
       },
@@ -11979,7 +11979,7 @@
         },
         {
           "person": "AJH",
-          "value": 93100.71
+          "value": 93876.0
         },
         {
           "person": "DM",
@@ -11995,11 +11995,11 @@
         },
         {
           "person": "CA",
-          "value": 48785.07
+          "value": 48911.05
         },
         {
           "person": "In Progress",
-          "value": 18730.21
+          "value": 21197.66
         },
         {
           "person": "JMS",
@@ -12038,7 +12038,7 @@
         },
         {
           "person": "RP",
-          "value": 82966.12
+          "value": 83189.45
         },
         {
           "person": "CK",
@@ -12145,7 +12145,7 @@
         },
         {
           "person": "JB",
-          "value": 43130.27
+          "value": 44404.41
         },
         {
           "person": "Not Coated",
@@ -12316,6 +12316,10 @@
         {
           "person": "R2Ship",
           "value": 5784.36
+        },
+        {
+          "person": "REPRNT",
+          "value": 2172.68
         },
         {
           "person": "JMH",
