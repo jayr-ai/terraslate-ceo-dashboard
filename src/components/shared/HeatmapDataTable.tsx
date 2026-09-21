@@ -16,6 +16,11 @@ export interface HeatmapColumn {
   heat?: HeatColor;
   truncate?: boolean;
   sortable?: boolean;
+  // When the row's `flagKey` field is truthy, this cell gets a fixed red
+  // conditional-format instead of any `heat` gradient — for a business-rule
+  // highlight (e.g. "this campaign's ROAS is below 1") rather than a
+  // relative-magnitude heatmap. See Facebook Ads' daily/monthly tables.
+  flagKey?: string;
 }
 
 export interface HeatmapTableData {
@@ -23,8 +28,8 @@ export interface HeatmapTableData {
   title: string;
   caption?: string;
   columns: HeatmapColumn[];
-  rows: Record<string, string | number | null>[];
-  grandTotalRow?: Record<string, string | number | null>;
+  rows: Record<string, string | number | boolean | null>[];
+  grandTotalRow?: Record<string, string | number | boolean | null>;
   source: Source;
   pageSize?: number;
   defaultSortKey?: string;
@@ -85,7 +90,14 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
     setPage(0);
   }
 
-  function cellStyle(col: HeatmapColumn, value: string | number | null): React.CSSProperties | undefined {
+  function cellStyle(
+    col: HeatmapColumn,
+    value: string | number | boolean | null,
+    row: Record<string, string | number | boolean | null>,
+  ): React.CSSProperties | undefined {
+    if (col.flagKey && row[col.flagKey]) {
+      return { backgroundColor: "var(--trend-bad-bg)" };
+    }
     if (!col.heat || typeof value !== "number") return undefined;
     const range = heatRanges[col.key];
     if (!range || range.max <= 0) return undefined;
@@ -93,7 +105,7 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
     return { backgroundColor: `rgba(var(--heat-${col.heat}), ${(t * 0.55).toFixed(3)})` };
   }
 
-  function renderRow(row: Record<string, string | number | null>, key: string | number, bold = false) {
+  function renderRow(row: Record<string, string | number | boolean | null>, key: string | number, bold = false) {
     return (
       <tr key={key} className={bold ? heatStyles.grandTotalRow : undefined}>
         {table.columns.map((col) => {
@@ -103,7 +115,7 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
             <td
               key={col.key}
               className={col.align === "right" ? styles.alignRight : undefined}
-              style={cellStyle(col, raw)}
+              style={cellStyle(col, raw, row)}
             >
               {col.truncate && typeof raw === "string" ? (
                 <span className={styles.truncateCell} title={raw}>
@@ -197,7 +209,7 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
   );
 }
 
-function formatCell(value: string | number | null, format?: HeatmapFormat): string {
+function formatCell(value: string | number | boolean | null, format?: HeatmapFormat): string {
   if (value === null || value === undefined) return "-";
   if (format === "hours") return typeof value === "number" ? value.toFixed(2) : String(value);
   if (format === "percent") return typeof value === "number" ? `${value.toFixed(1)}%` : String(value);
