@@ -11,15 +11,25 @@ export interface Env {
   GITHUB_TOKEN: string;
   GITHUB_REPO: string;
   GITHUB_WORKFLOW_FILE: string;
-  ALLOWED_ORIGIN: string;
+  // Comma-separated — the dashboard is now served from two places (the
+  // GitHub Pages origin, and the terraslate.azdigitalph.com hub's
+  // /ceo-dashboard/ copy), so a single hardcoded origin 403s one of them.
+  // Access-Control-Allow-Origin can only ever echo back ONE value, so we
+  // check the request's own Origin against this allow-list and echo that
+  // back when it matches (standard multi-origin CORS pattern) — see
+  // corsHeaders() below.
+  ALLOWED_ORIGINS: string;
   COOLDOWN_SECONDS: string;
 }
 
-function corsHeaders(env: Env): HeadersInit {
+function corsHeaders(requestOrigin: string | null, env: Env): HeadersInit {
+  const allowed = env.ALLOWED_ORIGINS.split(",").map((o) => o.trim());
+  const origin = requestOrigin && allowed.includes(requestOrigin) ? requestOrigin : allowed[0];
   return {
-    "Access-Control-Allow-Origin": env.ALLOWED_ORIGIN,
+    "Access-Control-Allow-Origin": origin,
     "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
     "Access-Control-Allow-Headers": "Content-Type",
+    Vary: "Origin",
   };
 }
 
@@ -32,7 +42,7 @@ function json(body: unknown, status: number, headers: HeadersInit): Response {
 
 export default {
   async fetch(request: Request, env: Env): Promise<Response> {
-    const headers = corsHeaders(env);
+    const headers = corsHeaders(request.headers.get("Origin"), env);
 
     if (request.method === "OPTIONS") {
       return new Response(null, { headers });

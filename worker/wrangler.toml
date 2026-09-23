@@ -11,7 +11,9 @@ id = "5e4622238edc438998a49e145696a347"
 [vars]
 GITHUB_REPO = "jayr-ai/terraslate-ceo-dashboard"
 GITHUB_WORKFLOW_FILE = "deploy.yml"
-ALLOWED_ORIGIN = "https://jayr-ai.github.io"
+# Both places the dashboard is actually served from — see the Env comment
+# in src/index.ts for why this can't just be swapped to one or the other.
+ALLOWED_ORIGINS = "https://jayr-ai.github.io,https://terraslate.azdigitalph.com"
 COOLDOWN_SECONDS = "180"
 
 # Set via: wrangler secret put GITHUB_TOKEN
