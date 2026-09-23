@@ -5,4 +5,13 @@
   padding: 16px 18px;
   box-shadow: var(--shadow-card);
   min-width: 0;
+  /* flex:1 (not height:100%) so this genuinely fills whatever's left in
+     the stretched Section column after its header — matches how
+     ByObjectiveSection's table now fills the same row. Centers the bars
+     vertically for the rare case Top Campaigns ends up the shorter side
+     (e.g. a custom range with very few campaigns). */
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
