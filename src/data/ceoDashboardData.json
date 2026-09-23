@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T04:23:42.001352Z",
+  "generatedAt": "2026-09-23T04:33:02.300608Z",
   "anchors": {
     "sales": "2026-09-20",
     "marketing": "2026-09-22",
@@ -11865,7 +11865,7 @@
       },
       {
         "assignee": "LF",
-        "allTime": 159,
+        "allTime": 160,
         "allTimePct": 19.0
       },
       {
@@ -12275,7 +12275,7 @@
           "value": 8796.25
         },
         {
-          "person": "159",
+          "person": "160",
           "value": 8116.0
         },
         {
