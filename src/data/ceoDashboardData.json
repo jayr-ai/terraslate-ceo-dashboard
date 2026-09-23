@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-23T03:45:12.980740Z",
+  "generatedAt": "2026-09-23T04:19:28.484519Z",
   "anchors": {
     "sales": "2026-09-20",
     "marketing": "2026-09-22",
@@ -12057,16 +12057,16 @@
           "value": 52503.24
         },
         {
+          "person": "In Progress",
+          "value": 36330.57
+        },
+        {
           "person": "X",
           "value": 30418.97
         },
         {
           "person": "DO",
           "value": 27882.51
-        },
-        {
-          "person": "In Progress",
-          "value": 26282.02
         },
         {
           "person": "SPS",
@@ -12164,12 +12164,12 @@
           "value": 50276.4
         },
         {
-          "person": "Not Coated",
-          "value": 34521.9
+          "person": "In Progress",
+          "value": 39718.91
         },
         {
-          "person": "In Progress",
-          "value": 29670.36
+          "person": "Not Coated",
+          "value": 34521.9
         },
         {
           "person": "X",
@@ -12244,7 +12244,7 @@
         },
         {
           "person": "VM",
-          "value": 44542.79
+          "value": 44732.24
         },
         {
           "person": "17",
@@ -12252,7 +12252,7 @@
         },
         {
           "person": "In Progress",
-          "value": 30832.2
+          "value": 40880.75
         },
         {
           "person": "CK",
