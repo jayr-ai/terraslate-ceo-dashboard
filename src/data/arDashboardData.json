@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-21T13:19:28.563253Z",
-  "anchor": "2026-09-21",
+  "generatedAt": "2026-09-23T03:45:48.626587Z",
+  "anchor": "2026-09-23",
   "buckets": {
     "last30": {
       "label": "Last 30 Days Rec.",
@@ -8,11 +8,11 @@
       "total": 58163.19,
       "count": 28,
       "trend": {
-        "changePct": 5.1,
+        "changePct": 36.7,
         "direction": "up"
       },
       "countTrend": {
-        "changePct": 3.7,
+        "changePct": 12.0,
         "direction": "up"
       },
       "rows": [
@@ -161,14 +161,14 @@
     "d31to60": {
       "label": "31-60 Days Rec.",
       "unpaidLabel": "Unpaid",
-      "total": 55331.0,
-      "count": 27,
+      "total": 42546.8,
+      "count": 25,
       "trend": {
-        "changePct": 365.3,
+        "changePct": 72.4,
         "direction": "up"
       },
       "countTrend": {
-        "changePct": 285.7,
+        "changePct": 177.8,
         "direction": "up"
       },
       "rows": [
@@ -296,7 +296,17 @@
           "date": "Aug 5, 2026",
           "order": "#13122567",
           "total": 438.0
-        },
+        }
+      ]
+    },
+    "d61to90": {
+      "label": "61-90 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 24676.0,
+      "count": 9,
+      "trend": null,
+      "countTrend": null,
+      "rows": [
         {
           "date": "Jul 23, 2026",
           "order": "#13121698",
@@ -306,17 +316,7 @@
           "date": "Jul 23, 2026",
           "order": "#13121680",
           "total": 6132.0
-        }
-      ]
-    },
-    "d61to90": {
-      "label": "61-90 Days Rec.",
-      "unpaidLabel": "Unpaid",
-      "total": 11891.8,
-      "count": 7,
-      "trend": null,
-      "countTrend": null,
-      "rows": [
+        },
         {
           "date": "Jul 18, 2026",
           "order": "#13121398",
@@ -403,12 +403,12 @@
     {
       "key": "d31to60",
       "label": "31-60 Days",
-      "pct": 44.1
+      "pct": 33.9
     },
     {
       "key": "d61to90",
       "label": "61-90 Days",
-      "pct": 9.5
+      "pct": 19.7
     },
     {
       "key": "d90plus",
@@ -417,14 +417,14 @@
     }
   ],
   "dso": {
-    "value": 4.6,
+    "value": 4.8,
     "trend": {
-      "changePct": 84.0,
+      "changePct": 92.0,
       "direction": "up"
     },
     "salesWindowLabel": "(all sales)"
   },
-  "narrative": "AR grew 86.5% vs. the prior 30 days, driven mainly by a 365.3% jump in 31-60 Days receivables \u2014 prioritize collection on the 27 unpaid orders in that bucket before they roll into the next aging tier.",
+  "narrative": "AR grew 86.5% vs. the prior 30 days, driven mainly by a 72.4% jump in 31-60 Days receivables \u2014 prioritize collection on the 25 unpaid orders in that bucket before they roll into the next aging tier.",
   "topCustomers": {
     "rows": [
       {
