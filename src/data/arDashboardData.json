@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-23T05:04:46.334940Z",
-  "anchor": "2026-09-23",
+  "generatedAt": "2026-09-24T13:55:01.815786Z",
+  "anchor": "2026-09-24",
   "buckets": {
     "last30": {
       "label": "Last 30 Days Rec.",
@@ -8,11 +8,11 @@
       "total": 58163.19,
       "count": 28,
       "trend": {
-        "changePct": 36.7,
+        "changePct": 36.3,
         "direction": "up"
       },
       "countTrend": {
-        "changePct": 12.0,
+        "changePct": 7.7,
         "direction": "up"
       },
       "rows": [
@@ -386,11 +386,11 @@
     "total": 125385.99,
     "count": 62,
     "trend": {
-      "changePct": 86.5,
+      "changePct": 86.2,
       "direction": "up"
     },
     "countTrend": {
-      "changePct": 82.4,
+      "changePct": 77.1,
       "direction": "up"
     }
   },
@@ -417,14 +417,14 @@
     }
   ],
   "dso": {
-    "value": 4.8,
+    "value": 4.3,
     "trend": {
-      "changePct": 92.0,
+      "changePct": 79.2,
       "direction": "up"
     },
     "salesWindowLabel": "(all sales)"
   },
-  "narrative": "AR grew 86.5% vs. the prior 30 days, driven mainly by a 72.4% jump in 31-60 Days receivables \u2014 prioritize collection on the 25 unpaid orders in that bucket before they roll into the next aging tier.",
+  "narrative": "AR grew 86.2% vs. the prior 30 days, driven mainly by a 72.4% jump in 31-60 Days receivables \u2014 prioritize collection on the 25 unpaid orders in that bucket before they roll into the next aging tier.",
   "topCustomers": {
     "rows": [
       {
