@@ -25,8 +25,8 @@ export function buildCountriesTable(window: ShippingWindow): HeatmapTableData {
     title: "Top Countries By Shipping Spend",
     columns: [
       { key: "name", label: "Country", align: "left" },
-      { key: "count", label: "No. of Shipment", align: "right", format: "number", heat: "blue" },
-      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true, heat: "green" },
+      { key: "count", label: "No. of Shipment", align: "right", format: "number" },
+      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true },
     ],
     rows: window.countries.rows.map((r) => ({ name: r.name, count: r.count, price: r.price })),
     grandTotalRow: { name: "Grand total", count: window.countries.grandTotal.count, price: window.countries.grandTotal.price },
@@ -42,8 +42,8 @@ export function buildStatesTable(window: ShippingWindow): HeatmapTableData {
     columns: [
       { key: "state", label: "State", align: "left" },
       { key: "country", label: "Country", align: "left" },
-      { key: "count", label: "No. of Shipment", align: "right", format: "number", heat: "blue" },
-      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true, heat: "green" },
+      { key: "count", label: "No. of Shipment", align: "right", format: "number" },
+      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true },
     ],
     rows: window.states.rows.map((r) => ({ state: r.state, country: r.country, count: r.count, price: r.price })),
     grandTotalRow: { state: "Grand total", country: "", count: window.states.grandTotal.count, price: window.states.grandTotal.price },
@@ -60,8 +60,8 @@ export function buildCitiesTable(window: ShippingWindow): HeatmapTableData {
     columns: [
       { key: "city", label: "City", align: "left" },
       { key: "country", label: "Country", align: "left" },
-      { key: "count", label: "No. of Shipment", align: "right", format: "number", heat: "blue" },
-      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true, heat: "green" },
+      { key: "count", label: "No. of Shipment", align: "right", format: "number" },
+      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true },
     ],
     rows: window.cities.rows.map((r) => ({ city: r.city, country: r.country, count: r.count, price: r.price })),
     grandTotalRow: { city: "Grand total", country: "", count: window.cities.grandTotal.count, price: window.cities.grandTotal.price },
@@ -88,7 +88,7 @@ export function buildZoneTable(window: ShippingWindow): HeatmapTableData {
     title: "Shipment by ZONE",
     columns: [
       { key: "zone", label: "Zone", align: "left" },
-      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true, heat: "green" },
+      { key: "price", label: "Shipping Price", align: "right", format: "currency", sortable: true },
     ],
     rows: window.zones.rows.map((r) => ({ zone: r.zone === "null" ? "No zone (int'l)" : `Zone ${r.zone}`, price: r.price })),
     grandTotalRow: { zone: "Total", price: window.zones.grandTotal.price },
