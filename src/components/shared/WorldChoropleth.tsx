@@ -9,14 +9,14 @@ import styles from "./WorldChoropleth.module.css";
 // covers every country name this dashboard's data has ever produced.
 const GEO_URL = "https://cdn.jsdelivr.net/npm/world-atlas@2/countries-50m.json";
 
-const US_NAME = "United States of America";
-
-// Same sequential ramp as UsChoropleth.
-const RAMP = ["#12244a", "#173769", "#1c4a8c", "#2064b8", "#2a78d6", "#3987e5", "#5ea8f2", "#8ec4f7"];
-const US_COLOR = "var(--warning)";
+// White-landmass style, matching the source Looker Studio report's own
+// world map (light blue sequential ramp on white land, dark ocean, plain
+// numeric min/max legend) rather than UsChoropleth's dark-navy ramp.
+const RAMP = ["#dbeef9", "#c3e2f4", "#a4d3ec", "#82c0e0", "#5ea8d3", "#3f8fc4", "#2874ae", "#155a90"];
+const NO_DATA_FILL = "#ffffff";
 
 function colorFor(value: number, max: number): string {
-  if (value <= 0 || max <= 0) return "var(--surface-hover)";
+  if (value <= 0 || max <= 0) return NO_DATA_FILL;
   const t = Math.sqrt(value / max);
   const idx = Math.min(RAMP.length - 1, Math.round(t * (RAMP.length - 1)));
   return RAMP[idx];
@@ -35,22 +35,14 @@ export function WorldChoropleth({
   const wrapRef = useRef<HTMLDivElement>(null);
   const [hover, setHover] = useState<{ name: string; value: number; x: number; y: number } | null>(null);
 
-  // USA dwarfs every other country in this data (order of magnitude+), and
-  // its own state-level breakdown is already the map right above this one
-  // — so it gets a fixed highlight color instead of dominating the ramp
-  // and washing out every international destination to near-black.
-  const maxIntl = Math.max(0, ...Object.entries(data).filter(([name]) => name !== US_NAME).map(([, v]) => v));
+  const values = Object.values(data).filter((v) => v > 0);
+  const max = Math.max(0, ...values);
+  const min = values.length ? Math.min(...values) : 0;
 
   function updateHover(name: string, value: number, e: MouseEvent) {
     const rect = wrapRef.current?.getBoundingClientRect();
     if (!rect) return;
     setHover({ name, value, x: e.clientX - rect.left, y: e.clientY - rect.top });
-  }
-
-  function fillFor(name: string): string {
-    const value = data[name] ?? 0;
-    if (value <= 0) return "var(--surface-hover)";
-    return name === US_NAME ? US_COLOR : colorFor(value, maxIntl);
   }
 
   return (
@@ -72,7 +64,7 @@ export function WorldChoropleth({
                   key={geo.rsmKey}
                   geography={geo}
                   className={styles.country}
-                  fill={fillFor(name)}
+                  fill={colorFor(value, max)}
                   onMouseEnter={(e) => updateHover(name, value, e)}
                   onMouseMove={(e) => updateHover(name, value, e)}
                   onMouseLeave={() => setHover(null)}
@@ -95,19 +87,13 @@ export function WorldChoropleth({
           </span>
         </div>
       )}
-      <div className={styles.legend}>
-        <span style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
-          <span style={{ width: 9, height: 9, borderRadius: 2, background: US_COLOR, display: "inline-block" }} />
-          USA
-        </span>
-        <span>Fewer</span>
-        <div className={styles.legendRamp}>
-          {RAMP.map((c) => (
-            <span key={c} style={{ background: c }} />
-          ))}
+      {max > 0 && (
+        <div className={styles.legend}>
+          <span className={styles.legendValue}>{min.toLocaleString("en-US")}</span>
+          <div className={styles.legendRamp} style={{ background: `linear-gradient(90deg, ${RAMP.join(", ")})` }} />
+          <span className={styles.legendValue}>{max.toLocaleString("en-US")}</span>
         </div>
-        <span>More (Int'l)</span>
-      </div>
+      )}
     </div>
   );
 }
