@@ -55,7 +55,13 @@ export function WorldChoropleth({
 
   return (
     <div className={styles.wrap} ref={wrapRef} onMouseLeave={() => setHover(null)}>
-      <ComposableMap projection="geoEqualEarth" width={520} height={300} className={styles.svg}>
+      <ComposableMap
+        projection="geoEqualEarth"
+        projectionConfig={{ scale: 98 }}
+        width={520}
+        height={300}
+        className={styles.svg}
+      >
         <Geographies geography={GEO_URL}>
           {({ geographies }) =>
             geographies.map((geo) => {
