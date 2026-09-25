@@ -18,15 +18,50 @@ function colorFor(value: number, max: number): string {
   return RAMP[idx];
 }
 
-export function UsChoropleth({ data }: { data: Record<string, number> }) {
+export interface CategoryLegendItem {
+  key: string;
+  label: string;
+  color: string;
+}
+
+export function UsChoropleth({
+  data,
+  valueLabel = "orders",
+  category,
+}: {
+  data: Record<string, number>;
+  // Label suffix in the hover tooltip, e.g. "orders" -> "1,942 orders".
+  valueLabel?: string;
+  // Opt-in categorical mode (e.g. AirCall/Shipping's carrier-zone map) —
+  // colors each state by a discrete category instead of a value ramp.
+  // `data` is still used for the tooltip's own count, just not for color.
+  category?: {
+    valueByState: Record<string, string>; // full state name -> category key
+    colors: Record<string, string>; // category key -> fill color
+    legend: CategoryLegendItem[];
+  };
+}) {
   const wrapRef = useRef<HTMLDivElement>(null);
-  const [hover, setHover] = useState<{ name: string; value: number; x: number; y: number } | null>(null);
+  const [hover, setHover] = useState<{ name: string; value: number; categoryLabel?: string; x: number; y: number } | null>(
+    null,
+  );
   const max = Math.max(0, ...Object.values(data));
 
   function updateHover(name: string, value: number, e: MouseEvent) {
     const rect = wrapRef.current?.getBoundingClientRect();
     if (!rect) return;
-    setHover({ name, value, x: e.clientX - rect.left, y: e.clientY - rect.top });
+    const categoryLabel = category
+      ? category.legend.find((l) => l.key === category.valueByState[name])?.label
+      : undefined;
+    setHover({ name, value, categoryLabel, x: e.clientX - rect.left, y: e.clientY - rect.top });
+  }
+
+  function fillFor(name: string): string {
+    if (category) {
+      const key = category.valueByState[name];
+      return key ? category.colors[key] ?? "var(--surface-hover)" : "var(--surface-hover)";
+    }
+    return colorFor(data[name] ?? 0, max);
   }
 
   return (
@@ -42,7 +77,7 @@ export function UsChoropleth({ data }: { data: Record<string, number> }) {
                   key={geo.rsmKey}
                   geography={geo}
                   className={styles.state}
-                  fill={colorFor(value, max)}
+                  fill={fillFor(name)}
                   onMouseEnter={(e) => updateHover(name, value, e)}
                   onMouseMove={(e) => updateHover(name, value, e)}
                   onMouseLeave={() => setHover(null)}
@@ -58,23 +93,34 @@ export function UsChoropleth({ data }: { data: Record<string, number> }) {
         </Geographies>
       </ComposableMap>
       {hover && (
-        <div
-          className={styles.tooltip}
-          style={{ left: hover.x, top: hover.y }}
-        >
+        <div className={styles.tooltip} style={{ left: hover.x, top: hover.y }}>
           <strong>{hover.name}</strong>
-          <span>{hover.value.toLocaleString("en-US")} orders</span>
+          {hover.categoryLabel && <span>{hover.categoryLabel}</span>}
+          <span>
+            {hover.value.toLocaleString("en-US")} {valueLabel}
+          </span>
         </div>
       )}
-      <div className={styles.legend}>
-        <span>Fewer</span>
-        <div className={styles.legendRamp}>
-          {RAMP.map((c) => (
-            <span key={c} style={{ background: c }} />
+      {category ? (
+        <div className={styles.legend}>
+          {category.legend.map((item) => (
+            <span key={item.key} style={{ display: "inline-flex", alignItems: "center", gap: 4 }}>
+              <span style={{ width: 9, height: 9, borderRadius: 2, background: item.color, display: "inline-block" }} />
+              {item.label}
+            </span>
           ))}
         </div>
-        <span>More</span>
-      </div>
+      ) : (
+        <div className={styles.legend}>
+          <span>Fewer</span>
+          <div className={styles.legendRamp}>
+            {RAMP.map((c) => (
+              <span key={c} style={{ background: c }} />
+            ))}
+          </div>
+          <span>More</span>
+        </div>
+      )}
     </div>
   );
 }

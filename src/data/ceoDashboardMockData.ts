@@ -526,7 +526,7 @@ export const navItems: NavItem[] = [
   { id: "accounts-receivable", label: "Accounts Receivable", icon: "file-text", active: true },
   { id: "google-ads", label: "Google Ads", icon: "search", active: false },
   { id: "facebook-ads", label: "Facebook Ads", icon: "thumbs-up", active: true },
-  { id: "shipping-dashboard", label: "Shipping Dashboard", icon: "truck", active: false },
+  { id: "shipping-dashboard", label: "Shipping Dashboard", icon: "truck", active: true },
   { id: "sales-report", label: "Sales Report Dashboard", icon: "bar-chart-2", active: false },
   { id: "paper-catalog", label: "Paper Catalog Usage", icon: "book-open", active: false },
 ];

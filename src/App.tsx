@@ -7,9 +7,12 @@ import { CeoDashboard } from "./pages/CeoDashboard";
 import { AirCallDashboard } from "./pages/AirCallDashboard";
 import { AccountsReceivable } from "./pages/AccountsReceivable";
 import { FacebookAds } from "./pages/FacebookAds";
+import { ShippingDashboard } from "./pages/ShippingDashboard";
 import { DateRangeProvider, useDateRange } from "./data/DateRangeContext";
 import { AircallDateRangeProvider, useAircallDateRange } from "./data/AircallDateRangeContext";
 import { FacebookAdsDateRangeProvider, useFacebookAdsDateRange } from "./data/FacebookAdsDateRangeContext";
+import { ShippingDateRangeProvider, useShippingDateRange } from "./data/ShippingDateRangeContext";
+import { CarrierFilter } from "./components/layout/CarrierFilter";
 import type { NavItem } from "./data/ceoDashboardMockData";
 import styles from "./App.module.css";
 
@@ -71,6 +74,23 @@ function FacebookAdsHeader({ onMenuClick }: { onMenuClick: () => void }) {
   );
 }
 
+function ShippingDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
+  const { selection, setPreset, setCustom, carrier, setCarrier, windows } = useShippingDateRange();
+  return (
+    <Header title="Shipping Dashboard" subtitle="FedEx & UPS data" onMenuClick={onMenuClick}>
+      <RefreshDataButton />
+      <CarrierFilter carrier={carrier} setCarrier={setCarrier} />
+      <DateRangePicker
+        selection={selection}
+        setPreset={setPreset}
+        setCustom={setCustom}
+        displayStart={windows.displayStart}
+        displayEnd={windows.displayEnd}
+      />
+    </Header>
+  );
+}
+
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   const [activePage, setActivePage] = useState<NavItem["id"]>("ceo-dashboard");
@@ -86,6 +106,9 @@ function App() {
   } else if (activePage === "facebook-ads") {
     headerEl = <FacebookAdsHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <FacebookAds />;
+  } else if (activePage === "shipping-dashboard") {
+    headerEl = <ShippingDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
+    contentEl = <ShippingDashboard />;
   } else {
     headerEl = <CeoDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <CeoDashboard />;
@@ -95,18 +118,20 @@ function App() {
     <DateRangeProvider>
       <AircallDateRangeProvider>
         <FacebookAdsDateRangeProvider>
-          <div className={styles.shell}>
-            <Sidebar
-              open={navOpen}
-              onClose={() => setNavOpen(false)}
-              activePage={activePage}
-              onSelectPage={setActivePage}
-            />
-            <div className={styles.main}>
-              {headerEl}
-              <div className={styles.content}>{contentEl}</div>
+          <ShippingDateRangeProvider>
+            <div className={styles.shell}>
+              <Sidebar
+                open={navOpen}
+                onClose={() => setNavOpen(false)}
+                activePage={activePage}
+                onSelectPage={setActivePage}
+              />
+              <div className={styles.main}>
+                {headerEl}
+                <div className={styles.content}>{contentEl}</div>
+              </div>
             </div>
-          </div>
+          </ShippingDateRangeProvider>
         </FacebookAdsDateRangeProvider>
       </AircallDateRangeProvider>
     </DateRangeProvider>
