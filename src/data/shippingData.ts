@@ -19,6 +19,26 @@ function fmtMoney(v: number): string {
 // Top Countries / State / Cities By Shipping Spend tables
 // ---------------------------------------------------------------------------
 
+// Only the 5 names (of the ~15 this dashboard's data has ever produced)
+// that don't already match the world-atlas's own name verbatim — see
+// WorldChoropleth.tsx for why 50m resolution is required to cover these.
+const COUNTRY_NAME_TO_ATLAS: Record<string, string> = {
+  USA: "United States of America",
+  "Cook Islands": "Cook Is.",
+  "Saint Barthélemy": "St-Barthélemy",
+  "Sint Maarten (Dutch part)": "Sint Maarten",
+  "Virgin Islands (U.S.)": "U.S. Virgin Is.",
+};
+
+export function buildCountryMapCounts(window: ShippingWindow): Record<string, number> {
+  const counts: Record<string, number> = {};
+  for (const r of window.countries.rows) {
+    const atlasName = COUNTRY_NAME_TO_ATLAS[r.name] ?? r.name;
+    counts[atlasName] = (counts[atlasName] ?? 0) + r.count;
+  }
+  return counts;
+}
+
 export function buildCountriesTable(window: ShippingWindow): HeatmapTableData {
   return {
     id: "top-countries",

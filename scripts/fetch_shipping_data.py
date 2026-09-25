@@ -37,9 +37,6 @@ simplification for border states, not a bug.
 
 ## Scope decisions (flagged to JV, not silently done)
 
-  - No world map for Shipment By Country: 99%+ of shipments are US-only
-    (16 of 1,958 in the Aug 2026 reference window) — the Top Countries
-    table already carries the same information for that small a slice.
   - No city-level bubble/geo map for Shipment By City: the sheet has zip
     codes but no lat/lng, so plotting real city positions would need an
     external zip->coordinate dataset this pipeline doesn't have. The Top
