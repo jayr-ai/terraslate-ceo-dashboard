@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:34:30.131938Z",
+  "generatedAt": "2026-09-28T12:38:54.922149Z",
   "anchors": {
     "sales": "2026-09-27",
     "marketing": "2026-09-26",
@@ -1634,18 +1634,18 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$403,606.75",
+            "value": "$404,367.62",
             "trend": {
-              "changePct": 16.1,
+              "changePct": 16.3,
               "direction": "up"
             }
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "626",
+            "value": "628",
             "trend": {
-              "changePct": -9.3,
+              "changePct": -9.0,
               "direction": "down"
             }
           },
@@ -1711,13 +1711,13 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$702,124.37",
+            "value": "$702,885.24",
             "trend": null
           },
           {
             "id": "printed-orders",
             "label": "Printed Orders",
-            "value": "1297",
+            "value": "1299",
             "trend": null
           },
           {
@@ -28325,8 +28325,8 @@
       },
       {
         "date": "2026-09-28",
-        "prodValue": 34233.56,
-        "printedOrders": 49,
+        "prodValue": 34994.43,
+        "printedOrders": 51,
         "blankValue": 0.0,
         "blankOrders": 0
       },
