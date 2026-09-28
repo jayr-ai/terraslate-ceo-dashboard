@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-28T12:38:54.922149Z",
+  "generatedAt": "2026-09-28T12:44:40.060269Z",
   "anchors": {
     "sales": "2026-09-27",
     "marketing": "2026-09-26",
@@ -28533,7 +28533,7 @@
         },
         {
           "person": "JS",
-          "value": 99015.14
+          "value": 99025.98
         },
         {
           "person": "RFM",
@@ -28588,7 +28588,7 @@
         },
         {
           "person": "AJH",
-          "value": 127890.96
+          "value": 127999.85
         },
         {
           "person": "LG",
@@ -28612,7 +28612,7 @@
         },
         {
           "person": "In Progress",
-          "value": 3301.48
+          "value": 3192.59
         },
         {
           "person": "JMH",
@@ -28651,7 +28651,7 @@
         },
         {
           "person": "RP",
-          "value": 137144.72
+          "value": 138377.34
         },
         {
           "person": "VC",
