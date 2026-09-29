@@ -50,6 +50,32 @@ jobs:
         with:
           path: dist
 
+      # The custom-domain hub (terraslate.azdigitalph.com/ceo-dashboard/) is
+      # a separate repo serving a static copy at a different base path —
+      # GitHub Pages above doesn't touch it. Build again with that base and
+      # push the copy straight into the hub repo so both stay in sync on
+      # every refresh, not just on manual re-syncs.
+      - name: Sync hub copy (terraslate.azdigitalph.com)
+        env:
+          HUB_REPO_TOKEN: ${{ secrets.HUB_REPO_TOKEN }}
+        run: |
+          npx vite build --base=/ceo-dashboard/ --outDir dist-hub
+          git clone --depth 1 https://x-access-token:${HUB_REPO_TOKEN}@github.com/jayr-ai/terraslate-dashboard.git hub-repo
+          rm -rf hub-repo/ceo-dashboard
+          mkdir -p hub-repo/ceo-dashboard
+          cp -r dist-hub/* hub-repo/ceo-dashboard/
+          cd hub-repo
+          python3 inject_gate.py ceo-dashboard/index.html
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add ceo-dashboard
+          if ! git diff --cached --quiet; then
+            git commit -m "Sync CEO Dashboard: automated data refresh"
+            git push
+          else
+            echo "Hub copy already up to date."
+          fi
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
