@@ -527,7 +527,7 @@ export const navItems: NavItem[] = [
   { id: "facebook-ads", label: "Facebook Ads", icon: "thumbs-up", active: true },
   { id: "shipping-dashboard", label: "Shipping Dashboard", icon: "truck", active: true },
   { id: "sales-report", label: "Sales Report Dashboard", icon: "bar-chart-2", active: true },
-  { id: "paper-catalog", label: "Paper Catalog Usage", icon: "book-open", active: false },
+  { id: "paper-catalog", label: "Paper Catalog Usage", icon: "book-open", active: true },
 ];
 
 export const dateRangeDefault = { start: "Jul 8, 2026", end: "Aug 6, 2026" };

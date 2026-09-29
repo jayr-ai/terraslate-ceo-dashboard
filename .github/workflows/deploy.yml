@@ -33,7 +33,8 @@ jobs:
           python3 scripts/fetch_facebook_ads.py
           python3 scripts/fetch_shipping_data.py
           python3 scripts/fetch_sales_report.py
-          DATA_FILES="src/data/ceoDashboardData.json src/data/aircallDashboardData.json src/data/arDashboardData.json src/data/facebookAdsData.json src/data/shippingData.json src/data/salesReportData.json"
+          python3 scripts/fetch_paper_catalog.py
+          DATA_FILES="src/data/ceoDashboardData.json src/data/aircallDashboardData.json src/data/arDashboardData.json src/data/facebookAdsData.json src/data/shippingData.json src/data/salesReportData.json src/data/paperCatalogData.json"
           if ! git diff --quiet -- $DATA_FILES; then
             git config user.name "github-actions[bot]"
             git config user.email "github-actions[bot]@users.noreply.github.com"

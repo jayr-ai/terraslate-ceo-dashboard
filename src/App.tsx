@@ -9,6 +9,7 @@ import { AccountsReceivable } from "./pages/AccountsReceivable";
 import { FacebookAds } from "./pages/FacebookAds";
 import { ShippingDashboard } from "./pages/ShippingDashboard";
 import { SalesReportDashboard } from "./pages/SalesReportDashboard";
+import { PaperCatalogUsage } from "./pages/PaperCatalogUsage";
 import { DateRangeProvider, useDateRange } from "./data/DateRangeContext";
 import { AircallDateRangeProvider, useAircallDateRange } from "./data/AircallDateRangeContext";
 import { FacebookAdsDateRangeProvider, useFacebookAdsDateRange } from "./data/FacebookAdsDateRangeContext";
@@ -104,6 +105,17 @@ function SalesReportDashboardHeader({ onMenuClick }: { onMenuClick: () => void }
   );
 }
 
+function PaperCatalogUsageHeader({ onMenuClick }: { onMenuClick: () => void }) {
+  // No date-range picker here, deliberately — the source sheet is itself
+  // a fixed rolling 7-week pivot, not a per-transaction feed to slice by
+  // an arbitrary date range.
+  return (
+    <Header title="Paper Catalog Usage" subtitle="Source: Paper Catalog — dashboard tab" onMenuClick={onMenuClick}>
+      <RefreshDataButton />
+    </Header>
+  );
+}
+
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   const [activePage, setActivePage] = useState<NavItem["id"]>("ceo-dashboard");
@@ -125,6 +137,9 @@ function App() {
   } else if (activePage === "sales-report") {
     headerEl = <SalesReportDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <SalesReportDashboard />;
+  } else if (activePage === "paper-catalog") {
+    headerEl = <PaperCatalogUsageHeader onMenuClick={() => setNavOpen((v) => !v)} />;
+    contentEl = <PaperCatalogUsage />;
   } else {
     headerEl = <CeoDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <CeoDashboard />;

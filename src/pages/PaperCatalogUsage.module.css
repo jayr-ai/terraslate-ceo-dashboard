@@ -1,0 +1,14 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  padding: 24px 28px 48px;
+  max-width: 1440px;
+}
+
+@media (max-width: 640px) {
+  .stack {
+    gap: 22px;
+    padding: 16px 14px 40px;
+  }
+}
