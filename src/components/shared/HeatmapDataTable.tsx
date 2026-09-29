@@ -33,6 +33,11 @@ export interface HeatmapColumn {
   // by this number, lowest-priority so heat/flag/signColor still show
   // through where they apply. Used for Paper Catalog's per-week bands.
   band?: number;
+  // Renders as a narrow, empty, unlabeled gutter column instead of real
+  // data — a genuine visual gap between column groups (e.g. between one
+  // week's block and the next), matching the blank spacer columns the
+  // reference Google Sheet itself uses. Ignores every other column prop.
+  spacer?: boolean;
 }
 
 export interface HeatmapTableData {
@@ -130,6 +135,7 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
     return (
       <tr key={key} className={bold ? heatStyles.grandTotalRow : undefined}>
         {table.columns.map((col) => {
+          if (col.spacer) return <td key={col.key} className={heatStyles.spacer} />;
           const raw = row[col.key];
           const display = formatCell(raw, col.format);
           if (col.bar) {
@@ -175,30 +181,34 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
         <table className={`${styles.table} ${heatStyles.table}`}>
           <thead>
             <tr>
-              {table.columns.map((col) => (
-                <th
-                  key={col.key}
-                  className={`${heatStyles.wrapHeader} ${col.align === "right" ? styles.alignRight : ""}`}
-                  style={col.band != null && col.band % 2 === 1 ? { backgroundColor: "var(--surface-hover)" } : undefined}
-                >
-                  {col.sortable ? (
-                    <button type="button" className={styles.sortButton} onClick={() => toggleSort(col.key)}>
-                      {col.label}
-                      {sortKey === col.key ? (
-                        sortDir === "asc" ? (
-                          <ChevronUp size={13} strokeWidth={2.5} />
+              {table.columns.map((col) =>
+                col.spacer ? (
+                  <th key={col.key} className={heatStyles.spacer} aria-hidden="true" />
+                ) : (
+                  <th
+                    key={col.key}
+                    className={`${heatStyles.wrapHeader} ${col.align === "right" ? styles.alignRight : ""}`}
+                    style={col.band != null && col.band % 2 === 1 ? { backgroundColor: "var(--surface-hover)" } : undefined}
+                  >
+                    {col.sortable ? (
+                      <button type="button" className={styles.sortButton} onClick={() => toggleSort(col.key)}>
+                        {col.label}
+                        {sortKey === col.key ? (
+                          sortDir === "asc" ? (
+                            <ChevronUp size={13} strokeWidth={2.5} />
+                          ) : (
+                            <ChevronDown size={13} strokeWidth={2.5} />
+                          )
                         ) : (
-                          <ChevronDown size={13} strokeWidth={2.5} />
-                        )
-                      ) : (
-                        <ChevronDown size={13} strokeWidth={2.5} className={styles.sortHint} />
-                      )}
-                    </button>
-                  ) : (
-                    col.label
-                  )}
-                </th>
-              ))}
+                          <ChevronDown size={13} strokeWidth={2.5} className={styles.sortHint} />
+                        )}
+                      </button>
+                    ) : (
+                      col.label
+                    )}
+                  </th>
+                ),
+              )}
             </tr>
           </thead>
           <tbody>
