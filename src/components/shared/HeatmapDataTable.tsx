@@ -25,6 +25,9 @@ export interface HeatmapColumn {
   // highlight (e.g. "this campaign's ROAS is below 1") rather than a
   // relative-magnitude heatmap. See Facebook Ads' daily/monthly tables.
   flagKey?: string;
+  // Colors the text green/red by the value's sign (positive/negative) —
+  // no color at exactly zero. Used for Sales Report's "% Variance" column.
+  signColor?: boolean;
 }
 
 export interface HeatmapTableData {
@@ -101,6 +104,9 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
   ): React.CSSProperties | undefined {
     if (col.flagKey && row[col.flagKey]) {
       return { backgroundColor: "var(--trend-bad-bg)" };
+    }
+    if (col.signColor && typeof value === "number" && value !== 0) {
+      return { color: value > 0 ? "var(--trend-good)" : "var(--trend-bad)" };
     }
     if (!col.heat || typeof value !== "number") return undefined;
     const range = heatRanges[col.key];

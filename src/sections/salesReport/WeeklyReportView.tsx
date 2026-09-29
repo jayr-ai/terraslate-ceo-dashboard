@@ -53,7 +53,7 @@ export function WeeklyReportView({ channelKey }: { channelKey: ChannelKey }) {
                   { key: "actual", label: channel.actualLabel, align: "right", format: "currency" },
                   { key: "forecast", label: channel.forecastLabel, align: "right", format: "currency" },
                   { key: "diff", label: channel.diffLabel, align: "right", format: "currency" },
-                  { key: "variancePct", label: channel.varianceLabel, align: "right", format: "percent" },
+                  { key: "variancePct", label: channel.varianceLabel, align: "right", format: "percent", signColor: true },
                   { key: "trend", label: channel.trendLabel, align: "right", bar: true },
                 ],
                 rows: q.hasData
