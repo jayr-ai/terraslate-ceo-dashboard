@@ -46,3 +46,15 @@
 .table td:first-child {
   white-space: nowrap;
 }
+
+.barTrack {
+  width: 100%;
+  min-width: 40px;
+}
+
+.barFill {
+  height: 8px;
+  background: var(--blue-500);
+  border-radius: 2px;
+  min-width: 2px;
+}

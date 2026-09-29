@@ -16,6 +16,10 @@ export interface HeatmapColumn {
   heat?: HeatColor;
   truncate?: boolean;
   sortable?: boolean;
+  // Renders a filled horizontal bar instead of text — width proportional
+  // to value/columnMax (magnitude only, not a value+bar combo). Used for
+  // the Sales Report's "Trend" columns.
+  bar?: boolean;
   // When the row's `flagKey` field is truthy, this cell gets a fixed red
   // conditional-format instead of any `heat` gradient — for a business-rule
   // highlight (e.g. "this campaign's ROAS is below 1") rather than a
@@ -46,7 +50,7 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
   const heatRanges = useMemo(() => {
     const ranges: Record<string, { min: number; max: number }> = {};
     for (const col of table.columns) {
-      if (!col.heat) continue;
+      if (!col.heat && !col.bar) continue;
       const values = table.rows
         .map((r) => r[col.key])
         .filter((v): v is number => typeof v === "number");
@@ -111,6 +115,19 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
         {table.columns.map((col) => {
           const raw = row[col.key];
           const display = formatCell(raw, col.format);
+          if (col.bar) {
+            const range = heatRanges[col.key];
+            const pct = typeof raw === "number" && range && range.max > 0 ? Math.max(0, Math.min(1, raw / range.max)) * 100 : 0;
+            return (
+              <td key={col.key} className={col.align === "right" ? styles.alignRight : undefined}>
+                {pct > 0 && (
+                  <div className={heatStyles.barTrack}>
+                    <div className={heatStyles.barFill} style={{ width: `${pct}%` }} />
+                  </div>
+                )}
+              </td>
+            );
+          }
           return (
             <td
               key={col.key}

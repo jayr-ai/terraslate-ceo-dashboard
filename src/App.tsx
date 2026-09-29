@@ -8,11 +8,14 @@ import { AirCallDashboard } from "./pages/AirCallDashboard";
 import { AccountsReceivable } from "./pages/AccountsReceivable";
 import { FacebookAds } from "./pages/FacebookAds";
 import { ShippingDashboard } from "./pages/ShippingDashboard";
+import { SalesReportDashboard } from "./pages/SalesReportDashboard";
 import { DateRangeProvider, useDateRange } from "./data/DateRangeContext";
 import { AircallDateRangeProvider, useAircallDateRange } from "./data/AircallDateRangeContext";
 import { FacebookAdsDateRangeProvider, useFacebookAdsDateRange } from "./data/FacebookAdsDateRangeContext";
 import { ShippingDateRangeProvider, useShippingDateRange } from "./data/ShippingDateRangeContext";
+import { SalesReportProvider, useSalesReport } from "./data/SalesReportContext";
 import { CarrierFilter } from "./components/layout/CarrierFilter";
+import { YearFilter } from "./components/layout/YearFilter";
 import type { NavItem } from "./data/ceoDashboardMockData";
 import styles from "./App.module.css";
 
@@ -91,6 +94,16 @@ function ShippingDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
   );
 }
 
+function SalesReportDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
+  const { year, setYear } = useSalesReport();
+  return (
+    <Header title="Sales Report Dashboard" subtitle="Source: Sales Team Weekly Tracker" onMenuClick={onMenuClick}>
+      <RefreshDataButton />
+      <YearFilter year={year} setYear={setYear} />
+    </Header>
+  );
+}
+
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   const [activePage, setActivePage] = useState<NavItem["id"]>("ceo-dashboard");
@@ -109,6 +122,9 @@ function App() {
   } else if (activePage === "shipping-dashboard") {
     headerEl = <ShippingDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <ShippingDashboard />;
+  } else if (activePage === "sales-report") {
+    headerEl = <SalesReportDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
+    contentEl = <SalesReportDashboard />;
   } else {
     headerEl = <CeoDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <CeoDashboard />;
@@ -119,18 +135,20 @@ function App() {
       <AircallDateRangeProvider>
         <FacebookAdsDateRangeProvider>
           <ShippingDateRangeProvider>
-            <div className={styles.shell}>
-              <Sidebar
-                open={navOpen}
-                onClose={() => setNavOpen(false)}
-                activePage={activePage}
-                onSelectPage={setActivePage}
-              />
-              <div className={styles.main}>
-                {headerEl}
-                <div className={styles.content}>{contentEl}</div>
+            <SalesReportProvider>
+              <div className={styles.shell}>
+                <Sidebar
+                  open={navOpen}
+                  onClose={() => setNavOpen(false)}
+                  activePage={activePage}
+                  onSelectPage={setActivePage}
+                />
+                <div className={styles.main}>
+                  {headerEl}
+                  <div className={styles.content}>{contentEl}</div>
+                </div>
               </div>
-            </div>
+            </SalesReportProvider>
           </ShippingDateRangeProvider>
         </FacebookAdsDateRangeProvider>
       </AircallDateRangeProvider>

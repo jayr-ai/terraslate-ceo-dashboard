@@ -1,0 +1,51 @@
+.tile {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.box {
+  border-radius: var(--radius-card);
+  padding: 10px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.bad {
+  background: var(--trend-bad-bg);
+}
+
+.good {
+  background: var(--trend-good-bg);
+}
+
+.neutral {
+  background: var(--surface-hover);
+}
+
+.label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.value {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.bad .value {
+  color: var(--trend-bad);
+}
+
+.good .value {
+  color: var(--trend-good);
+}
+
+.neutral .value {
+  color: var(--text-primary);
+}

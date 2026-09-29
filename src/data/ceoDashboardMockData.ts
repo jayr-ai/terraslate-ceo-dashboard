@@ -526,7 +526,7 @@ export const navItems: NavItem[] = [
   { id: "google-ads", label: "Google Ads", icon: "search", active: false },
   { id: "facebook-ads", label: "Facebook Ads", icon: "thumbs-up", active: true },
   { id: "shipping-dashboard", label: "Shipping Dashboard", icon: "truck", active: true },
-  { id: "sales-report", label: "Sales Report Dashboard", icon: "bar-chart-2", active: false },
+  { id: "sales-report", label: "Sales Report Dashboard", icon: "bar-chart-2", active: true },
   { id: "paper-catalog", label: "Paper Catalog Usage", icon: "book-open", active: false },
 ];
 
