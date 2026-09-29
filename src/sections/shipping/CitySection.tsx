@@ -5,6 +5,7 @@ import { EmptyState } from "../../components/shared/EmptyState";
 import { useShippingDateRange } from "../../data/ShippingDateRangeContext";
 import { buildCitiesTable, buildCityMapPoints, shippingSource } from "../../data/shippingData";
 import mapRowStyles from "./MapRow.module.css";
+import styles from "./CitySection.module.css";
 
 const CityBubbleMap = lazy(() =>
   import("../../components/shared/CityBubbleMap").then((m) => ({ default: m.CityBubbleMap })),
@@ -17,13 +18,15 @@ export function CitySection() {
 
   return (
     <Section title="Shipment By City" source={shippingSource}>
-      <div className={mapRowStyles.mapCard}>
-        <h3 className={mapRowStyles.mapTitle}>Shipment By City</h3>
-        <Suspense fallback={<EmptyState message="Loading map…" height={260} />}>
-          <CityBubbleMap points={points} />
-        </Suspense>
+      <div className={styles.row}>
+        <div className={mapRowStyles.mapCard}>
+          <h3 className={mapRowStyles.mapTitle}>Shipment By City</h3>
+          <Suspense fallback={<EmptyState message="Loading map…" height={260} />}>
+            <CityBubbleMap points={points} />
+          </Suspense>
+        </div>
+        <HeatmapDataTable table={table} />
       </div>
-      <HeatmapDataTable table={table} />
     </Section>
   );
 }
