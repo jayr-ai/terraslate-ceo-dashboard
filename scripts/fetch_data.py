@@ -449,14 +449,20 @@ def marketing_window(dated: list[tuple[date, dict]], start: date, end: date) -> 
     prev_start, prev_end = prev_period(start, end)
 
     def window_totals(s: date, e: date) -> dict:
-        spend = purchase_value = conv = 0.0
+        # CPA's denominator is the "SALE / PURCHASE" column, not "CONV. By
+        # Time" (a different, unrelated conversions metric with a
+        # similar-sounding name) — verified against the reference Looker
+        # Studio report's exact CPA Combined for Aug 31-Sep 29, 2026
+        # ($82.16): spend/purchases reproduces it, spend/"CONV. By Time"
+        # does not (gave $49.89, ~1.65x off).
+        spend = purchase_value = purchases = 0.0
         for d, r in dated:
             if s <= d <= e:
                 spend += money(r.get("AD SPEND"))
                 purchase_value += money(r.get("PURCHASE VALUE"))
-                conv += num(r.get("CONV. By Time"))
+                purchases += num(r.get("SALE / PURCHASE"))
         roas = purchase_value / spend if spend else 0
-        cpa = spend / conv if conv else 0
+        cpa = spend / purchases if purchases else 0
         return {"spend": spend, "purchase_value": purchase_value, "roas": roas, "cpa": cpa}
 
     cur = window_totals(start, end)
@@ -488,7 +494,7 @@ def build_marketing_daily_raw(dated: list[tuple[date, dict]], anchor: date) -> l
         if start <= d <= anchor:
             by_date[d]["spend"] += money(r.get("AD SPEND"))
             by_date[d]["purchaseValue"] += money(r.get("PURCHASE VALUE"))
-            by_date[d]["conversions"] += num(r.get("CONV. By Time"))
+            by_date[d]["conversions"] += num(r.get("SALE / PURCHASE"))
     out = []
     d = start
     while d <= anchor:

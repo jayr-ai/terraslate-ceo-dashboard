@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T06:29:26.993566Z",
+  "generatedAt": "2026-09-29T06:37:41.445084Z",
   "anchors": {
     "sales": "2026-09-27",
     "marketing": "2026-09-28",
@@ -827,9 +827,9 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$27.12",
+            "value": "$105.29",
             "trend": {
-              "changePct": -16.5,
+              "changePct": -55.4,
               "direction": "down"
             }
           },
@@ -869,9 +869,9 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$32.47",
+            "value": "$235.87",
             "trend": {
-              "changePct": 14.4,
+              "changePct": 143.5,
               "direction": "up"
             }
           },
@@ -911,9 +911,9 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$33.80",
+            "value": "$92.54",
             "trend": {
-              "changePct": 32.2,
+              "changePct": 16.7,
               "direction": "up"
             }
           },
@@ -953,9 +953,9 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$50.45",
+            "value": "$82.63",
             "trend": {
-              "changePct": 126.0,
+              "changePct": 3.5,
               "direction": "up"
             }
           },
@@ -995,10 +995,10 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$48.41",
+            "value": "$82.38",
             "trend": {
-              "changePct": 58.1,
-              "direction": "up"
+              "changePct": -1.7,
+              "direction": "down"
             }
           },
           {
@@ -1037,9 +1037,9 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$24.58",
+            "value": "$81.07",
             "trend": {
-              "changePct": 319.0,
+              "changePct": 63.2,
               "direction": "up"
             }
           },
@@ -2830,943 +2830,943 @@
         "date": "2026-04-02",
         "spend": 1239.97,
         "purchaseValue": 14012.53,
-        "conversions": 118.0
+        "conversions": 31.3
       },
       {
         "date": "2026-04-03",
         "spend": 1003.93,
         "purchaseValue": 3973.0,
-        "conversions": 151.0
+        "conversions": 13.0
       },
       {
         "date": "2026-04-04",
         "spend": 587.51,
         "purchaseValue": 1242.61,
-        "conversions": 135.0
+        "conversions": 5.0
       },
       {
         "date": "2026-04-05",
         "spend": 480.65,
         "purchaseValue": 696.15,
-        "conversions": 158.0
+        "conversions": 7.0
       },
       {
         "date": "2026-04-06",
         "spend": 1048.85,
         "purchaseValue": 19125.0,
-        "conversions": 162.0
+        "conversions": 43.3
       },
       {
         "date": "2026-04-07",
         "spend": 1400.08,
         "purchaseValue": 24821.66,
-        "conversions": 168.0
+        "conversions": 54.7
       },
       {
         "date": "2026-04-08",
         "spend": 1328.91,
         "purchaseValue": 13928.25,
-        "conversions": 142.0
+        "conversions": 46.0
       },
       {
         "date": "2026-04-09",
         "spend": 1228.62,
         "purchaseValue": 23795.35,
-        "conversions": 153.0
+        "conversions": 57.7
       },
       {
         "date": "2026-04-10",
         "spend": 1345.88,
         "purchaseValue": 8603.47,
-        "conversions": 158.0
+        "conversions": 27.0
       },
       {
         "date": "2026-04-11",
         "spend": 465.96,
         "purchaseValue": 274.3,
-        "conversions": 114.0
+        "conversions": 3.0
       },
       {
         "date": "2026-04-12",
         "spend": 535.22,
         "purchaseValue": 7404.39,
-        "conversions": 156.0
+        "conversions": 5.0
       },
       {
         "date": "2026-04-13",
         "spend": 1239.38,
         "purchaseValue": 11912.86,
-        "conversions": 164.0
+        "conversions": 39.0
       },
       {
         "date": "2026-04-14",
         "spend": 2013.73,
         "purchaseValue": 5431.14,
-        "conversions": 150.0
+        "conversions": 22.1
       },
       {
         "date": "2026-04-15",
         "spend": 1206.13,
         "purchaseValue": 7806.17,
-        "conversions": 137.0
+        "conversions": 20.0
       },
       {
         "date": "2026-04-16",
         "spend": 1403.69,
         "purchaseValue": 11168.09,
-        "conversions": 138.0
+        "conversions": 17.0
       },
       {
         "date": "2026-04-17",
         "spend": 1029.58,
         "purchaseValue": 7526.41,
-        "conversions": 136.0
+        "conversions": 24.0
       },
       {
         "date": "2026-04-18",
         "spend": 491.58,
         "purchaseValue": 1483.47,
-        "conversions": 138.0
+        "conversions": 7.0
       },
       {
         "date": "2026-04-19",
         "spend": 504.78,
         "purchaseValue": 41.58,
-        "conversions": 194.0
+        "conversions": 1.0
       },
       {
         "date": "2026-04-20",
         "spend": 1491.88,
         "purchaseValue": 7502.72,
-        "conversions": 153.0
+        "conversions": 19.5
       },
       {
         "date": "2026-04-21",
         "spend": 1550.5,
         "purchaseValue": 14227.13,
-        "conversions": 155.0
+        "conversions": 31.9
       },
       {
         "date": "2026-04-22",
         "spend": 1837.51,
         "purchaseValue": 14835.93,
-        "conversions": 170.0
+        "conversions": 34.4
       },
       {
         "date": "2026-04-23",
         "spend": 1249.32,
         "purchaseValue": 10518.18,
-        "conversions": 155.0
+        "conversions": 31.9
       },
       {
         "date": "2026-04-24",
         "spend": 1149.76,
         "purchaseValue": 9487.42,
-        "conversions": 179.0
+        "conversions": 20.5
       },
       {
         "date": "2026-04-25",
         "spend": 520.53,
         "purchaseValue": 1794.75,
-        "conversions": 165.0
+        "conversions": 6.5
       },
       {
         "date": "2026-04-26",
         "spend": 586.34,
         "purchaseValue": 1640.2,
-        "conversions": 177.0
+        "conversions": 5.5
       },
       {
         "date": "2026-04-27",
         "spend": 1456.36,
         "purchaseValue": 19639.72,
-        "conversions": 160.0
+        "conversions": 41.5
       },
       {
         "date": "2026-04-28",
         "spend": 1604.74,
         "purchaseValue": 15785.21,
-        "conversions": 161.0
+        "conversions": 32.2
       },
       {
         "date": "2026-04-29",
         "spend": 1509.87,
         "purchaseValue": 6872.79,
-        "conversions": 198.0
+        "conversions": 29.0
       },
       {
         "date": "2026-04-30",
         "spend": 1009.62,
         "purchaseValue": 12515.29,
-        "conversions": 210.0
+        "conversions": 34.9
       },
       {
         "date": "2026-05-01",
         "spend": 1222.86,
         "purchaseValue": 14281.52,
-        "conversions": 201.0
+        "conversions": 35.0
       },
       {
         "date": "2026-05-02",
         "spend": 446.52,
         "purchaseValue": 2307.95,
-        "conversions": 173.0
+        "conversions": 5.0
       },
       {
         "date": "2026-05-03",
         "spend": 523.21,
         "purchaseValue": 214.54,
-        "conversions": 201.0
+        "conversions": 2.5
       },
       {
         "date": "2026-05-04",
         "spend": 1634.85,
         "purchaseValue": 11466.58,
-        "conversions": 199.0
+        "conversions": 32.2
       },
       {
         "date": "2026-05-05",
         "spend": 1177.78,
         "purchaseValue": 10158.59,
-        "conversions": 174.0
+        "conversions": 34.4
       },
       {
         "date": "2026-05-06",
         "spend": 1183.99,
         "purchaseValue": 10272.09,
-        "conversions": 175.0
+        "conversions": 29.5
       },
       {
         "date": "2026-05-07",
         "spend": 1039.14,
         "purchaseValue": 10801.8,
-        "conversions": 208.0
+        "conversions": 32.8
       },
       {
         "date": "2026-05-08",
         "spend": 999.65,
         "purchaseValue": 10713.63,
-        "conversions": 195.0
+        "conversions": 20.3
       },
       {
         "date": "2026-05-09",
         "spend": 379.45,
         "purchaseValue": 276.86,
-        "conversions": 162.0
+        "conversions": 2.0
       },
       {
         "date": "2026-05-10",
         "spend": 559.45,
         "purchaseValue": 16442.22,
-        "conversions": 197.0
+        "conversions": 7.5
       },
       {
         "date": "2026-05-11",
         "spend": 1362.5,
         "purchaseValue": 22132.25,
-        "conversions": 163.0
+        "conversions": 28.0
       },
       {
         "date": "2026-05-12",
         "spend": 1479.29,
         "purchaseValue": 6707.01,
-        "conversions": 171.0
+        "conversions": 25.8
       },
       {
         "date": "2026-05-13",
         "spend": 1141.85,
         "purchaseValue": 10626.08,
-        "conversions": 202.0
+        "conversions": 27.3
       },
       {
         "date": "2026-05-14",
         "spend": 1086.96,
         "purchaseValue": 10138.18,
-        "conversions": 211.0
+        "conversions": 28.3
       },
       {
         "date": "2026-05-15",
         "spend": 1225.4,
         "purchaseValue": 9537.57,
-        "conversions": 162.0
+        "conversions": 23.5
       },
       {
         "date": "2026-05-16",
         "spend": 525.87,
         "purchaseValue": 3898.16,
-        "conversions": 162.0
+        "conversions": 9.0
       },
       {
         "date": "2026-05-17",
         "spend": 617.55,
         "purchaseValue": 2440.4,
-        "conversions": 182.0
+        "conversions": 2.0
       },
       {
         "date": "2026-05-18",
         "spend": 1436.54,
         "purchaseValue": 4364.55,
-        "conversions": 169.0
+        "conversions": 18.5
       },
       {
         "date": "2026-05-19",
         "spend": 1330.28,
         "purchaseValue": 25436.03,
-        "conversions": 141.0
+        "conversions": 31.3
       },
       {
         "date": "2026-05-20",
         "spend": 1462.18,
         "purchaseValue": 15249.97,
-        "conversions": 159.0
+        "conversions": 27.9
       },
       {
         "date": "2026-05-21",
         "spend": 1647.86,
         "purchaseValue": 14926.52,
-        "conversions": 189.0
+        "conversions": 33.0
       },
       {
         "date": "2026-05-22",
         "spend": 1610.77,
         "purchaseValue": 4238.52,
-        "conversions": 193.0
+        "conversions": 17.2
       },
       {
         "date": "2026-05-23",
         "spend": 548.11,
         "purchaseValue": 1747.45,
-        "conversions": 150.0
+        "conversions": 9.0
       },
       {
         "date": "2026-05-24",
         "spend": 720.21,
         "purchaseValue": 1715.67,
-        "conversions": 197.0
+        "conversions": 9.0
       },
       {
         "date": "2026-05-25",
         "spend": 1102.62,
         "purchaseValue": 2229.24,
-        "conversions": 206.0
+        "conversions": 11.7
       },
       {
         "date": "2026-05-26",
         "spend": 1407.37,
         "purchaseValue": 11650.14,
-        "conversions": 141.0
+        "conversions": 35.6
       },
       {
         "date": "2026-05-27",
         "spend": 1617.13,
         "purchaseValue": 17039.46,
-        "conversions": 180.0
+        "conversions": 42.3
       },
       {
         "date": "2026-05-28",
         "spend": 1315.79,
         "purchaseValue": 15391.52,
-        "conversions": 190.0
+        "conversions": 41.7
       },
       {
         "date": "2026-05-29",
         "spend": 1143.07,
         "purchaseValue": 6279.87,
-        "conversions": 158.0
+        "conversions": 24.3
       },
       {
         "date": "2026-05-30",
         "spend": 506.21,
         "purchaseValue": 3764.58,
-        "conversions": 153.0
+        "conversions": 8.8
       },
       {
         "date": "2026-05-31",
         "spend": 732.69,
         "purchaseValue": 3297.75,
-        "conversions": 189.0
+        "conversions": 5.6
       },
       {
         "date": "2026-06-01",
         "spend": 1553.22,
         "purchaseValue": 10425.88,
-        "conversions": 203.0
+        "conversions": 33.0
       },
       {
         "date": "2026-06-02",
         "spend": 1762.05,
         "purchaseValue": 18228.84,
-        "conversions": 179.0
+        "conversions": 33.5
       },
       {
         "date": "2026-06-03",
         "spend": 1589.36,
         "purchaseValue": 10908.7,
-        "conversions": 172.0
+        "conversions": 44.3
       },
       {
         "date": "2026-06-04",
         "spend": 1499.39,
         "purchaseValue": 14117.3,
-        "conversions": 200.0
+        "conversions": 31.3
       },
       {
         "date": "2026-06-05",
         "spend": 1243.65,
         "purchaseValue": 8501.67,
-        "conversions": 203.0
+        "conversions": 17.0
       },
       {
         "date": "2026-06-06",
         "spend": 556.68,
         "purchaseValue": 2787.68,
-        "conversions": 152.0
+        "conversions": 6.0
       },
       {
         "date": "2026-06-07",
         "spend": 734.54,
         "purchaseValue": 1713.91,
-        "conversions": 247.0
+        "conversions": 11.0
       },
       {
         "date": "2026-06-08",
         "spend": 1489.73,
         "purchaseValue": 13611.6,
-        "conversions": 218.0
+        "conversions": 26.0
       },
       {
         "date": "2026-06-09",
         "spend": 1681.31,
         "purchaseValue": 7319.66,
-        "conversions": 201.0
+        "conversions": 28.6
       },
       {
         "date": "2026-06-10",
         "spend": 1463.32,
         "purchaseValue": 12379.88,
-        "conversions": 207.0
+        "conversions": 37.0
       },
       {
         "date": "2026-06-11",
         "spend": 1397.68,
         "purchaseValue": 5877.43,
-        "conversions": 199.0
+        "conversions": 18.9
       },
       {
         "date": "2026-06-12",
         "spend": 1476.53,
         "purchaseValue": 17504.42,
-        "conversions": 213.0
+        "conversions": 39.0
       },
       {
         "date": "2026-06-13",
         "spend": 693.54,
         "purchaseValue": 3488.37,
-        "conversions": 173.0
+        "conversions": 6.0
       },
       {
         "date": "2026-06-14",
         "spend": 806.37,
         "purchaseValue": 1752.17,
-        "conversions": 215.0
+        "conversions": 8.0
       },
       {
         "date": "2026-06-15",
         "spend": 1579.19,
         "purchaseValue": 12743.88,
-        "conversions": 211.0
+        "conversions": 29.0
       },
       {
         "date": "2026-06-16",
         "spend": 1552.49,
         "purchaseValue": 8144.22,
-        "conversions": 174.0
+        "conversions": 26.6
       },
       {
         "date": "2026-06-17",
         "spend": 1588.47,
         "purchaseValue": 6364.13,
-        "conversions": 210.0
+        "conversions": 14.9
       },
       {
         "date": "2026-06-18",
         "spend": 2547.64,
         "purchaseValue": 9460.76,
-        "conversions": 206.0
+        "conversions": 26.8
       },
       {
         "date": "2026-06-19",
         "spend": 1425.25,
         "purchaseValue": 4626.8,
-        "conversions": 196.0
+        "conversions": 15.4
       },
       {
         "date": "2026-06-20",
         "spend": 597.74,
         "purchaseValue": 4853.38,
-        "conversions": 152.0
+        "conversions": 9.0
       },
       {
         "date": "2026-06-21",
         "spend": 623.31,
         "purchaseValue": 2710.87,
-        "conversions": 197.0
+        "conversions": 6.0
       },
       {
         "date": "2026-06-22",
         "spend": 1352.78,
         "purchaseValue": 6940.56,
-        "conversions": 220.0
+        "conversions": 15.8
       },
       {
         "date": "2026-06-23",
         "spend": 1515.35,
         "purchaseValue": 9964.65,
-        "conversions": 184.0
+        "conversions": 30.3
       },
       {
         "date": "2026-06-24",
         "spend": 1239.95,
         "purchaseValue": 6299.1,
-        "conversions": 196.0
+        "conversions": 28.8
       },
       {
         "date": "2026-06-25",
         "spend": 1191.15,
         "purchaseValue": 8577.35,
-        "conversions": 223.0
+        "conversions": 29.0
       },
       {
         "date": "2026-06-26",
         "spend": 1025.29,
         "purchaseValue": 16094.38,
-        "conversions": 183.0
+        "conversions": 28.5
       },
       {
         "date": "2026-06-27",
         "spend": 395.41,
         "purchaseValue": 1698.27,
-        "conversions": 160.0
+        "conversions": 5.0
       },
       {
         "date": "2026-06-28",
         "spend": 614.16,
         "purchaseValue": 832.05,
-        "conversions": 190.0
+        "conversions": 4.0
       },
       {
         "date": "2026-06-29",
         "spend": 1362.81,
         "purchaseValue": 14775.73,
-        "conversions": 172.0
+        "conversions": 43.0
       },
       {
         "date": "2026-06-30",
         "spend": 1436.57,
         "purchaseValue": 12837.94,
-        "conversions": 196.0
+        "conversions": 34.8
       },
       {
         "date": "2026-07-01",
         "spend": 1313.28,
         "purchaseValue": 11153.64,
-        "conversions": 249.0
+        "conversions": 25.7
       },
       {
         "date": "2026-07-02",
         "spend": 1169.06,
         "purchaseValue": 4572.84,
-        "conversions": 192.0
+        "conversions": 13.8
       },
       {
         "date": "2026-07-03",
         "spend": 1056.83,
         "purchaseValue": 4803.83,
-        "conversions": 228.0
+        "conversions": 14.0
       },
       {
         "date": "2026-07-04",
         "spend": 375.25,
         "purchaseValue": 1347.04,
-        "conversions": 186.0
+        "conversions": 8.0
       },
       {
         "date": "2026-07-05",
         "spend": 551.87,
         "purchaseValue": 3921.14,
-        "conversions": 267.0
+        "conversions": 9.0
       },
       {
         "date": "2026-07-06",
         "spend": 1160.01,
         "purchaseValue": 9463.34,
-        "conversions": 245.0
+        "conversions": 31.0
       },
       {
         "date": "2026-07-07",
         "spend": 1393.56,
         "purchaseValue": 14618.56,
-        "conversions": 200.0
+        "conversions": 39.8
       },
       {
         "date": "2026-07-08",
         "spend": 1203.07,
         "purchaseValue": 8520.9,
-        "conversions": 242.0
+        "conversions": 25.3
       },
       {
         "date": "2026-07-09",
         "spend": 1322.94,
         "purchaseValue": 13528.53,
-        "conversions": 208.0
+        "conversions": 31.0
       },
       {
         "date": "2026-07-10",
         "spend": 1078.97,
         "purchaseValue": 10025.69,
-        "conversions": 193.0
+        "conversions": 18.0
       },
       {
         "date": "2026-07-11",
         "spend": 420.85,
         "purchaseValue": 3622.5,
-        "conversions": 163.0
+        "conversions": 6.5
       },
       {
         "date": "2026-07-12",
         "spend": 615.74,
         "purchaseValue": 1695.65,
-        "conversions": 223.0
+        "conversions": 5.7
       },
       {
         "date": "2026-07-13",
         "spend": 1262.08,
         "purchaseValue": 9312.9,
-        "conversions": 192.0
+        "conversions": 23.5
       },
       {
         "date": "2026-07-14",
         "spend": 1522.36,
         "purchaseValue": 12137.12,
-        "conversions": 209.0
+        "conversions": 32.6
       },
       {
         "date": "2026-07-15",
         "spend": 1288.74,
         "purchaseValue": 12231.9,
-        "conversions": 167.0
+        "conversions": 33.6
       },
       {
         "date": "2026-07-16",
         "spend": 1097.32,
         "purchaseValue": 4962.54,
-        "conversions": 169.0
+        "conversions": 24.2
       },
       {
         "date": "2026-07-17",
         "spend": 1083.17,
         "purchaseValue": 7378.07,
-        "conversions": 150.0
+        "conversions": 24.2
       },
       {
         "date": "2026-07-18",
         "spend": 445.95,
         "purchaseValue": 673.01,
-        "conversions": 126.0
+        "conversions": 10.0
       },
       {
         "date": "2026-07-19",
         "spend": 552.38,
         "purchaseValue": 807.36,
-        "conversions": 155.0
+        "conversions": 3.0
       },
       {
         "date": "2026-07-20",
         "spend": 1368.29,
         "purchaseValue": 7966.9,
-        "conversions": 182.0
+        "conversions": 26.2
       },
       {
         "date": "2026-07-21",
         "spend": 1798.71,
         "purchaseValue": 14092.17,
-        "conversions": 202.0
+        "conversions": 36.2
       },
       {
         "date": "2026-07-22",
         "spend": 1190.34,
         "purchaseValue": 10136.55,
-        "conversions": 187.0
+        "conversions": 32.0
       },
       {
         "date": "2026-07-23",
         "spend": 1473.07,
         "purchaseValue": 17191.66,
-        "conversions": 194.0
+        "conversions": 33.3
       },
       {
         "date": "2026-07-24",
         "spend": 1412.69,
         "purchaseValue": 5675.9,
-        "conversions": 178.0
+        "conversions": 22.5
       },
       {
         "date": "2026-07-25",
         "spend": 600.04,
         "purchaseValue": 3221.1,
-        "conversions": 133.0
+        "conversions": 6.3
       },
       {
         "date": "2026-07-26",
         "spend": 654.42,
         "purchaseValue": 3008.48,
-        "conversions": 174.0
+        "conversions": 8.0
       },
       {
         "date": "2026-07-27",
         "spend": 1693.66,
         "purchaseValue": 8172.45,
-        "conversions": 189.0
+        "conversions": 29.0
       },
       {
         "date": "2026-07-28",
         "spend": 1424.66,
         "purchaseValue": 14003.24,
-        "conversions": 196.0
+        "conversions": 38.0
       },
       {
         "date": "2026-07-29",
         "spend": 1531.43,
         "purchaseValue": 11136.25,
-        "conversions": 153.0
+        "conversions": 32.2
       },
       {
         "date": "2026-07-30",
         "spend": 1305.43,
         "purchaseValue": 8140.05,
-        "conversions": 199.0
+        "conversions": 31.5
       },
       {
         "date": "2026-07-31",
         "spend": 1344.91,
         "purchaseValue": 8030.17,
-        "conversions": 165.0
+        "conversions": 24.6
       },
       {
         "date": "2026-08-01",
         "spend": 450.77,
         "purchaseValue": 1704.03,
-        "conversions": 170.0
+        "conversions": 8.0
       },
       {
         "date": "2026-08-02",
         "spend": 630.39,
         "purchaseValue": 1548.51,
-        "conversions": 193.0
+        "conversions": 7.5
       },
       {
         "date": "2026-08-03",
         "spend": 1884.71,
         "purchaseValue": 18458.87,
-        "conversions": 196.0
+        "conversions": 43.3
       },
       {
         "date": "2026-08-04",
         "spend": 1689.99,
         "purchaseValue": 13919.36,
-        "conversions": 218.0
+        "conversions": 32.2
       },
       {
         "date": "2026-08-05",
         "spend": 1667.99,
         "purchaseValue": 17458.02,
-        "conversions": 192.0
+        "conversions": 24.4
       },
       {
         "date": "2026-08-06",
         "spend": 1808.69,
         "purchaseValue": 12558.75,
-        "conversions": 264.0
+        "conversions": 35.8
       },
       {
         "date": "2026-08-07",
         "spend": 1443.88,
         "purchaseValue": 9521.29,
-        "conversions": 159.0
+        "conversions": 25.2
       },
       {
         "date": "2026-08-08",
         "spend": 974.27,
         "purchaseValue": 4859.67,
-        "conversions": 258.0
+        "conversions": 7.8
       },
       {
         "date": "2026-08-09",
         "spend": 1164.29,
         "purchaseValue": 1029.97,
-        "conversions": 226.0
+        "conversions": 6.0
       },
       {
         "date": "2026-08-10",
         "spend": 3321.44,
         "purchaseValue": 14363.49,
-        "conversions": 160.0
+        "conversions": 32.0
       },
       {
         "date": "2026-08-11",
         "spend": 2607.09,
         "purchaseValue": 12072.88,
-        "conversions": 25.0
+        "conversions": 34.3
       },
       {
         "date": "2026-08-12",
         "spend": 2903.77,
         "purchaseValue": 16967.9,
-        "conversions": 24.0
+        "conversions": 39.6
       },
       {
         "date": "2026-08-13",
         "spend": 2621.7,
         "purchaseValue": 10649.84,
-        "conversions": 28.0
+        "conversions": 38.6
       },
       {
         "date": "2026-08-14",
         "spend": 2125.65,
         "purchaseValue": 6095.45,
-        "conversions": 17.0
+        "conversions": 19.0
       },
       {
         "date": "2026-08-15",
         "spend": 1348.01,
         "purchaseValue": 1703.31,
-        "conversions": 5.0
+        "conversions": 6.6
       },
       {
         "date": "2026-08-16",
         "spend": 1534.73,
         "purchaseValue": 1628.28,
-        "conversions": 5.0
+        "conversions": 11.0
       },
       {
         "date": "2026-08-17",
         "spend": 2621.63,
         "purchaseValue": 12329.25,
-        "conversions": 17.0
+        "conversions": 34.3
       },
       {
         "date": "2026-08-18",
         "spend": 2823.6,
         "purchaseValue": 6107.15,
-        "conversions": 16.0
+        "conversions": 20.5
       },
       {
         "date": "2026-08-19",
         "spend": 2439.19,
         "purchaseValue": 8751.76,
-        "conversions": 18.0
+        "conversions": 26.4
       },
       {
         "date": "2026-08-20",
         "spend": 2151.08,
         "purchaseValue": 12330.29,
-        "conversions": 18.0
+        "conversions": 29.8
       },
       {
         "date": "2026-08-21",
         "spend": 2023.28,
         "purchaseValue": 6172.42,
-        "conversions": 10.0
+        "conversions": 19.3
       },
       {
         "date": "2026-08-22",
         "spend": 1214.35,
         "purchaseValue": 5221.71,
-        "conversions": 8.0
+        "conversions": 11.5
       },
       {
         "date": "2026-08-23",
         "spend": 958.76,
         "purchaseValue": 956.49,
-        "conversions": 2.0
+        "conversions": 5.0
       },
       {
         "date": "2026-08-24",
         "spend": 2293.97,
         "purchaseValue": 17616.35,
-        "conversions": 17.0
+        "conversions": 24.3
       },
       {
         "date": "2026-08-25",
         "spend": 2438.73,
         "purchaseValue": 10264.3,
-        "conversions": 22.0
+        "conversions": 41.8
       },
       {
         "date": "2026-08-26",
         "spend": 2008.05,
         "purchaseValue": 7396.91,
-        "conversions": 17.0
+        "conversions": 20.0
       },
       {
         "date": "2026-08-27",
         "spend": 2259.51,
         "purchaseValue": 9868.32,
-        "conversions": 19.0
+        "conversions": 29.9
       },
       {
         "date": "2026-08-28",
         "spend": 2182.26,
         "purchaseValue": 5339.24,
-        "conversions": 14.0
+        "conversions": 24.5
       },
       {
         "date": "2026-08-29",
         "spend": 655.73,
         "purchaseValue": 3262.98,
-        "conversions": 8.0
+        "conversions": 13.5
       },
       {
         "date": "2026-08-30",
         "spend": 942.51,
         "purchaseValue": 1625.13,
-        "conversions": 5.0
+        "conversions": 7.0
       },
       {
         "date": "2026-08-31",
         "spend": 2383.51,
         "purchaseValue": 9271.51,
-        "conversions": 11.0
+        "conversions": 31.1
       },
       {
         "date": "2026-09-01",
         "spend": 2679.42,
         "purchaseValue": 13201.27,
-        "conversions": 17.0
+        "conversions": 31.0
       },
       {
         "date": "2026-09-02",
         "spend": 2270.54,
         "purchaseValue": 10825.53,
-        "conversions": 12.0
+        "conversions": 33.8
       },
       {
         "date": "2026-09-03",
         "spend": 2483.05,
         "purchaseValue": 9629.65,
-        "conversions": 16.0
+        "conversions": 32.0
       },
       {
         "date": "2026-09-04",
         "spend": 2176.98,
         "purchaseValue": 6607.59,
-        "conversions": 9.0
+        "conversions": 20.3
       },
       {
         "date": "2026-09-05",
         "spend": 2181.92,
         "purchaseValue": 3354.73,
-        "conversions": 5.0
+        "conversions": 15.9
       },
       {
         "date": "2026-09-06",
@@ -3778,133 +3778,133 @@
         "date": "2026-09-07",
         "spend": 2448.3,
         "purchaseValue": 5338.67,
-        "conversions": 6.0
+        "conversions": 15.1
       },
       {
         "date": "2026-09-08",
         "spend": 2572.13,
         "purchaseValue": 9691.94,
-        "conversions": 11.0
+        "conversions": 30.6
       },
       {
         "date": "2026-09-09",
         "spend": 2280.42,
         "purchaseValue": 12488.45,
-        "conversions": 27.0
+        "conversions": 49.4
       },
       {
         "date": "2026-09-10",
         "spend": 2031.62,
         "purchaseValue": 14943.69,
-        "conversions": 25.0
+        "conversions": 41.6
       },
       {
         "date": "2026-09-11",
         "spend": 1640.32,
         "purchaseValue": 9389.42,
-        "conversions": 15.0
+        "conversions": 25.9
       },
       {
         "date": "2026-09-12",
         "spend": 1350.9,
         "purchaseValue": 2259.29,
-        "conversions": 6.0
+        "conversions": 11.5
       },
       {
         "date": "2026-09-13",
         "spend": 998.6,
         "purchaseValue": 4044.56,
-        "conversions": 6.0
+        "conversions": 13.0
       },
       {
         "date": "2026-09-14",
         "spend": 2455.96,
         "purchaseValue": 29090.74,
-        "conversions": 51.0
+        "conversions": 50.9
       },
       {
         "date": "2026-09-15",
         "spend": 2064.86,
         "purchaseValue": 9468.63,
-        "conversions": 72.0
+        "conversions": 27.2
       },
       {
         "date": "2026-09-16",
         "spend": 2029.31,
         "purchaseValue": 12669.87,
-        "conversions": 66.0
+        "conversions": 35.0
       },
       {
         "date": "2026-09-17",
         "spend": 2051.04,
         "purchaseValue": 8494.33,
-        "conversions": 85.0
+        "conversions": 24.4
       },
       {
         "date": "2026-09-18",
         "spend": 2180.1,
         "purchaseValue": 4366.91,
-        "conversions": 69.0
+        "conversions": 14.4
       },
       {
         "date": "2026-09-19",
         "spend": 1267.13,
         "purchaseValue": 2723.92,
-        "conversions": 74.0
+        "conversions": 13.0
       },
       {
         "date": "2026-09-20",
         "spend": 1342.81,
         "purchaseValue": 1043.42,
-        "conversions": 77.0
+        "conversions": 6.5
       },
       {
         "date": "2026-09-21",
         "spend": 2817.24,
         "purchaseValue": 14595.87,
-        "conversions": 95.0
+        "conversions": 53.0
       },
       {
         "date": "2026-09-22",
         "spend": 2702.05,
         "purchaseValue": 12648.73,
-        "conversions": 61.0
+        "conversions": 33.0
       },
       {
         "date": "2026-09-23",
         "spend": 2528.97,
         "purchaseValue": 15511.92,
-        "conversions": 79.0
+        "conversions": 41.0
       },
       {
         "date": "2026-09-24",
         "spend": 2844.17,
         "purchaseValue": 8363.13,
-        "conversions": 85.0
+        "conversions": 36.5
       },
       {
         "date": "2026-09-25",
         "spend": 2811.61,
         "purchaseValue": 8837.32,
-        "conversions": 72.0
+        "conversions": 25.0
       },
       {
         "date": "2026-09-26",
         "spend": 1646.57,
         "purchaseValue": 2016.74,
-        "conversions": 58.0
+        "conversions": 17.0
       },
       {
         "date": "2026-09-27",
         "spend": 2240.76,
         "purchaseValue": 1883.85,
-        "conversions": 69.0
+        "conversions": 9.5
       },
       {
         "date": "2026-09-28",
         "spend": 1789.87,
         "purchaseValue": 4566.94,
-        "conversions": 66.0
+        "conversions": 17.0
       }
     ],
     "staffSales": [
