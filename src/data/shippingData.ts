@@ -7,7 +7,7 @@ import type { Source } from "./ceoDashboardMockData";
 import type { HeatmapTableData } from "../components/shared/HeatmapDataTable";
 import type { HorizontalBarDatum } from "../components/shared/HorizontalBarChart";
 import type { CategoryLegendItem } from "../components/shared/UsChoropleth";
-import type { ShippingWindow } from "../lib/shippingDateRange";
+import type { ShippingWindow, CityMapPoint } from "../lib/shippingDateRange";
 
 export const shippingSource: Source = { label: "Shipping Dashboard — ALL tab (UPS + FedEx)", confirmed: true };
 
@@ -88,6 +88,10 @@ export function buildCitiesTable(window: ShippingWindow): HeatmapTableData {
     source: shippingSource,
     pageSize: 10,
   };
+}
+
+export function buildCityMapPoints(window: ShippingWindow): CityMapPoint[] {
+  return window.cities.mapPoints;
 }
 
 // ---------------------------------------------------------------------------

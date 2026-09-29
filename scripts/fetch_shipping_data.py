@@ -35,12 +35,28 @@ this data). The zone map colors each state by its single MOST COMMON
 zone among that state's shipments in the selected window — a real
 simplification for border states, not a bug.
 
-## Scope decisions (flagged to JV, not silently done)
+## Shipment By City bubble map
 
-  - No city-level bubble/geo map for Shipment By City: the sheet has zip
-    codes but no lat/lng, so plotting real city positions would need an
-    external zip->coordinate dataset this pipeline doesn't have. The Top
-    Cities table carries the same ranking.
+Each row's `Zip Code` is resolved to a lat/lng via `data/zip_centroids.csv`
+— a one-time export (33,791 rows) of the US Census Bureau's 2024 ZCTA
+Gazetteer (public domain, https://www.census.gov/geographies/reference-files/time-series/geo/gazetteer-files.html),
+not a live lookup, so a refresh never depends on an external geocoding
+service being up. Coverage check against every zip actually in this
+sheet: 5,817 unique zips, 165 unmapped (2.8%) — 111 of those are
+malformed junk (concatenated digits, all-zero placeholders) that
+wouldn't have resolved to anything real anyway, leaving 54 genuine
+zips (0.9% of the total) the Census Bureau doesn't assign a ZCTA to
+(mostly PO-Box-only zips, which have no residential footprint to
+centroid). Rows with an unmapped zip are simply skipped for the map
+(they still count everywhere else — Country/State/City/Zone tables).
+
+Map points are grouped by exact lat/lng, i.e. by zip (not by city
+name) — this is deliberately finer-grained than the "Top Cities" table
+so nearby-but-distinct zips within the same metro render as separate
+dots, matching the reference report's clustered look. Unlike the Top
+Cities table, the map does NOT exclude Lahaina — that exclusion is
+specific to the ranked-spend table in the reference, and Lahaina is a
+real ship-to location that belongs on a map of where shipments go.
 
 ## Date-range + Carrier picker architecture (mirrors scripts/fetch_facebook_ads.py)
 
@@ -68,6 +84,7 @@ SHEET_ID = "16VVJuxHd23wbYBTI3QSXyk7AMa3Ng-iYbNvVsoCTgTM"
 ALL_GID = "2065189606"
 
 OUT_PATH = Path(__file__).resolve().parent.parent / "src" / "data" / "shippingData.json"
+ZIP_CENTROIDS_PATH = Path(__file__).resolve().parent / "data" / "zip_centroids.csv"
 
 PRESET_KEYS = ["today", "yesterday", "last7", "last30", "thisMonth", "lastMonth"]
 RAW_WINDOW_DAYS = 180
@@ -79,6 +96,14 @@ def fetch_rows() -> list[dict[str, str]]:
     with urllib.request.urlopen(url, timeout=60) as resp:
         raw = resp.read().decode("utf-8")
     return list(csv.DictReader(io.StringIO(raw)))
+
+
+def load_zip_centroids() -> dict[str, tuple[float, float]]:
+    out: dict[str, tuple[float, float]] = {}
+    with ZIP_CENTROIDS_PATH.open(newline="") as f:
+        for zip_code, lat, lng in csv.reader(f):
+            out[zip_code] = (float(lat), float(lng))
+    return out
 
 
 def money(s: str | None) -> float:
@@ -150,10 +175,17 @@ def date_key(d: date) -> str:
 
 
 class Row:
-    __slots__ = ("d", "carrier", "country", "country_full", "state", "state_full", "city", "zone", "price")
+    __slots__ = ("d", "carrier", "country", "country_full", "state", "state_full", "city", "zone", "price", "lat", "lng")
 
 
-def load_rows(raw_rows: list[dict[str, str]]) -> list[Row]:
+def resolve_zip(zip_code: str, centroids: dict[str, tuple[float, float]]) -> tuple[float, float] | None:
+    zip_code = zip_code.strip()
+    if not zip_code:
+        return None
+    return centroids.get(zip_code) or centroids.get(zip_code.zfill(5))
+
+
+def load_rows(raw_rows: list[dict[str, str]], centroids: dict[str, tuple[float, float]]) -> list[Row]:
     out: list[Row] = []
     for r in raw_rows:
         if is_junk(r):
@@ -174,6 +206,8 @@ def load_rows(raw_rows: list[dict[str, str]]) -> list[Row]:
         row.city = (r.get("City") or "").strip()
         row.zone = (r.get("ZONE") or "").strip()
         row.price = money(r.get("Shipping Price"))
+        latlng = resolve_zip(r.get("Zip Code") or "", centroids)
+        row.lat, row.lng = latlng if latlng else (None, None)
         out.append(row)
     return out
 
@@ -256,7 +290,44 @@ def build_cities(rows: list[Row]) -> dict:
             for (city, country), v in ranked
         ],
         "grandTotal": {"count": total_count, "price": round(total_price, 2)},
+        "mapPoints": build_city_map_points(rows),
     }
+
+
+def in_albers_usa_bounds(lat: float, lng: float) -> bool:
+    # react-simple-maps' geoAlbersUsa composite projection only plots
+    # CONUS plus an inset Alaska/Hawaii — a real, valid lat/lng outside
+    # those (Puerto Rico, US Virgin Islands, other territories) makes the
+    # underlying d3 projection return null and crashes <Marker>. Verified
+    # against real data: Ponce, PR (17.99, -66.66) and St. Thomas, USVI
+    # (18.34, -64.93) both resolve a real zip centroid but fall outside
+    # every box below. Boxes are deliberately generous, not precise borders.
+    if 24.0 <= lat <= 50.0 and -125.0 <= lng <= -66.0:
+        return True  # CONUS
+    if 51.0 <= lat <= 72.0 and -180.0 <= lng <= -129.0:
+        return True  # Alaska
+    if 18.0 <= lat <= 23.0 and -160.0 <= lng <= -154.0:
+        return True  # Hawaii
+    return False
+
+
+def build_city_map_points(rows: list[Row]) -> list[dict]:
+    # Grouped by exact (lat, lng), i.e. by zip — see module docstring.
+    # No Lahaina exclusion here, deliberately (also see module docstring).
+    per: dict[tuple[float, float], dict] = defaultdict(lambda: {"count": 0, "price": 0.0, "city": "", "state": ""})
+    for r in rows:
+        if r.lat is None or r.lng is None or not in_albers_usa_bounds(r.lat, r.lng):
+            continue
+        agg = per[(r.lat, r.lng)]
+        agg["count"] += 1
+        agg["price"] += r.price
+        if not agg["city"]:
+            agg["city"] = r.city
+            agg["state"] = r.state_full
+    return [
+        {"lat": lat, "lng": lng, "count": v["count"], "price": round(v["price"], 2), "city": v["city"], "state": v["state"]}
+        for (lat, lng), v in per.items()
+    ]
 
 
 ZONE_KEYS = ["2", "3", "4", "5", "6", "7", "null"]
@@ -328,6 +399,8 @@ def build_daily_raw(rows: list[Row], anchor: date) -> list[dict]:
             "city": r.city,
             "zone": r.zone,
             "price": round(r.price, 2),
+            "lat": r.lat,
+            "lng": r.lng,
         })
     return out
 
@@ -340,7 +413,8 @@ def build_daily_raw(rows: list[Row], anchor: date) -> list[dict]:
 def main():
     print("Fetching ALL tab ...")
     raw_rows = fetch_rows()
-    rows = load_rows(raw_rows)
+    centroids = load_zip_centroids()
+    rows = load_rows(raw_rows, centroids)
     print(f"  {len(rows):,} valid rows, {min(r.d for r in rows)} to {max(r.d for r in rows)}")
 
     anchor = latest_active_date(rows)
