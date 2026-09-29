@@ -42,8 +42,8 @@ export function buildPaperCatalogTable(): HeatmapTableData {
 
   data.weeks.forEach((w, i) => {
     const short = shortWeekLabel(w.label);
-    columns.push({ key: `count_${i}`, label: `${short} Qty`, align: "right", format: "number" });
-    columns.push({ key: `pct_${i}`, label: `${short} %`, align: "right", format: "percent", heat: "green", sortable: true });
+    columns.push({ key: `count_${i}`, label: `${short} Qty`, align: "right", format: "number", band: i });
+    columns.push({ key: `pct_${i}`, label: `${short} %`, align: "right", format: "percent", heat: "green", sortable: true, band: i });
   });
 
   const rows = data.rows.map((r) => {

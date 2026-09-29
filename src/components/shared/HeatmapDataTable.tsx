@@ -28,6 +28,11 @@ export interface HeatmapColumn {
   // Colors the text green/red by the value's sign (positive/negative) —
   // no color at exactly zero. Used for Sales Report's "% Variance" column.
   signColor?: boolean;
+  // Alternating subtle background tint for columns that belong to the
+  // same logical group (e.g. one week's count+% pair) — even/odd band
+  // by this number, lowest-priority so heat/flag/signColor still show
+  // through where they apply. Used for Paper Catalog's per-week bands.
+  band?: number;
 }
 
 export interface HeatmapTableData {
@@ -108,11 +113,17 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
     if (col.signColor && typeof value === "number" && value !== 0) {
       return { color: value > 0 ? "var(--trend-good)" : "var(--trend-bad)" };
     }
-    if (!col.heat || typeof value !== "number") return undefined;
-    const range = heatRanges[col.key];
-    if (!range || range.max <= 0) return undefined;
-    const t = Math.max(0, Math.min(1, value / range.max));
-    return { backgroundColor: `rgba(var(--heat-${col.heat}), ${(t * 0.55).toFixed(3)})` };
+    if (col.heat && typeof value === "number") {
+      const range = heatRanges[col.key];
+      if (range && range.max > 0) {
+        const t = Math.max(0, Math.min(1, value / range.max));
+        return { backgroundColor: `rgba(var(--heat-${col.heat}), ${(t * 0.55).toFixed(3)})` };
+      }
+    }
+    if (col.band != null && col.band % 2 === 1) {
+      return { backgroundColor: "var(--surface-hover)" };
+    }
+    return undefined;
   }
 
   function renderRow(row: Record<string, string | number | boolean | null>, key: string | number, bold = false) {
@@ -168,6 +179,7 @@ export function HeatmapDataTable({ table }: { table: HeatmapTableData }) {
                 <th
                   key={col.key}
                   className={`${heatStyles.wrapHeader} ${col.align === "right" ? styles.alignRight : ""}`}
+                  style={col.band != null && col.band % 2 === 1 ? { backgroundColor: "var(--surface-hover)" } : undefined}
                 >
                   {col.sortable ? (
                     <button type="button" className={styles.sortButton} onClick={() => toggleSort(col.key)}>
