@@ -22,7 +22,7 @@ export function ContributionView() {
               title: `${q.quarter} | Sales Contribution`,
               columns: [
                 { key: "week", label: "Week", align: "left" },
-                { key: "actual", label: "Actual", align: "right", format: "currency" },
+                { key: "actual", label: "Actual", align: "right", format: "currency", heat: "blue" },
                 { key: "draftPct", label: "Draft %", align: "right", format: "percent" },
                 { key: "webPct", label: "Web site %", align: "right", format: "percent" },
                 { key: "gdPct", label: "Graphic Design %", align: "right", format: "percent" },
