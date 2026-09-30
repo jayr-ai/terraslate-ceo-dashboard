@@ -523,7 +523,7 @@ export const navItems: NavItem[] = [
   { id: "ceo-dashboard", label: "CEO Dashboard", icon: "layout-dashboard", active: true },
   { id: "aircall-dashboard", label: "AirCall Dashboard", icon: "phone-call", active: true },
   { id: "accounts-receivable", label: "Accounts Receivable", icon: "file-text", active: true },
-  { id: "google-ads", label: "Google Ads", icon: "search", active: false },
+  { id: "google-ads", label: "Google Ads", icon: "search", active: true },
   { id: "facebook-ads", label: "Facebook Ads", icon: "thumbs-up", active: true },
   { id: "shipping-dashboard", label: "Shipping Dashboard", icon: "truck", active: true },
   { id: "sales-report", label: "Sales Report Dashboard", icon: "bar-chart-2", active: true },

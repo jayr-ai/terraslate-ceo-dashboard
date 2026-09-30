@@ -10,6 +10,7 @@ import { FacebookAds } from "./pages/FacebookAds";
 import { ShippingDashboard } from "./pages/ShippingDashboard";
 import { SalesReportDashboard } from "./pages/SalesReportDashboard";
 import { PaperCatalogUsage } from "./pages/PaperCatalogUsage";
+import { GoogleAdsDashboard } from "./pages/GoogleAdsDashboard";
 import { DateRangeProvider, useDateRange } from "./data/DateRangeContext";
 import { AircallDateRangeProvider, useAircallDateRange } from "./data/AircallDateRangeContext";
 import { FacebookAdsDateRangeProvider, useFacebookAdsDateRange } from "./data/FacebookAdsDateRangeContext";
@@ -116,6 +117,18 @@ function PaperCatalogUsageHeader({ onMenuClick }: { onMenuClick: () => void }) {
   );
 }
 
+function GoogleAdsDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
+  // No date-range picker here, deliberately — this page isn't wired to a
+  // live source yet (see the in-page AlertBanner). The reference report's
+  // own picker (Last 28 days, excluding today + period comparison) will be
+  // added once the real Google Ads API connection is live.
+  return (
+    <Header title="Google Ads Dashboard" subtitle="Source: Google Ads — TerraSlate Ads Account" onMenuClick={onMenuClick}>
+      <RefreshDataButton />
+    </Header>
+  );
+}
+
 function App() {
   const [navOpen, setNavOpen] = useState(false);
   const [activePage, setActivePage] = useState<NavItem["id"]>("ceo-dashboard");
@@ -140,6 +153,9 @@ function App() {
   } else if (activePage === "paper-catalog") {
     headerEl = <PaperCatalogUsageHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <PaperCatalogUsage />;
+  } else if (activePage === "google-ads") {
+    headerEl = <GoogleAdsDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
+    contentEl = <GoogleAdsDashboard />;
   } else {
     headerEl = <CeoDashboardHeader onMenuClick={() => setNavOpen((v) => !v)} />;
     contentEl = <CeoDashboard />;
