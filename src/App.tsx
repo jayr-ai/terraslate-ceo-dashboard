@@ -16,6 +16,7 @@ import { AircallDateRangeProvider, useAircallDateRange } from "./data/AircallDat
 import { FacebookAdsDateRangeProvider, useFacebookAdsDateRange } from "./data/FacebookAdsDateRangeContext";
 import { ShippingDateRangeProvider, useShippingDateRange } from "./data/ShippingDateRangeContext";
 import { SalesReportProvider, useSalesReport } from "./data/SalesReportContext";
+import { GoogleAdsDateRangeProvider, useGoogleAdsDateRange } from "./data/GoogleAdsDateRangeContext";
 import { CarrierFilter } from "./components/layout/CarrierFilter";
 import { YearFilter } from "./components/layout/YearFilter";
 import type { NavItem } from "./data/ceoDashboardMockData";
@@ -118,13 +119,22 @@ function PaperCatalogUsageHeader({ onMenuClick }: { onMenuClick: () => void }) {
 }
 
 function GoogleAdsDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
-  // No date-range picker here, deliberately — this page isn't wired to a
-  // live source yet (see the in-page AlertBanner). The reference report's
-  // own picker (Last 28 days, excluding today + period comparison) will be
-  // added once the real Google Ads API connection is live.
+  // Live as of the Adveronix-sourced sheet (Campaign x Day, no Device
+  // dimension — device breakdown was dropped, Adveronix can't extract it).
+  // Uses the same standard preset picker as every other live page rather
+  // than literally replicating the native report's own "Last 28 days
+  // excluding today" default, for consistency across the app.
+  const { selection, setPreset, setCustom, windows } = useGoogleAdsDateRange();
   return (
-    <Header title="Google Ads Dashboard" subtitle="Source: Google Ads — TerraSlate Ads Account" onMenuClick={onMenuClick}>
+    <Header title="Google Ads Dashboard" subtitle="Source: Google Ads — TerraSlate Ads Account (via Adveronix)" onMenuClick={onMenuClick}>
       <RefreshDataButton />
+      <DateRangePicker
+        selection={selection}
+        setPreset={setPreset}
+        setCustom={setCustom}
+        displayStart={windows.displayStart}
+        displayEnd={windows.displayEnd}
+      />
     </Header>
   );
 }
@@ -167,18 +177,20 @@ function App() {
         <FacebookAdsDateRangeProvider>
           <ShippingDateRangeProvider>
             <SalesReportProvider>
-              <div className={styles.shell}>
-                <Sidebar
-                  open={navOpen}
-                  onClose={() => setNavOpen(false)}
-                  activePage={activePage}
-                  onSelectPage={setActivePage}
-                />
-                <div className={styles.main}>
-                  {headerEl}
-                  <div className={styles.content}>{contentEl}</div>
+              <GoogleAdsDateRangeProvider>
+                <div className={styles.shell}>
+                  <Sidebar
+                    open={navOpen}
+                    onClose={() => setNavOpen(false)}
+                    activePage={activePage}
+                    onSelectPage={setActivePage}
+                  />
+                  <div className={styles.main}>
+                    {headerEl}
+                    <div className={styles.content}>{contentEl}</div>
+                  </div>
                 </div>
-              </div>
+              </GoogleAdsDateRangeProvider>
             </SalesReportProvider>
           </ShippingDateRangeProvider>
         </FacebookAdsDateRangeProvider>

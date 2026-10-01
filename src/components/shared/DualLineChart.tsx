@@ -6,15 +6,33 @@ const INCALL_COLOR = "var(--series-3)";
 
 export interface DualLineChartPoint {
   date: string;
-  total: number;
-  inCall: number;
+  // Index signature rather than `total`/`inCall` directly so callers can
+  // plot any two numeric fields via the `series` prop below — AirCall (the
+  // original/default caller) still just uses `total`/`inCall`.
+  [key: string]: string | number;
 }
+
+export interface DualLineSeriesConfig {
+  key: string;
+  name: string;
+  color: string;
+  yAxisId: string;
+  // Axis tick formatter for this series' own Y axis — defaults to the
+  // K-suffix numeric formatter below if omitted.
+  formatAxisTick?: (v: number) => string;
+}
+
+const DEFAULT_SERIES: DualLineSeriesConfig[] = [
+  { key: "total", name: "duration (total)", color: TOTAL_COLOR, yAxisId: "total" },
+  { key: "inCall", name: "duration (in call)", color: INCALL_COLOR, yAxisId: "inCall" },
+];
 
 export function DualLineChart({
   data,
   height = 220,
   title,
   yAxisUnit,
+  series = DEFAULT_SERIES,
 }: {
   data: DualLineChartPoint[];
   height?: number;
@@ -22,9 +40,13 @@ export function DualLineChart({
   // Small muted caption next to the title clarifying what the Y-axis scale
   // means, e.g. "seconds" — the axis ticks alone (e.g. "18K") are ambiguous.
   yAxisUnit?: string;
+  // Exactly 2 series expected (one per Y axis, left/right) — defaults to
+  // AirCall's original total/inCall duration pair.
+  series?: DualLineSeriesConfig[];
 }) {
   const uid = `${data.length}-${data[0]?.date ?? ""}`;
   const glowId = `dual-line-glow-${uid}`;
+  const [seriesA, seriesB] = series;
 
   return (
     <div>
@@ -56,20 +78,20 @@ export function DualLineChart({
             minTickGap={40}
           />
           <YAxis
-            yAxisId="total"
+            yAxisId={seriesA.yAxisId}
             tick={{ fill: "var(--text-muted)", fontSize: 11 }}
             axisLine={{ stroke: "var(--border-hairline-strong)" }}
             tickLine={false}
-            tickFormatter={formatAxisValue}
+            tickFormatter={seriesA.formatAxisTick ?? formatAxisValue}
             width={44}
           />
           <YAxis
-            yAxisId="inCall"
+            yAxisId={seriesB.yAxisId}
             orientation="right"
             tick={{ fill: "var(--text-muted)", fontSize: 11 }}
             axisLine={{ stroke: "var(--border-hairline-strong)" }}
             tickLine={false}
-            tickFormatter={formatAxisValue}
+            tickFormatter={seriesB.formatAxisTick ?? formatAxisValue}
             width={44}
           />
           <Legend
@@ -80,22 +102,22 @@ export function DualLineChart({
             formatter={(value) => <span style={{ color: "var(--text-secondary)", fontSize: 12 }}>{value}</span>}
           />
           <Line
-            yAxisId="total"
+            yAxisId={seriesA.yAxisId}
             type="monotone"
-            dataKey="total"
-            name="duration (total)"
-            stroke={TOTAL_COLOR}
+            dataKey={seriesA.key}
+            name={seriesA.name}
+            stroke={seriesA.color}
             strokeWidth={1.5}
             dot={false}
             isAnimationActive={false}
             style={{ filter: `url(#${glowId})` }}
           />
           <Line
-            yAxisId="inCall"
+            yAxisId={seriesB.yAxisId}
             type="monotone"
-            dataKey="inCall"
-            name="duration (in call)"
-            stroke={INCALL_COLOR}
+            dataKey={seriesB.key}
+            name={seriesB.name}
+            stroke={seriesB.color}
             strokeWidth={1.5}
             dot={false}
             isAnimationActive={false}
