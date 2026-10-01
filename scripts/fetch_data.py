@@ -846,20 +846,34 @@ def main():
     sales_windows = build_sales_windows(sales_daily, sales_anchor)
     sales_raw = build_sales_daily_raw(sales_daily, sales_anchor)
 
+    # Every other section used to resolve presets ("Last 7 days" etc.) off
+    # its OWN latest-active-date anchor — technically correct per-section,
+    # but the page only shows ONE date-range label (driven by sales_anchor,
+    # see DateRangeContext.tsx's use of ANCHORS.sales), so Marketing/Tracker/
+    # Staff/Graphic Design/Graphics Hours could silently show a materially
+    # different window than the label claimed (e.g. the Tracker's own anchor
+    # can land weeks in the future on a real forward-scheduled ship date,
+    # while the label still said "Sep 21-27"). Caught via a user-reported
+    # Ad Spend mismatch that traced to exactly this — JV chose "one shared
+    # anchor for the whole page" (over captioning each section with its own
+    # true range) so every section now resolves off sales_anchor. Each
+    # section's own true latest-active date is still computed and reported
+    # in `anchors` below, for debugging/data-freshness visibility only — it
+    # no longer drives any window.
     print("Fetching ProductionRaw / BlankOrders (tracker) ...")
     tracker_daily, tracker_anchor = load_terraslate_tracker_daily()
-    tracker_windows = build_terraslate_tracker_windows(tracker_daily, tracker_anchor)
-    tracker_raw = build_terraslate_tracker_daily_raw(tracker_daily, tracker_anchor)
+    tracker_windows = build_terraslate_tracker_windows(tracker_daily, sales_anchor)
+    tracker_raw = build_terraslate_tracker_daily_raw(tracker_daily, sales_anchor)
 
     print("Fetching ADS ...")
     marketing_dated, _, marketing_anchor = load_marketing_daily()
-    marketing_windows = build_marketing_windows(marketing_dated, marketing_anchor)
-    marketing_raw = build_marketing_daily_raw(marketing_dated, marketing_anchor)
+    marketing_windows = build_marketing_windows(marketing_dated, sales_anchor)
+    marketing_raw = build_marketing_daily_raw(marketing_dated, sales_anchor)
 
     print("Fetching SalesPerStaff (Breadwinnaz + Proof/Graphic team sales) ...")
     staff_dated, staff_anchor = load_staff_daily()
-    breadwinnaz_windows, proof_windows, graphic_sales_windows = build_staff_windows(staff_dated, staff_anchor)
-    staff_raw = build_staff_daily_raw(staff_dated, staff_anchor)
+    breadwinnaz_windows, proof_windows, graphic_sales_windows = build_staff_windows(staff_dated, sales_anchor)
+    staff_raw = build_staff_daily_raw(staff_dated, sales_anchor)
 
     print("Fetching PrePress ...")
     prepress = build_prepress()
@@ -869,13 +883,13 @@ def main():
 
     print("Fetching graphic_design ...")
     graphic_design_daily, gd_anchor = load_graphic_design_daily()
-    graphic_design_windows = build_graphic_design_windows(graphic_design_daily, gd_anchor)
-    graphic_design_raw = build_graphic_design_daily_raw(graphic_design_daily, gd_anchor)
+    graphic_design_windows = build_graphic_design_windows(graphic_design_daily, sales_anchor)
+    graphic_design_raw = build_graphic_design_daily_raw(graphic_design_daily, sales_anchor)
 
     print("Fetching graphics_clockify ...")
     hours_dated, hours_anchor = load_graphics_hours_daily()
-    graphics_hours_windows = build_graphics_hours_windows(hours_dated, hours_anchor)
-    graphics_hours_raw = build_graphics_hours_daily_raw(hours_dated, hours_anchor)
+    graphics_hours_windows = build_graphics_hours_windows(hours_dated, sales_anchor)
+    graphics_hours_raw = build_graphics_hours_daily_raw(hours_dated, sales_anchor)
 
     print("Fetching country_city (shipping by state) ...")
     shipping = build_shipping_by_state()
@@ -885,6 +899,11 @@ def main():
 
     data = {
         "generatedAt": datetime.utcnow().isoformat() + "Z",
+        # `sales` is the ONE anchor every section's preset windows are
+        # actually resolved against (and the only one the date-range picker
+        # label uses — see DateRangeContext.tsx). The other fields are each
+        # dataset's own true latest-active date, kept here for data-
+        # freshness debugging only — informational, not used for windowing.
         "anchors": {
             "sales": sales_anchor.isoformat(),
             "marketing": marketing_anchor.isoformat(),
