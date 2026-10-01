@@ -1,60 +1,34 @@
 import { createContext, useContext, useMemo, useState, type ReactNode } from "react";
-import raw from "./shippingData.json";
 import {
-  ANCHOR,
-  DEFAULT_SELECTION,
-  resolvePresetRange,
-  computeCustomWindow,
-  type DateRangeSelection,
-  type PresetKey,
+  DEFAULT_MONTH,
+  MONTHS,
+  getShippingWindow,
   type Carrier,
+  type MonthOption,
   type ShippingWindow,
 } from "../lib/shippingDateRange";
 
-interface ResolvedWindows extends ShippingWindow {
-  displayStart: string;
-  displayEnd: string;
-}
-
 interface ShippingDateRangeContextValue {
-  selection: DateRangeSelection;
-  setPreset: (key: PresetKey) => void;
-  setCustom: (start: string, end: string) => void;
+  month: string;
+  setMonth: (key: string) => void;
+  months: MonthOption[];
   carrier: Carrier;
   setCarrier: (c: Carrier) => void;
-  windows: ResolvedWindows;
+  windows: ShippingWindow;
 }
 
 const ShippingDateRangeContext = createContext<ShippingDateRangeContextValue | null>(null);
 
-const presetWindows = raw.windows as unknown as Record<PresetKey, ShippingWindow>;
-
 export function ShippingDateRangeProvider({ children }: { children: ReactNode }) {
-  const [selection, setSelection] = useState<DateRangeSelection>(DEFAULT_SELECTION);
+  const [month, setMonth] = useState<string>(DEFAULT_MONTH);
   const [carrier, setCarrier] = useState<Carrier>("All");
 
-  const windows = useMemo<ResolvedWindows>(() => {
-    if (selection.kind === "preset" && carrier === "All") {
-      const { key } = selection;
-      return {
-        ...presetWindows[key],
-        displayStart: resolvePresetRange(ANCHOR, key)[0],
-        displayEnd: resolvePresetRange(ANCHOR, key)[1],
-      };
-    }
-    const [start, end] =
-      selection.kind === "preset" ? resolvePresetRange(ANCHOR, selection.key) : [selection.start, selection.end];
-    return {
-      ...computeCustomWindow(start, end, carrier),
-      displayStart: start,
-      displayEnd: end,
-    };
-  }, [selection, carrier]);
+  const windows = useMemo(() => getShippingWindow(month, carrier), [month, carrier]);
 
   const value: ShippingDateRangeContextValue = {
-    selection,
-    setPreset: (key) => setSelection({ kind: "preset", key }),
-    setCustom: (start, end) => setSelection({ kind: "custom", start, end }),
+    month,
+    setMonth,
+    months: MONTHS,
     carrier,
     setCarrier,
     windows,

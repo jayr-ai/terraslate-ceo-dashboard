@@ -58,16 +58,18 @@ Cities table, the map does NOT exclude Lahaina — that exclusion is
 specific to the ranked-spend table in the reference, and Lahaina is a
 real ship-to location that belongs on a map of where shipments go.
 
-## Date-range + Carrier picker architecture (mirrors scripts/fetch_facebook_ads.py)
+## Month + Carrier picker architecture (JV, 2026-10-01: replaced the
+## standard Today/Yesterday/Last Week/etc. picker with a plain Monthly
+## dropdown — this sheet is updated on a monthly cadence, not daily, so a
+## trailing-N-days window never meant much here anyway)
 
-  1. **`windows`** — the 6 preset ranges, CARRIER="All" only, anchored to
-     the latest date with any shipment. Any other carrier selection, or a
-     custom date range, is computed client-side from `dailyRaw` instead —
-     precomputing all (6 presets x 3 carriers) combinations wasn't worth
-     the extra pipeline complexity for a 3-way toggle.
-  2. **`dailyRaw`** — per-shipment rows, capped to the trailing
-     RAW_WINDOW_DAYS days (same convention/cap as every other dashboard
-     here), for client-computed windows.
+`windows` precomputes every (month x carrier) combination up front —
+Jan 2025 (or the real data's own earliest month, if that's earlier)
+through December of the current year, x All/UPS/FEDEX. That's a small,
+fully enumerable grid (no "custom range" exists anymore, so there's no
+need for a client-computed fallback or a capped per-shipment `dailyRaw`
+feed like the other pickers use) — the client does a pure lookup by
+`${monthKey}.${carrier}`, nothing is computed in the browser.
 """
 
 from __future__ import annotations
@@ -86,8 +88,6 @@ ALL_GID = "2065189606"
 OUT_PATH = Path(__file__).resolve().parent.parent / "src" / "data" / "shippingData.json"
 ZIP_CENTROIDS_PATH = Path(__file__).resolve().parent / "data" / "zip_centroids.csv"
 
-PRESET_KEYS = ["today", "yesterday", "last7", "last30", "thisMonth", "lastMonth"]
-RAW_WINDOW_DAYS = 180
 EXCLUDED_CITY = "LAHAINA"
 
 
@@ -130,57 +130,41 @@ def is_junk(r: dict[str, str]) -> bool:
     return "R_State" in (r.get("State") or "") or "R_Cntry" in (r.get("Country") or "") or "R_City" in (r.get("City") or "")
 
 
-def trend(curr: float, prev: float) -> dict | None:
-    if prev == 0:
-        return None
-    pct = round((curr - prev) / prev * 100, 1)
-    direction = "up" if pct > 0 else "down" if pct < 0 else "na"
-    return {"changePct": pct, "direction": direction}
-
-
-def prev_period(start: date, end: date) -> tuple[date, date]:
-    length = (end - start).days + 1
-    prev_end = start - timedelta(days=1)
-    prev_start = prev_end - timedelta(days=length - 1)
-    return prev_start, prev_end
-
-
-def resolve_last_week() -> tuple[date, date]:
-    """"Last Week" (labeled; preset key stays "last7") is NOT anchor-relative
-    like every other preset — it's a literal, calendar-pinned Mon-Sun week
-    relative to the real current date (JV, 2026-10-01: "always pull the
-    previous week cutoff from Monday to Sunday"). Mirrors dateRange.ts's
-    resolveLastWeekRange()."""
-    today = date.today()
-    days_since_monday = today.weekday()  # Mon=0 .. Sun=6
-    this_monday = today - timedelta(days=days_since_monday)
-    last_monday = this_monday - timedelta(days=7)
-    last_sunday = this_monday - timedelta(days=1)
-    return last_monday, last_sunday
-
-
-def resolve_preset(anchor: date, key: str) -> tuple[date, date]:
-    if key == "today":
-        return anchor, anchor
-    if key == "yesterday":
-        d = anchor - timedelta(days=1)
-        return d, d
-    if key == "last7":
-        return resolve_last_week()
-    if key == "last30":
-        return anchor - timedelta(days=29), anchor
-    if key == "thisMonth":
-        return anchor.replace(day=1), anchor
-    if key == "lastMonth":
-        first_this = anchor.replace(day=1)
-        last_prev = first_this - timedelta(days=1)
-        first_prev = last_prev.replace(day=1)
-        return first_prev, last_prev
-    raise ValueError(f"unknown preset {key}")
-
-
 def date_key(d: date) -> str:
     return d.isoformat()
+
+
+def month_key(year: int, month: int) -> str:
+    return f"{year:04d}-{month:02d}"
+
+
+def month_label(year: int, month: int) -> str:
+    return date(year, month, 1).strftime("%b %Y")
+
+
+def month_bounds(year: int, month: int) -> tuple[date, date]:
+    start = date(year, month, 1)
+    end = date(year, 12, 31) if month == 12 else date(year, month + 1, 1) - timedelta(days=1)
+    return start, end
+
+
+def generate_months(rows: list[Row]) -> list[tuple[int, int]]:
+    """Jan 2025 through December of the current real year (JV, 2026-10-01:
+    a plain Monthly dropdown, no Today/Last Week/etc.) — extended backward
+    if real data starts earlier than Jan 2025, so a real month is never
+    silently dropped from the dropdown."""
+    earliest = min(r.d for r in rows)
+    start_year, start_month = min((2025, 1), (earliest.year, earliest.month))
+    this_year = date.today().year
+    months: list[tuple[int, int]] = []
+    y, m = start_year, start_month
+    while (y, m) <= (this_year, 12):
+        months.append((y, m))
+        m += 1
+        if m == 13:
+            m = 1
+            y += 1
+    return months
 
 
 # ---------------------------------------------------------------------------
@@ -388,34 +372,18 @@ def build_section_window(rows: list[Row]) -> dict:
     }
 
 
-def build_windows(rows: list[Row], anchor: date) -> dict:
-    out = {}
-    for key in PRESET_KEYS:
-        start, end = resolve_preset(anchor, key)
-        window_rows = filter_rows(rows, start, end, "All")
-        out[key] = build_section_window(window_rows)
-    return out
+CARRIERS = ["All", "UPS", "FEDEX"]
 
 
-def build_daily_raw(rows: list[Row], anchor: date) -> list[dict]:
-    start = anchor - timedelta(days=RAW_WINDOW_DAYS - 1)
-    out = []
-    for r in rows:
-        if not (start <= r.d <= anchor):
-            continue
-        out.append({
-            "date": date_key(r.d),
-            "carrier": r.carrier,
-            "country": r.country,
-            "countryFull": r.country_full,
-            "state": r.state,
-            "stateFull": r.state_full,
-            "city": r.city,
-            "zone": r.zone,
-            "price": round(r.price, 2),
-            "lat": r.lat,
-            "lng": r.lng,
-        })
+def build_month_windows(rows: list[Row], months: list[tuple[int, int]]) -> dict:
+    out: dict[str, dict] = {}
+    for y, m in months:
+        start, end = month_bounds(y, m)
+        key = month_key(y, m)
+        out[key] = {}
+        for carrier in CARRIERS:
+            window_rows = filter_rows(rows, start, end, carrier)
+            out[key][carrier] = build_section_window(window_rows)
     return out
 
 
@@ -432,18 +400,17 @@ def main():
     print(f"  {len(rows):,} valid rows, {min(r.d for r in rows)} to {max(r.d for r in rows)}")
 
     anchor = latest_active_date(rows)
+    months = generate_months(rows)
 
-    print("Building Country/State/City/Zone sections (6 presets, Carrier=All) ...")
-    windows = build_windows(rows, anchor)
-
-    print("Building dailyRaw (custom range + carrier filter support) ...")
-    daily_raw = build_daily_raw(rows, anchor)
+    print(f"Building {len(months)} months x {len(CARRIERS)} carriers ...")
+    windows = build_month_windows(rows, months)
 
     data = {
         "generatedAt": datetime.utcnow().isoformat() + "Z",
         "anchor": anchor.isoformat(),
+        "defaultMonth": month_key(anchor.year, anchor.month),
+        "months": [{"key": month_key(y, m), "label": month_label(y, m)} for y, m in months],
         "windows": windows,
-        "dailyRaw": daily_raw,
     }
 
     OUT_PATH.parent.mkdir(parents=True, exist_ok=True)

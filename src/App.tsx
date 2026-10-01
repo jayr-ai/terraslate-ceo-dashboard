@@ -18,6 +18,7 @@ import { ShippingDateRangeProvider, useShippingDateRange } from "./data/Shipping
 import { SalesReportProvider, useSalesReport } from "./data/SalesReportContext";
 import { GoogleAdsDateRangeProvider, useGoogleAdsDateRange } from "./data/GoogleAdsDateRangeContext";
 import { CarrierFilter } from "./components/layout/CarrierFilter";
+import { MonthFilter } from "./components/layout/MonthFilter";
 import { YearFilter } from "./components/layout/YearFilter";
 import type { NavItem } from "./data/ceoDashboardMockData";
 import styles from "./App.module.css";
@@ -81,18 +82,12 @@ function FacebookAdsHeader({ onMenuClick }: { onMenuClick: () => void }) {
 }
 
 function ShippingDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
-  const { selection, setPreset, setCustom, carrier, setCarrier, windows } = useShippingDateRange();
+  const { month, setMonth, months, carrier, setCarrier } = useShippingDateRange();
   return (
     <Header title="Shipping Dashboard" subtitle="FedEx & UPS data" onMenuClick={onMenuClick}>
       <RefreshDataButton />
       <CarrierFilter carrier={carrier} setCarrier={setCarrier} />
-      <DateRangePicker
-        selection={selection}
-        setPreset={setPreset}
-        setCustom={setCustom}
-        displayStart={windows.displayStart}
-        displayEnd={windows.displayEnd}
-      />
+      <MonthFilter month={month} setMonth={setMonth} months={months} />
     </Header>
   );
 }
