@@ -145,6 +145,20 @@ def prev_period(start: date, end: date) -> tuple[date, date]:
     return prev_start, prev_end
 
 
+def resolve_last_week() -> tuple[date, date]:
+    """"Last Week" (labeled; preset key stays "last7") is NOT anchor-relative
+    like every other preset — it's a literal, calendar-pinned Mon-Sun week
+    relative to the real current date (JV, 2026-10-01: "always pull the
+    previous week cutoff from Monday to Sunday"). Mirrors dateRange.ts's
+    resolveLastWeekRange()."""
+    today = date.today()
+    days_since_monday = today.weekday()  # Mon=0 .. Sun=6
+    this_monday = today - timedelta(days=days_since_monday)
+    last_monday = this_monday - timedelta(days=7)
+    last_sunday = this_monday - timedelta(days=1)
+    return last_monday, last_sunday
+
+
 def resolve_preset(anchor: date, key: str) -> tuple[date, date]:
     if key == "today":
         return anchor, anchor
@@ -152,7 +166,7 @@ def resolve_preset(anchor: date, key: str) -> tuple[date, date]:
         d = anchor - timedelta(days=1)
         return d, d
     if key == "last7":
-        return anchor - timedelta(days=6), anchor
+        return resolve_last_week()
     if key == "last30":
         return anchor - timedelta(days=29), anchor
     if key == "thisMonth":

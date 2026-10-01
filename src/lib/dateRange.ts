@@ -15,7 +15,7 @@ export type PresetKey = (typeof PRESET_KEYS)[number];
 export const PRESET_LABELS: Record<PresetKey, string> = {
   today: "Today",
   yesterday: "Yesterday",
-  last7: "Last 7 days",
+  last7: "Last Week",
   last30: "Last 30 days",
   thisMonth: "This month",
   lastMonth: "Last month",
@@ -74,10 +74,37 @@ export function trend(curr: number, prev: number): Trend | undefined {
   return { changePct: pct, direction };
 }
 
+// "Last Week" is the one preset that is NOT anchored to a dataset's own
+// latest-active date — it's a literal, calendar-pinned Mon-Sun week
+// relative to the real current date (JV, 2026-10-01: "always pull the
+// previous week cutoff from Monday to Sunday"). Uses the viewer's own
+// local calendar date (getFullYear/Month/Date, not toISOString(), which
+// would round-trip through UTC and show the wrong day near midnight for
+// anyone outside UTC+0 — the exact bug already hit elsewhere in this app).
+function todayLocalIso(): string {
+  const d = new Date();
+  const y = d.getFullYear();
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const day = String(d.getDate()).padStart(2, "0");
+  return `${y}-${m}-${day}`;
+}
+
+/** [lastMonday, lastSunday] of the most recently fully-completed Mon-Sun
+ * week, relative to today — mirrors fetch_data.py's resolve_last_week(). */
+export function resolveLastWeekRange(): [string, string] {
+  const today = todayLocalIso();
+  const dow = toDate(today).getUTCDay(); // Sun=0 .. Sat=6
+  const daysSinceMonday = (dow + 6) % 7; // Mon=0 .. Sun=6
+  const thisMonday = addDays(today, -daysSinceMonday);
+  return [addDays(thisMonday, -7), addDays(thisMonday, -1)];
+}
+
 /** Resolves a preset key to [start, end] anchored to that dataset's own
  * latest-active date — mirrors fetch_data.py's resolve_preset(). Only used
  * for display (the actual preset *data* is precomputed server-side); custom
- * range uses this same anchor concept implicitly via the date inputs. */
+ * range uses this same anchor concept implicitly via the date inputs.
+ * "last7" (labeled "Last Week") ignores the anchor entirely — see
+ * resolveLastWeekRange() above. */
 export function resolvePresetRange(anchor: string, key: PresetKey): [string, string] {
   switch (key) {
     case "today":
@@ -87,7 +114,7 @@ export function resolvePresetRange(anchor: string, key: PresetKey): [string, str
       return [d, d];
     }
     case "last7":
-      return [addDays(anchor, -6), anchor];
+      return resolveLastWeekRange();
     case "last30":
       return [addDays(anchor, -29), anchor];
     case "thisMonth":
