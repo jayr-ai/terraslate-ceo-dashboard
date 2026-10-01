@@ -162,6 +162,10 @@ export interface DailyChartPoint {
   cost: number;
   avgCpc: number;
   avgCpm: number;
+  // Matches DualLineChartPoint's own index signature — required for TS to
+  // accept this as chart data (an explicit interface isn't structurally
+  // assignable to an indexed type without one, even with matching fields).
+  [key: string]: string | number;
 }
 
 export function computeCustomDailyChart(start: string, end: string): DailyChartPoint[] {
