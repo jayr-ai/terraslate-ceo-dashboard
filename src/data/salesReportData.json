@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-29T11:43:30.864838Z",
+  "generatedAt": "2026-10-01T12:36:28.732882Z",
   "years": [
     2026,
     2025,
@@ -4689,17 +4689,17 @@
       "quarter": "Q3",
       "weekStart": "09/21/2026",
       "forecast": 251565.0,
-      "actual": null,
+      "actual": 330371.0,
       "forecastDraft": 118132.0,
-      "actualDraft": null,
+      "actualDraft": 200155.0,
       "fcstAmzn": 30236.0,
-      "actualAmzn": null,
+      "actualAmzn": 30999.0,
       "fcstGd": 5031.0,
-      "paidGdWork": null,
+      "paidGdWork": 3649.0,
       "fcstWeb": 96654.0,
-      "actualWeb": null,
+      "actualWeb": 98327.0,
       "forecastWmt": 1512.0,
-      "actualWmt": null
+      "actualWmt": 890.0
     }
   ]
 }
