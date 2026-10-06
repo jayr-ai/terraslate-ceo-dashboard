@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-05T14:10:02.946905Z",
-  "anchor": "2026-10-04",
+  "generatedAt": "2026-10-06T04:29:37.043587Z",
+  "anchor": "2026-10-05",
   "summary": {
     "windows": {
       "today": {
@@ -12,9 +12,9 @@
             "stats": [
               {
                 "label": "Clicks",
-                "value": "42",
+                "value": "85",
                 "trend": {
-                  "changePct": -55.3,
+                  "changePct": -6.6,
                   "direction": "down"
                 }
               },
@@ -22,15 +22,15 @@
                 "label": "CTR",
                 "value": "1.5%",
                 "trend": {
-                  "changePct": -0.7,
-                  "direction": "down"
+                  "changePct": 14.3,
+                  "direction": "up"
                 }
               },
               {
                 "label": "Impressions",
-                "value": "2.8K",
+                "value": "5.6K",
                 "trend": {
-                  "changePct": -55.0,
+                  "changePct": -18.4,
                   "direction": "down"
                 }
               }
@@ -43,25 +43,25 @@
             "stats": [
               {
                 "label": "Conversions",
-                "value": "1.0",
+                "value": "4.0",
                 "trend": {
-                  "changePct": 0.0,
-                  "direction": "na"
+                  "changePct": 33.3,
+                  "direction": "up"
                 }
               },
               {
                 "label": "Conv. rate",
-                "value": "2.4%",
+                "value": "4.7%",
                 "trend": {
-                  "changePct": 124.5,
+                  "changePct": 42.7,
                   "direction": "up"
                 }
               },
               {
                 "label": "Cost / conv.",
-                "value": "$293.70",
+                "value": "$196.79",
                 "trend": {
-                  "changePct": -46.3,
+                  "changePct": -22.8,
                   "direction": "down"
                 }
               }
@@ -74,25 +74,25 @@
             "stats": [
               {
                 "label": "Cost",
-                "value": "$293.70",
+                "value": "$787.16",
                 "trend": {
-                  "changePct": -46.3,
-                  "direction": "down"
+                  "changePct": 2.9,
+                  "direction": "up"
                 }
               },
               {
                 "label": "Avg. CPC",
-                "value": "$6.99",
+                "value": "$9.26",
                 "trend": {
-                  "changePct": 20.3,
+                  "changePct": 10.2,
                   "direction": "up"
                 }
               },
               {
                 "label": "Avg. CPM",
-                "value": "$106.34",
+                "value": "$140.92",
                 "trend": {
-                  "changePct": 19.4,
+                  "changePct": 26.1,
                   "direction": "up"
                 }
               }
@@ -109,26 +109,26 @@
             "stats": [
               {
                 "label": "Clicks",
-                "value": "94",
+                "value": "91",
                 "trend": {
-                  "changePct": -42.0,
+                  "changePct": -2.2,
                   "direction": "down"
                 }
               },
               {
                 "label": "CTR",
-                "value": "1.5%",
+                "value": "1.3%",
                 "trend": {
-                  "changePct": 37.8,
-                  "direction": "up"
+                  "changePct": -12.5,
+                  "direction": "down"
                 }
               },
               {
                 "label": "Impressions",
-                "value": "6.1K",
+                "value": "6.8K",
                 "trend": {
-                  "changePct": -58.0,
-                  "direction": "down"
+                  "changePct": 11.6,
+                  "direction": "up"
                 }
               }
             ]
@@ -140,26 +140,26 @@
             "stats": [
               {
                 "label": "Conversions",
-                "value": "1.0",
+                "value": "3.0",
                 "trend": {
-                  "changePct": -93.8,
-                  "direction": "down"
+                  "changePct": 200.0,
+                  "direction": "up"
                 }
               },
               {
                 "label": "Conv. rate",
-                "value": "1.1%",
+                "value": "3.3%",
                 "trend": {
-                  "changePct": -89.3,
-                  "direction": "down"
+                  "changePct": 205.6,
+                  "direction": "up"
                 }
               },
               {
                 "label": "Cost / conv.",
-                "value": "$546.48",
+                "value": "$254.91",
                 "trend": {
-                  "changePct": 768.4,
-                  "direction": "up"
+                  "changePct": -53.3,
+                  "direction": "down"
                 }
               }
             ]
@@ -171,25 +171,25 @@
             "stats": [
               {
                 "label": "Cost",
-                "value": "$546.48",
+                "value": "$764.72",
                 "trend": {
-                  "changePct": -45.7,
-                  "direction": "down"
+                  "changePct": 40.0,
+                  "direction": "up"
                 }
               },
               {
                 "label": "Avg. CPC",
-                "value": "$5.81",
+                "value": "$8.40",
                 "trend": {
-                  "changePct": -6.4,
-                  "direction": "down"
+                  "changePct": 43.1,
+                  "direction": "up"
                 }
               },
               {
                 "label": "Avg. CPM",
-                "value": "$89.09",
+                "value": "$111.77",
                 "trend": {
-                  "changePct": 29.3,
+                  "changePct": 25.4,
                   "direction": "up"
                 }
               }
@@ -206,9 +206,9 @@
             "stats": [
               {
                 "label": "Clicks",
-                "value": "895",
+                "value": "942",
                 "trend": {
-                  "changePct": 0.6,
+                  "changePct": 5.8,
                   "direction": "up"
                 }
               },
@@ -216,16 +216,16 @@
                 "label": "CTR",
                 "value": "1.6%",
                 "trend": {
-                  "changePct": 7.2,
+                  "changePct": 5.2,
                   "direction": "up"
                 }
               },
               {
                 "label": "Impressions",
-                "value": "54.6K",
+                "value": "58.7K",
                 "trend": {
-                  "changePct": -6.3,
-                  "direction": "down"
+                  "changePct": 0.7,
+                  "direction": "up"
                 }
               }
             ]
@@ -237,25 +237,25 @@
             "stats": [
               {
                 "label": "Conversions",
-                "value": "78.0",
+                "value": "85.0",
                 "trend": {
-                  "changePct": -38.8,
+                  "changePct": -34.9,
                   "direction": "down"
                 }
               },
               {
                 "label": "Conv. rate",
-                "value": "8.7%",
+                "value": "9.0%",
                 "trend": {
-                  "changePct": -39.1,
+                  "changePct": -38.5,
                   "direction": "down"
                 }
               },
               {
                 "label": "Cost / conv.",
-                "value": "$80.86",
+                "value": "$79.74",
                 "trend": {
-                  "changePct": 67.7,
+                  "changePct": 69.2,
                   "direction": "up"
                 }
               }
@@ -268,17 +268,17 @@
             "stats": [
               {
                 "label": "Cost",
-                "value": "$6.31K",
+                "value": "$6.78K",
                 "trend": {
-                  "changePct": 2.6,
+                  "changePct": 10.2,
                   "direction": "up"
                 }
               },
               {
                 "label": "Avg. CPC",
-                "value": "$7.05",
+                "value": "$7.19",
                 "trend": {
-                  "changePct": 2.0,
+                  "changePct": 4.1,
                   "direction": "up"
                 }
               },
@@ -303,9 +303,9 @@
             "stats": [
               {
                 "label": "Clicks",
-                "value": "3.4K",
+                "value": "3.5K",
                 "trend": {
-                  "changePct": -14.1,
+                  "changePct": -8.4,
                   "direction": "down"
                 }
               },
@@ -313,15 +313,15 @@
                 "label": "CTR",
                 "value": "1.4%",
                 "trend": {
-                  "changePct": 14.2,
+                  "changePct": 10.7,
                   "direction": "up"
                 }
               },
               {
                 "label": "Impressions",
-                "value": "232.7K",
+                "value": "237.5K",
                 "trend": {
-                  "changePct": -24.4,
+                  "changePct": -17.7,
                   "direction": "down"
                 }
               }
@@ -334,9 +334,9 @@
             "stats": [
               {
                 "label": "Conversions",
-                "value": "418.9",
+                "value": "427.0",
                 "trend": {
-                  "changePct": 9.3,
+                  "changePct": 13.4,
                   "direction": "up"
                 }
               },
@@ -344,15 +344,15 @@
                 "label": "Conv. rate",
                 "value": "12.4%",
                 "trend": {
-                  "changePct": 27.2,
+                  "changePct": 23.8,
                   "direction": "up"
                 }
               },
               {
                 "label": "Cost / conv.",
-                "value": "$55.06",
+                "value": "$56.20",
                 "trend": {
-                  "changePct": -5.1,
+                  "changePct": -1.2,
                   "direction": "down"
                 }
               }
@@ -365,25 +365,25 @@
             "stats": [
               {
                 "label": "Cost",
-                "value": "$23.06K",
+                "value": "$24.00K",
                 "trend": {
-                  "changePct": 3.7,
+                  "changePct": 12.1,
                   "direction": "up"
                 }
               },
               {
                 "label": "Avg. CPC",
-                "value": "$6.84",
+                "value": "$6.95",
                 "trend": {
-                  "changePct": 20.8,
+                  "changePct": 22.4,
                   "direction": "up"
                 }
               },
               {
                 "label": "Avg. CPM",
-                "value": "$99.12",
+                "value": "$101.03",
                 "trend": {
-                  "changePct": 37.3,
+                  "changePct": 36.2,
                   "direction": "up"
                 }
               }
@@ -400,9 +400,9 @@
             "stats": [
               {
                 "label": "Clicks",
-                "value": "442",
+                "value": "574",
                 "trend": {
-                  "changePct": -14.0,
+                  "changePct": -2.5,
                   "direction": "down"
                 }
               },
@@ -410,15 +410,15 @@
                 "label": "CTR",
                 "value": "1.3%",
                 "trend": {
-                  "changePct": -37.4,
+                  "changePct": -34.5,
                   "direction": "down"
                 }
               },
               {
                 "label": "Impressions",
-                "value": "33.4K",
+                "value": "43.0K",
                 "trend": {
-                  "changePct": 37.3,
+                  "changePct": 48.4,
                   "direction": "up"
                 }
               }
@@ -431,9 +431,9 @@
             "stats": [
               {
                 "label": "Conversions",
-                "value": "27.0",
+                "value": "35.0",
                 "trend": {
-                  "changePct": -50.5,
+                  "changePct": -48.9,
                   "direction": "down"
                 }
               },
@@ -441,15 +441,15 @@
                 "label": "Conv. rate",
                 "value": "6.1%",
                 "trend": {
-                  "changePct": -42.4,
+                  "changePct": -47.5,
                   "direction": "down"
                 }
               },
               {
                 "label": "Cost / conv.",
-                "value": "$104.40",
+                "value": "$116.48",
                 "trend": {
-                  "changePct": 41.2,
+                  "changePct": 80.0,
                   "direction": "up"
                 }
               }
@@ -462,25 +462,25 @@
             "stats": [
               {
                 "label": "Cost",
-                "value": "$2.82K",
+                "value": "$4.08K",
                 "trend": {
-                  "changePct": -30.0,
+                  "changePct": -8.0,
                   "direction": "down"
                 }
               },
               {
                 "label": "Avg. CPC",
-                "value": "$6.38",
+                "value": "$7.10",
                 "trend": {
-                  "changePct": -18.6,
+                  "changePct": -5.7,
                   "direction": "down"
                 }
               },
               {
                 "label": "Avg. CPM",
-                "value": "$84.43",
+                "value": "$94.70",
                 "trend": {
-                  "changePct": -49.1,
+                  "changePct": -38.0,
                   "direction": "down"
                 }
               }
@@ -528,25 +528,25 @@
             "stats": [
               {
                 "label": "Conversions",
-                "value": "451.4",
+                "value": "460.4",
                 "trend": {
-                  "changePct": 14.2,
+                  "changePct": 16.5,
                   "direction": "up"
                 }
               },
               {
                 "label": "Conv. rate",
-                "value": "13.2%",
+                "value": "13.4%",
                 "trend": {
-                  "changePct": 34.4,
+                  "changePct": 37.0,
                   "direction": "up"
                 }
               },
               {
                 "label": "Cost / conv.",
-                "value": "$51.51",
+                "value": "$50.50",
                 "trend": {
-                  "changePct": -9.8,
+                  "changePct": -11.5,
                   "direction": "down"
                 }
               }
@@ -591,28 +591,28 @@
     "windows": {
       "today": [
         {
-          "date": "2026-10-04",
-          "clicks": 42,
+          "date": "2026-10-05",
+          "clicks": 85,
           "ctr": 1.52,
-          "impressions": 2762,
-          "conversions": 1.0,
-          "convRate": 2.38,
-          "cost": 293.7,
-          "avgCpc": 6.99,
-          "avgCpm": 106.34
+          "impressions": 5586,
+          "conversions": 4.0,
+          "convRate": 4.71,
+          "cost": 787.16,
+          "avgCpc": 9.26,
+          "avgCpm": 140.92
         }
       ],
       "yesterday": [
         {
-          "date": "2026-10-03",
-          "clicks": 94,
-          "ctr": 1.53,
-          "impressions": 6134,
-          "conversions": 1.0,
-          "convRate": 1.06,
-          "cost": 546.48,
-          "avgCpc": 5.81,
-          "avgCpm": 89.09
+          "date": "2026-10-04",
+          "clicks": 91,
+          "ctr": 1.33,
+          "impressions": 6842,
+          "conversions": 3.0,
+          "convRate": 3.3,
+          "cost": 764.72,
+          "avgCpc": 8.4,
+          "avgCpm": 111.77
         }
       ],
       "last7": [
@@ -621,8 +621,8 @@
           "clicks": 137,
           "ctr": 1.9,
           "impressions": 7223,
-          "conversions": 14.5,
-          "convRate": 10.58,
+          "conversions": 16.0,
+          "convRate": 11.68,
           "cost": 1242.84,
           "avgCpc": 9.07,
           "avgCpm": 172.07
@@ -643,8 +643,8 @@
           "clicks": 146,
           "ctr": 2.19,
           "impressions": 6662,
-          "conversions": 19.0,
-          "convRate": 13.01,
+          "conversions": 20.5,
+          "convRate": 14.04,
           "cost": 1066.41,
           "avgCpc": 7.3,
           "avgCpm": 160.07
@@ -654,58 +654,47 @@
           "clicks": 144,
           "ctr": 1.46,
           "impressions": 9873,
-          "conversions": 9.0,
-          "convRate": 6.25,
+          "conversions": 11.0,
+          "convRate": 7.64,
           "cost": 971.83,
           "avgCpc": 6.75,
           "avgCpm": 98.43
         },
         {
           "date": "2026-10-02",
-          "clicks": 162,
-          "ctr": 1.11,
+          "clicks": 161,
+          "ctr": 1.1,
           "impressions": 14618,
           "conversions": 16.0,
-          "convRate": 9.88,
-          "cost": 1006.82,
-          "avgCpc": 6.21,
-          "avgCpm": 68.88
+          "convRate": 9.94,
+          "cost": 1006.8,
+          "avgCpc": 6.25,
+          "avgCpm": 68.87
         },
         {
           "date": "2026-10-03",
-          "clicks": 94,
-          "ctr": 1.53,
-          "impressions": 6134,
+          "clicks": 93,
+          "ctr": 1.52,
+          "impressions": 6131,
           "conversions": 1.0,
-          "convRate": 1.06,
-          "cost": 546.48,
-          "avgCpc": 5.81,
-          "avgCpm": 89.09
+          "convRate": 1.08,
+          "cost": 546.34,
+          "avgCpc": 5.87,
+          "avgCpm": 89.11
         },
         {
           "date": "2026-10-04",
-          "clicks": 42,
-          "ctr": 1.52,
-          "impressions": 2762,
-          "conversions": 1.0,
-          "convRate": 2.38,
-          "cost": 293.7,
-          "avgCpc": 6.99,
-          "avgCpm": 106.34
+          "clicks": 91,
+          "ctr": 1.33,
+          "impressions": 6842,
+          "conversions": 3.0,
+          "convRate": 3.3,
+          "cost": 764.72,
+          "avgCpc": 8.4,
+          "avgCpm": 111.77
         }
       ],
       "last30": [
-        {
-          "date": "2026-09-05",
-          "clicks": 51,
-          "ctr": 1.06,
-          "impressions": 4832,
-          "conversions": 8.9,
-          "convRate": 17.45,
-          "cost": 326.0,
-          "avgCpc": 6.39,
-          "avgCpm": 67.47
-        },
         {
           "date": "2026-09-06",
           "clicks": 56,
@@ -733,8 +722,8 @@
           "clicks": 134,
           "ctr": 1.51,
           "impressions": 8896,
-          "conversions": 15.6,
-          "convRate": 11.66,
+          "conversions": 16.6,
+          "convRate": 12.4,
           "cost": 858.25,
           "avgCpc": 6.4,
           "avgCpm": 96.48
@@ -799,8 +788,8 @@
           "clicks": 155,
           "ctr": 1.18,
           "impressions": 13088,
-          "conversions": 38.4,
-          "convRate": 24.78,
+          "conversions": 39.4,
+          "convRate": 25.43,
           "cost": 1184.81,
           "avgCpc": 7.64,
           "avgCpm": 90.53
@@ -821,8 +810,8 @@
           "clicks": 138,
           "ctr": 1.4,
           "impressions": 9870,
-          "conversions": 19.0,
-          "convRate": 13.77,
+          "conversions": 20.0,
+          "convRate": 14.49,
           "cost": 768.21,
           "avgCpc": 5.57,
           "avgCpm": 77.83
@@ -909,8 +898,8 @@
           "clicks": 179,
           "ctr": 1.18,
           "impressions": 15108,
-          "conversions": 19.5,
-          "convRate": 10.89,
+          "conversions": 21.5,
+          "convRate": 12.01,
           "cost": 1238.52,
           "avgCpc": 6.92,
           "avgCpm": 81.98
@@ -920,8 +909,8 @@
           "clicks": 134,
           "ctr": 1.62,
           "impressions": 8290,
-          "conversions": 20.0,
-          "convRate": 14.93,
+          "conversions": 21.0,
+          "convRate": 15.67,
           "cost": 929.99,
           "avgCpc": 6.94,
           "avgCpm": 112.18
@@ -953,8 +942,8 @@
           "clicks": 137,
           "ctr": 1.9,
           "impressions": 7223,
-          "conversions": 14.5,
-          "convRate": 10.58,
+          "conversions": 16.0,
+          "convRate": 11.68,
           "cost": 1242.84,
           "avgCpc": 9.07,
           "avgCpm": 172.07
@@ -975,8 +964,8 @@
           "clicks": 146,
           "ctr": 2.19,
           "impressions": 6662,
-          "conversions": 19.0,
-          "convRate": 13.01,
+          "conversions": 20.5,
+          "convRate": 14.04,
           "cost": 1066.41,
           "avgCpc": 7.3,
           "avgCpm": 160.07
@@ -986,44 +975,55 @@
           "clicks": 144,
           "ctr": 1.46,
           "impressions": 9873,
-          "conversions": 9.0,
-          "convRate": 6.25,
+          "conversions": 11.0,
+          "convRate": 7.64,
           "cost": 971.83,
           "avgCpc": 6.75,
           "avgCpm": 98.43
         },
         {
           "date": "2026-10-02",
-          "clicks": 162,
-          "ctr": 1.11,
+          "clicks": 161,
+          "ctr": 1.1,
           "impressions": 14618,
           "conversions": 16.0,
-          "convRate": 9.88,
-          "cost": 1006.82,
-          "avgCpc": 6.21,
-          "avgCpm": 68.88
+          "convRate": 9.94,
+          "cost": 1006.8,
+          "avgCpc": 6.25,
+          "avgCpm": 68.87
         },
         {
           "date": "2026-10-03",
-          "clicks": 94,
-          "ctr": 1.53,
-          "impressions": 6134,
+          "clicks": 93,
+          "ctr": 1.52,
+          "impressions": 6131,
           "conversions": 1.0,
-          "convRate": 1.06,
-          "cost": 546.48,
-          "avgCpc": 5.81,
-          "avgCpm": 89.09
+          "convRate": 1.08,
+          "cost": 546.34,
+          "avgCpc": 5.87,
+          "avgCpm": 89.11
         },
         {
           "date": "2026-10-04",
-          "clicks": 42,
+          "clicks": 91,
+          "ctr": 1.33,
+          "impressions": 6842,
+          "conversions": 3.0,
+          "convRate": 3.3,
+          "cost": 764.72,
+          "avgCpc": 8.4,
+          "avgCpm": 111.77
+        },
+        {
+          "date": "2026-10-05",
+          "clicks": 85,
           "ctr": 1.52,
-          "impressions": 2762,
-          "conversions": 1.0,
-          "convRate": 2.38,
-          "cost": 293.7,
-          "avgCpc": 6.99,
-          "avgCpm": 106.34
+          "impressions": 5586,
+          "conversions": 4.0,
+          "convRate": 4.71,
+          "cost": 787.16,
+          "avgCpc": 9.26,
+          "avgCpm": 140.92
         }
       ],
       "thisMonth": [
@@ -1032,44 +1032,55 @@
           "clicks": 144,
           "ctr": 1.46,
           "impressions": 9873,
-          "conversions": 9.0,
-          "convRate": 6.25,
+          "conversions": 11.0,
+          "convRate": 7.64,
           "cost": 971.83,
           "avgCpc": 6.75,
           "avgCpm": 98.43
         },
         {
           "date": "2026-10-02",
-          "clicks": 162,
-          "ctr": 1.11,
+          "clicks": 161,
+          "ctr": 1.1,
           "impressions": 14618,
           "conversions": 16.0,
-          "convRate": 9.88,
-          "cost": 1006.82,
-          "avgCpc": 6.21,
-          "avgCpm": 68.88
+          "convRate": 9.94,
+          "cost": 1006.8,
+          "avgCpc": 6.25,
+          "avgCpm": 68.87
         },
         {
           "date": "2026-10-03",
-          "clicks": 94,
-          "ctr": 1.53,
-          "impressions": 6134,
+          "clicks": 93,
+          "ctr": 1.52,
+          "impressions": 6131,
           "conversions": 1.0,
-          "convRate": 1.06,
-          "cost": 546.48,
-          "avgCpc": 5.81,
-          "avgCpm": 89.09
+          "convRate": 1.08,
+          "cost": 546.34,
+          "avgCpc": 5.87,
+          "avgCpm": 89.11
         },
         {
           "date": "2026-10-04",
-          "clicks": 42,
+          "clicks": 91,
+          "ctr": 1.33,
+          "impressions": 6842,
+          "conversions": 3.0,
+          "convRate": 3.3,
+          "cost": 764.72,
+          "avgCpc": 8.4,
+          "avgCpm": 111.77
+        },
+        {
+          "date": "2026-10-05",
+          "clicks": 85,
           "ctr": 1.52,
-          "impressions": 2762,
-          "conversions": 1.0,
-          "convRate": 2.38,
-          "cost": 293.7,
-          "avgCpc": 6.99,
-          "avgCpm": 106.34
+          "impressions": 5586,
+          "conversions": 4.0,
+          "convRate": 4.71,
+          "cost": 787.16,
+          "avgCpc": 9.26,
+          "avgCpm": 140.92
         }
       ],
       "lastMonth": [
@@ -1155,8 +1166,8 @@
           "clicks": 134,
           "ctr": 1.51,
           "impressions": 8896,
-          "conversions": 15.6,
-          "convRate": 11.66,
+          "conversions": 16.6,
+          "convRate": 12.4,
           "cost": 858.25,
           "avgCpc": 6.4,
           "avgCpm": 96.48
@@ -1221,8 +1232,8 @@
           "clicks": 155,
           "ctr": 1.18,
           "impressions": 13088,
-          "conversions": 38.4,
-          "convRate": 24.78,
+          "conversions": 39.4,
+          "convRate": 25.43,
           "cost": 1184.81,
           "avgCpc": 7.64,
           "avgCpm": 90.53
@@ -1243,8 +1254,8 @@
           "clicks": 138,
           "ctr": 1.4,
           "impressions": 9870,
-          "conversions": 19.0,
-          "convRate": 13.77,
+          "conversions": 20.0,
+          "convRate": 14.49,
           "cost": 768.21,
           "avgCpc": 5.57,
           "avgCpm": 77.83
@@ -1331,8 +1342,8 @@
           "clicks": 179,
           "ctr": 1.18,
           "impressions": 15108,
-          "conversions": 19.5,
-          "convRate": 10.89,
+          "conversions": 21.5,
+          "convRate": 12.01,
           "cost": 1238.52,
           "avgCpc": 6.92,
           "avgCpm": 81.98
@@ -1342,8 +1353,8 @@
           "clicks": 134,
           "ctr": 1.62,
           "impressions": 8290,
-          "conversions": 20.0,
-          "convRate": 14.93,
+          "conversions": 21.0,
+          "convRate": 15.67,
           "cost": 929.99,
           "avgCpc": 6.94,
           "avgCpm": 112.18
@@ -1375,8 +1386,8 @@
           "clicks": 137,
           "ctr": 1.9,
           "impressions": 7223,
-          "conversions": 14.5,
-          "convRate": 10.58,
+          "conversions": 16.0,
+          "convRate": 11.68,
           "cost": 1242.84,
           "avgCpc": 9.07,
           "avgCpm": 172.07
@@ -1397,8 +1408,8 @@
           "clicks": 146,
           "ctr": 2.19,
           "impressions": 6662,
-          "conversions": 19.0,
-          "convRate": 13.01,
+          "conversions": 20.5,
+          "convRate": 14.04,
           "cost": 1066.41,
           "avgCpc": 7.3,
           "avgCpm": 160.07
@@ -1412,20 +1423,56 @@
         "rows": [
           {
             "campaign": "SN - Branded II",
-            "ctr": 18.37,
-            "avgCpc": 2.55,
-            "costPerConv": 22.99
+            "ctr": 21.78,
+            "avgCpc": 4.32,
+            "costPerConv": 31.65
           },
           {
             "campaign": "DSA - Category - Paper II",
-            "ctr": 9.52,
-            "avgCpc": 5.39,
+            "ctr": 6.37,
+            "avgCpc": 8.92,
+            "costPerConv": null
+          },
+          {
+            "campaign": "SN - Waterproof Paper II",
+            "ctr": 2.5,
+            "avgCpc": 28.42,
             "costPerConv": null
           },
           {
             "campaign": "PMAX (Full) - Waterproof Paper",
-            "ctr": 1.15,
-            "avgCpc": 8.38,
+            "ctr": 1.97,
+            "avgCpc": 10.94,
+            "costPerConv": 262.64
+          },
+          {
+            "campaign": "PMAX - Waterproof Menus",
+            "ctr": 1.16,
+            "avgCpc": 13.99,
+            "costPerConv": null
+          },
+          {
+            "campaign": "PMAX - Menu Design",
+            "ctr": 0.63,
+            "avgCpc": 0.28,
+            "costPerConv": null
+          },
+          {
+            "campaign": "PMAX - Waterproof Paper II",
+            "ctr": 0.62,
+            "avgCpc": 4.4,
+            "costPerConv": null
+          },
+          {
+            "campaign": "PMAX - Business Cards",
+            "ctr": 0.56,
+            "avgCpc": 29.07,
+            "costPerConv": null
+          },
+          {
+            "campaign": "Shopping - WM - Top 10",
+            "ctr": 0.48,
+            "avgCpc": 13.78,
             "costPerConv": null
           }
         ]
@@ -1434,27 +1481,21 @@
         "rows": [
           {
             "campaign": "SN - Branded II",
-            "ctr": 27.16,
-            "avgCpc": 3.9,
-            "costPerConv": null
+            "ctr": 21.95,
+            "avgCpc": 3.3,
+            "costPerConv": 59.41
           },
           {
             "campaign": "DSA - Category - Paper II",
-            "ctr": 8.77,
-            "avgCpc": 4.36,
+            "ctr": 7.14,
+            "avgCpc": 16.23,
             "costPerConv": null
           },
           {
             "campaign": "PMAX (Full) - Waterproof Paper",
-            "ctr": 1.28,
-            "avgCpc": 4.46,
-            "costPerConv": null
-          },
-          {
-            "campaign": "PMAX - Waterproof Menus",
-            "ctr": 0.89,
-            "avgCpc": 10.84,
-            "costPerConv": 238.37
+            "ctr": 1.03,
+            "avgCpc": 9.28,
+            "costPerConv": 320.19
           }
         ]
       },
@@ -1462,9 +1503,9 @@
         "rows": [
           {
             "campaign": "SN - Branded II",
-            "ctr": 24.57,
-            "avgCpc": 4.67,
-            "costPerConv": 25.42
+            "ctr": 24.64,
+            "avgCpc": 4.65,
+            "costPerConv": 24.76
           },
           {
             "campaign": "SN - Waterproof Paper II",
@@ -1474,21 +1515,21 @@
           },
           {
             "campaign": "DSA - Category - Paper II",
-            "ctr": 5.35,
-            "avgCpc": 8.58,
-            "costPerConv": 497.37
+            "ctr": 5.36,
+            "avgCpc": 9.19,
+            "costPerConv": 551.51
           },
           {
             "campaign": "PMAX (Full) - Waterproof Paper",
-            "ctr": 1.34,
-            "avgCpc": 7.06,
-            "costPerConv": 239.02
+            "ctr": 1.27,
+            "avgCpc": 7.47,
+            "costPerConv": 206.96
           },
           {
             "campaign": "PMAX - Waterproof Menus",
-            "ctr": 1.24,
-            "avgCpc": 12.48,
-            "costPerConv": 636.58
+            "ctr": 1.23,
+            "avgCpc": 12.6,
+            "costPerConv": 424.34
           },
           {
             "campaign": "PMAX - Business Cards",
@@ -1520,57 +1561,57 @@
         "rows": [
           {
             "campaign": "SN - Branded II",
-            "ctr": 24.82,
+            "ctr": 24.78,
             "avgCpc": 5.01,
-            "costPerConv": 22.15
+            "costPerConv": 22.03
           },
           {
             "campaign": "SN - Waterproof Paper II",
-            "ctr": 6.68,
-            "avgCpc": 8.06,
-            "costPerConv": 165.16
+            "ctr": 6.2,
+            "avgCpc": 9.0,
+            "costPerConv": 193.58
           },
           {
             "campaign": "DSA - Category - Paper II",
-            "ctr": 5.9,
-            "avgCpc": 7.58,
-            "costPerConv": 89.57
+            "ctr": 5.92,
+            "avgCpc": 7.84,
+            "costPerConv": 98.53
           },
           {
             "campaign": "PMAX - Waterproof Menus",
-            "ctr": 1.36,
-            "avgCpc": 12.08,
-            "costPerConv": 283.86
+            "ctr": 1.34,
+            "avgCpc": 12.22,
+            "costPerConv": 295.17
           },
           {
             "campaign": "PMAX (Full) - Waterproof Paper",
             "ctr": 1.2,
-            "avgCpc": 6.33,
-            "costPerConv": 74.9
+            "avgCpc": 6.65,
+            "costPerConv": 78.88
           },
           {
             "campaign": "PMAX - Business Cards",
-            "ctr": 1.08,
-            "avgCpc": 7.74,
+            "ctr": 0.97,
+            "avgCpc": 10.41,
             "costPerConv": null
           },
           {
             "campaign": "Shopping - WM - Top 10",
-            "ctr": 0.73,
-            "avgCpc": 9.95,
-            "costPerConv": 192.11
+            "ctr": 0.72,
+            "avgCpc": 10.02,
+            "costPerConv": 183.31
           },
           {
             "campaign": "PMAX - Waterproof Paper II",
             "ctr": 0.53,
-            "avgCpc": 6.34,
-            "costPerConv": 98.62
+            "avgCpc": 6.32,
+            "costPerConv": 104.56
           },
           {
             "campaign": "PMAX - Menu Design",
             "ctr": 0.4,
-            "avgCpc": 1.89,
-            "costPerConv": 54.31
+            "avgCpc": 1.77,
+            "costPerConv": 62.82
           }
         ]
       },
@@ -1578,56 +1619,56 @@
         "rows": [
           {
             "campaign": "SN - Branded II",
-            "ctr": 22.2,
-            "avgCpc": 2.85,
-            "costPerConv": 15.66
+            "ctr": 22.4,
+            "avgCpc": 3.16,
+            "costPerConv": 18.58
           },
           {
             "campaign": "DSA - Category - Paper II",
-            "ctr": 6.98,
-            "avgCpc": 6.11,
+            "ctr": 6.75,
+            "avgCpc": 7.86,
             "costPerConv": null
           },
           {
             "campaign": "SN - Waterproof Paper II",
-            "ctr": 5.88,
-            "avgCpc": 8.62,
-            "costPerConv": 180.96
+            "ctr": 5.26,
+            "avgCpc": 10.34,
+            "costPerConv": 237.8
           },
           {
             "campaign": "PMAX (Full) - Waterproof Paper",
-            "ctr": 1.19,
-            "avgCpc": 6.24,
-            "costPerConv": 287.01
+            "ctr": 1.18,
+            "avgCpc": 7.42,
+            "costPerConv": 253.48
           },
           {
             "campaign": "PMAX - Waterproof Menus",
-            "ctr": 1.18,
-            "avgCpc": 10.77,
-            "costPerConv": 645.95
+            "ctr": 1.16,
+            "avgCpc": 11.31,
+            "costPerConv": 378.87
           },
           {
             "campaign": "PMAX - Business Cards",
-            "ctr": 1.08,
-            "avgCpc": 7.74,
+            "ctr": 0.97,
+            "avgCpc": 10.41,
             "costPerConv": null
           },
           {
             "campaign": "Shopping - WM - Top 10",
-            "ctr": 0.64,
-            "avgCpc": 17.28,
-            "costPerConv": 276.51
+            "ctr": 0.59,
+            "avgCpc": 16.45,
+            "costPerConv": 345.43
           },
           {
             "campaign": "PMAX - Waterproof Paper II",
-            "ctr": 0.4,
-            "avgCpc": 4.14,
-            "costPerConv": 120.2
+            "ctr": 0.44,
+            "avgCpc": 4.21,
+            "costPerConv": 164.19
           },
           {
             "campaign": "PMAX - Menu Design",
-            "ctr": 0.24,
-            "avgCpc": 0.96,
+            "ctr": 0.28,
+            "avgCpc": 0.79,
             "costPerConv": null
           }
         ]
@@ -1638,7 +1679,7 @@
             "campaign": "SN - Branded II",
             "ctr": 25.41,
             "avgCpc": 5.23,
-            "costPerConv": 23.43
+            "costPerConv": 22.97
           },
           {
             "campaign": "SN - Waterproof Paper II",
@@ -1662,13 +1703,13 @@
             "campaign": "PMAX (Full) - Waterproof Paper",
             "ctr": 1.21,
             "avgCpc": 6.37,
-            "costPerConv": 58.36
+            "costPerConv": 56.65
           },
           {
             "campaign": "Shopping - WM - Top 10",
             "ctr": 0.75,
             "avgCpc": 9.17,
-            "costPerConv": 211.67
+            "costPerConv": 196.55
           },
           {
             "campaign": "PMAX - Waterproof Paper II",
@@ -1688,37 +1729,118 @@
   },
   "dailyRaw": [
     {
+      "date": "2026-10-05",
+      "campaign": "PMAX - Waterproof Menus",
+      "cost": 111.94,
+      "clicks": 8.0,
+      "impressions": 690.0,
+      "conversions": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "PMAX - Waterproof Paper II",
+      "cost": 43.99,
+      "clicks": 10.0,
+      "impressions": 1623.0,
+      "conversions": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "PMAX - Menu Design",
+      "cost": 0.57,
+      "clicks": 2.0,
+      "impressions": 316.0,
+      "conversions": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "PMAX - Business Cards",
+      "cost": 58.14,
+      "clicks": 2.0,
+      "impressions": 358.0,
+      "conversions": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "SN - Waterproof Paper II",
+      "cost": 56.84,
+      "clicks": 2.0,
+      "impressions": 80.0,
+      "conversions": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "SN - Branded II",
+      "cost": 94.95,
+      "clicks": 22.0,
+      "impressions": 101.0,
+      "conversions": 3.0,
+      "value": 693.22
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "DSA - Category - Paper II",
+      "cost": 89.17,
+      "clicks": 10.0,
+      "impressions": 157.0,
+      "conversions": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "Shopping - WM - Top 10",
+      "cost": 68.92,
+      "clicks": 5.0,
+      "impressions": 1044.0,
+      "conversions": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-05",
+      "campaign": "PMAX (Full) - Waterproof Paper",
+      "cost": 262.64,
+      "clicks": 24.0,
+      "impressions": 1217.0,
+      "conversions": 1.0,
+      "value": 167.02
+    },
+    {
       "date": "2026-10-04",
       "campaign": "SN - Branded II",
-      "cost": 22.99,
-      "clicks": 9.0,
-      "impressions": 49.0,
+      "cost": 59.41,
+      "clicks": 18.0,
+      "impressions": 82.0,
       "conversions": 1.0,
       "value": 82.2
     },
     {
       "date": "2026-10-04",
       "campaign": "DSA - Category - Paper II",
-      "cost": 10.78,
-      "clicks": 2.0,
-      "impressions": 21.0,
+      "cost": 64.92,
+      "clicks": 4.0,
+      "impressions": 56.0,
       "conversions": 0.0,
       "value": 0.0
     },
     {
       "date": "2026-10-04",
       "campaign": "PMAX (Full) - Waterproof Paper",
-      "cost": 259.93,
-      "clicks": 31.0,
-      "impressions": 2692.0,
-      "conversions": 0.0,
-      "value": 0.0
+      "cost": 640.39,
+      "clicks": 69.0,
+      "impressions": 6704.0,
+      "conversions": 2.0,
+      "value": 187.66
     },
     {
       "date": "2026-10-03",
       "campaign": "PMAX - Waterproof Menus",
-      "cost": 238.37,
-      "clicks": 22.0,
+      "cost": 238.23,
+      "clicks": 21.0,
       "impressions": 2473.0,
       "conversions": 1.0,
       "value": 125.72
@@ -1746,7 +1868,7 @@
       "campaign": "PMAX (Full) - Waterproof Paper",
       "cost": 200.57,
       "clicks": 45.0,
-      "impressions": 3523.0,
+      "impressions": 3520.0,
       "conversions": 0.0,
       "value": 0.0
     },
@@ -1825,8 +1947,8 @@
     {
       "date": "2026-10-02",
       "campaign": "PMAX (Full) - Waterproof Paper",
-      "cost": 249.5,
-      "clicks": 42.0,
+      "cost": 249.48,
+      "clicks": 41.0,
       "impressions": 3670.0,
       "conversions": 3.0,
       "value": 1345.77
@@ -1837,8 +1959,8 @@
       "cost": 210.65,
       "clicks": 13.0,
       "impressions": 738.0,
-      "conversions": 0.0,
-      "value": 0.0
+      "conversions": 1.0,
+      "value": 146.25
     },
     {
       "date": "2026-10-01",
@@ -1882,8 +2004,8 @@
       "cost": 112.17,
       "clicks": 42.0,
       "impressions": 199.0,
-      "conversions": 6.5,
-      "value": 2889.95
+      "conversions": 7.5,
+      "value": 3062.87
     },
     {
       "date": "2026-10-01",
@@ -1954,8 +2076,8 @@
       "cost": 409.6,
       "clicks": 68.0,
       "impressions": 292.0,
-      "conversions": 13.0,
-      "value": 7539.78
+      "conversions": 14.5,
+      "value": 7601.16
     },
     {
       "date": "2026-09-30",
@@ -2098,8 +2220,8 @@
       "cost": 331.08,
       "clicks": 57.0,
       "impressions": 221.0,
-      "conversions": 12.0,
-      "value": 5313.65
+      "conversions": 12.5,
+      "value": 5329.02
     },
     {
       "date": "2026-09-28",
@@ -2125,8 +2247,8 @@
       "cost": 317.22,
       "clicks": 32.0,
       "impressions": 2122.0,
-      "conversions": 1.5,
-      "value": 963.54
+      "conversions": 2.5,
+      "value": 1698.31
     },
     {
       "date": "2026-09-27",
@@ -2251,8 +2373,8 @@
       "cost": 142.38,
       "clicks": 9.0,
       "impressions": 1412.0,
-      "conversions": 4.0,
-      "value": 1190.84
+      "conversions": 5.0,
+      "value": 1216.43
     },
     {
       "date": "2026-09-25",
@@ -2296,8 +2418,8 @@
       "cost": 441.66,
       "clicks": 48.0,
       "impressions": 219.0,
-      "conversions": 11.0,
-      "value": 2799.21
+      "conversions": 13.0,
+      "value": 4512.43
     },
     {
       "date": "2026-09-24",
@@ -2737,8 +2859,8 @@
       "cost": 121.79,
       "clicks": 43.0,
       "impressions": 241.0,
-      "conversions": 14.0,
-      "value": 7316.75
+      "conversions": 15.0,
+      "value": 8232.15
     },
     {
       "date": "2026-09-16",
@@ -2890,8 +3012,8 @@
       "cost": 108.54,
       "clicks": 12.0,
       "impressions": 1384.0,
-      "conversions": 13.5,
-      "value": 11860.47
+      "conversions": 14.5,
+      "value": 12595.24
     },
     {
       "date": "2026-09-13",
@@ -3169,8 +3291,8 @@
       "cost": 340.9,
       "clicks": 66.0,
       "impressions": 237.0,
-      "conversions": 13.12,
-      "value": 3565.51
+      "conversions": 14.12,
+      "value": 3947.51
     },
     {
       "date": "2026-09-08",
@@ -13746,87 +13868,6 @@
       "impressions": 0.0,
       "conversions": 0.0,
       "value": 0.0
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "PMAX - Waterproof Menus",
-      "cost": 136.37,
-      "clicks": 22.0,
-      "impressions": 1560.0,
-      "conversions": 4.5,
-      "value": 968.41
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "PMAX - Waterproof Paper II",
-      "cost": 145.26,
-      "clicks": 26.0,
-      "impressions": 3205.0,
-      "conversions": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "SN - WM Broad",
-      "cost": 23.96,
-      "clicks": 3.0,
-      "impressions": 37.0,
-      "conversions": 1.0,
-      "value": 340.78
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "PMAX - Menu Design",
-      "cost": 17.77,
-      "clicks": 7.0,
-      "impressions": 1895.0,
-      "conversions": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "PMAX - Business Cards",
-      "cost": 10.27,
-      "clicks": 4.0,
-      "impressions": 190.0,
-      "conversions": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "SN - Waterproof Paper II",
-      "cost": 16.07,
-      "clicks": 4.0,
-      "impressions": 21.0,
-      "conversions": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "SN - Branded II",
-      "cost": 337.14,
-      "clicks": 58.0,
-      "impressions": 244.0,
-      "conversions": 15.45,
-      "value": 5402.13
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "DSA - URL - Menu Main II",
-      "cost": 39.55,
-      "clicks": 4.0,
-      "impressions": 37.0,
-      "conversions": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-08",
-      "campaign": "DSA - Category - Paper II",
-      "cost": 22.0,
-      "clicks": 2.0,
-      "impressions": 34.0,
-      "conversions": 3.0,
-      "value": 470.0
     }
   ]
 }
