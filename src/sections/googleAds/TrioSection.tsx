@@ -33,7 +33,7 @@ export function TrioSection({ trio, dailyChart }: { trio: GoogleAdsTrio; dailyCh
       <p className={styles.subtitle}>{trio.subtitle}</p>
       <div className={grid.statGrid1x3}>
         {trio.stats.map((s) => (
-          <StatTile key={s.label} label={s.label} value={s.value} trend={s.trend} />
+          <StatTile key={s.label} label={s.label} value={s.value} trend={s.trend} stacked />
         ))}
       </div>
       <div className={styles.chartSlot}>
