@@ -157,7 +157,10 @@ def parse_date(s: str | None, year: int | None = None) -> date | None:
 
 
 def fmt_money(v: float) -> str:
-    return f"${v:,.2f}"
+    # Whole dollars, no cents (JV, 2026-10-08) — every CEO Dashboard dollar
+    # amount EXCEPT Marketing Metrics' Ad Spend/Purchase Value, which stay
+    # compact (fmt_money_k, unchanged below).
+    return f"${v:,.0f}"
 
 
 def fmt_money_k(v: float) -> str:
@@ -489,7 +492,7 @@ def marketing_window(dated: list[tuple[date, dict]], start: date, end: date) -> 
         "tiles": [
             tile("roas", "ROAS [FB/GA]", cur["roas"], prev["roas"], lambda v: f"{v:.2f}"),
             tile("ad-spend", "Ad Spend", cur["spend"], prev["spend"], fmt_money_k),
-            tile("cpa-combined", "CPA Combined", cur["cpa"], prev["cpa"], lambda v: f"${v:,.2f}"),
+            tile("cpa-combined", "CPA Combined", cur["cpa"], prev["cpa"], lambda v: f"${v:,.0f}"),
             tile("purchase-value", "Purchase Value", cur["purchase_value"], prev["purchase_value"], fmt_money_k),
         ],
         "windowStart": start.isoformat(),

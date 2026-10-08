@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-08T12:53:11.468732Z",
+  "generatedAt": "2026-10-08T13:48:03.718435Z",
   "anchors": {
     "sales": "2026-10-04",
     "marketing": "2026-10-06",
@@ -15,7 +15,7 @@
           {
             "id": "overall-sales",
             "label": "Overall Sales",
-            "value": "$6,848.67",
+            "value": "$6,849",
             "hero": true,
             "trend": {
               "changePct": -16.8,
@@ -26,7 +26,7 @@
           {
             "id": "shopify-sales",
             "label": "Shopify Sales",
-            "value": "$4,000.74",
+            "value": "$4,001",
             "hero": false,
             "trend": {
               "changePct": -28.8,
@@ -37,7 +37,7 @@
           {
             "id": "amazon-sales",
             "label": "Amazon Sales",
-            "value": "$2,847.93",
+            "value": "$2,848",
             "hero": false,
             "trend": {
               "changePct": 11.1,
@@ -77,7 +77,7 @@
           {
             "id": "overall-sales",
             "label": "Overall Sales",
-            "value": "$8,235.52",
+            "value": "$8,236",
             "hero": true,
             "trend": {
               "changePct": -87.7,
@@ -88,7 +88,7 @@
           {
             "id": "shopify-sales",
             "label": "Shopify Sales",
-            "value": "$5,619.65",
+            "value": "$5,620",
             "hero": false,
             "trend": {
               "changePct": -90.6,
@@ -99,7 +99,7 @@
           {
             "id": "amazon-sales",
             "label": "Amazon Sales",
-            "value": "$2,563.96",
+            "value": "$2,564",
             "hero": false,
             "trend": {
               "changePct": -58.7,
@@ -110,7 +110,7 @@
           {
             "id": "walmart-sales",
             "label": "Walmart Sales",
-            "value": "$51.91",
+            "value": "$52",
             "hero": false,
             "trend": {
               "changePct": -91.0,
@@ -144,7 +144,7 @@
           {
             "id": "overall-sales",
             "label": "Overall Sales",
-            "value": "$285,009.81",
+            "value": "$285,010",
             "hero": true,
             "trend": {
               "changePct": -13.7,
@@ -163,7 +163,7 @@
           {
             "id": "shopify-sales",
             "label": "Shopify Sales",
-            "value": "$251,740.48",
+            "value": "$251,740",
             "hero": false,
             "trend": {
               "changePct": -15.7,
@@ -182,7 +182,7 @@
           {
             "id": "amazon-sales",
             "label": "Amazon Sales",
-            "value": "$32,216.92",
+            "value": "$32,217",
             "hero": false,
             "trend": {
               "changePct": 3.9,
@@ -201,7 +201,7 @@
           {
             "id": "walmart-sales",
             "label": "Walmart Sales",
-            "value": "$1,052.41",
+            "value": "$1,052",
             "hero": false,
             "trend": {
               "changePct": 18.2,
@@ -243,7 +243,7 @@
           {
             "id": "overall-sales",
             "label": "Overall Sales",
-            "value": "$1,142,017.08",
+            "value": "$1,142,017",
             "hero": true,
             "trend": {
               "changePct": 14.0,
@@ -285,7 +285,7 @@
           {
             "id": "shopify-sales",
             "label": "Shopify Sales",
-            "value": "$1,003,671.03",
+            "value": "$1,003,671",
             "hero": false,
             "trend": {
               "changePct": 14.3,
@@ -327,7 +327,7 @@
           {
             "id": "amazon-sales",
             "label": "Amazon Sales",
-            "value": "$135,405.53",
+            "value": "$135,406",
             "hero": false,
             "trend": {
               "changePct": 10.4,
@@ -369,7 +369,7 @@
           {
             "id": "walmart-sales",
             "label": "Walmart Sales",
-            "value": "$2,940.52",
+            "value": "$2,941",
             "hero": false,
             "trend": {
               "changePct": 128.2,
@@ -434,7 +434,7 @@
           {
             "id": "overall-sales",
             "label": "Overall Sales",
-            "value": "$130,174.09",
+            "value": "$130,174",
             "hero": true,
             "trend": {
               "changePct": -19.4,
@@ -450,7 +450,7 @@
           {
             "id": "shopify-sales",
             "label": "Shopify Sales",
-            "value": "$114,412.29",
+            "value": "$114,412",
             "hero": false,
             "trend": {
               "changePct": -19.5,
@@ -466,7 +466,7 @@
           {
             "id": "amazon-sales",
             "label": "Amazon Sales",
-            "value": "$15,125.03",
+            "value": "$15,125",
             "hero": false,
             "trend": {
               "changePct": -20.0,
@@ -482,7 +482,7 @@
           {
             "id": "walmart-sales",
             "label": "Walmart Sales",
-            "value": "$636.77",
+            "value": "$637",
             "hero": false,
             "trend": {
               "changePct": 53.2,
@@ -521,7 +521,7 @@
           {
             "id": "overall-sales",
             "label": "Overall Sales",
-            "value": "$1,181,581.31",
+            "value": "$1,181,581",
             "hero": true,
             "trend": {
               "changePct": 22.7,
@@ -563,7 +563,7 @@
           {
             "id": "shopify-sales",
             "label": "Shopify Sales",
-            "value": "$1,039,551.76",
+            "value": "$1,039,552",
             "hero": false,
             "trend": {
               "changePct": 24.6,
@@ -605,7 +605,7 @@
           {
             "id": "amazon-sales",
             "label": "Amazon Sales",
-            "value": "$139,664.03",
+            "value": "$139,664",
             "hero": false,
             "trend": {
               "changePct": 9.9,
@@ -647,7 +647,7 @@
           {
             "id": "walmart-sales",
             "label": "Walmart Sales",
-            "value": "$2,365.52",
+            "value": "$2,366",
             "hero": false,
             "trend": {
               "changePct": 42.5,
@@ -734,7 +734,7 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$126.01",
+            "value": "$126",
             "trend": {
               "changePct": -61.1,
               "direction": "down"
@@ -776,7 +776,7 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$324.06",
+            "value": "$324",
             "trend": {
               "changePct": 426.2,
               "direction": "up"
@@ -818,7 +818,7 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$85.02",
+            "value": "$85",
             "trend": {
               "changePct": 18.6,
               "direction": "up"
@@ -860,7 +860,7 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$76.71",
+            "value": "$77",
             "trend": {
               "changePct": -9.5,
               "direction": "down"
@@ -902,7 +902,7 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$91.33",
+            "value": "$91",
             "trend": {
               "changePct": 1.3,
               "direction": "up"
@@ -944,7 +944,7 @@
           {
             "id": "cpa-combined",
             "label": "CPA Combined",
-            "value": "$75.49",
+            "value": "$75",
             "trend": {
               "changePct": -6.9,
               "direction": "down"
@@ -1421,7 +1421,7 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$198,801.02",
+            "value": "$198,801",
             "trend": {
               "changePct": -4.5,
               "direction": "down"
@@ -1439,7 +1439,7 @@
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$53,497.57",
+            "value": "$53,498",
             "trend": {
               "changePct": 16.8,
               "direction": "up"
@@ -1461,7 +1461,7 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$726,648.63",
+            "value": "$726,649",
             "trend": {
               "changePct": 474.1,
               "direction": "up"
@@ -1479,7 +1479,7 @@
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$182,839.65",
+            "value": "$182,840",
             "trend": {
               "changePct": 540.8,
               "direction": "up"
@@ -1501,7 +1501,7 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$68,971.90",
+            "value": "$68,972",
             "trend": {
               "changePct": -46.9,
               "direction": "down"
@@ -1519,7 +1519,7 @@
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$21,261.44",
+            "value": "$21,261",
             "trend": {
               "changePct": -34.0,
               "direction": "down"
@@ -1541,7 +1541,7 @@
           {
             "id": "production-order-value",
             "label": "Production Order Value",
-            "value": "$784,258.93",
+            "value": "$784,259",
             "trend": null
           },
           {
@@ -1553,7 +1553,7 @@
           {
             "id": "blank-order-value",
             "label": "Blank Order Value",
-            "value": "$186,300.59",
+            "value": "$186,301",
             "trend": {
               "changePct": 4790.2,
               "direction": "up"
@@ -27818,7 +27818,7 @@
       {
         "assignee": "RM",
         "t": 2,
-        "tPct": 100.0,
+        "tPct": 50.0,
         "y": 12,
         "yPct": 26.0
       },
@@ -27838,10 +27838,10 @@
       },
       {
         "assignee": "LF",
-        "t": 0,
-        "tPct": 0.0,
-        "y": 11,
-        "yPct": 23.0
+        "t": 2,
+        "tPct": 50.0,
+        "y": 10,
+        "yPct": 22.0
       },
       {
         "assignee": "SN",
@@ -27872,7 +27872,7 @@
         },
         {
           "person": "DG",
-          "value": 133694.75
+          "value": 133794.95
         },
         {
           "person": "RQ",
@@ -27880,7 +27880,7 @@
         },
         {
           "person": "JS",
-          "value": 119506.02
+          "value": 119550.67
         },
         {
           "person": "LF",
@@ -27900,7 +27900,7 @@
         },
         {
           "person": "X",
-          "value": 11909.51
+          "value": 12692.51
         },
         {
           "person": "T",
@@ -27919,15 +27919,15 @@
       "rows": [
         {
           "person": "WW",
-          "value": 261580.15
+          "value": 261614.15
         },
         {
           "person": "PS",
-          "value": 174485.36
+          "value": 177916.35
         },
         {
           "person": "AJH",
-          "value": 173315.37
+          "value": 175338.91
         },
         {
           "person": "LG",
@@ -27943,7 +27943,7 @@
         },
         {
           "person": "In Progress",
-          "value": 12957.39
+          "value": 9550.86
         },
         {
           "person": "JMS",
@@ -27955,7 +27955,7 @@
         },
         {
           "person": "$75,559",
-          "value": 1278.0
+          "value": 1700.0
         },
         {
           "person": "DG",
@@ -27990,7 +27990,7 @@
         },
         {
           "person": "CK",
-          "value": 127378.72
+          "value": 127412.72
         },
         {
           "person": "VC",
@@ -28085,11 +28085,11 @@
         },
         {
           "person": "JB",
-          "value": 179098.22
+          "value": 180812.65
         },
         {
           "person": "CK",
-          "value": 161011.9
+          "value": 161045.9
         },
         {
           "person": "RP",
@@ -28172,7 +28172,7 @@
       "rows": [
         {
           "person": "AH",
-          "value": 510597.37
+          "value": 512685.12
         },
         {
           "person": "VC",
@@ -28188,7 +28188,7 @@
         },
         {
           "person": "AO",
-          "value": 42029.8
+          "value": 42063.8
         },
         {
           "person": "CK",
@@ -28224,7 +28224,7 @@
         },
         {
           "person": "0",
-          "value": 1278.0
+          "value": 1700.0
         },
         {
           "person": "JMH",
@@ -28245,6 +28245,10 @@
         {
           "person": "JS",
           "value": 452.91
+        },
+        {
+          "person": "308",
+          "value": 422.0
         },
         {
           "person": "408",
@@ -28275,7 +28279,7 @@
         },
         {
           "person": "R2Ship",
-          "value": 30785.2
+          "value": 32493.43
         },
         {
           "person": "VM",
@@ -28295,7 +28299,7 @@
         },
         {
           "person": "F",
-          "value": 1278.0
+          "value": 1700.0
         },
         {
           "person": "(blank)",
@@ -28304,6 +28308,14 @@
         {
           "person": "vm",
           "value": 491.05
+        },
+        {
+          "person": "M",
+          "value": 422.0
+        },
+        {
+          "person": "REPRNT",
+          "value": 413.52
         },
         {
           "person": "SMC",

@@ -185,8 +185,11 @@ const CHANNEL_LABEL: Record<(typeof CHANNELS)[number], string> = {
   walmart: "Walmart",
 };
 
+// Whole dollars, no cents (JV, 2026-10-08) — every CEO Dashboard dollar
+// amount EXCEPT Marketing Metrics' Ad Spend/Purchase Value, which stay
+// compact (fmtMoneyK, unchanged below). Mirrors fetch_data.py's fmt_money().
 function fmtMoney(v: number): string {
-  return `$${v.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`;
+  return `$${v.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`;
 }
 function fmtMoneyK(v: number): string {
   return `$${(v / 1000).toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}K`;
@@ -292,7 +295,7 @@ export function computeCustomMarketingWindow(start: string, end: string): Market
     tiles: [
       tile("roas", "ROAS [FB/GA]", cur.roas, prev.roas, (v) => v.toFixed(2)),
       tile("ad-spend", "Ad Spend", cur.spend, prev.spend, fmtMoneyK),
-      tile("cpa-combined", "CPA Combined", cur.cpa, prev.cpa, (v) => `$${v.toFixed(2)}`),
+      tile("cpa-combined", "CPA Combined", cur.cpa, prev.cpa, (v) => `$${v.toFixed(0)}`),
       tile("purchase-value", "Purchase Value", cur.purchaseValue, prev.purchaseValue, fmtMoneyK),
     ],
     windowStart: start,

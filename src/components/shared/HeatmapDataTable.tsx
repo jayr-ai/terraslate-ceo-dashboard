@@ -5,7 +5,12 @@ import { useGlowOnScroll } from "../../hooks/useGlowOnScroll";
 import styles from "./DataTable.module.css";
 import heatStyles from "./HeatmapDataTable.module.css";
 
-export type HeatmapFormat = "hours" | "number" | "percent" | "currency" | "text";
+// "currency0" is whole-dollar currency (no cents) — opt-in, additive to
+// "currency" (unchanged everywhere else this table is used) so CEO
+// Dashboard's Production Teams tables can go decimal-free (JV, 2026-10-08)
+// without affecting Shipping/Facebook Ads/Paper Catalog/etc.'s own
+// currency columns.
+export type HeatmapFormat = "hours" | "number" | "percent" | "currency" | "currency0" | "text";
 export type HeatColor = "blue" | "green" | "cyan";
 
 export interface HeatmapColumn {
@@ -262,6 +267,11 @@ function formatCell(value: string | number | boolean | null, format?: HeatmapFor
   if (format === "currency") {
     return typeof value === "number"
       ? `$${value.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`
+      : String(value);
+  }
+  if (format === "currency0") {
+    return typeof value === "number"
+      ? `$${value.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`
       : String(value);
   }
   return String(value);

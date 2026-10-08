@@ -137,7 +137,7 @@ export const productionTeamTables: HeatmapTableData[] = raw.productionTeams.map(
   title: t.title,
   columns: [
     { key: "person", label: t.personLabel, align: "left" as const, sortable: true, truncate: true },
-    { key: "value", label: "Order Value", align: "right" as const, sortable: true, format: "currency" as const, heat: "blue" as const },
+    { key: "value", label: "Order Value", align: "right" as const, sortable: true, format: "currency0" as const, heat: "blue" as const },
   ],
   rows: t.rows as unknown as Record<string, string | number | null>[],
   source: productionTeamSource,
@@ -169,7 +169,7 @@ export function buildGraphicDesignValueTile(window: GraphicDesignWindow): StatTi
   return {
     id: "graphic-design-value",
     label: "Graphic Design Value",
-    value: `$${window.value.toLocaleString("en-US", { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
+    value: `$${window.value.toLocaleString("en-US", { minimumFractionDigits: 0, maximumFractionDigits: 0 })}`,
     trend: window.trend,
     source: graphicDesignSource,
   };
