@@ -2,7 +2,12 @@
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  align-items: start;
+  /* "stretch" (the grid default) makes every .col match the tallest
+     column's natural height — previously "start" let each column sit at
+     its own intrinsic height, so Account Managers (one 6-row table) ended
+     up visibly taller than Proof Team + Graphic Team stacked, or Graphic
+     Design Value + Graphics Team Hrs stacked, with nothing to balance it. */
+  align-items: stretch;
 }
 
 .col {
@@ -10,6 +15,9 @@
   flex-direction: column;
   gap: 14px;
   min-width: 0;
+  /* Spreads a column's 2 stacked cards across the full stretched height
+     instead of leaving blank space pooled below the second card. */
+  justify-content: space-between;
 }
 
 @media (max-width: 1180px) {
