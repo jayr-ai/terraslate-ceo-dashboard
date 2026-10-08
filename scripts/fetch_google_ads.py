@@ -160,8 +160,14 @@ def fmt_conversions(v: float) -> str:
 
 
 def fmt_money(v: float) -> str:
+    # Cent precision only below $100 (where it's actually meaningful, e.g.
+    # Avg. CPC) — above that, decimals just overflow the narrow trio-card
+    # tiles without adding anything a viewer needs (JV, 2026-10-08: "Avg.
+    # CPM $101.34" overlapped its own card; "$24.98K" Cost did too).
     if abs(v) >= 1000:
-        return f"${v / 1000:.2f}K"
+        return f"${round(v / 1000)}K"
+    if abs(v) >= 100:
+        return f"${round(v)}"
     return f"${v:.2f}"
 
 
@@ -268,7 +274,7 @@ def build_summary(cur: Agg, prev: Agg) -> dict:
                     {"label": "Conversions", "value": fmt_conversions(cur.conversions), "trend": trend(cur.conversions, prev.conversions)},
                     {"label": "Conv. rate", "value": fmt_pct(cur.conv_rate()), "trend": trend(cur.conv_rate(), prev.conv_rate())},
                     {
-                        "label": "Cost / conv.",
+                        "label": "Cost/conv.",
                         "value": fmt_money(cur_cpconv) if cur_cpconv is not None else "No data",
                         "trend": trend(cur_cpconv, prev_cpconv) if cur_cpconv is not None and prev_cpconv is not None else None,
                     },

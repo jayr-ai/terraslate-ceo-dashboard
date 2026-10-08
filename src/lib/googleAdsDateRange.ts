@@ -45,8 +45,14 @@ function fmtConversions(v: number): string {
   if (v >= 1000) return `${(v / 1000).toFixed(1)}K`;
   return v.toFixed(1);
 }
+// Cent precision only below $100 (where it's actually meaningful, e.g.
+// Avg. CPC) — above that, decimals just overflow the narrow trio-card
+// tiles without adding anything a viewer needs (JV, 2026-10-08: "Avg. CPM
+// $101.34" overlapped its own card; "$24.98K" Cost did too). Mirrors
+// fetch_google_ads.py's fmt_money() exactly.
 function fmtMoney(v: number): string {
-  if (Math.abs(v) >= 1000) return `$${(v / 1000).toFixed(2)}K`;
+  if (Math.abs(v) >= 1000) return `$${Math.round(v / 1000)}K`;
+  if (Math.abs(v) >= 100) return `$${Math.round(v)}`;
   return `$${v.toFixed(2)}`;
 }
 function fmtPct(v: number): string {
@@ -132,7 +138,7 @@ export function computeCustomSummary(start: string, end: string): SummaryWindow 
           { label: "Conversions", value: fmtConversions(cur.conversions), trend: computeTrend(cur.conversions, prev.conversions) },
           { label: "Conv. rate", value: fmtPct(cur.convRate()), trend: computeTrend(cur.convRate(), prev.convRate()) },
           {
-            label: "Cost / conv.",
+            label: "Cost/conv.",
             value: curCpConv !== null ? fmtMoney(curCpConv) : "No data",
             trend: curCpConv !== null && prevCpConv !== null ? computeTrend(curCpConv, prevCpConv) : null,
           },
