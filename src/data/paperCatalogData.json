@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-06T04:29:36.387441Z",
+  "generatedAt": "2026-10-08T08:15:50.737230Z",
   "weeks": [
     {
       "label": "2026 | Week 41",
@@ -35,7 +35,7 @@
       "name": "TSP 12x18 14 Mil",
       "weeklyCounts": [
         0,
-        0,
+        8135,
         5473,
         5286,
         3279,
@@ -44,20 +44,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        29.29,
         21.8,
         19.49,
         30.04,
         33.38,
         45.61
       ],
-      "goalPct": 30.1
+      "goalPct": 29.9
     },
     {
       "name": "Reg Paper 12x18",
       "weeklyCounts": [
         0,
-        0,
+        1108,
         4705,
         11040,
         10,
@@ -66,20 +66,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        3.99,
         18.74,
         40.7,
         0.09,
         17.43,
         2.2
       ],
-      "goalPct": 15.8
+      "goalPct": 13.9
     },
     {
       "name": "TSP 9.5x15.5 14 Mil",
       "weeklyCounts": [
         0,
-        0,
+        2908,
         3496,
         1603,
         2325,
@@ -88,20 +88,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        10.47,
         13.93,
         5.91,
         21.3,
         19.68,
         6.53
       ],
-      "goalPct": 13.5
+      "goalPct": 13.0
     },
     {
       "name": "TSP 13x19 14 Mil",
       "weeklyCounts": [
         0,
-        0,
+        2173,
         1708,
         2267,
         1976,
@@ -110,20 +110,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        7.82,
         6.8,
         8.36,
         18.1,
         11.89,
         11.12
       ],
-      "goalPct": 11.3
+      "goalPct": 10.7
     },
     {
       "name": "TSP 12x18 10 Mil",
       "weeklyCounts": [
         0,
-        0,
+        2393,
         886,
         779,
         1425,
@@ -132,20 +132,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        8.62,
         3.53,
         2.87,
         13.05,
         4.09,
         5.67
       ],
-      "goalPct": 5.8
+      "goalPct": 6.3
     },
     {
       "name": "Polyslate 12x18 10 Mil",
       "weeklyCounts": [
         0,
-        0,
+        1180,
         274,
         657,
         162,
@@ -154,7 +154,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        4.25,
         1.09,
         2.42,
         1.48,
@@ -176,14 +176,36 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         3.98,
         0.0,
         9.16,
         5.61,
         0.0
       ],
-      "goalPct": 3.8
+      "goalPct": 3.1
+    },
+    {
+      "name": "TSP 13x19 8 Mil",
+      "weeklyCounts": [
+        0,
+        4027,
+        62,
+        437,
+        2,
+        7,
+        257
+      ],
+      "weeklyPcts": [
+        null,
+        14.5,
+        0.25,
+        1.61,
+        0.02,
+        0.04,
+        1.48
+      ],
+      "goalPct": 3.0
     },
     {
       "name": "Pacesetter 13x19 80# Silk",
@@ -198,20 +220,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         16.55,
         0.0,
         0.0,
         0.0,
         0.0
       ],
-      "goalPct": 3.3
+      "goalPct": 2.8
     },
     {
       "name": "TSP 13x19 5 Mil",
       "weeklyCounts": [
         0,
-        0,
+        359,
         2330,
         472,
         4,
@@ -220,20 +242,42 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        1.29,
         9.28,
         1.74,
         0.04,
         0.37,
         2.78
       ],
-      "goalPct": 2.8
+      "goalPct": 2.6
+    },
+    {
+      "name": "TSP 12x18 8 Mil (New)",
+      "weeklyCounts": [
+        0,
+        2837,
+        117,
+        662,
+        126,
+        137,
+        24
+      ],
+      "weeklyPcts": [
+        null,
+        10.21,
+        0.47,
+        2.44,
+        1.15,
+        0.77,
+        0.14
+      ],
+      "goalPct": 2.5
     },
     {
       "name": "TSP 13x19 10 Mil",
       "weeklyCounts": [
         0,
-        0,
+        347,
         123,
         1922,
         77,
@@ -242,20 +286,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        1.25,
         0.49,
         7.09,
         0.71,
         1.01,
         2.35
       ],
-      "goalPct": 2.3
+      "goalPct": 2.1
     },
     {
       "name": "TSP 9.5x15.5 8 Mil",
       "weeklyCounts": [
         0,
-        0,
+        51,
         116,
         874,
         120,
@@ -264,20 +308,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.18,
         0.46,
         3.22,
         1.1,
         2.01,
         0.0
       ],
-      "goalPct": 1.4
+      "goalPct": 1.2
     },
     {
       "name": "TSP 12x18 8 Mil",
       "weeklyCounts": [
         0,
-        0,
+        301,
         206,
         544,
         59,
@@ -286,7 +330,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        1.08,
         0.82,
         2.01,
         0.54,
@@ -296,76 +340,10 @@
       "goalPct": 1.0
     },
     {
-      "name": "TSP 12x18 8 Mil (New)",
-      "weeklyCounts": [
-        0,
-        0,
-        117,
-        662,
-        126,
-        137,
-        24
-      ],
-      "weeklyPcts": [
-        null,
-        null,
-        0.47,
-        2.44,
-        1.15,
-        0.77,
-        0.14
-      ],
-      "goalPct": 1.0
-    },
-    {
-      "name": "TSP 13x19 8 Mil",
-      "weeklyCounts": [
-        0,
-        0,
-        62,
-        437,
-        2,
-        7,
-        257
-      ],
-      "weeklyPcts": [
-        null,
-        null,
-        0.25,
-        1.61,
-        0.02,
-        0.04,
-        1.48
-      ],
-      "goalPct": 0.7
-    },
-    {
-      "name": "6 Up Amazon Labels (SEF)",
-      "weeklyCounts": [
-        0,
-        0,
-        60,
-        180,
-        0,
-        0,
-        411
-      ],
-      "weeklyPcts": [
-        null,
-        null,
-        0.24,
-        0.66,
-        0.0,
-        0.0,
-        2.37
-      ],
-      "goalPct": 0.7
-    },
-    {
       "name": "TSP 9.5x15.5 10 Mil",
       "weeklyCounts": [
         0,
-        0,
+        508,
         2,
         123,
         52,
@@ -374,20 +352,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        1.83,
         0.01,
         0.45,
         0.48,
         0.6,
         1.3
       ],
-      "goalPct": 0.6
+      "goalPct": 0.8
     },
     {
       "name": "TSP 9.5x 15.5 10 Mil",
       "weeklyCounts": [
         0,
-        0,
+        554,
         227,
         0,
         127,
@@ -396,20 +374,86 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        1.99,
         0.9,
         0.0,
         1.16,
         0.0,
         0.0
       ],
-      "goalPct": 0.4
+      "goalPct": 0.7
+    },
+    {
+      "name": "6 Up Amazon Labels (SEF)",
+      "weeklyCounts": [
+        0,
+        4,
+        60,
+        180,
+        0,
+        0,
+        411
+      ],
+      "weeklyPcts": [
+        null,
+        0.01,
+        0.24,
+        0.66,
+        0.0,
+        0.0,
+        2.37
+      ],
+      "goalPct": 0.5
+    },
+    {
+      "name": "Polyslate 13x19 10 Mil",
+      "weeklyCounts": [
+        0,
+        486,
+        9,
+        36,
+        110,
+        4,
+        0
+      ],
+      "weeklyPcts": [
+        null,
+        1.75,
+        0.04,
+        0.13,
+        1.01,
+        0.02,
+        0.0
+      ],
+      "goalPct": 0.5
+    },
+    {
+      "name": "Gloss 100# 13 x 19",
+      "weeklyCounts": [
+        0,
+        291,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "weeklyPcts": [
+        null,
+        1.05,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "goalPct": 0.2
     },
     {
       "name": "100# 13x19",
       "weeklyCounts": [
         0,
-        0,
+        40,
         4,
         40,
         42,
@@ -418,7 +462,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.14,
         0.02,
         0.15,
         0.38,
@@ -428,32 +472,10 @@
       "goalPct": 0.2
     },
     {
-      "name": "Polyslate 13x19 10 Mil",
-      "weeklyCounts": [
-        0,
-        0,
-        9,
-        36,
-        110,
-        4,
-        0
-      ],
-      "weeklyPcts": [
-        null,
-        null,
-        0.04,
-        0.13,
-        1.01,
-        0.02,
-        0.0
-      ],
-      "goalPct": 0.2
-    },
-    {
       "name": "_",
       "weeklyCounts": [
         0,
-        0,
+        8,
         5,
         27,
         9,
@@ -462,20 +484,20 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.03,
         0.02,
         0.1,
         0.08,
         0.01,
         0.64
       ],
-      "goalPct": 0.2
+      "goalPct": 0.1
     },
     {
       "name": "Gloss Paper #100 13 x 19",
       "weeklyCounts": [
         0,
-        0,
+        2,
         0,
         0,
         0,
@@ -484,14 +506,14 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.01,
         0.0,
         0.0,
         0.0,
         0.07,
         0.8
       ],
-      "goalPct": 0.2
+      "goalPct": 0.1
     },
     {
       "name": "TSP 8.5x11 14 Mil (SEF)",
@@ -506,7 +528,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.0,
         0.48,
         0.0,
@@ -528,12 +550,34 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.17,
         0.01,
         0.02,
         0.02,
         0.31
+      ],
+      "goalPct": 0.1
+    },
+    {
+      "name": "TSP 12x18 Adhesive",
+      "weeklyCounts": [
+        0,
+        55,
+        31,
+        0,
+        0,
+        0,
+        3
+      ],
+      "weeklyPcts": [
+        null,
+        0.2,
+        0.12,
+        0.0,
+        0.0,
+        0.0,
+        0.02
       ],
       "goalPct": 0.1
     },
@@ -550,7 +594,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.2,
         0.02,
         0.03,
@@ -572,7 +616,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.0,
         0.0,
         0.0,
@@ -580,28 +624,6 @@
         0.0
       ],
       "goalPct": 0.1
-    },
-    {
-      "name": "TSP 12x18 Adhesive",
-      "weeklyCounts": [
-        0,
-        0,
-        31,
-        0,
-        0,
-        0,
-        3
-      ],
-      "weeklyPcts": [
-        null,
-        null,
-        0.12,
-        0.0,
-        0.0,
-        0.0,
-        0.02
-      ],
-      "goalPct": 0.0
     },
     {
       "name": "TSP 8.5x11 14 Mil (LEF)",
@@ -616,7 +638,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.0,
         0.11,
         0.0,
@@ -638,7 +660,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.0,
         0.0,
         0.01,
@@ -651,7 +673,7 @@
       "name": "PS 13x19 100# Gloss cover",
       "weeklyCounts": [
         0,
-        0,
+        3,
         16,
         1,
         1,
@@ -660,7 +682,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.01,
         0.06,
         0.0,
         0.01,
@@ -673,7 +695,7 @@
       "name": "TSP 12x18 5 Mil",
       "weeklyCounts": [
         0,
-        0,
+        6,
         1,
         2,
         0,
@@ -682,7 +704,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.02,
         0.0,
         0.01,
         0.0,
@@ -704,7 +726,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.03,
         0.0,
         0.0,
@@ -726,7 +748,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.0,
         0.0,
         0.0,
@@ -748,7 +770,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.0,
         0.0,
         0.04,
@@ -770,7 +792,7 @@
       ],
       "weeklyPcts": [
         null,
-        null,
+        0.0,
         0.0,
         0.01,
         0.0,
@@ -783,7 +805,7 @@
   "totals": {
     "weeklyCounts": [
       0,
-      0,
+      27776,
       25103,
       27122,
       10916,
@@ -792,7 +814,7 @@
     ],
     "weeklyPcts": [
       0.0,
-      0.0,
+      100.0,
       100.0,
       100.0,
       100.0,

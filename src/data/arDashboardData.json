@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-06T04:29:12.766000Z",
-  "anchor": "2026-10-06",
+  "generatedAt": "2026-10-08T08:15:35.359418Z",
+  "anchor": "2026-10-08",
   "buckets": {
     "last30": {
       "label": "Last 30 Days Rec.",
@@ -509,9 +509,9 @@
     }
   ],
   "dso": {
-    "value": 3.2,
+    "value": 3.4,
     "trend": {
-      "changePct": 128.6,
+      "changePct": 142.9,
       "direction": "up"
     },
     "salesWindowLabel": "(all sales)"
