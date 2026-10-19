@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-15T13:09:36.411867Z",
-  "anchor": "2026-10-15",
+  "generatedAt": "2026-10-19T10:59:22.517060Z",
+  "anchor": "2026-10-19",
   "buckets": {
     "last30": {
       "label": "Last 30 Days Rec.",
       "unpaidLabel": "Unpaid",
-      "total": 37530.51,
-      "count": 39,
+      "total": 19081.9,
+      "count": 33,
       "trend": {
-        "changePct": -18.1,
+        "changePct": -57.7,
         "direction": "down"
       },
       "countTrend": {
-        "changePct": 30.0,
+        "changePct": 43.5,
         "direction": "up"
       },
       "rows": [
@@ -180,7 +180,23 @@
           "date": "Sep 21, 2026",
           "order": "#13126133",
           "total": 1308.0
-        },
+        }
+      ]
+    },
+    "d31to60": {
+      "label": "31-60 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 45159.39,
+      "count": 23,
+      "trend": {
+        "changePct": 65.4,
+        "direction": "up"
+      },
+      "countTrend": {
+        "changePct": 15.0,
+        "direction": "up"
+      },
+      "rows": [
         {
           "date": "Sep 18, 2026",
           "order": "#13126085",
@@ -210,23 +226,7 @@
           "date": "Sep 15, 2026",
           "order": "#13125673",
           "total": 1308.0
-        }
-      ]
-    },
-    "d31to60": {
-      "label": "31-60 Days Rec.",
-      "unpaidLabel": "Unpaid",
-      "total": 44414.13,
-      "count": 28,
-      "trend": {
-        "changePct": 362.7,
-        "direction": "up"
-      },
-      "countTrend": {
-        "changePct": 211.1,
-        "direction": "up"
-      },
-      "rows": [
+        },
         {
           "date": "Sep 14, 2026",
           "order": "#13125590",
@@ -311,7 +311,17 @@
           "date": "Aug 20, 2026",
           "order": "#13123652",
           "total": 1416.0
-        },
+        }
+      ]
+    },
+    "d61to90": {
+      "label": "61-90 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 27301.35,
+      "count": 20,
+      "trend": null,
+      "countTrend": null,
+      "rows": [
         {
           "date": "Aug 19, 2026",
           "order": "#13123616",
@@ -366,17 +376,7 @@
           "date": "Aug 17, 2026",
           "order": "#13123392",
           "total": 6270.0
-        }
-      ]
-    },
-    "d61to90": {
-      "label": "61-90 Days Rec.",
-      "unpaidLabel": "Unpaid",
-      "total": 9598.0,
-      "count": 9,
-      "trend": null,
-      "countTrend": null,
-      "rows": [
+        },
         {
           "date": "Aug 14, 2026",
           "order": "#13123329",
@@ -456,11 +456,11 @@
     "total": 91542.64,
     "count": 76,
     "trend": {
-      "changePct": 65.1,
+      "changePct": 26.3,
       "direction": "up"
     },
     "countTrend": {
-      "changePct": 94.9,
+      "changePct": 76.7,
       "direction": "up"
     }
   },
@@ -468,17 +468,17 @@
     {
       "key": "last30",
       "label": "Last 30 Days",
-      "pct": 41.0
+      "pct": 20.8
     },
     {
       "key": "d31to60",
       "label": "31-60 Days",
-      "pct": 48.5
+      "pct": 49.3
     },
     {
       "key": "d61to90",
       "label": "61-90 Days",
-      "pct": 10.5
+      "pct": 29.8
     },
     {
       "key": "d90plus",
@@ -487,21 +487,21 @@
     }
   ],
   "dso": {
-    "value": 3.1,
+    "value": 2.9,
     "trend": {
-      "changePct": 72.2,
+      "changePct": 11.5,
       "direction": "up"
     },
     "salesWindowLabel": "(all sales)"
   },
-  "narrative": "AR grew 65.1% vs. the prior 30 days, driven mainly by a 362.7% jump in 31-60 Days receivables \u2014 prioritize collection on the 28 unpaid orders in that bucket before they roll into the next aging tier.",
+  "narrative": "AR grew 26.3% vs. the prior 30 days, driven mainly by a 65.4% jump in 31-60 Days receivables \u2014 prioritize collection on the 23 unpaid orders in that bucket before they roll into the next aging tier.",
   "topCustomers": {
     "rows": [
       {
         "name": "karen.s.james@disney.com",
-        "total": 28166.44,
-        "pct": 30.8,
-        "orderCount": 36,
+        "total": 24403.44,
+        "pct": 26.7,
+        "orderCount": 35,
         "flagged": true
       },
       {
@@ -513,9 +513,9 @@
       },
       {
         "name": "Bobby Zaph",
-        "total": 16884.83,
-        "pct": 18.4,
-        "orderCount": 5,
+        "total": 15420.19,
+        "pct": 16.8,
+        "orderCount": 2,
         "flagged": true
       },
       {
@@ -523,6 +523,13 @@
         "total": 5232.0,
         "pct": 5.7,
         "orderCount": 4,
+        "flagged": false
+      },
+      {
+        "name": "#13122826",
+        "total": 3763.0,
+        "pct": 4.1,
+        "orderCount": 1,
         "flagged": false
       },
       {
@@ -559,15 +566,8 @@
         "pct": 2.4,
         "orderCount": 1,
         "flagged": false
-      },
-      {
-        "name": "NVU Vegas, LLC",
-        "total": 1654.25,
-        "pct": 1.8,
-        "orderCount": 1,
-        "flagged": false
       }
     ],
-    "concentrationPct": 91.4
+    "concentrationPct": 88.0
   }
 }

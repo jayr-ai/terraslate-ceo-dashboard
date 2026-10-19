@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-15T13:09:47.865006Z",
+  "generatedAt": "2026-10-19T10:59:39.135061Z",
   "years": [
     2026,
     2025,
@@ -4735,6 +4735,25 @@
       "fcstGd": 5908.0,
       "paidGdWork": null,
       "fcstWeb": 115977.0,
+      "actualWeb": null,
+      "forecastWmt": 1512.0,
+      "actualWmt": null
+    },
+    {
+      "year": 2026,
+      "week": "W42",
+      "weekNum": 42,
+      "quarter": "Q4",
+      "weekStart": "10/12/2026",
+      "forecast": 255391.0,
+      "actual": null,
+      "forecastDraft": 120194.0,
+      "actualDraft": null,
+      "fcstAmzn": 30236.0,
+      "actualAmzn": null,
+      "fcstGd": 5108.0,
+      "paidGdWork": null,
+      "fcstWeb": 98341.0,
       "actualWeb": null,
       "forecastWmt": 1512.0,
       "actualWmt": null

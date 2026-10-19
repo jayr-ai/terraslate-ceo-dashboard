@@ -1,372 +1,372 @@
 {
-  "generatedAt": "2026-10-15T13:09:38.929809Z",
-  "anchor": "2026-10-14",
+  "generatedAt": "2026-10-19T10:59:28.227705Z",
+  "anchor": "2026-10-17",
   "summary": {
     "windows": {
       "today": {
         "spend": {
-          "value": 847.49,
+          "value": 790.99,
           "trend": {
-            "changePct": -34.5,
+            "changePct": -34.9,
             "direction": "down"
           }
         },
         "purchaseValue": {
-          "value": 6088.7,
+          "value": 626.18,
           "trend": {
-            "changePct": 128.6,
-            "direction": "up"
-          }
-        },
-        "roas": {
-          "value": 7.18,
-          "trend": {
-            "changePct": 248.5,
-            "direction": "up"
-          }
-        },
-        "costPerPurchase": {
-          "value": 47.08,
-          "trend": {
-            "changePct": -52.7,
+            "changePct": -88.1,
             "direction": "down"
           }
         },
-        "cpm": {
-          "value": 19.11,
+        "roas": {
+          "value": 0.79,
           "trend": {
-            "changePct": 2.6,
+            "changePct": -81.7,
+            "direction": "down"
+          }
+        },
+        "costPerPurchase": {
+          "value": 395.49,
+          "trend": {
+            "changePct": 323.3,
+            "direction": "up"
+          }
+        },
+        "cpm": {
+          "value": 23.28,
+          "trend": {
+            "changePct": 35.1,
             "direction": "up"
           }
         },
         "impressions": {
-          "value": 44355,
+          "value": 33979,
           "trend": {
-            "changePct": -36.2,
+            "changePct": -51.8,
             "direction": "down"
           }
         },
         "reach": {
-          "value": 27715,
+          "value": 23825,
           "trend": {
-            "changePct": -29.8,
+            "changePct": -43.6,
             "direction": "down"
           }
         },
         "linkClicks": {
-          "value": 292,
+          "value": 297,
           "trend": {
-            "changePct": -46.8,
+            "changePct": -39.5,
             "direction": "down"
           }
         },
         "costPerLinkClick": {
-          "value": 2.9,
+          "value": 2.66,
           "trend": {
-            "changePct": 22.9,
+            "changePct": 7.7,
             "direction": "up"
           }
         },
         "purchases": {
-          "value": 18,
+          "value": 2,
           "trend": {
-            "changePct": 38.5,
-            "direction": "up"
+            "changePct": -84.6,
+            "direction": "down"
           }
         },
-        "narrative": "Spent $847.49 for $6,088.70 in purchase value this period (7.18x ROAS), spend down 34.5% vs. the prior period. ROAS improved 248.5% vs. the prior period \u2014 efficiency is trending the right way."
+        "narrative": "Spent $790.99 for $626.18 in purchase value this period (0.79x ROAS), spend down 34.9% vs. the prior period. ROAS fell 81.7% vs. the prior period \u2014 the same spend is returning less."
       },
       "yesterday": {
         "spend": {
-          "value": 1293.79,
+          "value": 1214.71,
           "trend": {
-            "changePct": 0.3,
+            "changePct": 18.7,
             "direction": "up"
           }
         },
         "purchaseValue": {
-          "value": 2662.91,
+          "value": 5242.49,
           "trend": {
-            "changePct": 30.2,
+            "changePct": 43.7,
             "direction": "up"
           }
         },
         "roas": {
-          "value": 2.06,
+          "value": 4.32,
           "trend": {
-            "changePct": 30.4,
+            "changePct": 21.3,
             "direction": "up"
           }
         },
         "costPerPurchase": {
-          "value": 99.52,
+          "value": 93.44,
           "trend": {
-            "changePct": -15.2,
-            "direction": "down"
+            "changePct": 27.8,
+            "direction": "up"
           }
         },
         "cpm": {
-          "value": 18.62,
+          "value": 17.23,
           "trend": {
-            "changePct": -5.3,
-            "direction": "down"
+            "changePct": 1.1,
+            "direction": "up"
           }
         },
         "impressions": {
-          "value": 69491,
+          "value": 70493,
           "trend": {
-            "changePct": 5.9,
+            "changePct": 17.3,
             "direction": "up"
           }
         },
         "reach": {
-          "value": 39503,
+          "value": 42207,
           "trend": {
-            "changePct": -0.9,
-            "direction": "down"
+            "changePct": 18.5,
+            "direction": "up"
           }
         },
         "linkClicks": {
-          "value": 549,
+          "value": 491,
           "trend": {
-            "changePct": -1.3,
-            "direction": "down"
+            "changePct": 8.9,
+            "direction": "up"
           }
         },
         "costPerLinkClick": {
-          "value": 2.36,
+          "value": 2.47,
           "trend": {
-            "changePct": 1.7,
+            "changePct": 8.8,
             "direction": "up"
           }
         },
         "purchases": {
           "value": 13,
           "trend": {
-            "changePct": 18.2,
-            "direction": "up"
+            "changePct": -7.1,
+            "direction": "down"
           }
         },
-        "narrative": "Spent $1,293.79 for $2,662.91 in purchase value this period (2.06x ROAS), spend up 0.3% vs. the prior period. ROAS improved 30.4% vs. the prior period \u2014 efficiency is trending the right way."
+        "narrative": "Spent $1,214.71 for $5,242.49 in purchase value this period (4.32x ROAS), spend up 18.7% vs. the prior period. ROAS improved 21.3% vs. the prior period \u2014 efficiency is trending the right way."
       },
       "last7": {
         "spend": {
-          "value": 9473.58,
+          "value": 6817.2,
           "trend": {
-            "changePct": -3.7,
+            "changePct": -28.0,
             "direction": "down"
           }
         },
         "purchaseValue": {
-          "value": 22197.53,
+          "value": 22102.55,
           "trend": {
-            "changePct": -24.2,
+            "changePct": -0.4,
             "direction": "down"
           }
         },
         "roas": {
-          "value": 2.34,
+          "value": 3.24,
           "trend": {
-            "changePct": -21.5,
-            "direction": "down"
+            "changePct": 38.5,
+            "direction": "up"
           }
         },
         "costPerPurchase": {
-          "value": 119.92,
-          "trend": {
-            "changePct": 30.4,
-            "direction": "up"
-          }
-        },
-        "cpm": {
-          "value": 18.82,
-          "trend": {
-            "changePct": 11.4,
-            "direction": "up"
-          }
-        },
-        "impressions": {
-          "value": 503480,
-          "trend": {
-            "changePct": -13.6,
-            "direction": "down"
-          }
-        },
-        "reach": {
-          "value": 292243,
-          "trend": {
-            "changePct": -19.6,
-            "direction": "down"
-          }
-        },
-        "linkClicks": {
-          "value": 3603,
-          "trend": {
-            "changePct": -9.4,
-            "direction": "down"
-          }
-        },
-        "costPerLinkClick": {
-          "value": 2.63,
-          "trend": {
-            "changePct": 6.5,
-            "direction": "up"
-          }
-        },
-        "purchases": {
-          "value": 79,
+          "value": 88.54,
           "trend": {
             "changePct": -26.2,
             "direction": "down"
           }
         },
-        "narrative": "Spent $9,473.58 for $22,197.53 in purchase value this period (2.34x ROAS), spend down 3.7% vs. the prior period. ROAS fell 21.5% vs. the prior period \u2014 the same spend is returning less."
+        "cpm": {
+          "value": 18.67,
+          "trend": {
+            "changePct": -0.8,
+            "direction": "down"
+          }
+        },
+        "impressions": {
+          "value": 365189,
+          "trend": {
+            "changePct": -27.5,
+            "direction": "down"
+          }
+        },
+        "reach": {
+          "value": 219204,
+          "trend": {
+            "changePct": -25.0,
+            "direction": "down"
+          }
+        },
+        "linkClicks": {
+          "value": 2827,
+          "trend": {
+            "changePct": -21.5,
+            "direction": "down"
+          }
+        },
+        "costPerLinkClick": {
+          "value": 2.41,
+          "trend": {
+            "changePct": -8.4,
+            "direction": "down"
+          }
+        },
+        "purchases": {
+          "value": 77,
+          "trend": {
+            "changePct": -2.5,
+            "direction": "down"
+          }
+        },
+        "narrative": "Spent $6,817.20 for $22,102.55 in purchase value this period (3.24x ROAS), spend down 28.0% vs. the prior period. ROAS improved 38.5% vs. the prior period \u2014 efficiency is trending the right way."
       },
       "last30": {
         "spend": {
-          "value": 40966.74,
+          "value": 40703.3,
           "trend": {
             "changePct": 1.4,
             "direction": "up"
           }
         },
         "purchaseValue": {
-          "value": 114583.71,
+          "value": 109257.22,
           "trend": {
-            "changePct": 8.6,
-            "direction": "up"
-          }
-        },
-        "roas": {
-          "value": 2.8,
-          "trend": {
-            "changePct": 7.3,
-            "direction": "up"
-          }
-        },
-        "costPerPurchase": {
-          "value": 99.68,
-          "trend": {
-            "changePct": -16.3,
-            "direction": "down"
-          }
-        },
-        "cpm": {
-          "value": 17.47,
-          "trend": {
-            "changePct": 10.2,
-            "direction": "up"
-          }
-        },
-        "impressions": {
-          "value": 2345201,
-          "trend": {
-            "changePct": -7.9,
-            "direction": "down"
-          }
-        },
-        "reach": {
-          "value": 1412764,
-          "trend": {
-            "changePct": -2.5,
-            "direction": "down"
-          }
-        },
-        "linkClicks": {
-          "value": 15424,
-          "trend": {
-            "changePct": 27.6,
-            "direction": "up"
-          }
-        },
-        "costPerLinkClick": {
-          "value": 2.66,
-          "trend": {
-            "changePct": -20.4,
-            "direction": "down"
-          }
-        },
-        "purchases": {
-          "value": 411,
-          "trend": {
-            "changePct": 21.2,
-            "direction": "up"
-          }
-        },
-        "narrative": "Spent $40,966.74 for $114,583.71 in purchase value this period (2.80x ROAS), spend up 1.4% vs. the prior period. ROAS improved 7.3% vs. the prior period \u2014 efficiency is trending the right way."
-      },
-      "thisMonth": {
-        "spend": {
-          "value": 18063.38,
-          "trend": {
-            "changePct": -11.6,
-            "direction": "down"
-          }
-        },
-        "purchaseValue": {
-          "value": 51165.96,
-          "trend": {
-            "changePct": -4.2,
+            "changePct": -5.7,
             "direction": "down"
           }
         },
         "roas": {
-          "value": 2.83,
-          "trend": {
-            "changePct": 8.4,
-            "direction": "up"
-          }
-        },
-        "costPerPurchase": {
-          "value": 100.91,
-          "trend": {
-            "changePct": -4.6,
-            "direction": "down"
-          }
-        },
-        "cpm": {
-          "value": 18.29,
-          "trend": {
-            "changePct": 6.6,
-            "direction": "up"
-          }
-        },
-        "impressions": {
-          "value": 987777,
-          "trend": {
-            "changePct": -17.0,
-            "direction": "down"
-          }
-        },
-        "reach": {
-          "value": 587165,
-          "trend": {
-            "changePct": -19.6,
-            "direction": "down"
-          }
-        },
-        "linkClicks": {
-          "value": 7187,
-          "trend": {
-            "changePct": -3.8,
-            "direction": "down"
-          }
-        },
-        "costPerLinkClick": {
-          "value": 2.51,
-          "trend": {
-            "changePct": -8.1,
-            "direction": "down"
-          }
-        },
-        "purchases": {
-          "value": 179,
+          "value": 2.68,
           "trend": {
             "changePct": -7.3,
             "direction": "down"
           }
         },
-        "narrative": "Spent $18,063.38 for $51,165.96 in purchase value this period (2.83x ROAS), spend down 11.6% vs. the prior period. ROAS improved 8.4% vs. the prior period \u2014 efficiency is trending the right way."
+        "costPerPurchase": {
+          "value": 103.57,
+          "trend": {
+            "changePct": -5.1,
+            "direction": "down"
+          }
+        },
+        "cpm": {
+          "value": 17.89,
+          "trend": {
+            "changePct": 12.3,
+            "direction": "up"
+          }
+        },
+        "impressions": {
+          "value": 2275772,
+          "trend": {
+            "changePct": -9.7,
+            "direction": "down"
+          }
+        },
+        "reach": {
+          "value": 1380207,
+          "trend": {
+            "changePct": -3.9,
+            "direction": "down"
+          }
+        },
+        "linkClicks": {
+          "value": 15663,
+          "trend": {
+            "changePct": 30.4,
+            "direction": "up"
+          }
+        },
+        "costPerLinkClick": {
+          "value": 2.6,
+          "trend": {
+            "changePct": -22.2,
+            "direction": "down"
+          }
+        },
+        "purchases": {
+          "value": 393,
+          "trend": {
+            "changePct": 6.8,
+            "direction": "up"
+          }
+        },
+        "narrative": "Spent $40,703.30 for $109,257.22 in purchase value this period (2.68x ROAS), spend up 1.4% vs. the prior period. ROAS fell 7.3% vs. the prior period \u2014 the same spend is returning less."
+      },
+      "thisMonth": {
+        "spend": {
+          "value": 21449.02,
+          "trend": {
+            "changePct": -11.3,
+            "direction": "down"
+          }
+        },
+        "purchaseValue": {
+          "value": 62471.81,
+          "trend": {
+            "changePct": -13.8,
+            "direction": "down"
+          }
+        },
+        "roas": {
+          "value": 2.91,
+          "trend": {
+            "changePct": -3.0,
+            "direction": "down"
+          }
+        },
+        "costPerPurchase": {
+          "value": 100.23,
+          "trend": {
+            "changePct": 4.1,
+            "direction": "up"
+          }
+        },
+        "cpm": {
+          "value": 18.28,
+          "trend": {
+            "changePct": 8.4,
+            "direction": "up"
+          }
+        },
+        "impressions": {
+          "value": 1173504,
+          "trend": {
+            "changePct": -18.1,
+            "direction": "down"
+          }
+        },
+        "reach": {
+          "value": 699294,
+          "trend": {
+            "changePct": -19.9,
+            "direction": "down"
+          }
+        },
+        "linkClicks": {
+          "value": 8617,
+          "trend": {
+            "changePct": 0.2,
+            "direction": "up"
+          }
+        },
+        "costPerLinkClick": {
+          "value": 2.49,
+          "trend": {
+            "changePct": -11.4,
+            "direction": "down"
+          }
+        },
+        "purchases": {
+          "value": 214,
+          "trend": {
+            "changePct": -14.7,
+            "direction": "down"
+          }
+        },
+        "narrative": "Spent $21,449.02 for $62,471.81 in purchase value this period (2.91x ROAS), spend down 11.3% vs. the prior period. ROAS fell 3.0% vs. the prior period \u2014 the same spend is returning less."
       },
       "lastMonth": {
         "spend": {
@@ -448,211 +448,239 @@
       "today": {
         "rows": [
           {
-            "date": "Oct 14, 2026",
-            "impressions": 44355,
-            "cpm": 19.11,
-            "reach": 27715,
-            "linkClicks": 292,
-            "costPerLinkClick": 2.9,
-            "ctr": 0.66,
-            "freq": 1.35,
-            "purchases": 18,
-            "purchaseValue": 6088.7,
-            "amountSpent": 847.49,
-            "roas": 7.18
+            "date": "Oct 17, 2026",
+            "impressions": 33979,
+            "cpm": 23.28,
+            "reach": 23825,
+            "linkClicks": 297,
+            "costPerLinkClick": 2.66,
+            "ctr": 0.87,
+            "freq": 1.27,
+            "purchases": 2,
+            "purchaseValue": 626.18,
+            "amountSpent": 790.99,
+            "roas": 0.79
           }
         ],
         "grandTotal": {
           "date": "Grand total",
-          "impressions": 44355,
-          "cpm": 19.11,
-          "reach": 27715,
-          "linkClicks": 292,
-          "costPerLinkClick": 2.9,
-          "ctr": 0.66,
-          "freq": 1.35,
-          "purchases": 18,
-          "purchaseValue": 6088.7,
-          "amountSpent": 847.49,
-          "roas": 7.18
+          "impressions": 33979,
+          "cpm": 23.28,
+          "reach": 23825,
+          "linkClicks": 297,
+          "costPerLinkClick": 2.66,
+          "ctr": 0.87,
+          "freq": 1.27,
+          "purchases": 2,
+          "purchaseValue": 626.18,
+          "amountSpent": 790.99,
+          "roas": 0.79
         }
       },
       "yesterday": {
         "rows": [
           {
-            "date": "Oct 13, 2026",
-            "impressions": 69491,
-            "cpm": 18.62,
-            "reach": 39503,
-            "linkClicks": 549,
-            "costPerLinkClick": 2.36,
-            "ctr": 0.79,
-            "freq": 1.45,
+            "date": "Oct 16, 2026",
+            "impressions": 70493,
+            "cpm": 17.23,
+            "reach": 42207,
+            "linkClicks": 491,
+            "costPerLinkClick": 2.47,
+            "ctr": 0.7,
+            "freq": 1.41,
             "purchases": 13,
-            "purchaseValue": 2662.91,
-            "amountSpent": 1293.79,
-            "roas": 2.06
+            "purchaseValue": 5242.49,
+            "amountSpent": 1214.71,
+            "roas": 4.32
           }
         ],
         "grandTotal": {
           "date": "Grand total",
-          "impressions": 69491,
-          "cpm": 18.62,
-          "reach": 39503,
-          "linkClicks": 549,
-          "costPerLinkClick": 2.36,
-          "ctr": 0.79,
-          "freq": 1.45,
+          "impressions": 70493,
+          "cpm": 17.23,
+          "reach": 42207,
+          "linkClicks": 491,
+          "costPerLinkClick": 2.47,
+          "ctr": 0.7,
+          "freq": 1.41,
           "purchases": 13,
-          "purchaseValue": 2662.91,
-          "amountSpent": 1293.79,
-          "roas": 2.06
+          "purchaseValue": 5242.49,
+          "amountSpent": 1214.71,
+          "roas": 4.32
         }
       },
       "last7": {
         "rows": [
           {
-            "date": "Oct 11, 2026",
-            "impressions": 48902,
-            "cpm": 23.14,
-            "reach": 34055,
-            "linkClicks": 475,
-            "costPerLinkClick": 2.38,
-            "ctr": 0.97,
-            "freq": 1.31,
-            "purchases": 4,
-            "purchaseValue": 266.69,
-            "amountSpent": 1131.42,
-            "roas": 0.24
+            "date": "Oct 17, 2026",
+            "impressions": 33979,
+            "cpm": 23.28,
+            "reach": 23825,
+            "linkClicks": 297,
+            "costPerLinkClick": 2.66,
+            "ctr": 0.87,
+            "freq": 1.27,
+            "purchases": 2,
+            "purchaseValue": 626.18,
+            "amountSpent": 790.99,
+            "roas": 0.79
           },
           {
-            "date": "Oct 10, 2026",
-            "impressions": 44373,
-            "cpm": 20.86,
-            "reach": 28723,
-            "linkClicks": 351,
-            "costPerLinkClick": 2.64,
-            "ctr": 0.79,
-            "freq": 1.36,
-            "purchases": 9,
-            "purchaseValue": 4003.64,
-            "amountSpent": 925.81,
+            "date": "Oct 16, 2026",
+            "impressions": 70493,
+            "cpm": 17.23,
+            "reach": 42207,
+            "linkClicks": 491,
+            "costPerLinkClick": 2.47,
+            "ctr": 0.7,
+            "freq": 1.41,
+            "purchases": 13,
+            "purchaseValue": 5242.49,
+            "amountSpent": 1214.71,
             "roas": 4.32
           },
           {
-            "date": "Oct 9, 2026",
-            "impressions": 71961,
-            "cpm": 19.45,
-            "reach": 40455,
-            "linkClicks": 557,
-            "costPerLinkClick": 2.51,
-            "ctr": 0.77,
-            "freq": 1.48,
-            "purchases": 12,
-            "purchaseValue": 2391.6,
-            "amountSpent": 1399.83,
-            "roas": 1.71
-          },
-          {
-            "date": "Oct 8, 2026",
-            "impressions": 71624,
-            "cpm": 19.53,
-            "reach": 39774,
-            "linkClicks": 497,
-            "costPerLinkClick": 2.81,
-            "ctr": 0.69,
-            "freq": 1.46,
+            "date": "Oct 15, 2026",
+            "impressions": 60092,
+            "cpm": 17.04,
+            "reach": 35624,
+            "linkClicks": 451,
+            "costPerLinkClick": 2.27,
+            "ctr": 0.75,
+            "freq": 1.38,
             "purchases": 14,
-            "purchaseValue": 3734.17,
-            "amountSpent": 1398.89,
-            "roas": 2.67
+            "purchaseValue": 3647.95,
+            "amountSpent": 1023.67,
+            "roas": 3.56
           },
-          {
-            "date": "Oct 7, 2026",
-            "impressions": 73728,
-            "cpm": 19.36,
-            "reach": 41753,
-            "linkClicks": 457,
-            "costPerLinkClick": 3.12,
-            "ctr": 0.62,
-            "freq": 1.46,
-            "purchases": 14,
-            "purchaseValue": 4464.1,
-            "amountSpent": 1427.07,
-            "roas": 3.13
-          },
-          {
-            "date": "Oct 6, 2026",
-            "impressions": 90296,
-            "cpm": 17.69,
-            "reach": 51360,
-            "linkClicks": 573,
-            "costPerLinkClick": 2.79,
-            "ctr": 0.63,
-            "freq": 1.48,
-            "purchases": 12,
-            "purchaseValue": 5126.21,
-            "amountSpent": 1597.17,
-            "roas": 3.21
-          },
-          {
-            "date": "Oct 5, 2026",
-            "impressions": 102596,
-            "cpm": 15.53,
-            "reach": 56123,
-            "linkClicks": 693,
-            "costPerLinkClick": 2.3,
-            "ctr": 0.68,
-            "freq": 1.47,
-            "purchases": 14,
-            "purchaseValue": 2211.12,
-            "amountSpent": 1593.39,
-            "roas": 1.39
-          }
-        ],
-        "grandTotal": {
-          "date": "Grand total",
-          "impressions": 503480,
-          "cpm": 18.82,
-          "reach": 292243,
-          "linkClicks": 3603,
-          "costPerLinkClick": 2.63,
-          "ctr": 0.72,
-          "freq": 1.43,
-          "purchases": 79,
-          "purchaseValue": 22197.53,
-          "amountSpent": 9473.58,
-          "roas": 2.34
-        }
-      },
-      "last30": {
-        "rows": [
           {
             "date": "Oct 14, 2026",
-            "impressions": 44355,
-            "cpm": 19.11,
-            "reach": 27715,
-            "linkClicks": 292,
-            "costPerLinkClick": 2.9,
-            "ctr": 0.66,
-            "freq": 1.35,
-            "purchases": 18,
-            "purchaseValue": 6088.7,
-            "amountSpent": 847.49,
-            "roas": 7.18
+            "impressions": 65512,
+            "cpm": 18.37,
+            "reach": 38182,
+            "linkClicks": 483,
+            "costPerLinkClick": 2.49,
+            "ctr": 0.74,
+            "freq": 1.47,
+            "purchases": 24,
+            "purchaseValue": 7877.93,
+            "amountSpent": 1203.68,
+            "roas": 6.54
           },
           {
             "date": "Oct 13, 2026",
-            "impressions": 69491,
+            "impressions": 69497,
             "cpm": 18.62,
-            "reach": 39503,
+            "reach": 39509,
             "linkClicks": 549,
             "costPerLinkClick": 2.36,
             "ctr": 0.79,
             "freq": 1.45,
             "purchases": 13,
             "purchaseValue": 2662.91,
-            "amountSpent": 1293.79,
+            "amountSpent": 1293.87,
+            "roas": 2.06
+          },
+          {
+            "date": "Oct 12, 2026",
+            "impressions": 65616,
+            "cpm": 19.66,
+            "reach": 39857,
+            "linkClicks": 556,
+            "costPerLinkClick": 2.32,
+            "ctr": 0.85,
+            "freq": 1.41,
+            "purchases": 11,
+            "purchaseValue": 2045.09,
+            "amountSpent": 1290.28,
+            "roas": 1.58
+          }
+        ],
+        "grandTotal": {
+          "date": "Grand total",
+          "impressions": 365189,
+          "cpm": 18.67,
+          "reach": 219204,
+          "linkClicks": 2827,
+          "costPerLinkClick": 2.41,
+          "ctr": 0.77,
+          "freq": 1.4,
+          "purchases": 77,
+          "purchaseValue": 22102.55,
+          "amountSpent": 6817.2,
+          "roas": 3.24
+        }
+      },
+      "last30": {
+        "rows": [
+          {
+            "date": "Oct 17, 2026",
+            "impressions": 33979,
+            "cpm": 23.28,
+            "reach": 23825,
+            "linkClicks": 297,
+            "costPerLinkClick": 2.66,
+            "ctr": 0.87,
+            "freq": 1.27,
+            "purchases": 2,
+            "purchaseValue": 626.18,
+            "amountSpent": 790.99,
+            "roas": 0.79
+          },
+          {
+            "date": "Oct 16, 2026",
+            "impressions": 70493,
+            "cpm": 17.23,
+            "reach": 42207,
+            "linkClicks": 491,
+            "costPerLinkClick": 2.47,
+            "ctr": 0.7,
+            "freq": 1.41,
+            "purchases": 13,
+            "purchaseValue": 5242.49,
+            "amountSpent": 1214.71,
+            "roas": 4.32
+          },
+          {
+            "date": "Oct 15, 2026",
+            "impressions": 60092,
+            "cpm": 17.04,
+            "reach": 35624,
+            "linkClicks": 451,
+            "costPerLinkClick": 2.27,
+            "ctr": 0.75,
+            "freq": 1.38,
+            "purchases": 14,
+            "purchaseValue": 3647.95,
+            "amountSpent": 1023.67,
+            "roas": 3.56
+          },
+          {
+            "date": "Oct 14, 2026",
+            "impressions": 65512,
+            "cpm": 18.37,
+            "reach": 38182,
+            "linkClicks": 483,
+            "costPerLinkClick": 2.49,
+            "ctr": 0.74,
+            "freq": 1.47,
+            "purchases": 24,
+            "purchaseValue": 7877.93,
+            "amountSpent": 1203.68,
+            "roas": 6.54
+          },
+          {
+            "date": "Oct 13, 2026",
+            "impressions": 69497,
+            "cpm": 18.62,
+            "reach": 39509,
+            "linkClicks": 549,
+            "costPerLinkClick": 2.36,
+            "ctr": 0.79,
+            "freq": 1.45,
+            "purchases": 13,
+            "purchaseValue": 2662.91,
+            "amountSpent": 1293.87,
             "roas": 2.06
           },
           {
@@ -1004,93 +1032,93 @@
             "purchaseValue": 3349.97,
             "amountSpent": 1113.2,
             "roas": 3.01
-          },
-          {
-            "date": "Sep 17, 2026",
-            "impressions": 87814,
-            "cpm": 13.34,
-            "reach": 49546,
-            "linkClicks": 426,
-            "costPerLinkClick": 2.75,
-            "ctr": 0.49,
-            "freq": 1.5,
-            "purchases": 14,
-            "purchaseValue": 6596.66,
-            "amountSpent": 1171.61,
-            "roas": 5.63
-          },
-          {
-            "date": "Sep 16, 2026",
-            "impressions": 88157,
-            "cpm": 14.31,
-            "reach": 48683,
-            "linkClicks": 405,
-            "costPerLinkClick": 3.11,
-            "ctr": 0.46,
-            "freq": 1.53,
-            "purchases": 22,
-            "purchaseValue": 5209.47,
-            "amountSpent": 1261.11,
-            "roas": 4.13
-          },
-          {
-            "date": "Sep 15, 2026",
-            "impressions": 79185,
-            "cpm": 15.36,
-            "reach": 46457,
-            "linkClicks": 360,
-            "costPerLinkClick": 3.38,
-            "ctr": 0.45,
-            "freq": 1.47,
-            "purchases": 17,
-            "purchaseValue": 4826.21,
-            "amountSpent": 1216.36,
-            "roas": 3.97
           }
         ],
         "grandTotal": {
           "date": "Grand total",
-          "impressions": 2345201,
-          "cpm": 17.47,
-          "reach": 1412764,
-          "linkClicks": 15424,
-          "costPerLinkClick": 2.66,
-          "ctr": 0.66,
-          "freq": 1.43,
-          "purchases": 411,
-          "purchaseValue": 114583.71,
-          "amountSpent": 40966.74,
-          "roas": 2.8
+          "impressions": 2275772,
+          "cpm": 17.89,
+          "reach": 1380207,
+          "linkClicks": 15663,
+          "costPerLinkClick": 2.6,
+          "ctr": 0.69,
+          "freq": 1.42,
+          "purchases": 393,
+          "purchaseValue": 109257.22,
+          "amountSpent": 40703.3,
+          "roas": 2.68
         }
       },
       "thisMonth": {
         "rows": [
           {
+            "date": "Oct 17, 2026",
+            "impressions": 33979,
+            "cpm": 23.28,
+            "reach": 23825,
+            "linkClicks": 297,
+            "costPerLinkClick": 2.66,
+            "ctr": 0.87,
+            "freq": 1.27,
+            "purchases": 2,
+            "purchaseValue": 626.18,
+            "amountSpent": 790.99,
+            "roas": 0.79
+          },
+          {
+            "date": "Oct 16, 2026",
+            "impressions": 70493,
+            "cpm": 17.23,
+            "reach": 42207,
+            "linkClicks": 491,
+            "costPerLinkClick": 2.47,
+            "ctr": 0.7,
+            "freq": 1.41,
+            "purchases": 13,
+            "purchaseValue": 5242.49,
+            "amountSpent": 1214.71,
+            "roas": 4.32
+          },
+          {
+            "date": "Oct 15, 2026",
+            "impressions": 60092,
+            "cpm": 17.04,
+            "reach": 35624,
+            "linkClicks": 451,
+            "costPerLinkClick": 2.27,
+            "ctr": 0.75,
+            "freq": 1.38,
+            "purchases": 14,
+            "purchaseValue": 3647.95,
+            "amountSpent": 1023.67,
+            "roas": 3.56
+          },
+          {
             "date": "Oct 14, 2026",
-            "impressions": 44355,
-            "cpm": 19.11,
-            "reach": 27715,
-            "linkClicks": 292,
-            "costPerLinkClick": 2.9,
-            "ctr": 0.66,
-            "freq": 1.35,
-            "purchases": 18,
-            "purchaseValue": 6088.7,
-            "amountSpent": 847.49,
-            "roas": 7.18
+            "impressions": 65512,
+            "cpm": 18.37,
+            "reach": 38182,
+            "linkClicks": 483,
+            "costPerLinkClick": 2.49,
+            "ctr": 0.74,
+            "freq": 1.47,
+            "purchases": 24,
+            "purchaseValue": 7877.93,
+            "amountSpent": 1203.68,
+            "roas": 6.54
           },
           {
             "date": "Oct 13, 2026",
-            "impressions": 69491,
+            "impressions": 69497,
             "cpm": 18.62,
-            "reach": 39503,
+            "reach": 39509,
             "linkClicks": 549,
             "costPerLinkClick": 2.36,
             "ctr": 0.79,
             "freq": 1.45,
             "purchases": 13,
             "purchaseValue": 2662.91,
-            "amountSpent": 1293.79,
+            "amountSpent": 1293.87,
             "roas": 2.06
           },
           {
@@ -1264,17 +1292,17 @@
         ],
         "grandTotal": {
           "date": "Grand total",
-          "impressions": 987777,
-          "cpm": 18.29,
-          "reach": 587165,
-          "linkClicks": 7187,
-          "costPerLinkClick": 2.51,
+          "impressions": 1173504,
+          "cpm": 18.28,
+          "reach": 699294,
+          "linkClicks": 8617,
+          "costPerLinkClick": 2.49,
           "ctr": 0.73,
           "freq": 1.42,
-          "purchases": 179,
-          "purchaseValue": 51165.96,
-          "amountSpent": 18063.38,
-          "roas": 2.83
+          "purchases": 214,
+          "purchaseValue": 62471.81,
+          "amountSpent": 21449.02,
+          "roas": 2.91
         }
       },
       "lastMonth": {
@@ -1722,71 +1750,71 @@
       "today": {
         "rows": [
           {
-            "name": "Retargeting 4-5-23",
-            "spend": 221.09,
-            "roas": 1.37,
-            "purchases": 3,
-            "flagged": false
-          },
-          {
-            "name": "Retargeting 4.7.2022",
-            "spend": 158.65,
-            "roas": 14.41,
-            "purchases": 3,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Paper",
-            "spend": 132.29,
-            "roas": 14.33,
-            "purchases": 5,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
-            "spend": 30.16,
-            "roas": 0.83,
-            "purchases": 1,
-            "flagged": true
-          },
-          {
-            "name": "Sales - Menu Angle 1 9-14-26 *",
-            "spend": 29.47,
-            "roas": 6.87,
-            "purchases": 1,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Paper II 11-7-23",
-            "spend": 24.62,
+            "name": "Creative Exploration TSP Alpha",
+            "spend": 175.89,
             "roas": 0.0,
             "purchases": 0,
             "flagged": true
           },
           {
-            "name": "Sales - Waterproof Menu Boards 1-5-26",
-            "spend": 21.56,
+            "name": "Retargeting 4-5-23",
+            "spend": 153.59,
+            "roas": 0.24,
+            "purchases": 1,
+            "flagged": true
+          },
+          {
+            "name": "Retargeting 4.7.2022",
+            "spend": 150.01,
+            "roas": 0.0,
+            "purchases": 0,
+            "flagged": true
+          },
+          {
+            "name": "Sales - Waterproof Paper",
+            "spend": 92.74,
+            "roas": 0.0,
+            "purchases": 0,
+            "flagged": true
+          },
+          {
+            "name": "Sales - Menu Angle 1 9-14-26 *",
+            "spend": 28.27,
+            "roas": 0.0,
+            "purchases": 0,
+            "flagged": true
+          },
+          {
+            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+            "spend": 19.35,
+            "roas": 0.0,
+            "purchases": 0,
+            "flagged": true
+          },
+          {
+            "name": "Sales - No Detailed Targeting 4-10-23",
+            "spend": 14.65,
             "roas": 0.0,
             "purchases": 0,
             "flagged": true
           },
           {
             "name": "Sales - Paper - Angle 3 AA MC - 9-28-26",
-            "spend": 20.76,
-            "roas": 2.22,
-            "purchases": 1,
-            "flagged": false
+            "spend": 14.16,
+            "roas": 0.0,
+            "purchases": 0,
+            "flagged": true
           },
           {
-            "name": "Sales - Waterproof Menus 4-3-23",
-            "spend": 20.34,
+            "name": "Sales - Waterproof Paper II 11-7-23",
+            "spend": 13.65,
             "roas": 0.0,
             "purchases": 0,
             "flagged": true
           },
           {
             "name": "Sales - Business Cards 1-24-24",
-            "spend": 19.74,
+            "spend": 11.14,
             "roas": 0.0,
             "purchases": 0,
             "flagged": true
@@ -1797,70 +1825,70 @@
         "rows": [
           {
             "name": "Retargeting 4-5-23",
-            "spend": 356.12,
-            "roas": 1.92,
-            "purchases": 5,
+            "spend": 280.71,
+            "roas": 4.44,
+            "purchases": 3,
+            "flagged": false
+          },
+          {
+            "name": "Creative Exploration TSP Alpha",
+            "spend": 207.95,
+            "roas": 2.09,
+            "purchases": 2,
             "flagged": false
           },
           {
             "name": "Retargeting 4.7.2022",
-            "spend": 267.8,
-            "roas": 0.67,
-            "purchases": 1,
-            "flagged": true
+            "spend": 192.55,
+            "roas": 4.07,
+            "purchases": 3,
+            "flagged": false
           },
           {
             "name": "Sales - Waterproof Paper",
-            "spend": 214.62,
+            "spend": 164.78,
+            "roas": 6.55,
+            "purchases": 3,
+            "flagged": false
+          },
+          {
+            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+            "spend": 36.72,
             "roas": 0.0,
             "purchases": 0,
             "flagged": true
           },
           {
             "name": "Sales - Menu Angle 1 9-14-26 *",
-            "spend": 40.21,
-            "roas": 15.92,
+            "spend": 36.0,
+            "roas": 47.16,
             "purchases": 2,
             "flagged": false
           },
           {
             "name": "Sales - Waterproof Paper II 11-7-23",
-            "spend": 37.19,
-            "roas": 12.28,
-            "purchases": 2,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
-            "spend": 36.48,
-            "roas": 0.0,
-            "purchases": 0,
-            "flagged": true
-          },
-          {
-            "name": "Sales - Waterproof Menu Boards 1-5-26",
-            "spend": 30.66,
+            "spend": 26.51,
             "roas": 0.0,
             "purchases": 0,
             "flagged": true
           },
           {
             "name": "Sales - Business Cards 1-24-24",
-            "spend": 28.63,
-            "roas": 14.84,
-            "purchases": 1,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Menus 4-3-23",
-            "spend": 27.17,
-            "roas": 9.39,
-            "purchases": 1,
-            "flagged": false
+            "spend": 22.47,
+            "roas": 0.0,
+            "purchases": 0,
+            "flagged": true
           },
           {
             "name": "Sales - Paper - Angle 3 AA MC - 9-28-26",
-            "spend": 26.82,
+            "spend": 19.25,
+            "roas": 0.0,
+            "purchases": 0,
+            "flagged": true
+          },
+          {
+            "name": "Sales - Waterproof Menu Boards 1-5-26",
+            "spend": 18.96,
             "roas": 0.0,
             "purchases": 0,
             "flagged": true
@@ -1871,73 +1899,73 @@
         "rows": [
           {
             "name": "Retargeting 4-5-23",
-            "spend": 2064.03,
-            "roas": 3.83,
-            "purchases": 20,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Paper",
-            "spend": 1697.53,
-            "roas": 1.47,
-            "purchases": 11,
+            "spend": 1706.04,
+            "roas": 4.1,
+            "purchases": 24,
             "flagged": false
           },
           {
             "name": "Retargeting 4.7.2022",
-            "spend": 1672.15,
-            "roas": 3.34,
-            "purchases": 16,
+            "spend": 1288.84,
+            "roas": 3.51,
+            "purchases": 15,
             "flagged": false
           },
           {
-            "name": "Sales - Waterproof Paper II 11-7-23",
-            "spend": 480.24,
-            "roas": 0.14,
-            "purchases": 1,
-            "flagged": true
+            "name": "Sales - Waterproof Paper",
+            "spend": 1053.92,
+            "roas": 2.82,
+            "purchases": 8,
+            "flagged": false
           },
           {
-            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
-            "spend": 270.52,
-            "roas": 4.38,
-            "purchases": 1,
+            "name": "Creative Exploration TSP Alpha",
+            "spend": 383.84,
+            "roas": 1.13,
+            "purchases": 2,
             "flagged": false
           },
           {
             "name": "Sales - Menu Angle 1 9-14-26 *",
-            "spend": 267.99,
-            "roas": 4.48,
+            "spend": 226.59,
+            "roas": 12.06,
             "purchases": 6,
             "flagged": false
           },
           {
-            "name": "Sales - Waterproof Menu Boards 1-5-26",
-            "spend": 246.49,
-            "roas": 0.0,
-            "purchases": 0,
+            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+            "spend": 221.56,
+            "roas": 0.11,
+            "purchases": 1,
             "flagged": true
           },
           {
-            "name": "Sales - Lookalike - Waterproof Menus 2-19-25",
-            "spend": 235.39,
-            "roas": 0.7,
-            "purchases": 1,
-            "flagged": true
+            "name": "Sales - Waterproof Paper II 11-7-23",
+            "spend": 182.14,
+            "roas": 3.82,
+            "purchases": 4,
+            "flagged": false
           },
           {
             "name": "Sales - Business Cards 1-24-24",
-            "spend": 222.73,
-            "roas": 2.51,
-            "purchases": 1,
+            "spend": 140.63,
+            "roas": 3.02,
+            "purchases": 2,
+            "flagged": false
+          },
+          {
+            "name": "Sales - Waterproof Menu Boards 1-5-26",
+            "spend": 140.29,
+            "roas": 6.3,
+            "purchases": 3,
             "flagged": false
           },
           {
             "name": "Sales - Paper - Angle 3 AA MC - 9-28-26",
-            "spend": 214.71,
-            "roas": 2.56,
-            "purchases": 2,
-            "flagged": false
+            "spend": 130.89,
+            "roas": 0.35,
+            "purchases": 1,
+            "flagged": true
           }
         ]
       },
@@ -1945,72 +1973,72 @@
         "rows": [
           {
             "name": "Sales - Waterproof Paper",
-            "spend": 7384.33,
-            "roas": 2.94,
-            "purchases": 70,
+            "spend": 7074.46,
+            "roas": 2.9,
+            "purchases": 63,
             "flagged": false
           },
           {
             "name": "Retargeting 4-5-23",
-            "spend": 6431.68,
-            "roas": 4.22,
-            "purchases": 79,
+            "spend": 6854.23,
+            "roas": 3.9,
+            "purchases": 81,
             "flagged": false
           },
           {
             "name": "Retargeting 4.7.2022",
-            "spend": 6222.51,
-            "roas": 3.56,
-            "purchases": 68,
+            "spend": 6440.22,
+            "roas": 3.2,
+            "purchases": 69,
             "flagged": false
           },
           {
             "name": "Sales - Waterproof Paper II 11-7-23",
-            "spend": 2492.36,
-            "roas": 2.79,
-            "purchases": 27,
+            "spend": 2347.12,
+            "roas": 2.68,
+            "purchases": 26,
             "flagged": false
           },
           {
             "name": "Sales - Business Cards 1-24-24",
-            "spend": 1478.22,
-            "roas": 1.57,
+            "spend": 1309.04,
+            "roas": 1.65,
             "purchases": 8,
             "flagged": false
           },
           {
             "name": "Sales - Waterproof Menu Boards 1-5-26",
-            "spend": 1350.38,
-            "roas": 2.87,
+            "spend": 1279.74,
+            "roas": 2.8,
             "purchases": 11,
             "flagged": false
           },
           {
             "name": "Sales - Lookalike - Waterproof Menus 2-19-25",
-            "spend": 1092.18,
-            "roas": 2.95,
-            "purchases": 14,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Menus 4-3-23",
-            "spend": 1042.6,
-            "roas": 1.47,
-            "purchases": 8,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
-            "spend": 977.61,
-            "roas": 4.44,
+            "spend": 1023.41,
+            "roas": 2.88,
             "purchases": 13,
             "flagged": false
           },
           {
+            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+            "spend": 1022.83,
+            "roas": 4.04,
+            "purchases": 11,
+            "flagged": false
+          },
+          {
             "name": "Sales - Menu Angle 1 9-14-26 *",
-            "spend": 970.29,
-            "roas": 4.12,
-            "purchases": 14,
+            "spend": 990.48,
+            "roas": 5.4,
+            "purchases": 16,
+            "flagged": false
+          },
+          {
+            "name": "Sales - Waterproof Menus 4-3-23",
+            "spend": 961.2,
+            "roas": 1.6,
+            "purchases": 7,
             "flagged": false
           }
         ]
@@ -2019,73 +2047,73 @@
         "rows": [
           {
             "name": "Retargeting 4-5-23",
-            "spend": 3729.51,
-            "roas": 3.76,
-            "purchases": 45,
+            "spend": 4532.45,
+            "roas": 4.05,
+            "purchases": 56,
             "flagged": false
           },
           {
             "name": "Retargeting 4.7.2022",
-            "spend": 3294.86,
-            "roas": 3.28,
-            "purchases": 34,
+            "spend": 3887.97,
+            "roas": 3.25,
+            "purchases": 42,
             "flagged": false
           },
           {
             "name": "Sales - Waterproof Paper",
-            "spend": 3105.6,
-            "roas": 2.67,
-            "purchases": 26,
+            "spend": 3601.57,
+            "roas": 2.6,
+            "purchases": 29,
             "flagged": false
           },
           {
             "name": "Sales - Waterproof Paper II 11-7-23",
-            "spend": 917.53,
-            "roas": 3.53,
-            "purchases": 9,
-            "flagged": false
-          },
-          {
-            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
-            "spend": 518.96,
-            "roas": 3.57,
-            "purchases": 4,
+            "spend": 997.15,
+            "roas": 3.49,
+            "purchases": 11,
             "flagged": false
           },
           {
             "name": "Sales - Menu Angle 1 9-14-26 *",
-            "spend": 509.25,
-            "roas": 4.01,
-            "purchases": 9,
+            "spend": 625.75,
+            "roas": 6.29,
+            "purchases": 12,
+            "flagged": false
+          },
+          {
+            "name": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+            "spend": 625.5,
+            "roas": 2.96,
+            "purchases": 4,
             "flagged": false
           },
           {
             "name": "Sales - Waterproof Menu Boards 1-5-26",
-            "spend": 474.73,
-            "roas": 0.91,
-            "purchases": 2,
-            "flagged": true
-          },
-          {
-            "name": "Sales - Paper - Construction Professionals 9-21-26",
-            "spend": 426.7,
-            "roas": 0.71,
-            "purchases": 5,
-            "flagged": true
-          },
-          {
-            "name": "Sales - Lookalike - Waterproof Menus 2-19-25",
-            "spend": 423.54,
-            "roas": 0.75,
+            "spend": 534.36,
+            "roas": 2.18,
             "purchases": 4,
-            "flagged": true
+            "flagged": false
           },
           {
             "name": "Sales - Business Cards 1-24-24",
-            "spend": 421.36,
-            "roas": 3.51,
+            "spend": 484.45,
+            "roas": 3.05,
+            "purchases": 4,
+            "flagged": false
+          },
+          {
+            "name": "Sales - Paper - Angle 3 AA MC - 9-28-26",
+            "spend": 475.83,
+            "roas": 1.25,
             "purchases": 3,
             "flagged": false
+          },
+          {
+            "name": "Sales - Lookalike - Waterproof Menus 2-19-25",
+            "spend": 465.59,
+            "roas": 0.69,
+            "purchases": 4,
+            "flagged": true
           }
         ]
       },
@@ -2171,39 +2199,39 @@
         "rows": [
           {
             "objective": "(ODAX) Sales",
-            "amountSpent": 671.32,
-            "impressions": 31960,
-            "reach": 19932,
-            "linkClicks": 173,
-            "purchases": 15,
-            "purchaseValue": 3803.27,
-            "roas": 5.67
+            "amountSpent": 625.82,
+            "impressions": 26176,
+            "reach": 17866,
+            "linkClicks": 219,
+            "purchases": 2,
+            "purchaseValue": 626.18,
+            "roas": 1.0
           },
           {
             "objective": "Conversions",
-            "amountSpent": 158.65,
-            "impressions": 10234,
-            "reach": 5678,
-            "linkClicks": 76,
-            "purchases": 3,
-            "purchaseValue": 2285.43,
-            "roas": 14.41
+            "amountSpent": 150.01,
+            "impressions": 5244,
+            "reach": 3725,
+            "linkClicks": 46,
+            "purchases": 0,
+            "purchaseValue": 0.0,
+            "roas": 0.0
           },
           {
             "objective": "Traffic",
-            "amountSpent": 9.93,
-            "impressions": 658,
-            "reach": 633,
-            "linkClicks": 43,
+            "amountSpent": 7.86,
+            "impressions": 1071,
+            "reach": 796,
+            "linkClicks": 32,
             "purchases": 0,
             "purchaseValue": 0.0,
             "roas": 0.0
           },
           {
             "objective": "(ODAX) Awareness",
-            "amountSpent": 7.59,
-            "impressions": 1503,
-            "reach": 1472,
+            "amountSpent": 7.3,
+            "impressions": 1488,
+            "reach": 1438,
             "linkClicks": 0,
             "purchases": 0,
             "purchaseValue": 0.0,
@@ -2212,52 +2240,52 @@
         ],
         "grandTotal": {
           "objective": "Grand total",
-          "amountSpent": 847.49,
-          "impressions": 44355,
-          "reach": 27715,
-          "linkClicks": 292,
-          "purchases": 18,
-          "purchaseValue": 6088.7,
-          "roas": 7.18
+          "amountSpent": 790.99,
+          "impressions": 33979,
+          "reach": 23825,
+          "linkClicks": 297,
+          "purchases": 2,
+          "purchaseValue": 626.18,
+          "roas": 0.79
         }
       },
       "yesterday": {
         "rows": [
           {
             "objective": "(ODAX) Sales",
-            "amountSpent": 997.45,
-            "impressions": 48699,
-            "reach": 26789,
-            "linkClicks": 317,
-            "purchases": 12,
-            "purchaseValue": 2483.78,
-            "roas": 2.49
+            "amountSpent": 994.43,
+            "impressions": 51774,
+            "reach": 31086,
+            "linkClicks": 299,
+            "purchases": 10,
+            "purchaseValue": 4458.88,
+            "roas": 4.48
           },
           {
             "objective": "Conversions",
-            "amountSpent": 267.8,
-            "impressions": 16006,
-            "reach": 8058,
-            "linkClicks": 119,
-            "purchases": 1,
-            "purchaseValue": 179.13,
-            "roas": 0.67
+            "amountSpent": 192.55,
+            "impressions": 13706,
+            "reach": 7222,
+            "linkClicks": 120,
+            "purchases": 3,
+            "purchaseValue": 783.61,
+            "roas": 4.07
           },
           {
             "objective": "Traffic",
-            "amountSpent": 17.13,
-            "impressions": 2301,
-            "reach": 2205,
-            "linkClicks": 113,
+            "amountSpent": 15.47,
+            "impressions": 2310,
+            "reach": 1270,
+            "linkClicks": 72,
             "purchases": 0,
             "purchaseValue": 0.0,
             "roas": 0.0
           },
           {
             "objective": "(ODAX) Awareness",
-            "amountSpent": 11.41,
-            "impressions": 2485,
-            "reach": 2451,
+            "amountSpent": 12.26,
+            "impressions": 2703,
+            "reach": 2629,
             "linkClicks": 0,
             "purchases": 0,
             "purchaseValue": 0.0,
@@ -2266,53 +2294,53 @@
         ],
         "grandTotal": {
           "objective": "Grand total",
-          "amountSpent": 1293.79,
-          "impressions": 69491,
-          "reach": 39503,
-          "linkClicks": 549,
+          "amountSpent": 1214.71,
+          "impressions": 70493,
+          "reach": 42207,
+          "linkClicks": 491,
           "purchases": 13,
-          "purchaseValue": 2662.91,
-          "roas": 2.06
+          "purchaseValue": 5242.49,
+          "roas": 4.32
         }
       },
       "last7": {
         "rows": [
           {
             "objective": "(ODAX) Sales",
-            "amountSpent": 7603.89,
-            "impressions": 366606,
-            "reach": 214928,
-            "linkClicks": 2377,
+            "amountSpent": 5374.35,
+            "impressions": 263157,
+            "reach": 155639,
+            "linkClicks": 1718,
             "purchases": 62,
-            "purchaseValue": 16613.15,
-            "roas": 2.18
+            "purchaseValue": 17579.56,
+            "roas": 3.27
           },
           {
             "objective": "Conversions",
-            "amountSpent": 1672.15,
-            "impressions": 107578,
-            "reach": 49852,
-            "linkClicks": 748,
-            "purchases": 16,
-            "purchaseValue": 5584.38,
-            "roas": 3.34
+            "amountSpent": 1288.84,
+            "impressions": 76994,
+            "reach": 40814,
+            "linkClicks": 615,
+            "purchases": 15,
+            "purchaseValue": 4522.99,
+            "roas": 3.51
           },
           {
             "objective": "Traffic",
-            "amountSpent": 113.56,
-            "impressions": 11144,
-            "reach": 9689,
-            "linkClicks": 477,
-            "purchases": 1,
+            "amountSpent": 87.86,
+            "impressions": 10393,
+            "reach": 8473,
+            "linkClicks": 494,
+            "purchases": 0,
             "purchaseValue": 0.0,
             "roas": 0.0
           },
           {
             "objective": "(ODAX) Awareness",
-            "amountSpent": 83.98,
-            "impressions": 18152,
-            "reach": 17774,
-            "linkClicks": 1,
+            "amountSpent": 66.15,
+            "impressions": 14645,
+            "reach": 14278,
+            "linkClicks": 0,
             "purchases": 0,
             "purchaseValue": 0.0,
             "roas": 0.0
@@ -2320,52 +2348,52 @@
         ],
         "grandTotal": {
           "objective": "Grand total",
-          "amountSpent": 9473.58,
-          "impressions": 503480,
-          "reach": 292243,
-          "linkClicks": 3603,
-          "purchases": 79,
-          "purchaseValue": 22197.53,
-          "roas": 2.34
+          "amountSpent": 6817.2,
+          "impressions": 365189,
+          "reach": 219204,
+          "linkClicks": 2827,
+          "purchases": 77,
+          "purchaseValue": 22102.55,
+          "roas": 3.24
         }
       },
       "last30": {
         "rows": [
           {
             "objective": "(ODAX) Sales",
-            "amountSpent": 33901.54,
-            "impressions": 1807637,
-            "reach": 1088993,
-            "linkClicks": 10973,
-            "purchases": 341,
-            "purchaseValue": 92426.87,
-            "roas": 2.73
+            "amountSpent": 33431.5,
+            "impressions": 1733996,
+            "reach": 1053493,
+            "linkClicks": 11010,
+            "purchases": 322,
+            "purchaseValue": 88618.22,
+            "roas": 2.65
           },
           {
             "objective": "Conversions",
-            "amountSpent": 6222.51,
-            "impressions": 411038,
-            "reach": 203987,
-            "linkClicks": 2479,
-            "purchases": 68,
-            "purchaseValue": 22156.84,
-            "roas": 3.56
+            "amountSpent": 6440.22,
+            "impressions": 414410,
+            "reach": 207491,
+            "linkClicks": 2637,
+            "purchases": 69,
+            "purchaseValue": 20639.0,
+            "roas": 3.2
           },
           {
             "objective": "Traffic",
-            "amountSpent": 485.77,
-            "impressions": 46409,
-            "reach": 41755,
-            "linkClicks": 1970,
+            "amountSpent": 476.25,
+            "impressions": 47499,
+            "reach": 41545,
+            "linkClicks": 2014,
             "purchases": 2,
             "purchaseValue": 0.0,
             "roas": 0.0
           },
           {
             "objective": "(ODAX) Awareness",
-            "amountSpent": 356.92,
-            "impressions": 80117,
-            "reach": 78029,
+            "amountSpent": 355.33,
+            "impressions": 79867,
+            "reach": 77678,
             "linkClicks": 2,
             "purchases": 0,
             "purchaseValue": 0.0,
@@ -2374,52 +2402,52 @@
         ],
         "grandTotal": {
           "objective": "Grand total",
-          "amountSpent": 40966.74,
-          "impressions": 2345201,
-          "reach": 1412764,
-          "linkClicks": 15424,
-          "purchases": 411,
-          "purchaseValue": 114583.71,
-          "roas": 2.8
+          "amountSpent": 40703.3,
+          "impressions": 2275772,
+          "reach": 1380207,
+          "linkClicks": 15663,
+          "purchases": 393,
+          "purchaseValue": 109257.22,
+          "roas": 2.68
         }
       },
       "thisMonth": {
         "rows": [
           {
             "objective": "(ODAX) Sales",
-            "amountSpent": 14386.04,
-            "impressions": 723212,
-            "reach": 431696,
-            "linkClicks": 4745,
-            "purchases": 144,
-            "purchaseValue": 40363.1,
-            "roas": 2.81
+            "amountSpent": 17099.67,
+            "impressions": 858402,
+            "reach": 512236,
+            "linkClicks": 5647,
+            "purchases": 171,
+            "purchaseValue": 49848.19,
+            "roas": 2.92
           },
           {
             "objective": "Conversions",
-            "amountSpent": 3294.86,
-            "impressions": 204810,
-            "reach": 99638,
-            "linkClicks": 1421,
-            "purchases": 34,
-            "purchaseValue": 10802.86,
-            "roas": 3.28
+            "amountSpent": 3887.97,
+            "impressions": 241476,
+            "reach": 119198,
+            "linkClicks": 1733,
+            "purchases": 42,
+            "purchaseValue": 12623.62,
+            "roas": 3.25
           },
           {
             "objective": "Traffic",
-            "amountSpent": 219.39,
-            "impressions": 22946,
-            "reach": 19940,
-            "linkClicks": 1020,
+            "amountSpent": 263.07,
+            "impressions": 28748,
+            "reach": 24156,
+            "linkClicks": 1236,
             "purchases": 1,
             "purchaseValue": 0.0,
             "roas": 0.0
           },
           {
             "objective": "(ODAX) Awareness",
-            "amountSpent": 163.09,
-            "impressions": 36809,
-            "reach": 35891,
+            "amountSpent": 198.31,
+            "impressions": 44878,
+            "reach": 43704,
             "linkClicks": 1,
             "purchases": 0,
             "purchaseValue": 0.0,
@@ -2428,13 +2456,13 @@
         ],
         "grandTotal": {
           "objective": "Grand total",
-          "amountSpent": 18063.38,
-          "impressions": 987777,
-          "reach": 587165,
-          "linkClicks": 7187,
-          "purchases": 179,
-          "purchaseValue": 51165.96,
-          "roas": 2.83
+          "amountSpent": 21449.02,
+          "impressions": 1173504,
+          "reach": 699294,
+          "linkClicks": 8617,
+          "purchases": 214,
+          "purchaseValue": 62471.81,
+          "roas": 2.91
         }
       },
       "lastMonth": {
@@ -2651,1187 +2679,35 @@
       },
       {
         "month": "Oct 2026",
-        "impressions": 987777,
-        "cpm": 18.29,
-        "reach": 587165,
-        "linkClicks": 7187,
-        "costPerLinkClick": 2.51,
+        "impressions": 1173504,
+        "cpm": 18.28,
+        "reach": 699294,
+        "linkClicks": 8617,
+        "costPerLinkClick": 2.49,
         "ctr": 0.73,
         "freq": 1.42,
-        "purchases": 179,
-        "purchaseValue": 51165.96,
-        "amountSpent": 18063.38,
-        "roas": 2.83
+        "purchases": 214,
+        "purchaseValue": 62471.81,
+        "amountSpent": 21449.02,
+        "roas": 2.91
       }
     ],
     "grandTotal": {
       "month": "Grand total",
-      "impressions": 17249501,
-      "cpm": 13.25,
-      "reach": 10738047,
-      "linkClicks": 124631,
-      "costPerLinkClick": 1.83,
+      "impressions": 17435228,
+      "cpm": 13.31,
+      "reach": 10850176,
+      "linkClicks": 126061,
+      "costPerLinkClick": 1.84,
       "ctr": 0.72,
       "freq": 1.39,
-      "purchases": 3592,
-      "purchaseValue": 1207095.9,
-      "amountSpent": 228636.56,
-      "roas": 5.28
+      "purchases": 3627,
+      "purchaseValue": 1218401.75,
+      "amountSpent": 232022.2,
+      "roas": 5.25
     }
   },
   "dailyRaw": [
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper Catch-All 4-7-26",
-      "spend": 12.18,
-      "reach": 575.0,
-      "impressions": 739.0,
-      "freq": 1.29,
-      "clicks": 1.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "Conversions",
-      "campaign": "Retargeting 4.7.2022",
-      "spend": 89.25,
-      "reach": 1063.0,
-      "impressions": 4629.0,
-      "freq": 4.35,
-      "clicks": 57.0,
-      "purchases": 1.0,
-      "value": 190.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu Catch-All 1 4-14-26",
-      "spend": 14.85,
-      "reach": 638.0,
-      "impressions": 781.0,
-      "freq": 1.22,
-      "clicks": 1.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menus 4-3-23",
-      "spend": 19.65,
-      "reach": 1131.0,
-      "impressions": 1246.0,
-      "freq": 1.1,
-      "clicks": 5.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Retargeting 4-5-23",
-      "spend": 9.34,
-      "reach": 588.0,
-      "impressions": 864.0,
-      "freq": 1.47,
-      "clicks": 9.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - No Detailed Targeting 4-10-23",
-      "spend": 1.88,
-      "reach": 124.0,
-      "impressions": 128.0,
-      "freq": 1.03,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper",
-      "spend": 101.89,
-      "reach": 3532.0,
-      "impressions": 7494.0,
-      "freq": 2.12,
-      "clicks": 29.0,
-      "purchases": 2.0,
-      "value": 384.98
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Table Tents 7-5-23",
-      "spend": 9.63,
-      "reach": 738.0,
-      "impressions": 768.0,
-      "freq": 1.04,
-      "clicks": 3.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Menu Design Services 8-10-23",
-      "spend": 18.35,
-      "reach": 852.0,
-      "impressions": 939.0,
-      "freq": 1.1,
-      "clicks": 6.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Schools 8-22-23",
-      "spend": 5.56,
-      "reach": 212.0,
-      "impressions": 332.0,
-      "freq": 1.57,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "Traffic",
-      "campaign": "Traffic - Free Menu Sample Pack 8-28-23",
-      "spend": 4.18,
-      "reach": 1033.0,
-      "impressions": 1097.0,
-      "freq": 1.06,
-      "clicks": 13.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - Testimonial Video 10-17-23",
-      "spend": 5.09,
-      "reach": 1131.0,
-      "impressions": 1157.0,
-      "freq": 1.02,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Video Viewers 10-24-23",
-      "spend": 2.02,
-      "reach": 143.0,
-      "impressions": 146.0,
-      "freq": 1.02,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Sample Pack 11-1-23",
-      "spend": 3.59,
-      "reach": 340.0,
-      "impressions": 372.0,
-      "freq": 1.09,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Hotel 11-1-23",
-      "spend": 1.85,
-      "reach": 164.0,
-      "impressions": 195.0,
-      "freq": 1.19,
-      "clicks": 5.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper II 11-7-23",
-      "spend": 30.53,
-      "reach": 2358.0,
-      "impressions": 2673.0,
-      "freq": 1.13,
-      "clicks": 29.0,
-      "purchases": 1.0,
-      "value": 88.15
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Business Cards 1-24-24",
-      "spend": 22.42,
-      "reach": 1341.0,
-      "impressions": 1714.0,
-      "freq": 1.28,
-      "clicks": 29.0,
-      "purchases": 1.0,
-      "value": 277.12
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - TikTok Menu Videos 5-17-24",
-      "spend": 4.17,
-      "reach": 1347.0,
-      "impressions": 1347.0,
-      "freq": 1.0,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "Traffic",
-      "campaign": "Traffic - TikTok Menu Videos 5-17-24",
-      "spend": 2.65,
-      "reach": 156.0,
-      "impressions": 158.0,
-      "freq": 1.01,
-      "clicks": 3.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - TikTok Paper Videos 5-23-24",
-      "spend": 4.33,
-      "reach": 1303.0,
-      "impressions": 1311.0,
-      "freq": 1.01,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "Traffic",
-      "campaign": "Traffic - TikTok Paper Videos 5-23-24",
-      "spend": 2.09,
-      "reach": 606.0,
-      "impressions": 614.0,
-      "freq": 1.01,
-      "clicks": 11.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - TikTok Menu Video Viewers 5-28-24",
-      "spend": 1.75,
-      "reach": 262.0,
-      "impressions": 277.0,
-      "freq": 1.06,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - TikTok Paper Video Viewers 5-29-24",
-      "spend": 1.51,
-      "reach": 115.0,
-      "impressions": 120.0,
-      "freq": 1.04,
-      "clicks": 4.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Lookalike - Waterproof Menus 2-19-25",
-      "spend": 8.1,
-      "reach": 512.0,
-      "impressions": 565.0,
-      "freq": 1.1,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Lookalike - Waterproof Paper 3-10-25",
-      "spend": 1.77,
-      "reach": 131.0,
-      "impressions": 133.0,
-      "freq": 1.02,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - WP Architectural 7-29-25",
-      "spend": 6.45,
-      "reach": 539.0,
-      "impressions": 548.0,
-      "freq": 1.02,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "Traffic",
-      "campaign": "Traffic - TasteAI Menu Campaign 8-5-25",
-      "spend": 4.97,
-      "reach": 587.0,
-      "impressions": 597.0,
-      "freq": 1.02,
-      "clicks": 23.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Salons 9-11-25",
-      "spend": 1.73,
-      "reach": 124.0,
-      "impressions": 146.0,
-      "freq": 1.18,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu II 10-8-25 (Switched to CBO 5-17-26)",
-      "spend": 6.34,
-      "reach": 387.0,
-      "impressions": 408.0,
-      "freq": 1.05,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "Traffic",
-      "campaign": "Traffic - Kyle Menu Board Videos B1 12-17-25",
-      "spend": 6.66,
-      "reach": 741.0,
-      "impressions": 758.0,
-      "freq": 1.02,
-      "clicks": 14.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu Boards 1-5-26",
-      "spend": 20.31,
-      "reach": 1154.0,
-      "impressions": 1441.0,
-      "freq": 1.25,
-      "clicks": 6.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-18",
-      "objective": "Traffic",
-      "campaign": "Traffic - WM 1-19-26",
-      "spend": 6.27,
-      "reach": 1125.0,
-      "impressions": 1125.0,
-      "freq": 1.0,
-      "clicks": 70.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper Catch-All 4-7-26",
-      "spend": 13.58,
-      "reach": 478.0,
-      "impressions": 622.0,
-      "freq": 1.3,
-      "clicks": 6.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "Conversions",
-      "campaign": "Retargeting 4.7.2022",
-      "spend": 104.89,
-      "reach": 1026.0,
-      "impressions": 6016.0,
-      "freq": 5.86,
-      "clicks": 109.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu Catch-All 1 4-14-26",
-      "spend": 16.54,
-      "reach": 564.0,
-      "impressions": 716.0,
-      "freq": 1.27,
-      "clicks": 7.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menus 4-3-23",
-      "spend": 24.4,
-      "reach": 1152.0,
-      "impressions": 1244.0,
-      "freq": 1.08,
-      "clicks": 5.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Retargeting 4-5-23",
-      "spend": 9.34,
-      "reach": 576.0,
-      "impressions": 908.0,
-      "freq": 1.58,
-      "clicks": 4.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - No Detailed Targeting 4-10-23",
-      "spend": 1.63,
-      "reach": 144.0,
-      "impressions": 156.0,
-      "freq": 1.08,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper",
-      "spend": 99.16,
-      "reach": 2612.0,
-      "impressions": 6482.0,
-      "freq": 2.48,
-      "clicks": 17.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Table Tents 7-5-23",
-      "spend": 10.78,
-      "reach": 605.0,
-      "impressions": 654.0,
-      "freq": 1.08,
-      "clicks": 5.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Menu Design Services 8-10-23",
-      "spend": 22.45,
-      "reach": 857.0,
-      "impressions": 1052.0,
-      "freq": 1.23,
-      "clicks": 4.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Schools 8-22-23",
-      "spend": 4.22,
-      "reach": 145.0,
-      "impressions": 222.0,
-      "freq": 1.53,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "Traffic",
-      "campaign": "Traffic - Free Menu Sample Pack 8-28-23",
-      "spend": 5.28,
-      "reach": 1533.0,
-      "impressions": 1681.0,
-      "freq": 1.1,
-      "clicks": 35.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - Testimonial Video 10-17-23",
-      "spend": 5.11,
-      "reach": 1299.0,
-      "impressions": 1327.0,
-      "freq": 1.02,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Video Viewers 10-24-23",
-      "spend": 1.67,
-      "reach": 95.0,
-      "impressions": 95.0,
-      "freq": 1.0,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Sample Pack 11-1-23",
-      "spend": 3.59,
-      "reach": 218.0,
-      "impressions": 224.0,
-      "freq": 1.03,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Hotel 11-1-23",
-      "spend": 2.05,
-      "reach": 131.0,
-      "impressions": 141.0,
-      "freq": 1.08,
-      "clicks": 5.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper II 11-7-23",
-      "spend": 34.97,
-      "reach": 2135.0,
-      "impressions": 2518.0,
-      "freq": 1.18,
-      "clicks": 25.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Business Cards 1-24-24",
-      "spend": 26.37,
-      "reach": 1269.0,
-      "impressions": 1700.0,
-      "freq": 1.34,
-      "clicks": 27.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - TikTok Menu Videos 5-17-24",
-      "spend": 5.53,
-      "reach": 1384.0,
-      "impressions": 1412.0,
-      "freq": 1.02,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "Traffic",
-      "campaign": "Traffic - TikTok Menu Videos 5-17-24",
-      "spend": 3.17,
-      "reach": 163.0,
-      "impressions": 165.0,
-      "freq": 1.01,
-      "clicks": 14.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - TikTok Paper Videos 5-23-24",
-      "spend": 5.41,
-      "reach": 1324.0,
-      "impressions": 1347.0,
-      "freq": 1.02,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "Traffic",
-      "campaign": "Traffic - TikTok Paper Videos 5-23-24",
-      "spend": 3.11,
-      "reach": 1044.0,
-      "impressions": 1053.0,
-      "freq": 1.01,
-      "clicks": 10.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - TikTok Menu Video Viewers 5-28-24",
-      "spend": 1.92,
-      "reach": 177.0,
-      "impressions": 182.0,
-      "freq": 1.03,
-      "clicks": 1.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - TikTok Paper Video Viewers 5-29-24",
-      "spend": 2.03,
-      "reach": 123.0,
-      "impressions": 130.0,
-      "freq": 1.06,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Lookalike - Waterproof Menus 2-19-25",
-      "spend": 11.24,
-      "reach": 627.0,
-      "impressions": 692.0,
-      "freq": 1.1,
-      "clicks": 3.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Lookalike - Waterproof Paper 3-10-25",
-      "spend": 1.97,
-      "reach": 178.0,
-      "impressions": 189.0,
-      "freq": 1.06,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - WP Architectural 7-29-25",
-      "spend": 7.4,
-      "reach": 469.0,
-      "impressions": 520.0,
-      "freq": 1.11,
-      "clicks": 2.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "Traffic",
-      "campaign": "Traffic - TasteAI Menu Campaign 8-5-25",
-      "spend": 6.9,
-      "reach": 785.0,
-      "impressions": 802.0,
-      "freq": 1.02,
-      "clicks": 23.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Salons 9-11-25",
-      "spend": 1.9,
-      "reach": 102.0,
-      "impressions": 131.0,
-      "freq": 1.28,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu II 10-8-25 (Switched to CBO 5-17-26)",
-      "spend": 9.07,
-      "reach": 466.0,
-      "impressions": 518.0,
-      "freq": 1.11,
-      "clicks": 4.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "Traffic",
-      "campaign": "Traffic - Kyle Menu Board Videos B1 12-17-25",
-      "spend": 8.05,
-      "reach": 905.0,
-      "impressions": 905.0,
-      "freq": 1.0,
-      "clicks": 22.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu Boards 1-5-26",
-      "spend": 24.99,
-      "reach": 1059.0,
-      "impressions": 1376.0,
-      "freq": 1.3,
-      "clicks": 7.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-19",
-      "objective": "Traffic",
-      "campaign": "Traffic - WM 1-19-26",
-      "spend": 6.31,
-      "reach": 1189.0,
-      "impressions": 1203.0,
-      "freq": 1.01,
-      "clicks": 87.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper Catch-All 4-7-26",
-      "spend": 18.65,
-      "reach": 639.0,
-      "impressions": 879.0,
-      "freq": 1.38,
-      "clicks": 2.0,
-      "purchases": 1.0,
-      "value": 367.01
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "Conversions",
-      "campaign": "Retargeting 4.7.2022",
-      "spend": 139.24,
-      "reach": 1211.0,
-      "impressions": 7664.0,
-      "freq": 6.33,
-      "clicks": 74.0,
-      "purchases": 3.0,
-      "value": 1119.45
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu Catch-All 1 4-14-26",
-      "spend": 15.64,
-      "reach": 637.0,
-      "impressions": 781.0,
-      "freq": 1.23,
-      "clicks": 2.0,
-      "purchases": 1.0,
-      "value": 178.36
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menus 4-3-23",
-      "spend": 24.28,
-      "reach": 1196.0,
-      "impressions": 1368.0,
-      "freq": 1.14,
-      "clicks": 6.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Retargeting 4-5-23",
-      "spend": 14.34,
-      "reach": 840.0,
-      "impressions": 1319.0,
-      "freq": 1.57,
-      "clicks": 12.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - No Detailed Targeting 4-10-23",
-      "spend": 2.1,
-      "reach": 188.0,
-      "impressions": 204.0,
-      "freq": 1.09,
-      "clicks": 1.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper",
-      "spend": 134.51,
-      "reach": 4408.0,
-      "impressions": 10021.0,
-      "freq": 2.27,
-      "clicks": 22.0,
-      "purchases": 6.0,
-      "value": 1545.38
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Table Tents 7-5-23",
-      "spend": 12.78,
-      "reach": 912.0,
-      "impressions": 995.0,
-      "freq": 1.09,
-      "clicks": 8.0,
-      "purchases": 1.0,
-      "value": 115.5
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Menu Design Services 8-10-23",
-      "spend": 28.69,
-      "reach": 1222.0,
-      "impressions": 1496.0,
-      "freq": 1.22,
-      "clicks": 6.0,
-      "purchases": 1.0,
-      "value": 281.6
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Schools 8-22-23",
-      "spend": 7.5,
-      "reach": 245.0,
-      "impressions": 364.0,
-      "freq": 1.49,
-      "clicks": 3.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "Traffic",
-      "campaign": "Traffic - Free Menu Sample Pack 8-28-23",
-      "spend": 2.86,
-      "reach": 699.0,
-      "impressions": 757.0,
-      "freq": 1.08,
-      "clicks": 8.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - Testimonial Video 10-17-23",
-      "spend": 4.83,
-      "reach": 921.0,
-      "impressions": 941.0,
-      "freq": 1.02,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Video Viewers 10-24-23",
-      "spend": 1.81,
-      "reach": 111.0,
-      "impressions": 116.0,
-      "freq": 1.05,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Sample Pack 11-1-23",
-      "spend": 3.17,
-      "reach": 183.0,
-      "impressions": 191.0,
-      "freq": 1.04,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Hotel 11-1-23",
-      "spend": 1.99,
-      "reach": 165.0,
-      "impressions": 172.0,
-      "freq": 1.04,
-      "clicks": 5.0,
-      "purchases": 1.0,
-      "value": 10.89
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Paper II 11-7-23",
-      "spend": 48.22,
-      "reach": 3578.0,
-      "impressions": 4167.0,
-      "freq": 1.16,
-      "clicks": 19.0,
-      "purchases": 1.0,
-      "value": 144.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Business Cards 1-24-24",
-      "spend": 32.95,
-      "reach": 1751.0,
-      "impressions": 2461.0,
-      "freq": 1.41,
-      "clicks": 17.0,
-      "purchases": 2.0,
-      "value": 1343.02
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - TikTok Menu Videos 5-17-24",
-      "spend": 5.36,
-      "reach": 1335.0,
-      "impressions": 1335.0,
-      "freq": 1.0,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "Traffic",
-      "campaign": "Traffic - TikTok Menu Videos 5-17-24",
-      "spend": 3.25,
-      "reach": 183.0,
-      "impressions": 188.0,
-      "freq": 1.03,
-      "clicks": 10.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Awareness",
-      "campaign": "Awareness - TikTok Paper Videos 5-23-24",
-      "spend": 5.25,
-      "reach": 1281.0,
-      "impressions": 1281.0,
-      "freq": 1.0,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "Traffic",
-      "campaign": "Traffic - TikTok Paper Videos 5-23-24",
-      "spend": 3.01,
-      "reach": 573.0,
-      "impressions": 579.0,
-      "freq": 1.01,
-      "clicks": 10.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - TikTok Menu Video Viewers 5-28-24",
-      "spend": 1.92,
-      "reach": 225.0,
-      "impressions": 234.0,
-      "freq": 1.04,
-      "clicks": 5.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - TikTok Paper Video Viewers 5-29-24",
-      "spend": 2.59,
-      "reach": 227.0,
-      "impressions": 277.0,
-      "freq": 1.22,
-      "clicks": 1.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Lookalike - Waterproof Menus 2-19-25",
-      "spend": 11.41,
-      "reach": 714.0,
-      "impressions": 754.0,
-      "freq": 1.06,
-      "clicks": 3.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Lookalike - Waterproof Paper 3-10-25",
-      "spend": 2.51,
-      "reach": 228.0,
-      "impressions": 235.0,
-      "freq": 1.03,
-      "clicks": 1.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - WP Architectural 7-29-25",
-      "spend": 7.46,
-      "reach": 502.0,
-      "impressions": 518.0,
-      "freq": 1.03,
-      "clicks": 0.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "Traffic",
-      "campaign": "Traffic - TasteAI Menu Campaign 8-5-25",
-      "spend": 6.63,
-      "reach": 858.0,
-      "impressions": 878.0,
-      "freq": 1.02,
-      "clicks": 15.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Salons 9-11-25",
-      "spend": 2.88,
-      "reach": 264.0,
-      "impressions": 301.0,
-      "freq": 1.14,
-      "clicks": 1.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu II 10-8-25 (Switched to CBO 5-17-26)",
-      "spend": 9.01,
-      "reach": 543.0,
-      "impressions": 570.0,
-      "freq": 1.05,
-      "clicks": 4.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "Traffic",
-      "campaign": "Traffic - Kyle Menu Board Videos B1 12-17-25",
-      "spend": 7.18,
-      "reach": 642.0,
-      "impressions": 661.0,
-      "freq": 1.03,
-      "clicks": 22.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "(ODAX) Sales",
-      "campaign": "Sales - Waterproof Menu Boards 1-5-26",
-      "spend": 25.31,
-      "reach": 1130.0,
-      "impressions": 1481.0,
-      "freq": 1.31,
-      "clicks": 3.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
-    {
-      "date": "2026-04-20",
-      "objective": "Traffic",
-      "campaign": "Traffic - WM 1-19-26",
-      "spend": 5.48,
-      "reach": 979.0,
-      "impressions": 983.0,
-      "freq": 1.0,
-      "clicks": 83.0,
-      "purchases": 0.0,
-      "value": 0.0
-    },
     {
       "date": "2026-04-21",
       "objective": "(ODAX) Sales",
@@ -74888,9 +73764,9 @@
       "date": "2026-10-13",
       "objective": "(ODAX) Sales",
       "campaign": "Retargeting 4-5-23",
-      "spend": 356.12,
+      "spend": 356.14,
       "reach": 5508.0,
-      "impressions": 15473.0,
+      "impressions": 15474.0,
       "freq": 2.81,
       "clicks": 65.0,
       "purchases": 5.0,
@@ -74912,10 +73788,10 @@
       "date": "2026-10-13",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper",
-      "spend": 214.62,
-      "reach": 5456.0,
-      "impressions": 8760.0,
-      "freq": 1.61,
+      "spend": 214.64,
+      "reach": 5460.0,
+      "impressions": 8762.0,
+      "freq": 1.6,
       "clicks": 37.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75248,9 +74124,9 @@
       "date": "2026-10-13",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Menu Angle 1 9-14-26 *",
-      "spend": 40.21,
-      "reach": 778.0,
-      "impressions": 1850.0,
+      "spend": 40.25,
+      "reach": 779.0,
+      "impressions": 1852.0,
       "freq": 2.38,
       "clicks": 6.0,
       "purchases": 2.0,
@@ -75273,8 +74149,8 @@
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Paper - Construction Professionals 9-21-26",
       "spend": 10.8,
-      "reach": 413.0,
-      "impressions": 469.0,
+      "reach": 414.0,
+      "impressions": 470.0,
       "freq": 1.14,
       "clicks": 8.0,
       "purchases": 1.0,
@@ -75308,23 +74184,23 @@
       "date": "2026-10-14",
       "objective": "Conversions",
       "campaign": "Retargeting 4.7.2022",
-      "spend": 158.65,
-      "reach": 5678.0,
-      "impressions": 10234.0,
-      "freq": 1.8,
-      "clicks": 76.0,
-      "purchases": 3.0,
-      "value": 2285.43
+      "spend": 225.34,
+      "reach": 7249.0,
+      "impressions": 14429.0,
+      "freq": 1.99,
+      "clicks": 106.0,
+      "purchases": 4.0,
+      "value": 2669.15
     },
     {
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Menus 4-3-23",
-      "spend": 20.34,
-      "reach": 679.0,
-      "impressions": 857.0,
-      "freq": 1.26,
-      "clicks": 8.0,
+      "spend": 25.99,
+      "reach": 852.0,
+      "impressions": 1108.0,
+      "freq": 1.3,
+      "clicks": 11.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75332,23 +74208,23 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Retargeting 4-5-23",
-      "spend": 221.09,
-      "reach": 4135.0,
-      "impressions": 9529.0,
-      "freq": 2.3,
-      "clicks": 29.0,
-      "purchases": 3.0,
-      "value": 302.61
+      "spend": 310.14,
+      "reach": 5038.0,
+      "impressions": 13365.0,
+      "freq": 2.65,
+      "clicks": 59.0,
+      "purchases": 5.0,
+      "value": 1139.14
     },
     {
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - No Detailed Targeting 4-10-23",
-      "spend": 3.83,
-      "reach": 230.0,
-      "impressions": 512.0,
-      "freq": 2.23,
-      "clicks": 4.0,
+      "spend": 5.37,
+      "reach": 323.0,
+      "impressions": 891.0,
+      "freq": 2.76,
+      "clicks": 11.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75356,11 +74232,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper",
-      "spend": 132.29,
-      "reach": 3835.0,
-      "impressions": 5647.0,
-      "freq": 1.47,
-      "clicks": 15.0,
+      "spend": 199.09,
+      "reach": 5559.0,
+      "impressions": 8493.0,
+      "freq": 1.53,
+      "clicks": 25.0,
       "purchases": 5.0,
       "value": 1895.98
     },
@@ -75368,11 +74244,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Table Tents 7-5-23",
-      "spend": 12.75,
-      "reach": 542.0,
-      "impressions": 690.0,
-      "freq": 1.27,
-      "clicks": 0.0,
+      "spend": 16.42,
+      "reach": 689.0,
+      "impressions": 905.0,
+      "freq": 1.31,
+      "clicks": 2.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75380,11 +74256,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Menu Design Services 8-10-23",
-      "spend": 16.33,
-      "reach": 483.0,
-      "impressions": 585.0,
-      "freq": 1.21,
-      "clicks": 2.0,
+      "spend": 20.49,
+      "reach": 616.0,
+      "impressions": 784.0,
+      "freq": 1.27,
+      "clicks": 5.0,
       "purchases": 1.0,
       "value": 647.34
     },
@@ -75392,10 +74268,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Schools 8-22-23",
-      "spend": 4.4,
-      "reach": 137.0,
-      "impressions": 147.0,
-      "freq": 1.07,
+      "spend": 5.77,
+      "reach": 219.0,
+      "impressions": 239.0,
+      "freq": 1.09,
       "clicks": 4.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75404,11 +74280,11 @@
       "date": "2026-10-14",
       "objective": "Traffic",
       "campaign": "Traffic - Free Menu Sample Pack 8-28-23",
-      "spend": 3.06,
-      "reach": 265.0,
-      "impressions": 283.0,
-      "freq": 1.07,
-      "clicks": 10.0,
+      "spend": 4.82,
+      "reach": 419.0,
+      "impressions": 446.0,
+      "freq": 1.06,
+      "clicks": 12.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75416,10 +74292,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Awareness",
       "campaign": "Awareness - Testimonial Video 10-17-23",
-      "spend": 1.48,
-      "reach": 113.0,
-      "impressions": 129.0,
-      "freq": 1.14,
+      "spend": 2.03,
+      "reach": 144.0,
+      "impressions": 176.0,
+      "freq": 1.22,
       "clicks": 0.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75428,10 +74304,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Video Viewers 10-24-23",
-      "spend": 1.89,
-      "reach": 133.0,
-      "impressions": 148.0,
-      "freq": 1.11,
+      "spend": 2.2,
+      "reach": 151.0,
+      "impressions": 170.0,
+      "freq": 1.13,
       "clicks": 1.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75440,11 +74316,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Hotel 11-1-23",
-      "spend": 5.4,
-      "reach": 310.0,
-      "impressions": 985.0,
-      "freq": 3.18,
-      "clicks": 4.0,
+      "spend": 7.2,
+      "reach": 378.0,
+      "impressions": 1621.0,
+      "freq": 4.29,
+      "clicks": 6.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75452,11 +74328,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper II 11-7-23",
-      "spend": 24.62,
-      "reach": 1328.0,
-      "impressions": 1963.0,
-      "freq": 1.48,
-      "clicks": 13.0,
+      "spend": 35.72,
+      "reach": 1845.0,
+      "impressions": 3223.0,
+      "freq": 1.75,
+      "clicks": 31.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75464,11 +74340,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Business Cards 1-24-24",
-      "spend": 19.74,
-      "reach": 873.0,
-      "impressions": 1078.0,
-      "freq": 1.23,
-      "clicks": 3.0,
+      "spend": 26.0,
+      "reach": 1209.0,
+      "impressions": 1604.0,
+      "freq": 1.33,
+      "clicks": 6.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75476,10 +74352,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Awareness",
       "campaign": "Awareness - TikTok Menu Videos 5-17-24",
-      "spend": 3.18,
-      "reach": 630.0,
-      "impressions": 645.0,
-      "freq": 1.02,
+      "spend": 4.92,
+      "reach": 1147.0,
+      "impressions": 1200.0,
+      "freq": 1.05,
       "clicks": 0.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75488,11 +74364,11 @@
       "date": "2026-10-14",
       "objective": "Traffic",
       "campaign": "Traffic - TikTok Menu Videos 5-17-24",
-      "spend": 2.57,
-      "reach": 92.0,
-      "impressions": 92.0,
+      "spend": 3.32,
+      "reach": 117.0,
+      "impressions": 117.0,
       "freq": 1.0,
-      "clicks": 12.0,
+      "clicks": 15.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75500,10 +74376,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Awareness",
       "campaign": "Awareness - TikTok Paper Videos 5-23-24",
-      "spend": 2.93,
-      "reach": 729.0,
-      "impressions": 729.0,
-      "freq": 1.0,
+      "spend": 4.97,
+      "reach": 1294.0,
+      "impressions": 1304.0,
+      "freq": 1.01,
       "clicks": 0.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75512,11 +74388,11 @@
       "date": "2026-10-14",
       "objective": "Traffic",
       "campaign": "Traffic - TikTok Paper Videos 5-23-24",
-      "spend": 2.81,
-      "reach": 105.0,
-      "impressions": 109.0,
-      "freq": 1.04,
-      "clicks": 9.0,
+      "spend": 3.23,
+      "reach": 133.0,
+      "impressions": 139.0,
+      "freq": 1.05,
+      "clicks": 10.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75524,23 +74400,23 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - TikTok Menu Video Viewers 5-28-24",
-      "spend": 4.98,
-      "reach": 414.0,
-      "impressions": 735.0,
-      "freq": 1.78,
-      "clicks": 6.0,
-      "purchases": 0.0,
-      "value": 0.0
+      "spend": 7.06,
+      "reach": 525.0,
+      "impressions": 1110.0,
+      "freq": 2.11,
+      "clicks": 7.0,
+      "purchases": 1.0,
+      "value": 150.36
     },
     {
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Lookalike - Waterproof Menus 2-19-25",
-      "spend": 12.69,
-      "reach": 854.0,
-      "impressions": 1220.0,
-      "freq": 1.43,
-      "clicks": 8.0,
+      "spend": 18.81,
+      "reach": 1154.0,
+      "impressions": 1866.0,
+      "freq": 1.62,
+      "clicks": 15.0,
       "purchases": 1.0,
       "value": 130.93
     },
@@ -75548,11 +74424,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Salons 9-11-25",
-      "spend": 1.99,
-      "reach": 86.0,
-      "impressions": 98.0,
-      "freq": 1.14,
-      "clicks": 1.0,
+      "spend": 2.45,
+      "reach": 110.0,
+      "impressions": 123.0,
+      "freq": 1.12,
+      "clicks": 2.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75560,11 +74436,11 @@
       "date": "2026-10-14",
       "objective": "Traffic",
       "campaign": "Traffic - Kyle Menu Board Videos B1 12-17-25",
-      "spend": 1.49,
-      "reach": 171.0,
-      "impressions": 174.0,
-      "freq": 1.02,
-      "clicks": 12.0,
+      "spend": 4.45,
+      "reach": 492.0,
+      "impressions": 493.0,
+      "freq": 1.0,
+      "clicks": 40.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75572,21 +74448,21 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Menu Boards 1-5-26",
-      "spend": 21.56,
-      "reach": 719.0,
-      "impressions": 971.0,
-      "freq": 1.35,
+      "spend": 28.22,
+      "reach": 928.0,
+      "impressions": 1347.0,
+      "freq": 1.45,
       "clicks": 4.0,
-      "purchases": 0.0,
-      "value": 0.0
+      "purchases": 1.0,
+      "value": 404.62
     },
     {
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper Catch-All 4-7-26",
-      "spend": 9.98,
-      "reach": 245.0,
-      "impressions": 288.0,
+      "spend": 12.27,
+      "reach": 322.0,
+      "impressions": 380.0,
       "freq": 1.18,
       "clicks": 1.0,
       "purchases": 0.0,
@@ -75596,10 +74472,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Menu Catch-All 1 4-14-26",
-      "spend": 10.32,
-      "reach": 336.0,
-      "impressions": 360.0,
-      "freq": 1.07,
+      "spend": 16.11,
+      "reach": 548.0,
+      "impressions": 603.0,
+      "freq": 1.1,
       "clicks": 1.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75608,23 +74484,23 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Sample Pack Restart CBO 4-27-26",
-      "spend": 4.01,
-      "reach": 124.0,
-      "impressions": 150.0,
-      "freq": 1.21,
-      "clicks": 4.0,
-      "purchases": 0.0,
-      "value": 0.0
+      "spend": 5.99,
+      "reach": 174.0,
+      "impressions": 230.0,
+      "freq": 1.32,
+      "clicks": 5.0,
+      "purchases": 1.0,
+      "value": 14.0
     },
     {
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
-      "spend": 30.16,
-      "reach": 1076.0,
-      "impressions": 1311.0,
-      "freq": 1.22,
-      "clicks": 27.0,
+      "spend": 44.77,
+      "reach": 1550.0,
+      "impressions": 2046.0,
+      "freq": 1.32,
+      "clicks": 43.0,
       "purchases": 1.0,
       "value": 25.07
     },
@@ -75632,11 +74508,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Menu CBO 5-19-26",
-      "spend": 12.74,
-      "reach": 418.0,
-      "impressions": 700.0,
-      "freq": 1.67,
-      "clicks": 0.0,
+      "spend": 20.41,
+      "reach": 585.0,
+      "impressions": 1124.0,
+      "freq": 1.92,
+      "clicks": 1.0,
       "purchases": 2.0,
       "value": 552.87
     },
@@ -75644,11 +74520,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper CA2 Print 5-20-26",
-      "spend": 7.29,
-      "reach": 434.0,
-      "impressions": 451.0,
+      "spend": 11.23,
+      "reach": 789.0,
+      "impressions": 821.0,
       "freq": 1.04,
-      "clicks": 7.0,
+      "clicks": 14.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75656,10 +74532,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper CA3 Arts 5-20-26",
-      "spend": 4.84,
-      "reach": 148.0,
-      "impressions": 154.0,
-      "freq": 1.04,
+      "spend": 6.42,
+      "reach": 198.0,
+      "impressions": 209.0,
+      "freq": 1.06,
       "clicks": 3.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75668,11 +74544,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper CA4 Crafts 5-27-26",
-      "spend": 3.97,
-      "reach": 88.0,
-      "impressions": 105.0,
-      "freq": 1.19,
-      "clicks": 1.0,
+      "spend": 5.6,
+      "reach": 159.0,
+      "impressions": 194.0,
+      "freq": 1.22,
+      "clicks": 3.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75680,10 +74556,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Waterproof Paper CA5 Car 6-8-26",
-      "spend": 3.57,
-      "reach": 152.0,
-      "impressions": 197.0,
-      "freq": 1.3,
+      "spend": 4.95,
+      "reach": 204.0,
+      "impressions": 285.0,
+      "freq": 1.4,
       "clicks": 3.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75692,11 +74568,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Menu Angle 1 9-14-26 *",
-      "spend": 29.47,
-      "reach": 683.0,
-      "impressions": 1390.0,
-      "freq": 2.04,
-      "clicks": 3.0,
+      "spend": 40.75,
+      "reach": 835.0,
+      "impressions": 1866.0,
+      "freq": 2.23,
+      "clicks": 5.0,
       "purchases": 1.0,
       "value": 202.46
     },
@@ -75704,11 +74580,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Paper - Office A1 9-15-26 *",
-      "spend": 7.03,
-      "reach": 124.0,
-      "impressions": 131.0,
+      "spend": 9.69,
+      "reach": 199.0,
+      "impressions": 210.0,
       "freq": 1.06,
-      "clicks": 4.0,
+      "clicks": 7.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75716,11 +74592,11 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Paper - Construction Professionals 9-21-26",
-      "spend": 10.48,
-      "reach": 426.0,
-      "impressions": 467.0,
-      "freq": 1.1,
-      "clicks": 6.0,
+      "spend": 15.03,
+      "reach": 660.0,
+      "impressions": 730.0,
+      "freq": 1.11,
+      "clicks": 8.0,
       "purchases": 0.0,
       "value": 0.0
     },
@@ -75728,10 +74604,10 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Menu - Angle 2 - 9-21-26",
-      "spend": 12.8,
-      "reach": 253.0,
-      "impressions": 291.0,
-      "freq": 1.15,
+      "spend": 16.36,
+      "reach": 350.0,
+      "impressions": 408.0,
+      "freq": 1.17,
       "clicks": 6.0,
       "purchases": 0.0,
       "value": 0.0
@@ -75740,13 +74616,1369 @@
       "date": "2026-10-14",
       "objective": "(ODAX) Sales",
       "campaign": "Sales - Paper - Angle 3 AA MC - 9-28-26",
-      "spend": 20.76,
-      "reach": 667.0,
-      "impressions": 800.0,
-      "freq": 1.2,
-      "clicks": 5.0,
+      "spend": 30.09,
+      "reach": 1018.0,
+      "impressions": 1253.0,
+      "freq": 1.23,
+      "clicks": 11.0,
       "purchases": 1.0,
       "value": 46.01
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "Conversions",
+      "campaign": "Retargeting 4.7.2022",
+      "spend": 183.86,
+      "reach": 7042.0,
+      "impressions": 13521.0,
+      "freq": 1.92,
+      "clicks": 116.0,
+      "purchases": 4.0,
+      "value": 653.43
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menus 4-3-23",
+      "spend": 20.77,
+      "reach": 667.0,
+      "impressions": 818.0,
+      "freq": 1.23,
+      "clicks": 2.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Retargeting 4-5-23",
+      "spend": 279.57,
+      "reach": 5181.0,
+      "impressions": 13234.0,
+      "freq": 2.55,
+      "clicks": 55.0,
+      "purchases": 5.0,
+      "value": 2234.8
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - No Detailed Targeting 4-10-23",
+      "spend": 4.78,
+      "reach": 292.0,
+      "impressions": 554.0,
+      "freq": 1.9,
+      "clicks": 8.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper",
+      "spend": 171.63,
+      "reach": 5154.0,
+      "impressions": 7999.0,
+      "freq": 1.55,
+      "clicks": 25.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Table Tents 7-5-23",
+      "spend": 15.8,
+      "reach": 565.0,
+      "impressions": 690.0,
+      "freq": 1.22,
+      "clicks": 2.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu Design Services 8-10-23",
+      "spend": 13.15,
+      "reach": 439.0,
+      "impressions": 560.0,
+      "freq": 1.28,
+      "clicks": 3.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Schools 8-22-23",
+      "spend": 3.52,
+      "reach": 186.0,
+      "impressions": 242.0,
+      "freq": 1.3,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "Traffic",
+      "campaign": "Traffic - Free Menu Sample Pack 8-28-23",
+      "spend": 3.83,
+      "reach": 873.0,
+      "impressions": 1125.0,
+      "freq": 1.29,
+      "clicks": 15.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - Testimonial Video 10-17-23",
+      "spend": 2.03,
+      "reach": 272.0,
+      "impressions": 329.0,
+      "freq": 1.21,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Video Viewers 10-24-23",
+      "spend": 1.91,
+      "reach": 155.0,
+      "impressions": 174.0,
+      "freq": 1.12,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Hotel 11-1-23",
+      "spend": 7.0,
+      "reach": 461.0,
+      "impressions": 871.0,
+      "freq": 1.89,
+      "clicks": 9.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper II 11-7-23",
+      "spend": 28.36,
+      "reach": 1339.0,
+      "impressions": 2443.0,
+      "freq": 1.82,
+      "clicks": 21.0,
+      "purchases": 2.0,
+      "value": 238.45
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Business Cards 1-24-24",
+      "spend": 23.22,
+      "reach": 1098.0,
+      "impressions": 1498.0,
+      "freq": 1.36,
+      "clicks": 10.0,
+      "purchases": 1.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - TikTok Menu Videos 5-17-24",
+      "spend": 4.76,
+      "reach": 1147.0,
+      "impressions": 1147.0,
+      "freq": 1.0,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "Traffic",
+      "campaign": "Traffic - TikTok Menu Videos 5-17-24",
+      "spend": 3.26,
+      "reach": 84.0,
+      "impressions": 85.0,
+      "freq": 1.01,
+      "clicks": 11.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - TikTok Paper Videos 5-23-24",
+      "spend": 4.54,
+      "reach": 1214.0,
+      "impressions": 1225.0,
+      "freq": 1.01,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "Traffic",
+      "campaign": "Traffic - TikTok Paper Videos 5-23-24",
+      "spend": 2.91,
+      "reach": 229.0,
+      "impressions": 233.0,
+      "freq": 1.02,
+      "clicks": 8.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - TikTok Menu Video Viewers 5-28-24",
+      "spend": 6.68,
+      "reach": 521.0,
+      "impressions": 922.0,
+      "freq": 1.77,
+      "clicks": 12.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Lookalike - Waterproof Menus 2-19-25",
+      "spend": 16.01,
+      "reach": 1064.0,
+      "impressions": 1689.0,
+      "freq": 1.59,
+      "clicks": 19.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Salons 9-11-25",
+      "spend": 0.96,
+      "reach": 71.0,
+      "impressions": 73.0,
+      "freq": 1.03,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "Traffic",
+      "campaign": "Traffic - Kyle Menu Board Videos B1 12-17-25",
+      "spend": 4.46,
+      "reach": 436.0,
+      "impressions": 441.0,
+      "freq": 1.01,
+      "clicks": 44.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu Boards 1-5-26",
+      "spend": 22.97,
+      "reach": 669.0,
+      "impressions": 910.0,
+      "freq": 1.36,
+      "clicks": 2.0,
+      "purchases": 1.0,
+      "value": 329.9
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper Catch-All 4-7-26",
+      "spend": 9.95,
+      "reach": 281.0,
+      "impressions": 412.0,
+      "freq": 1.47,
+      "clicks": 2.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu Catch-All 1 4-14-26",
+      "spend": 13.83,
+      "reach": 456.0,
+      "impressions": 501.0,
+      "freq": 1.1,
+      "clicks": 7.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Sample Pack Restart CBO 4-27-26",
+      "spend": 5.46,
+      "reach": 141.0,
+      "impressions": 178.0,
+      "freq": 1.26,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+      "spend": 35.86,
+      "reach": 1262.0,
+      "impressions": 1918.0,
+      "freq": 1.52,
+      "clicks": 22.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu CBO 5-19-26",
+      "spend": 20.05,
+      "reach": 475.0,
+      "impressions": 938.0,
+      "freq": 1.97,
+      "clicks": 3.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA2 Print 5-20-26",
+      "spend": 9.01,
+      "reach": 632.0,
+      "impressions": 667.0,
+      "freq": 1.06,
+      "clicks": 10.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA3 Arts 5-20-26",
+      "spend": 5.58,
+      "reach": 173.0,
+      "impressions": 185.0,
+      "freq": 1.07,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA4 Crafts 5-27-26",
+      "spend": 5.98,
+      "reach": 177.0,
+      "impressions": 197.0,
+      "freq": 1.11,
+      "clicks": 2.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA5 Car 6-8-26",
+      "spend": 5.26,
+      "reach": 178.0,
+      "impressions": 252.0,
+      "freq": 1.42,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu Angle 1 9-14-26 *",
+      "spend": 40.91,
+      "reach": 934.0,
+      "impressions": 2008.0,
+      "freq": 2.15,
+      "clicks": 9.0,
+      "purchases": 1.0,
+      "value": 191.37
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Office A1 9-15-26 *",
+      "spend": 6.81,
+      "reach": 161.0,
+      "impressions": 186.0,
+      "freq": 1.16,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Construction Professionals 9-21-26",
+      "spend": 10.41,
+      "reach": 557.0,
+      "impressions": 602.0,
+      "freq": 1.08,
+      "clicks": 10.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu - Angle 2 - 9-21-26",
+      "spend": 12.3,
+      "reach": 363.0,
+      "impressions": 400.0,
+      "freq": 1.1,
+      "clicks": 8.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-15",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Angle 3 AA MC - 9-28-26",
+      "spend": 16.28,
+      "reach": 675.0,
+      "impressions": 865.0,
+      "freq": 1.28,
+      "clicks": 9.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "Conversions",
+      "campaign": "Retargeting 4.7.2022",
+      "spend": 192.55,
+      "reach": 7222.0,
+      "impressions": 13706.0,
+      "freq": 1.9,
+      "clicks": 120.0,
+      "purchases": 3.0,
+      "value": 783.61
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menus 4-3-23",
+      "spend": 18.7,
+      "reach": 810.0,
+      "impressions": 936.0,
+      "freq": 1.16,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Retargeting 4-5-23",
+      "spend": 280.71,
+      "reach": 5158.0,
+      "impressions": 12352.0,
+      "freq": 2.39,
+      "clicks": 57.0,
+      "purchases": 3.0,
+      "value": 1246.97
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - No Detailed Targeting 4-10-23",
+      "spend": 17.99,
+      "reach": 972.0,
+      "impressions": 2090.0,
+      "freq": 2.15,
+      "clicks": 27.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper",
+      "spend": 164.78,
+      "reach": 5288.0,
+      "impressions": 7627.0,
+      "freq": 1.44,
+      "clicks": 24.0,
+      "purchases": 3.0,
+      "value": 1079.91
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Table Tents 7-5-23",
+      "spend": 12.07,
+      "reach": 611.0,
+      "impressions": 738.0,
+      "freq": 1.21,
+      "clicks": 3.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu Design Services 8-10-23",
+      "spend": 10.1,
+      "reach": 465.0,
+      "impressions": 570.0,
+      "freq": 1.23,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Schools 8-22-23",
+      "spend": 4.28,
+      "reach": 166.0,
+      "impressions": 242.0,
+      "freq": 1.46,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "Traffic",
+      "campaign": "Traffic - Free Menu Sample Pack 8-28-23",
+      "spend": 5.18,
+      "reach": 631.0,
+      "impressions": 1664.0,
+      "freq": 2.64,
+      "clicks": 14.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - Testimonial Video 10-17-23",
+      "spend": 2.09,
+      "reach": 240.0,
+      "impressions": 290.0,
+      "freq": 1.21,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Video Viewers 10-24-23",
+      "spend": 2.0,
+      "reach": 161.0,
+      "impressions": 182.0,
+      "freq": 1.13,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Hotel 11-1-23",
+      "spend": 5.86,
+      "reach": 404.0,
+      "impressions": 846.0,
+      "freq": 2.09,
+      "clicks": 10.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper II 11-7-23",
+      "spend": 26.51,
+      "reach": 1446.0,
+      "impressions": 2105.0,
+      "freq": 1.46,
+      "clicks": 16.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Business Cards 1-24-24",
+      "spend": 22.47,
+      "reach": 1078.0,
+      "impressions": 1319.0,
+      "freq": 1.22,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - TikTok Menu Videos 5-17-24",
+      "spend": 5.17,
+      "reach": 1187.0,
+      "impressions": 1187.0,
+      "freq": 1.0,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "Traffic",
+      "campaign": "Traffic - TikTok Menu Videos 5-17-24",
+      "spend": 2.7,
+      "reach": 68.0,
+      "impressions": 68.0,
+      "freq": 1.0,
+      "clicks": 11.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - TikTok Paper Videos 5-23-24",
+      "spend": 5.0,
+      "reach": 1202.0,
+      "impressions": 1226.0,
+      "freq": 1.02,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "Traffic",
+      "campaign": "Traffic - TikTok Paper Videos 5-23-24",
+      "spend": 3.08,
+      "reach": 205.0,
+      "impressions": 212.0,
+      "freq": 1.03,
+      "clicks": 15.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - TikTok Menu Video Viewers 5-28-24",
+      "spend": 6.03,
+      "reach": 430.0,
+      "impressions": 666.0,
+      "freq": 1.55,
+      "clicks": 5.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Lookalike - Waterproof Menus 2-19-25",
+      "spend": 13.16,
+      "reach": 963.0,
+      "impressions": 1394.0,
+      "freq": 1.45,
+      "clicks": 13.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Salons 9-11-25",
+      "spend": 1.56,
+      "reach": 157.0,
+      "impressions": 170.0,
+      "freq": 1.08,
+      "clicks": 2.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "Traffic",
+      "campaign": "Traffic - Kyle Menu Board Videos B1 12-17-25",
+      "spend": 4.51,
+      "reach": 366.0,
+      "impressions": 366.0,
+      "freq": 1.0,
+      "clicks": 32.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu Boards 1-5-26",
+      "spend": 18.96,
+      "reach": 807.0,
+      "impressions": 996.0,
+      "freq": 1.23,
+      "clicks": 5.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper Catch-All 4-7-26",
+      "spend": 8.32,
+      "reach": 264.0,
+      "impressions": 346.0,
+      "freq": 1.31,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu Catch-All 1 4-14-26",
+      "spend": 14.21,
+      "reach": 449.0,
+      "impressions": 480.0,
+      "freq": 1.07,
+      "clicks": 7.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Sample Pack Restart CBO 4-27-26",
+      "spend": 3.82,
+      "reach": 121.0,
+      "impressions": 144.0,
+      "freq": 1.19,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+      "spend": 36.72,
+      "reach": 1290.0,
+      "impressions": 2142.0,
+      "freq": 1.66,
+      "clicks": 12.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu CBO 5-19-26",
+      "spend": 15.6,
+      "reach": 387.0,
+      "impressions": 767.0,
+      "freq": 1.98,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA2 Print 5-20-26",
+      "spend": 9.43,
+      "reach": 734.0,
+      "impressions": 780.0,
+      "freq": 1.06,
+      "clicks": 17.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA3 Arts 5-20-26",
+      "spend": 4.62,
+      "reach": 192.0,
+      "impressions": 200.0,
+      "freq": 1.04,
+      "clicks": 5.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA4 Crafts 5-27-26",
+      "spend": 5.27,
+      "reach": 167.0,
+      "impressions": 177.0,
+      "freq": 1.06,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA5 Car 6-8-26",
+      "spend": 4.35,
+      "reach": 164.0,
+      "impressions": 215.0,
+      "freq": 1.31,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu Angle 1 9-14-26 *",
+      "spend": 36.0,
+      "reach": 741.0,
+      "impressions": 1802.0,
+      "freq": 2.43,
+      "clicks": 7.0,
+      "purchases": 2.0,
+      "value": 1697.88
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Office A1 9-15-26 *",
+      "spend": 7.09,
+      "reach": 154.0,
+      "impressions": 165.0,
+      "freq": 1.07,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Construction Professionals 9-21-26",
+      "spend": 8.32,
+      "reach": 483.0,
+      "impressions": 526.0,
+      "freq": 1.09,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu - Angle 2 - 9-21-26",
+      "spend": 8.3,
+      "reach": 252.0,
+      "impressions": 273.0,
+      "freq": 1.08,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Angle 3 AA MC - 9-28-26",
+      "spend": 19.25,
+      "reach": 858.0,
+      "impressions": 1147.0,
+      "freq": 1.34,
+      "clicks": 6.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-16",
+      "objective": "(ODAX) Sales",
+      "campaign": "Creative Exploration TSP Alpha",
+      "spend": 207.95,
+      "reach": 5914.0,
+      "impressions": 10377.0,
+      "freq": 1.75,
+      "clicks": 54.0,
+      "purchases": 2.0,
+      "value": 434.12
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "Conversions",
+      "campaign": "Retargeting 4.7.2022",
+      "spend": 150.01,
+      "reach": 3725.0,
+      "impressions": 5244.0,
+      "freq": 1.41,
+      "clicks": 46.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menus 4-3-23",
+      "spend": 10.66,
+      "reach": 366.0,
+      "impressions": 398.0,
+      "freq": 1.09,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Retargeting 4-5-23",
+      "spend": 153.59,
+      "reach": 2834.0,
+      "impressions": 5154.0,
+      "freq": 1.82,
+      "clicks": 23.0,
+      "purchases": 1.0,
+      "value": 37.16
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - No Detailed Targeting 4-10-23",
+      "spend": 14.65,
+      "reach": 418.0,
+      "impressions": 834.0,
+      "freq": 2.0,
+      "clicks": 17.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper",
+      "spend": 92.74,
+      "reach": 2525.0,
+      "impressions": 3081.0,
+      "freq": 1.22,
+      "clicks": 11.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Table Tents 7-5-23",
+      "spend": 6.64,
+      "reach": 296.0,
+      "impressions": 365.0,
+      "freq": 1.23,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu Design Services 8-10-23",
+      "spend": 4.64,
+      "reach": 177.0,
+      "impressions": 204.0,
+      "freq": 1.15,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Schools 8-22-23",
+      "spend": 2.08,
+      "reach": 113.0,
+      "impressions": 140.0,
+      "freq": 1.24,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "Traffic",
+      "campaign": "Traffic - Free Menu Sample Pack 8-28-23",
+      "spend": 3.06,
+      "reach": 433.0,
+      "impressions": 703.0,
+      "freq": 1.62,
+      "clicks": 5.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - Testimonial Video 10-17-23",
+      "spend": 0.91,
+      "reach": 89.0,
+      "impressions": 104.0,
+      "freq": 1.17,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Video Viewers 10-24-23",
+      "spend": 1.03,
+      "reach": 79.0,
+      "impressions": 87.0,
+      "freq": 1.1,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Hotel 11-1-23",
+      "spend": 3.99,
+      "reach": 176.0,
+      "impressions": 266.0,
+      "freq": 1.51,
+      "clicks": 6.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper II 11-7-23",
+      "spend": 13.65,
+      "reach": 721.0,
+      "impressions": 1061.0,
+      "freq": 1.47,
+      "clicks": 6.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Business Cards 1-24-24",
+      "spend": 11.14,
+      "reach": 669.0,
+      "impressions": 817.0,
+      "freq": 1.22,
+      "clicks": 7.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - TikTok Menu Videos 5-17-24",
+      "spend": 3.22,
+      "reach": 643.0,
+      "impressions": 678.0,
+      "freq": 1.05,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "Traffic",
+      "campaign": "Traffic - TikTok Menu Videos 5-17-24",
+      "spend": 1.06,
+      "reach": 54.0,
+      "impressions": 56.0,
+      "freq": 1.04,
+      "clicks": 2.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Awareness",
+      "campaign": "Awareness - TikTok Paper Videos 5-23-24",
+      "spend": 3.17,
+      "reach": 706.0,
+      "impressions": 706.0,
+      "freq": 1.0,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "Traffic",
+      "campaign": "Traffic - TikTok Paper Videos 5-23-24",
+      "spend": 1.29,
+      "reach": 120.0,
+      "impressions": 121.0,
+      "freq": 1.01,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - TikTok Menu Video Viewers 5-28-24",
+      "spend": 4.52,
+      "reach": 323.0,
+      "impressions": 556.0,
+      "freq": 1.72,
+      "clicks": 5.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Lookalike - Waterproof Menus 2-19-25",
+      "spend": 6.76,
+      "reach": 538.0,
+      "impressions": 750.0,
+      "freq": 1.39,
+      "clicks": 16.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Salons 9-11-25",
+      "spend": 0.3,
+      "reach": 28.0,
+      "impressions": 28.0,
+      "freq": 1.0,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "Traffic",
+      "campaign": "Traffic - Kyle Menu Board Videos B1 12-17-25",
+      "spend": 2.45,
+      "reach": 189.0,
+      "impressions": 191.0,
+      "freq": 1.01,
+      "clicks": 21.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu Boards 1-5-26",
+      "spend": 11.04,
+      "reach": 359.0,
+      "impressions": 424.0,
+      "freq": 1.18,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper Catch-All 4-7-26",
+      "spend": 4.82,
+      "reach": 140.0,
+      "impressions": 157.0,
+      "freq": 1.12,
+      "clicks": 1.0,
+      "purchases": 1.0,
+      "value": 589.02
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu Catch-All 1 4-14-26",
+      "spend": 7.55,
+      "reach": 208.0,
+      "impressions": 222.0,
+      "freq": 1.07,
+      "clicks": 3.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Sample Pack Restart CBO 4-27-26",
+      "spend": 1.84,
+      "reach": 60.0,
+      "impressions": 79.0,
+      "freq": 1.32,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper - Unis - Adv+ 5-5-26",
+      "spend": 19.35,
+      "reach": 687.0,
+      "impressions": 791.0,
+      "freq": 1.15,
+      "clicks": 16.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Menu CBO 5-19-26",
+      "spend": 8.68,
+      "reach": 319.0,
+      "impressions": 473.0,
+      "freq": 1.48,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA2 Print 5-20-26",
+      "spend": 5.32,
+      "reach": 331.0,
+      "impressions": 345.0,
+      "freq": 1.04,
+      "clicks": 8.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA3 Arts 5-20-26",
+      "spend": 2.08,
+      "reach": 82.0,
+      "impressions": 93.0,
+      "freq": 1.13,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA4 Crafts 5-27-26",
+      "spend": 2.1,
+      "reach": 82.0,
+      "impressions": 86.0,
+      "freq": 1.05,
+      "clicks": 1.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Waterproof Paper CA5 Car 6-8-26",
+      "spend": 2.17,
+      "reach": 126.0,
+      "impressions": 137.0,
+      "freq": 1.09,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu Angle 1 9-14-26 *",
+      "spend": 28.27,
+      "reach": 571.0,
+      "impressions": 1204.0,
+      "freq": 2.11,
+      "clicks": 7.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Office A1 9-15-26 *",
+      "spend": 4.03,
+      "reach": 113.0,
+      "impressions": 117.0,
+      "freq": 1.04,
+      "clicks": 5.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Construction Professionals 9-21-26",
+      "spend": 7.03,
+      "reach": 275.0,
+      "impressions": 286.0,
+      "freq": 1.04,
+      "clicks": 4.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Menu - Angle 2 - 9-21-26",
+      "spend": 5.1,
+      "reach": 189.0,
+      "impressions": 200.0,
+      "freq": 1.06,
+      "clicks": 0.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Sales - Paper - Angle 3 AA MC - 9-28-26",
+      "spend": 14.16,
+      "reach": 527.0,
+      "impressions": 593.0,
+      "freq": 1.13,
+      "clicks": 5.0,
+      "purchases": 0.0,
+      "value": 0.0
+    },
+    {
+      "date": "2026-10-17",
+      "objective": "(ODAX) Sales",
+      "campaign": "Creative Exploration TSP Alpha",
+      "spend": 175.89,
+      "reach": 4534.0,
+      "impressions": 7228.0,
+      "freq": 1.59,
+      "clicks": 67.0,
+      "purchases": 0.0,
+      "value": 0.0
     }
   ]
 }
