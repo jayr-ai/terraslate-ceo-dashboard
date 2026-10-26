@@ -27,14 +27,33 @@ jobs:
         if: github.event_name == 'workflow_dispatch'
         run: |
           pip install --quiet openpyxl
-          python3 scripts/fetch_data.py
-          python3 scripts/fetch_aircall_data.py
-          python3 scripts/fetch_ar_data.py
-          python3 scripts/fetch_facebook_ads.py
-          python3 scripts/fetch_shipping_data.py
-          python3 scripts/fetch_sales_report.py
-          python3 scripts/fetch_paper_catalog.py
-          python3 scripts/fetch_google_ads.py
+          # Each script runs independently — one source breaking (e.g. a
+          # malformed cell, or a sheet's own formula/column getting deleted)
+          # must not block the other 7 dashboards from refreshing. Before
+          # 2026-10-26 this ran under plain `bash -e`, so a single crash in
+          # fetch_aircall_data.py aborted the whole step and NOTHING
+          # refreshed or deployed, for any page. `if ...; then` guards a
+          # command from triggering errexit, so this loop survives any one
+          # script failing.
+          FAILED=""
+          for script in \
+            scripts/fetch_data.py \
+            scripts/fetch_aircall_data.py \
+            scripts/fetch_ar_data.py \
+            scripts/fetch_facebook_ads.py \
+            scripts/fetch_shipping_data.py \
+            scripts/fetch_sales_report.py \
+            scripts/fetch_paper_catalog.py \
+            scripts/fetch_google_ads.py \
+          ; do
+            if python3 "$script"; then
+              :
+            else
+              echo "##[error]$script failed — its data was NOT updated this run."
+              FAILED="$FAILED $script"
+            fi
+          done
+
           DATA_FILES="src/data/ceoDashboardData.json src/data/aircallDashboardData.json src/data/arDashboardData.json src/data/facebookAdsData.json src/data/shippingData.json src/data/salesReportData.json src/data/paperCatalogData.json src/data/googleAdsData.json"
           if ! git diff --quiet -- $DATA_FILES; then
             git config user.name "github-actions[bot]"
@@ -46,13 +65,29 @@ jobs:
             echo "No data changes since last refresh."
           fi
 
+          if [ -n "$FAILED" ]; then
+            echo "##[error]Refresh had failures, but continuing to build + deploy with whatever data DID update:$FAILED"
+            exit 1
+          fi
+
+      # `!cancelled()` (not plain `always()`) below: run these even though
+      # the refresh step above may have exited 1 for a failed source — a
+      # partial data refresh still deserves a build+deploy for whichever
+      # dashboards DID update, rather than skipping the rest of the job (the
+      # pre-2026-10-26 behavior, which meant one broken source silently
+      # blocked every dashboard's deploy, not just its own). Still skips if
+      # someone actually cancels the run.
       - uses: actions/setup-node@v4
+        if: ${{ !cancelled() }}
         with:
           node-version: 22
           cache: npm
       - run: npm ci --legacy-peer-deps
+        if: ${{ !cancelled() }}
       - run: npm run build
+        if: ${{ !cancelled() }}
       - uses: actions/upload-pages-artifact@v3
+        if: ${{ !cancelled() }}
         with:
           path: dist
 
@@ -62,6 +97,7 @@ jobs:
       # push the copy straight into the hub repo so both stay in sync on
       # every refresh, not just on manual re-syncs.
       - name: Sync hub copy (terraslate.azdigitalph.com)
+        if: ${{ !cancelled() }}
         env:
           HUB_REPO_TOKEN: ${{ secrets.HUB_REPO_TOKEN }}
         run: |
@@ -84,6 +120,7 @@ jobs:
 
   deploy:
     needs: build
+    if: ${{ !cancelled() && needs.build.result != 'skipped' }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages

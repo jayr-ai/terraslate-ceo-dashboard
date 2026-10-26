@@ -175,6 +175,20 @@ def as_date(v) -> date | None:
     return None
 
 
+def cell_str(v) -> str:
+    # This script reads the workbook directly via openpyxl (not a CSV
+    # export, unlike every other fetch script here — see module docstring),
+    # so a cell can come back as any native Excel type (str, int, float,
+    # bool), not just str|None. A stray number typed into a text column
+    # (e.g. "direction") used to crash `(v or "").strip()` with
+    # AttributeError: 'float' object has no attribute 'strip' — broke the
+    # Refresh Data button for the whole dashboard (2026-10-26). Coerce to
+    # str first so any cell type is handled the same way.
+    if v is None:
+        return ""
+    return str(v).strip()
+
+
 # ---------------------------------------------------------------------------
 # 1. Raw Data 4-24 — Inbound / Outbound / Total Calls Duration tables + charts
 # ---------------------------------------------------------------------------
@@ -191,10 +205,10 @@ def load_calls_daily(wb: openpyxl.Workbook) -> tuple[dict, date]:
         d = as_date(row[idx["Date"]])
         if d is None:
             continue
-        direction = (row[idx["direction"]] or "").strip().lower()
+        direction = cell_str(row[idx["direction"]]).lower()
         if direction not in ("inbound", "outbound"):
             continue
-        user = (row[idx["user"]] or "").strip() or NO_USER_LABEL
+        user = cell_str(row[idx["user"]]) or NO_USER_LABEL
         dur_total = row[idx["duration (total)"]] or 0
         dur_call = row[idx["duration (in call)"]] or 0
         try:
@@ -349,6 +363,18 @@ def load_tags_daily(wb: openpyxl.Workbook) -> dict[tuple[date, str, str], int]:
     needs a real employee to attribute the call to."""
     idx, rows_iter = sheet_rows(wb, TAGS_DATA_TAB)
     daily: dict[tuple[date, str, str], int] = defaultdict(int)
+    if "Date" not in idx:
+        # The sheet's own header row broke (e.g. a #REF! error from a
+        # deleted column/sheet the tab's formulas pointed at) — surfaced
+        # 2026-10-26 as a hard KeyError that aborted the ENTIRE script
+        # (including the healthy Raw Data tab below it) and, because this
+        # fetch step runs under `bash -e`, blocked every other dashboard's
+        # refresh too. Degrade to "no tag data" instead of crashing, so a
+        # broken Tags_Data tab only empties Calls by Tag, not the whole
+        # pipeline. Source sheet needs a human fix regardless.
+        print(f"  WARNING: {TAGS_DATA_TAB} has no 'Date' column (header: {list(idx.keys())}) — "
+              "Calls by Tag will be empty until the source sheet is fixed.")
+        return daily
     for row in rows_iter:
         d = as_date(row[idx["Date"]])
         if d is None:
@@ -356,8 +382,8 @@ def load_tags_daily(wb: openpyxl.Workbook) -> dict[tuple[date, str, str], int]:
         main_tag = row[idx["Main Tag"]]
         if main_tag in HEADER_ARTIFACT_TAGS:
             continue
-        tag = (main_tag or "").strip() or "-"
-        initial = (row[idx["initial"]] or "").strip()
+        tag = cell_str(main_tag) or "-"
+        initial = cell_str(row[idx["initial"]])
         if initial in BLANK_INITIALS:
             initial = ""
         daily[(d, tag, initial)] += 1
