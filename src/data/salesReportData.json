@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T12:38:17.152839Z",
+  "generatedAt": "2026-11-02T13:35:39.552057Z",
   "years": [
     2026,
     2025,
@@ -4765,17 +4765,36 @@
       "quarter": "Q4",
       "weekStart": "10/19/2026",
       "forecast": 302692.0,
-      "actual": null,
+      "actual": 237983.0,
       "forecastDraft": 145690.0,
-      "actualDraft": null,
+      "actualDraft": 124451.0,
       "fcstAmzn": 30236.0,
-      "actualAmzn": null,
+      "actualAmzn": 25882.0,
       "fcstGd": 6054.0,
-      "paidGdWork": null,
+      "paidGdWork": 2598.0,
       "fcstWeb": 119201.0,
-      "actualWeb": null,
+      "actualWeb": 86972.0,
       "forecastWmt": 1512.0,
-      "actualWmt": null
+      "actualWmt": 677.0
+    },
+    {
+      "year": 2026,
+      "week": "W44",
+      "weekNum": 44,
+      "quarter": "Q4",
+      "weekStart": "10/26/2026",
+      "forecast": 279419.0,
+      "actual": 293608.0,
+      "forecastDraft": 133146.0,
+      "actualDraft": 158868.0,
+      "fcstAmzn": 30236.0,
+      "actualAmzn": 30697.0,
+      "fcstGd": 5588.0,
+      "paidGdWork": 3436.0,
+      "fcstWeb": 108937.0,
+      "actualWeb": 103534.0,
+      "forecastWmt": 1512.0,
+      "actualWmt": 508.0
     }
   ]
 }

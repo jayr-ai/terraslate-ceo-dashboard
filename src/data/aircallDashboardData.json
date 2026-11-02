@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-26T12:38:04.638589Z",
+  "generatedAt": "2026-11-02T13:35:20.781707Z",
   "anchor": "2026-10-18",
   "summary": {
     "windows": {
@@ -63,17 +63,11 @@
       "last7": {
         "totalCalls": {
           "value": 0,
-          "trend": {
-            "changePct": -100.0,
-            "direction": "down"
-          }
+          "trend": null
         },
         "totalTalkTimeHours": {
           "value": 0.0,
-          "trend": {
-            "changePct": -100.0,
-            "direction": "down"
-          }
+          "trend": null
         },
         "avgCallDurationSeconds": {
           "value": null,
@@ -85,7 +79,7 @@
           "value": 0,
           "trend": null
         },
-        "narrative": "Team handled 0 calls totaling 0.0 hours this period, down 100.0% vs. the prior period. Inbound and outbound activity are evenly split this period. Tag coverage remains a gap at 0% of calls categorized."
+        "narrative": "Team handled 0 calls totaling 0.0 hours this period. Inbound and outbound activity are evenly split this period. Tag coverage remains a gap at 0% of calls categorized."
       },
       "last30": {
         "totalCalls": {
@@ -1123,7 +1117,7 @@
       "last7": {
         "points": [
           {
-            "date": "2026-10-19",
+            "date": "2026-10-26",
             "inboundDurationTotal": 0,
             "inboundDurationInCall": 0,
             "outboundDurationTotal": 0,
@@ -1132,7 +1126,7 @@
             "totalDurationInCall": 0
           },
           {
-            "date": "2026-10-20",
+            "date": "2026-10-27",
             "inboundDurationTotal": 0,
             "inboundDurationInCall": 0,
             "outboundDurationTotal": 0,
@@ -1141,7 +1135,7 @@
             "totalDurationInCall": 0
           },
           {
-            "date": "2026-10-21",
+            "date": "2026-10-28",
             "inboundDurationTotal": 0,
             "inboundDurationInCall": 0,
             "outboundDurationTotal": 0,
@@ -1150,7 +1144,7 @@
             "totalDurationInCall": 0
           },
           {
-            "date": "2026-10-22",
+            "date": "2026-10-29",
             "inboundDurationTotal": 0,
             "inboundDurationInCall": 0,
             "outboundDurationTotal": 0,
@@ -1159,7 +1153,7 @@
             "totalDurationInCall": 0
           },
           {
-            "date": "2026-10-23",
+            "date": "2026-10-30",
             "inboundDurationTotal": 0,
             "inboundDurationInCall": 0,
             "outboundDurationTotal": 0,
@@ -1168,7 +1162,7 @@
             "totalDurationInCall": 0
           },
           {
-            "date": "2026-10-24",
+            "date": "2026-10-31",
             "inboundDurationTotal": 0,
             "inboundDurationInCall": 0,
             "outboundDurationTotal": 0,
@@ -1177,7 +1171,7 @@
             "totalDurationInCall": 0
           },
           {
-            "date": "2026-10-25",
+            "date": "2026-11-01",
             "inboundDurationTotal": 0,
             "inboundDurationInCall": 0,
             "outboundDurationTotal": 0,

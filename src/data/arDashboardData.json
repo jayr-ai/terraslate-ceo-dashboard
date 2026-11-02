@@ -1,21 +1,96 @@
 {
-  "generatedAt": "2026-10-26T12:38:07.022720Z",
-  "anchor": "2026-10-26",
+  "generatedAt": "2026-11-02T13:35:23.222043Z",
+  "anchor": "2026-11-02",
   "buckets": {
     "last30": {
       "label": "Last 30 Days Rec.",
       "unpaidLabel": "Unpaid",
-      "total": 21187.52,
+      "total": 51414.91,
       "count": 28,
       "trend": {
-        "changePct": -31.8,
-        "direction": "down"
-      },
-      "countTrend": {
-        "changePct": 12.0,
+        "changePct": 202.0,
         "direction": "up"
       },
+      "countTrend": {
+        "changePct": -17.6,
+        "direction": "down"
+      },
       "rows": [
+        {
+          "date": "Oct 30, 2026",
+          "order": "#13129850",
+          "total": 454.45
+        },
+        {
+          "date": "Oct 30, 2026",
+          "order": "#13129851",
+          "total": 458.62
+        },
+        {
+          "date": "Oct 30, 2026",
+          "order": "#13129886",
+          "total": 1764.72
+        },
+        {
+          "date": "Oct 29, 2026",
+          "order": "#13129693",
+          "total": 5147.11
+        },
+        {
+          "date": "Oct 29, 2026",
+          "order": "#13129696",
+          "total": 375.0
+        },
+        {
+          "date": "Oct 29, 2026",
+          "order": "#13129699",
+          "total": 375.0
+        },
+        {
+          "date": "Oct 29, 2026",
+          "order": "#13129704",
+          "total": 375.0
+        },
+        {
+          "date": "Oct 29, 2026",
+          "order": "#13129715",
+          "total": 103.2
+        },
+        {
+          "date": "Oct 28, 2026",
+          "order": "#13129558",
+          "total": 103.2
+        },
+        {
+          "date": "Oct 28, 2026",
+          "order": "#13129563",
+          "total": 103.2
+        },
+        {
+          "date": "Oct 28, 2026",
+          "order": "#13129566",
+          "total": 103.2
+        },
+        {
+          "date": "Oct 28, 2026",
+          "order": "#13129571",
+          "total": 103.2
+        },
+        {
+          "date": "Oct 28, 2026",
+          "order": "#13129576",
+          "total": 103.2
+        },
+        {
+          "date": "Oct 27, 2026",
+          "order": "#13129483",
+          "total": 271.78
+        },
+        {
+          "date": "Oct 26, 2026",
+          "order": "#13129318",
+          "total": 28451.69
+        },
         {
           "date": "Oct 23, 2026",
           "order": "#13129228",
@@ -77,15 +152,26 @@
           "total": 2650.0
         },
         {
-          "date": "Oct 7, 2026",
-          "order": "#13127721",
-          "total": 3502.43
-        },
-        {
           "date": "Oct 5, 2026",
           "order": "#13127484",
           "total": 55.15
-        },
+        }
+      ]
+    },
+    "d31to60": {
+      "label": "31-60 Days Rec.",
+      "unpaidLabel": "Unpaid",
+      "total": 17024.14,
+      "count": 34,
+      "trend": {
+        "changePct": 402.6,
+        "direction": "up"
+      },
+      "countTrend": {
+        "changePct": 580.0,
+        "direction": "up"
+      },
+      "rows": [
         {
           "date": "Oct 2, 2026",
           "order": "#13127272",
@@ -148,30 +234,9 @@
         },
         {
           "date": "Sep 28, 2026",
-          "order": "#13126881",
-          "total": 1654.25
-        },
-        {
-          "date": "Sep 28, 2026",
           "order": "#13126889",
           "total": 431.08
-        }
-      ]
-    },
-    "d31to60": {
-      "label": "31-60 Days Rec.",
-      "unpaidLabel": "Unpaid",
-      "total": 31088.61,
-      "count": 25,
-      "trend": {
-        "changePct": 750.8,
-        "direction": "up"
-      },
-      "countTrend": {
-        "changePct": 316.7,
-        "direction": "up"
-      },
-      "rows": [
+        },
         {
           "date": "Sep 24, 2026",
           "order": "#13126564",
@@ -258,16 +323,6 @@
           "total": 103.2
         },
         {
-          "date": "Sep 17, 2026",
-          "order": "#13125926",
-          "total": 15039.06
-        },
-        {
-          "date": "Sep 15, 2026",
-          "order": "#13125673",
-          "total": 1308.0
-        },
-        {
           "date": "Sep 15, 2026",
           "order": "#13125675",
           "total": 115.5
@@ -286,41 +341,26 @@
           "date": "Sep 10, 2026",
           "order": "#13125341",
           "total": 2218.41
-        },
-        {
-          "date": "Aug 31, 2026",
-          "order": "#13124535",
-          "total": 109.91
-        },
-        {
-          "date": "Aug 27, 2026",
-          "order": "#13124295",
-          "total": 516.0
         }
       ]
     },
     "d61to90": {
       "label": "61-90 Days Rec.",
       "unpaidLabel": "Unpaid",
-      "total": 3654.0,
-      "count": 6,
+      "total": 3387.41,
+      "count": 5,
       "trend": null,
       "countTrend": null,
       "rows": [
         {
-          "date": "Aug 25, 2026",
-          "order": "#13124142",
-          "total": 129.0
+          "date": "Aug 31, 2026",
+          "order": "#13124535",
+          "total": 109.91
         },
         {
           "date": "Aug 20, 2026",
           "order": "#13123652",
           "total": 1416.0
-        },
-        {
-          "date": "Aug 18, 2026",
-          "order": "#13123480",
-          "total": 247.5
         },
         {
           "date": "Aug 18, 2026",
@@ -349,33 +389,33 @@
       "rows": []
     }
   },
-  "allTimeReceivable": 55930.13,
+  "allTimeReceivable": 71826.46,
   "monthly": [
     {
       "month": "2026-08",
       "label": "Aug",
-      "total": 4279.91
+      "total": 3387.41
     },
     {
       "month": "2026-09",
       "label": "Sep",
-      "total": 33081.41
+      "total": 15080.1
     },
     {
       "month": "2026-10",
       "label": "Oct",
-      "total": 18568.81
+      "total": 53358.95
     }
   ],
   "totalOutstanding": {
-    "total": 55930.13,
-    "count": 59,
+    "total": 71826.46,
+    "count": 67,
     "trend": {
-      "changePct": 61.0,
+      "changePct": 251.9,
       "direction": "up"
     },
     "countTrend": {
-      "changePct": 90.3,
+      "changePct": 71.8,
       "direction": "up"
     }
   },
@@ -383,17 +423,17 @@
     {
       "key": "last30",
       "label": "Last 30 Days",
-      "pct": 37.9
+      "pct": 71.6
     },
     {
       "key": "d31to60",
       "label": "31-60 Days",
-      "pct": 55.6
+      "pct": 23.7
     },
     {
       "key": "d61to90",
       "label": "61-90 Days",
-      "pct": 6.5
+      "pct": 4.7
     },
     {
       "key": "d90plus",
@@ -402,87 +442,87 @@
     }
   ],
   "dso": {
-    "value": 1.9,
+    "value": 2.4,
     "trend": {
-      "changePct": 72.7,
+      "changePct": 300.0,
       "direction": "up"
     },
     "salesWindowLabel": "(all sales)"
   },
-  "narrative": "AR grew 61.0% vs. the prior 30 days, driven mainly by a 750.8% jump in 31-60 Days receivables \u2014 prioritize collection on the 25 unpaid orders in that bucket before they roll into the next aging tier.",
+  "narrative": "AR grew 251.9% vs. the prior 30 days, driven mainly by a 402.6% jump in 31-60 Days receivables \u2014 prioritize collection on the 34 unpaid orders in that bucket before they roll into the next aging tier.",
   "topCustomers": {
     "rows": [
       {
-        "name": "Bobby Zaph",
-        "total": 19156.35,
-        "pct": 34.3,
-        "orderCount": 5,
+        "name": "Edmond Rassi",
+        "total": 28451.69,
+        "pct": 39.6,
+        "orderCount": 1,
         "flagged": true
       },
       {
-        "name": "Design Ready Controls",
-        "total": 5232.0,
-        "pct": 9.4,
-        "orderCount": 4,
+        "name": "Luke Polles",
+        "total": 9536.18,
+        "pct": 13.3,
+        "orderCount": 6,
+        "flagged": false
+      },
+      {
+        "name": "DCL Development Company",
+        "total": 4264.39,
+        "pct": 5.9,
+        "orderCount": 29,
         "flagged": false
       },
       {
         "name": "Jesse Freeman",
         "total": 4100.11,
-        "pct": 7.3,
+        "pct": 5.7,
         "orderCount": 2,
         "flagged": false
       },
       {
-        "name": "ATTN: Tanner Wheeler",
-        "total": 3502.43,
-        "pct": 6.3,
-        "orderCount": 1,
-        "flagged": false
-      },
-      {
-        "name": "DCL Development Company",
-        "total": 3412.69,
-        "pct": 6.1,
-        "orderCount": 23,
+        "name": "Design Ready Controls",
+        "total": 3924.0,
+        "pct": 5.5,
+        "orderCount": 3,
         "flagged": false
       },
       {
         "name": "Latesha Neymour",
         "total": 2731.0,
-        "pct": 4.9,
+        "pct": 3.8,
         "orderCount": 2,
         "flagged": false
       },
       {
         "name": "Cody Rader SHIP BLIND",
         "total": 2650.0,
-        "pct": 4.7,
+        "pct": 3.7,
         "orderCount": 1,
         "flagged": false
       },
       {
         "name": "Lokelani Hamaku",
         "total": 2544.5,
-        "pct": 4.5,
+        "pct": 3.5,
         "orderCount": 1,
         "flagged": false
       },
       {
         "name": "Kyle Hanner",
         "total": 2218.41,
-        "pct": 4.0,
+        "pct": 3.1,
         "orderCount": 1,
         "flagged": false
       },
       {
         "name": "Janet Richardson",
         "total": 2214.0,
-        "pct": 4.0,
+        "pct": 3.1,
         "orderCount": 1,
         "flagged": false
       }
     ],
-    "concentrationPct": 85.4
+    "concentrationPct": 87.2
   }
 }
