@@ -437,6 +437,10 @@ def main():
     data = {
         "generatedAt": datetime.utcnow().isoformat() + "Z",
         "anchor": anchor.isoformat(),
+        # Newest invoice date in the Unpaid tab — "anchor" above is just the
+        # run date (aging is today-relative), so it can't answer "how fresh is
+        # the source data?".
+        "latestDataDate": max(r[0] for r in rows).isoformat(),
         "buckets": buckets,
         "allTimeReceivable": all_time_receivable,
         "monthly": monthly,

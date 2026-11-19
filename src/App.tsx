@@ -21,19 +21,13 @@ import { CarrierFilter } from "./components/layout/CarrierFilter";
 import { MonthFilter } from "./components/layout/MonthFilter";
 import { YearFilter } from "./components/layout/YearFilter";
 import { ANCHORS } from "./lib/dateRange";
+import { formatLongDate } from "./lib/formatDate";
+import { ANCHOR as AIRCALL_ANCHOR } from "./lib/aircallDateRange";
+import { ANCHOR as FB_ANCHOR } from "./lib/facebookAdsDateRange";
+import { ANCHOR as GOOGLE_ADS_ANCHOR } from "./lib/googleAdsDateRange";
+import arData from "./data/arDashboardData.json";
 import type { NavItem } from "./data/ceoDashboardMockData";
 import styles from "./App.module.css";
-
-// "2026-11-15" -> "November 15, 2026". Formatted in UTC from a UTC-midnight
-// Date so the day never shifts for viewers in other timezones.
-function formatLongDate(iso: string): string {
-  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
-    month: "long",
-    day: "numeric",
-    year: "numeric",
-    timeZone: "UTC",
-  });
-}
 
 function CeoDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
   const { selection, setPreset, setCustom, windows } = useDateRange();
@@ -54,7 +48,7 @@ function CeoDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
 function AirCallDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
   const { selection, setPreset, setCustom, windows } = useAircallDateRange();
   return (
-    <Header title="AirCall Dashboard" subtitle="Source: Aircall.io" onMenuClick={onMenuClick}>
+    <Header title="AirCall Dashboard" subtitle={`Source: Aircall.io · Most updated data as of ${formatLongDate(AIRCALL_ANCHOR)}`} onMenuClick={onMenuClick}>
       <RefreshDataButton />
       <DateRangePicker
         selection={selection}
@@ -71,7 +65,7 @@ function AccountsReceivableHeader({ onMenuClick }: { onMenuClick: () => void }) 
   // No date-range picker here, deliberately — the aging buckets are always
   // today-relative, so there's no meaningful custom range to layer on top.
   return (
-    <Header title="Accounts Receivable" subtitle="Source: TerraSlate Shopify" onMenuClick={onMenuClick}>
+    <Header title="Accounts Receivable" subtitle={`Source: TerraSlate Shopify · Most updated data as of ${formatLongDate(arData.latestDataDate)}`} onMenuClick={onMenuClick}>
       <RefreshDataButton />
     </Header>
   );
@@ -80,7 +74,7 @@ function AccountsReceivableHeader({ onMenuClick }: { onMenuClick: () => void }) 
 function FacebookAdsHeader({ onMenuClick }: { onMenuClick: () => void }) {
   const { selection, setPreset, setCustom, windows } = useFacebookAdsDateRange();
   return (
-    <Header title="Facebook Ads" subtitle="Source: Facebook Ads Report" onMenuClick={onMenuClick}>
+    <Header title="Facebook Ads" subtitle={`Source: Facebook Ads Report · Most updated data as of ${formatLongDate(FB_ANCHOR)}`} onMenuClick={onMenuClick}>
       <RefreshDataButton />
       <DateRangePicker
         selection={selection}
@@ -133,7 +127,7 @@ function GoogleAdsDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) 
   // excluding today" default, for consistency across the app.
   const { selection, setPreset, setCustom, windows } = useGoogleAdsDateRange();
   return (
-    <Header title="Google Ads Dashboard" subtitle="Source: Google Ads — TerraSlate Ads Account (via Adveronix)" onMenuClick={onMenuClick}>
+    <Header title="Google Ads Dashboard" subtitle={`Source: Google Ads (via Adveronix) · Most updated data as of ${formatLongDate(GOOGLE_ADS_ANCHOR)}`} onMenuClick={onMenuClick}>
       <RefreshDataButton />
       <DateRangePicker
         selection={selection}
