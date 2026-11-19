@@ -8,3 +8,12 @@ export function formatLongDate(iso: string): string {
     timeZone: "UTC",
   });
 }
+
+// "2026-10-25" -> "October 2026" (UTC, same reasoning as formatLongDate).
+export function formatMonthYear(iso: string): string {
+  return new Date(`${iso}T00:00:00Z`).toLocaleDateString("en-US", {
+    month: "long",
+    year: "numeric",
+    timeZone: "UTC",
+  });
+}

@@ -21,7 +21,8 @@ import { CarrierFilter } from "./components/layout/CarrierFilter";
 import { MonthFilter } from "./components/layout/MonthFilter";
 import { YearFilter } from "./components/layout/YearFilter";
 import { ANCHORS } from "./lib/dateRange";
-import { formatLongDate } from "./lib/formatDate";
+import { formatLongDate, formatMonthYear } from "./lib/formatDate";
+import { ANCHOR as SHIPPING_ANCHOR } from "./lib/shippingDateRange";
 import { ANCHOR as AIRCALL_ANCHOR } from "./lib/aircallDateRange";
 import { ANCHOR as FB_ANCHOR } from "./lib/facebookAdsDateRange";
 import { ANCHOR as GOOGLE_ADS_ANCHOR } from "./lib/googleAdsDateRange";
@@ -90,7 +91,7 @@ function FacebookAdsHeader({ onMenuClick }: { onMenuClick: () => void }) {
 function ShippingDashboardHeader({ onMenuClick }: { onMenuClick: () => void }) {
   const { month, setMonth, months, carrier, setCarrier } = useShippingDateRange();
   return (
-    <Header title="Shipping Dashboard" subtitle="FedEx & UPS data" onMenuClick={onMenuClick}>
+    <Header title="Shipping Dashboard" subtitle={`FedEx & UPS data · Most updated data as of ${formatMonthYear(SHIPPING_ANCHOR)}`} onMenuClick={onMenuClick}>
       <RefreshDataButton />
       <CarrierFilter carrier={carrier} setCarrier={setCarrier} />
       <MonthFilter month={month} setMonth={setMonth} months={months} />
