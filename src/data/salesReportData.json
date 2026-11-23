@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-11-23T10:11:06.496261Z",
+  "generatedAt": "2026-11-23T11:03:41.174803Z",
   "years": [
     2026,
     2025,
@@ -4784,7 +4784,7 @@
       "quarter": "Q4",
       "weekStart": "10/26/2026",
       "forecast": 279419.0,
-      "actual": 293608.0,
+      "actual": 293688.0,
       "forecastDraft": 133146.0,
       "actualDraft": 158868.0,
       "fcstAmzn": 30236.0,
@@ -4803,7 +4803,7 @@
       "quarter": "Q4",
       "weekStart": "11/02/2026",
       "forecast": 286539.0,
-      "actual": 290315.0,
+      "actual": 290653.0,
       "forecastDraft": 136983.0,
       "actualDraft": 162321.0,
       "fcstAmzn": 30236.0,
@@ -4813,7 +4813,7 @@
       "fcstWeb": 112077.0,
       "actualWeb": 99797.0,
       "forecastWmt": 1512.0,
-      "actualWmt": 0.0
+      "actualWmt": 338.0
     },
     {
       "year": 2026,
@@ -4822,17 +4822,17 @@
       "quarter": "Q4",
       "weekStart": "11/09/2026",
       "forecast": 287967.0,
-      "actual": null,
+      "actual": 338768.0,
       "forecastDraft": 137753.0,
-      "actualDraft": null,
+      "actualDraft": 204104.0,
       "fcstAmzn": 30236.0,
-      "actualAmzn": null,
+      "actualAmzn": 29451.0,
       "fcstGd": 5759.0,
-      "paidGdWork": null,
+      "paidGdWork": 6047.0,
       "fcstWeb": 112707.0,
-      "actualWeb": null,
+      "actualWeb": 105086.0,
       "forecastWmt": 1512.0,
-      "actualWmt": null
+      "actualWmt": 127.0
     },
     {
       "year": 2026,
@@ -4841,17 +4841,17 @@
       "quarter": "Q4",
       "weekStart": "11/16/2026",
       "forecast": 243450.0,
-      "actual": null,
+      "actual": 275885.0,
       "forecastDraft": 113758.0,
-      "actualDraft": null,
+      "actualDraft": 156843.0,
       "fcstAmzn": 30236.0,
-      "actualAmzn": null,
+      "actualAmzn": 28035.0,
       "fcstGd": 4869.0,
-      "paidGdWork": null,
+      "paidGdWork": 8382.0,
       "fcstWeb": 93075.0,
-      "actualWeb": null,
+      "actualWeb": 90668.0,
       "forecastWmt": 1512.0,
-      "actualWmt": null
+      "actualWmt": 339.0
     }
   ]
 }
