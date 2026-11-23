@@ -1,14 +1,14 @@
 {
-  "generatedAt": "2026-11-19T14:50:03.564696Z",
-  "anchor": "2026-11-08",
+  "generatedAt": "2026-11-23T10:10:52.157853Z",
+  "anchor": "2026-11-22",
   "summary": {
     "windows": {
       "today": {
         "totalCalls": {
-          "value": 1,
+          "value": 2,
           "trend": {
-            "changePct": 0.0,
-            "direction": "na"
+            "changePct": -66.7,
+            "direction": "down"
           }
         },
         "totalTalkTimeHours": {
@@ -16,9 +16,9 @@
           "trend": null
         },
         "avgCallDurationSeconds": {
-          "value": 15.0,
+          "value": 59.0,
           "trend": {
-            "changePct": 25.0,
+            "changePct": 253.3,
             "direction": "up"
           }
         },
@@ -28,13 +28,13 @@
           "value": 0.0,
           "trend": null
         },
-        "narrative": "Team handled 1 calls totaling 0.0 hours this period, flat 0.0% vs. the prior period. Inbound activity (100.0% of calls) continues to outpace outbound. Tag coverage remains a gap at 0.0% of calls categorized."
+        "narrative": "Team handled 2 calls totaling 0.0 hours this period, down 66.7% vs. the prior period. Inbound activity (100.0% of calls) continues to outpace outbound. Tag coverage remains a gap at 0.0% of calls categorized."
       },
       "yesterday": {
         "totalCalls": {
-          "value": 1,
+          "value": 6,
           "trend": {
-            "changePct": -99.4,
+            "changePct": -94.5,
             "direction": "down"
           }
         },
@@ -46,9 +46,9 @@
           }
         },
         "avgCallDurationSeconds": {
-          "value": 12.0,
+          "value": 16.7,
           "trend": {
-            "changePct": -79.7,
+            "changePct": -82.6,
             "direction": "down"
           }
         },
@@ -61,103 +61,106 @@
             "direction": "down"
           }
         },
-        "narrative": "Team handled 1 calls totaling 0.0 hours this period, down 99.4% vs. the prior period. Inbound activity (100.0% of calls) continues to outpace outbound. Tag coverage remains a gap at 0.0% of calls categorized."
+        "narrative": "Team handled 6 calls totaling 0.0 hours this period, down 94.5% vs. the prior period. Inbound activity (100.0% of calls) continues to outpace outbound. Tag coverage remains a gap at 0.0% of calls categorized."
       },
       "last7": {
         "totalCalls": {
-          "value": 0,
+          "value": 522,
           "trend": {
-            "changePct": -100.0,
+            "changePct": -16.2,
             "direction": "down"
           }
         },
         "totalTalkTimeHours": {
-          "value": 0.0,
+          "value": 16.2,
           "trend": {
-            "changePct": -100.0,
-            "direction": "down"
+            "changePct": 8.7,
+            "direction": "up"
           }
         },
         "avgCallDurationSeconds": {
-          "value": null,
-          "trend": null
-        },
-        "inboundPct": 0,
-        "outboundPct": 0,
-        "tagCoveragePct": {
-          "value": 0.0,
+          "value": 111.8,
           "trend": {
-            "changePct": -100.0,
-            "direction": "down"
+            "changePct": 30.0,
+            "direction": "up"
           }
         },
-        "narrative": "Team handled 0 calls totaling 0.0 hours this period, down 100.0% vs. the prior period. Inbound and outbound activity are evenly split this period. Tag coverage remains a gap at 0.0% of calls categorized."
+        "inboundPct": 34.3,
+        "outboundPct": 65.7,
+        "tagCoveragePct": {
+          "value": 65.5,
+          "trend": {
+            "changePct": 6.3,
+            "direction": "up"
+          }
+        },
+        "narrative": "Team handled 522 calls totaling 16.2 hours this period, down 16.2% vs. the prior period. Outbound activity (65.7% of calls) continues to outpace inbound. Tag coverage stands at 65.5% of calls categorized."
       },
       "last30": {
         "totalCalls": {
-          "value": 2404,
+          "value": 2440,
           "trend": {
-            "changePct": -27.5,
+            "changePct": -17.5,
             "direction": "down"
           }
         },
         "totalTalkTimeHours": {
-          "value": 82.5,
+          "value": 80.7,
           "trend": {
-            "changePct": -13.3,
-            "direction": "down"
+            "changePct": 0.7,
+            "direction": "up"
           }
         },
         "avgCallDurationSeconds": {
-          "value": 123.5,
+          "value": 119.1,
           "trend": {
-            "changePct": 19.6,
+            "changePct": 22.2,
             "direction": "up"
           }
         },
-        "inboundPct": 32.6,
-        "outboundPct": 67.4,
+        "inboundPct": 31.6,
+        "outboundPct": 68.4,
         "tagCoveragePct": {
-          "value": 63.0,
+          "value": 62.1,
           "trend": {
-            "changePct": 8.4,
+            "changePct": 0.2,
             "direction": "up"
           }
         },
-        "narrative": "Team handled 2,404 calls totaling 82.5 hours this period, down 27.5% vs. the prior period. Outbound activity (67.4% of calls) continues to outpace inbound. Tag coverage stands at 63.0% of calls categorized."
+        "narrative": "Team handled 2,440 calls totaling 80.7 hours this period, down 17.5% vs. the prior period. Outbound activity (68.4% of calls) continues to outpace inbound. Tag coverage stands at 62.1% of calls categorized."
       },
       "thisMonth": {
         "totalCalls": {
-          "value": 656,
+          "value": 1801,
           "trend": {
-            "changePct": 2.7,
+            "changePct": 3.0,
             "direction": "up"
           }
         },
         "totalTalkTimeHours": {
-          "value": 19.0,
+          "value": 50.1,
           "trend": {
-            "changePct": -37.9,
+            "changePct": -21.1,
             "direction": "down"
           }
         },
         "avgCallDurationSeconds": {
-          "value": 104.4,
+          "value": 100.2,
           "trend": {
-            "changePct": -39.5,
+            "changePct": -23.3,
             "direction": "down"
           }
         },
-        "inboundPct": 29.6,
-        "outboundPct": 70.4,
+        "inboundPct": 31.8,
+        "outboundPct": 68.2,
         "tagCoveragePct": {
-          "value": 62.0,
+          "value": 62.9,
           "trend": {
-            "changePct": 3.5,
-            "direction": "up"
+            "changePct": -0.6,
+            "direction": "down"
           }
         },
-        "narrative": "Team handled 656 calls totaling 19.0 hours this period, up 2.7% vs. the prior period. Outbound activity (70.4% of calls) continues to outpace inbound. Tag coverage stands at 62.0% of calls categorized."
+        "narrative": "Team handled 1,801 calls totaling 50.1 hours this period, up 3.0% vs. the prior period. Outbound activity (68.2% of calls) continues to outpace inbound. Tag coverage stands at 62.9% of calls categorized."
       },
       "lastMonth": {
         "totalCalls": {
@@ -201,16 +204,16 @@
           "rows": [
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.0,
+              "durationTotal": 0.03,
               "durationInCall": 0.0,
-              "count": 1,
+              "count": 2,
               "countPct": 100.0
             }
           ],
           "grandTotal": {
-            "durationTotal": 0.0,
+            "durationTotal": 0.03,
             "durationInCall": 0.0,
-            "count": 1,
+            "count": 2,
             "countPct": 100.0
           },
           "countLabel": "IB (total)",
@@ -231,16 +234,16 @@
           "rows": [
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.0,
+              "durationTotal": 0.03,
               "durationInCall": 0.0,
-              "count": 1,
+              "count": 2,
               "countPct": 100.0
             }
           ],
           "grandTotal": {
-            "durationTotal": 0.0,
+            "durationTotal": 0.03,
             "durationInCall": 0.0,
-            "count": 1,
+            "count": 2,
             "countPct": 100.0
           },
           "countLabel": "Total Calls",
@@ -252,16 +255,16 @@
           "rows": [
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.0,
+              "durationTotal": 0.03,
               "durationInCall": 0.0,
-              "count": 1,
+              "count": 6,
               "countPct": 100.0
             }
           ],
           "grandTotal": {
-            "durationTotal": 0.0,
+            "durationTotal": 0.03,
             "durationInCall": 0.0,
-            "count": 1,
+            "count": 6,
             "countPct": 100.0
           },
           "countLabel": "IB (total)",
@@ -282,16 +285,16 @@
           "rows": [
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.0,
+              "durationTotal": 0.03,
               "durationInCall": 0.0,
-              "count": 1,
+              "count": 6,
               "countPct": 100.0
             }
           ],
           "grandTotal": {
-            "durationTotal": 0.0,
+            "durationTotal": 0.03,
             "durationInCall": 0.0,
-            "count": 1,
+            "count": 6,
             "countPct": 100.0
           },
           "countLabel": "Total Calls",
@@ -300,34 +303,233 @@
       },
       "last7": {
         "inbound": {
-          "rows": [],
+          "rows": [
+            {
+              "employee": "Julian Meisner",
+              "durationTotal": 2.3,
+              "durationInCall": 2.2,
+              "count": 51,
+              "countPct": 28.5
+            },
+            {
+              "employee": "Mark Ruiz",
+              "durationTotal": 2.56,
+              "durationInCall": 2.47,
+              "count": 40,
+              "countPct": 22.3
+            },
+            {
+              "employee": "Sean Detschermitsch",
+              "durationTotal": 2.47,
+              "durationInCall": 2.4,
+              "count": 32,
+              "countPct": 17.9
+            },
+            {
+              "employee": "Ian Gindhart",
+              "durationTotal": 1.17,
+              "durationInCall": 1.12,
+              "count": 20,
+              "countPct": 11.2
+            },
+            {
+              "employee": "[No associated user]",
+              "durationTotal": 0.12,
+              "durationInCall": 0.0,
+              "count": 19,
+              "countPct": 10.6
+            },
+            {
+              "employee": "Maralisa Dictor",
+              "durationTotal": 0.52,
+              "durationInCall": 0.5,
+              "count": 11,
+              "countPct": 6.1
+            },
+            {
+              "employee": "Steven Peralta Cornejo",
+              "durationTotal": 0.32,
+              "durationInCall": 0.31,
+              "count": 5,
+              "countPct": 2.8
+            },
+            {
+              "employee": "Luke Bosick",
+              "durationTotal": 0.04,
+              "durationInCall": 0.04,
+              "count": 1,
+              "countPct": 0.6
+            }
+          ],
           "grandTotal": {
-            "durationTotal": 0.0,
-            "durationInCall": 0.0,
-            "count": 0,
-            "countPct": 0
+            "durationTotal": 9.5,
+            "durationInCall": 9.04,
+            "count": 179,
+            "countPct": 100.0
           },
           "countLabel": "IB (total)",
           "countPctLabel": "IB %"
         },
         "outbound": {
-          "rows": [],
+          "rows": [
+            {
+              "employee": "Julian Meisner",
+              "durationTotal": 2.36,
+              "durationInCall": 1.72,
+              "count": 153,
+              "countPct": 44.6
+            },
+            {
+              "employee": "Ian Gindhart",
+              "durationTotal": 1.07,
+              "durationInCall": 0.7,
+              "count": 79,
+              "countPct": 23.0
+            },
+            {
+              "employee": "Sean Detschermitsch",
+              "durationTotal": 0.73,
+              "durationInCall": 0.55,
+              "count": 51,
+              "countPct": 14.9
+            },
+            {
+              "employee": "Mark Ruiz",
+              "durationTotal": 1.05,
+              "durationInCall": 0.91,
+              "count": 41,
+              "countPct": 12.0
+            },
+            {
+              "employee": "Maralisa Dictor",
+              "durationTotal": 0.39,
+              "durationInCall": 0.38,
+              "count": 7,
+              "countPct": 2.0
+            },
+            {
+              "employee": "Angelique Cervera",
+              "durationTotal": 0.22,
+              "durationInCall": 0.2,
+              "count": 6,
+              "countPct": 1.7
+            },
+            {
+              "employee": "Bailey Pixton",
+              "durationTotal": 0.25,
+              "durationInCall": 0.23,
+              "count": 3,
+              "countPct": 0.9
+            },
+            {
+              "employee": "Ryan Smith",
+              "durationTotal": 0.03,
+              "durationInCall": 0.02,
+              "count": 2,
+              "countPct": 0.6
+            },
+            {
+              "employee": "Luke Bosick",
+              "durationTotal": 0.61,
+              "durationInCall": 0.61,
+              "count": 1,
+              "countPct": 0.3
+            }
+          ],
           "grandTotal": {
-            "durationTotal": 0.0,
-            "durationInCall": 0.0,
-            "count": 0,
-            "countPct": 0
+            "durationTotal": 6.71,
+            "durationInCall": 5.33,
+            "count": 343,
+            "countPct": 100.0
           },
           "countLabel": "OB (total)",
           "countPctLabel": "OB %"
         },
         "total": {
-          "rows": [],
+          "rows": [
+            {
+              "employee": "Julian Meisner",
+              "durationTotal": 4.66,
+              "durationInCall": 3.92,
+              "count": 204,
+              "countPct": 39.1
+            },
+            {
+              "employee": "Ian Gindhart",
+              "durationTotal": 2.24,
+              "durationInCall": 1.82,
+              "count": 99,
+              "countPct": 19.0
+            },
+            {
+              "employee": "Sean Detschermitsch",
+              "durationTotal": 3.2,
+              "durationInCall": 2.95,
+              "count": 83,
+              "countPct": 15.9
+            },
+            {
+              "employee": "Mark Ruiz",
+              "durationTotal": 3.61,
+              "durationInCall": 3.38,
+              "count": 81,
+              "countPct": 15.5
+            },
+            {
+              "employee": "[No associated user]",
+              "durationTotal": 0.12,
+              "durationInCall": 0.0,
+              "count": 19,
+              "countPct": 3.6
+            },
+            {
+              "employee": "Maralisa Dictor",
+              "durationTotal": 0.91,
+              "durationInCall": 0.88,
+              "count": 18,
+              "countPct": 3.4
+            },
+            {
+              "employee": "Angelique Cervera",
+              "durationTotal": 0.22,
+              "durationInCall": 0.2,
+              "count": 6,
+              "countPct": 1.1
+            },
+            {
+              "employee": "Steven Peralta Cornejo",
+              "durationTotal": 0.32,
+              "durationInCall": 0.31,
+              "count": 5,
+              "countPct": 1.0
+            },
+            {
+              "employee": "Bailey Pixton",
+              "durationTotal": 0.25,
+              "durationInCall": 0.23,
+              "count": 3,
+              "countPct": 0.6
+            },
+            {
+              "employee": "Ryan Smith",
+              "durationTotal": 0.03,
+              "durationInCall": 0.02,
+              "count": 2,
+              "countPct": 0.4
+            },
+            {
+              "employee": "Luke Bosick",
+              "durationTotal": 0.66,
+              "durationInCall": 0.65,
+              "count": 2,
+              "countPct": 0.4
+            }
+          ],
           "grandTotal": {
-            "durationTotal": 0.0,
-            "durationInCall": 0.0,
-            "count": 0,
-            "countPct": 0
+            "durationTotal": 16.21,
+            "durationInCall": 14.37,
+            "count": 522,
+            "countPct": 100.0
           },
           "countLabel": "Total Calls",
           "countPctLabel": "IB/OB %"
@@ -338,79 +540,72 @@
           "rows": [
             {
               "employee": "Julian Meisner",
-              "durationTotal": 9.25,
-              "durationInCall": 8.87,
-              "count": 185,
-              "countPct": 23.6
-            },
-            {
-              "employee": "Mark Ruiz",
-              "durationTotal": 11.84,
-              "durationInCall": 11.51,
-              "count": 179,
-              "countPct": 22.9
+              "durationTotal": 10.9,
+              "durationInCall": 10.47,
+              "count": 219,
+              "countPct": 28.4
             },
             {
               "employee": "Sean Detschermitsch",
-              "durationTotal": 14.27,
-              "durationInCall": 10.11,
-              "count": 173,
-              "countPct": 22.1
+              "durationTotal": 14.78,
+              "durationInCall": 10.6,
+              "count": 178,
+              "countPct": 23.1
+            },
+            {
+              "employee": "Mark Ruiz",
+              "durationTotal": 9.85,
+              "durationInCall": 9.55,
+              "count": 152,
+              "countPct": 19.7
             },
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.58,
+              "durationTotal": 0.52,
               "durationInCall": 0.0,
-              "count": 86,
-              "countPct": 11.0
+              "count": 83,
+              "countPct": 10.8
             },
             {
               "employee": "Maralisa Dictor",
-              "durationTotal": 3.51,
-              "durationInCall": 3.36,
-              "count": 70,
-              "countPct": 8.9
+              "durationTotal": 2.93,
+              "durationInCall": 2.79,
+              "count": 60,
+              "countPct": 7.8
             },
             {
               "employee": "Ian Gindhart",
-              "durationTotal": 1.58,
-              "durationInCall": 1.5,
-              "count": 28,
-              "countPct": 3.6
-            },
-            {
-              "employee": "Bailey Pixton",
-              "durationTotal": 1.77,
-              "durationInCall": 1.71,
-              "count": 24,
-              "countPct": 3.1
+              "durationTotal": 2.15,
+              "durationInCall": 2.04,
+              "count": 37,
+              "countPct": 4.8
             },
             {
               "employee": "Steven Peralta Cornejo",
-              "durationTotal": 3.41,
-              "durationInCall": 3.35,
-              "count": 23,
-              "countPct": 2.9
+              "durationTotal": 3.43,
+              "durationInCall": 3.36,
+              "count": 27,
+              "countPct": 3.5
+            },
+            {
+              "employee": "Bailey Pixton",
+              "durationTotal": 0.63,
+              "durationInCall": 0.61,
+              "count": 9,
+              "countPct": 1.2
             },
             {
               "employee": "Luke Bosick",
-              "durationTotal": 1.24,
-              "durationInCall": 1.2,
-              "count": 14,
-              "countPct": 1.8
-            },
-            {
-              "employee": "Angelique Cervera",
-              "durationTotal": 0.02,
-              "durationInCall": 0.01,
-              "count": 1,
-              "countPct": 0.1
+              "durationTotal": 0.48,
+              "durationInCall": 0.46,
+              "count": 6,
+              "countPct": 0.8
             }
           ],
           "grandTotal": {
-            "durationTotal": 47.46,
-            "durationInCall": 41.61,
-            "count": 783,
+            "durationTotal": 45.65,
+            "durationInCall": 39.88,
+            "count": 771,
             "countPct": 100.0
           },
           "countLabel": "IB (total)",
@@ -420,80 +615,73 @@
           "rows": [
             {
               "employee": "Julian Meisner",
-              "durationTotal": 6.42,
-              "durationInCall": 4.04,
-              "count": 591,
+              "durationTotal": 7.56,
+              "durationInCall": 5.06,
+              "count": 609,
               "countPct": 36.5
             },
             {
               "employee": "Sean Detschermitsch",
-              "durationTotal": 6.46,
-              "durationInCall": 4.93,
-              "count": 455,
-              "countPct": 28.1
+              "durationTotal": 5.91,
+              "durationInCall": 4.36,
+              "count": 482,
+              "countPct": 28.9
             },
             {
               "employee": "Ian Gindhart",
-              "durationTotal": 8.45,
-              "durationInCall": 3.51,
-              "count": 273,
-              "countPct": 16.8
+              "durationTotal": 8.62,
+              "durationInCall": 3.5,
+              "count": 300,
+              "countPct": 18.0
             },
             {
               "employee": "Mark Ruiz",
-              "durationTotal": 6.46,
-              "durationInCall": 1.82,
-              "count": 175,
-              "countPct": 10.8
+              "durationTotal": 7.11,
+              "durationInCall": 2.49,
+              "count": 166,
+              "countPct": 9.9
             },
             {
               "employee": "Maralisa Dictor",
-              "durationTotal": 2.17,
-              "durationInCall": 2.06,
-              "count": 46,
-              "countPct": 2.8
+              "durationTotal": 1.77,
+              "durationInCall": 1.69,
+              "count": 40,
+              "countPct": 2.4
             },
             {
               "employee": "Angelique Cervera",
-              "durationTotal": 1.74,
-              "durationInCall": 1.64,
+              "durationTotal": 1.71,
+              "durationInCall": 1.61,
               "count": 34,
-              "countPct": 2.1
-            },
-            {
-              "employee": "Bailey Pixton",
-              "durationTotal": 1.52,
-              "durationInCall": 1.46,
-              "count": 18,
-              "countPct": 1.1
+              "countPct": 2.0
             },
             {
               "employee": "Steven Peralta Cornejo",
-              "durationTotal": 1.06,
-              "durationInCall": 1.02,
+              "durationTotal": 0.8,
+              "durationInCall": 0.74,
               "count": 14,
-              "countPct": 0.9
+              "countPct": 0.8
             },
             {
-              "employee": "Luke Bosick",
-              "durationTotal": 0.53,
-              "durationInCall": 0.51,
-              "count": 9,
+              "employee": "Bailey Pixton",
+              "durationTotal": 0.58,
+              "durationInCall": 0.55,
+              "count": 10,
               "countPct": 0.6
             },
             {
-              "employee": "Ryan Smith",
-              "durationTotal": 0.1,
-              "durationInCall": 0.09,
-              "count": 4,
-              "countPct": 0.2
+              "employee": "Luke Bosick",
+              "durationTotal": 0.9,
+              "durationInCall": 0.87,
+              "count": 7,
+              "countPct": 0.4
             },
             {
-              "employee": "Dakota George",
-              "durationTotal": 0.1,
-              "durationInCall": 0.1,
-              "count": 1,
-              "countPct": 0.1
+              "employee": "Ryan Smith",
+              "durationTotal": 0.13,
+              "durationInCall": 0.11,
+              "count": 6,
+              "countPct": 0.4
             },
             {
               "employee": "Claudia Aculteco",
@@ -504,9 +692,9 @@
             }
           ],
           "grandTotal": {
-            "durationTotal": 35.02,
-            "durationInCall": 21.2,
-            "count": 1621,
+            "durationTotal": 35.09,
+            "durationInCall": 20.99,
+            "count": 1669,
             "countPct": 100.0
           },
           "countLabel": "OB (total)",
@@ -516,87 +704,80 @@
           "rows": [
             {
               "employee": "Julian Meisner",
-              "durationTotal": 15.66,
-              "durationInCall": 12.91,
-              "count": 776,
-              "countPct": 32.3
+              "durationTotal": 18.47,
+              "durationInCall": 15.53,
+              "count": 828,
+              "countPct": 33.9
             },
             {
               "employee": "Sean Detschermitsch",
-              "durationTotal": 20.73,
-              "durationInCall": 15.05,
-              "count": 628,
-              "countPct": 26.1
-            },
-            {
-              "employee": "Mark Ruiz",
-              "durationTotal": 18.3,
-              "durationInCall": 13.33,
-              "count": 354,
-              "countPct": 14.7
+              "durationTotal": 20.69,
+              "durationInCall": 14.96,
+              "count": 660,
+              "countPct": 27.0
             },
             {
               "employee": "Ian Gindhart",
-              "durationTotal": 10.03,
-              "durationInCall": 5.0,
-              "count": 301,
-              "countPct": 12.5
+              "durationTotal": 10.77,
+              "durationInCall": 5.54,
+              "count": 337,
+              "countPct": 13.8
+            },
+            {
+              "employee": "Mark Ruiz",
+              "durationTotal": 16.96,
+              "durationInCall": 12.04,
+              "count": 318,
+              "countPct": 13.0
             },
             {
               "employee": "Maralisa Dictor",
-              "durationTotal": 5.68,
-              "durationInCall": 5.42,
-              "count": 116,
-              "countPct": 4.8
+              "durationTotal": 4.69,
+              "durationInCall": 4.49,
+              "count": 100,
+              "countPct": 4.1
             },
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.58,
+              "durationTotal": 0.52,
               "durationInCall": 0.0,
-              "count": 86,
-              "countPct": 3.6
-            },
-            {
-              "employee": "Bailey Pixton",
-              "durationTotal": 3.29,
-              "durationInCall": 3.17,
-              "count": 42,
-              "countPct": 1.7
+              "count": 83,
+              "countPct": 3.4
             },
             {
               "employee": "Steven Peralta Cornejo",
-              "durationTotal": 4.47,
-              "durationInCall": 4.37,
-              "count": 37,
-              "countPct": 1.5
+              "durationTotal": 4.22,
+              "durationInCall": 4.1,
+              "count": 41,
+              "countPct": 1.7
             },
             {
               "employee": "Angelique Cervera",
-              "durationTotal": 1.76,
-              "durationInCall": 1.66,
-              "count": 35,
-              "countPct": 1.5
+              "durationTotal": 1.71,
+              "durationInCall": 1.61,
+              "count": 34,
+              "countPct": 1.4
+            },
+            {
+              "employee": "Bailey Pixton",
+              "durationTotal": 1.21,
+              "durationInCall": 1.16,
+              "count": 19,
+              "countPct": 0.8
             },
             {
               "employee": "Luke Bosick",
-              "durationTotal": 1.77,
-              "durationInCall": 1.7,
-              "count": 23,
-              "countPct": 1.0
+              "durationTotal": 1.38,
+              "durationInCall": 1.34,
+              "count": 13,
+              "countPct": 0.5
             },
             {
               "employee": "Ryan Smith",
-              "durationTotal": 0.1,
-              "durationInCall": 0.09,
-              "count": 4,
+              "durationTotal": 0.13,
+              "durationInCall": 0.11,
+              "count": 6,
               "countPct": 0.2
-            },
-            {
-              "employee": "Dakota George",
-              "durationTotal": 0.1,
-              "durationInCall": 0.1,
-              "count": 1,
-              "countPct": 0.0
             },
             {
               "employee": "Claudia Aculteco",
@@ -607,9 +788,9 @@
             }
           ],
           "grandTotal": {
-            "durationTotal": 82.47,
-            "durationInCall": 62.81,
-            "count": 2404,
+            "durationTotal": 80.75,
+            "durationInCall": 60.87,
+            "count": 2440,
             "countPct": 100.0
           },
           "countLabel": "Total Calls",
@@ -621,72 +802,72 @@
           "rows": [
             {
               "employee": "Julian Meisner",
-              "durationTotal": 3.15,
-              "durationInCall": 3.05,
-              "count": 55,
-              "countPct": 28.4
+              "durationTotal": 8.76,
+              "durationInCall": 8.42,
+              "count": 175,
+              "countPct": 30.5
             },
             {
               "employee": "Sean Detschermitsch",
-              "durationTotal": 2.68,
-              "durationInCall": 2.6,
-              "count": 43,
-              "countPct": 22.2
+              "durationTotal": 7.82,
+              "durationInCall": 7.57,
+              "count": 124,
+              "countPct": 21.6
             },
             {
               "employee": "Mark Ruiz",
-              "durationTotal": 2.44,
-              "durationInCall": 2.37,
-              "count": 37,
-              "countPct": 19.1
+              "durationTotal": 6.54,
+              "durationInCall": 6.33,
+              "count": 104,
+              "countPct": 18.2
             },
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.11,
+              "durationTotal": 0.37,
               "durationInCall": 0.0,
-              "count": 19,
-              "countPct": 9.8
+              "count": 57,
+              "countPct": 9.9
             },
             {
               "employee": "Maralisa Dictor",
-              "durationTotal": 0.82,
-              "durationInCall": 0.78,
-              "count": 19,
-              "countPct": 9.8
-            },
-            {
-              "employee": "Steven Peralta Cornejo",
-              "durationTotal": 1.57,
-              "durationInCall": 1.55,
-              "count": 8,
-              "countPct": 4.1
+              "durationTotal": 2.16,
+              "durationInCall": 2.06,
+              "count": 48,
+              "countPct": 8.4
             },
             {
               "employee": "Ian Gindhart",
-              "durationTotal": 0.37,
-              "durationInCall": 0.35,
-              "count": 6,
-              "countPct": 3.1
+              "durationTotal": 2.02,
+              "durationInCall": 1.93,
+              "count": 34,
+              "countPct": 5.9
+            },
+            {
+              "employee": "Steven Peralta Cornejo",
+              "durationTotal": 2.35,
+              "durationInCall": 2.3,
+              "count": 19,
+              "countPct": 3.3
             },
             {
               "employee": "Bailey Pixton",
-              "durationTotal": 0.48,
-              "durationInCall": 0.47,
-              "count": 6,
-              "countPct": 3.1
+              "durationTotal": 0.63,
+              "durationInCall": 0.61,
+              "count": 9,
+              "countPct": 1.6
             },
             {
               "employee": "Luke Bosick",
-              "durationTotal": 0.1,
-              "durationInCall": 0.1,
-              "count": 1,
+              "durationTotal": 0.19,
+              "durationInCall": 0.18,
+              "count": 3,
               "countPct": 0.5
             }
           ],
           "grandTotal": {
-            "durationTotal": 11.73,
-            "durationInCall": 11.27,
-            "count": 194,
+            "durationTotal": 30.83,
+            "durationInCall": 29.4,
+            "count": 573,
             "countPct": 100.0
           },
           "countLabel": "IB (total)",
@@ -695,87 +876,87 @@
         "outbound": {
           "rows": [
             {
-              "employee": "Sean Detschermitsch",
-              "durationTotal": 2.02,
-              "durationInCall": 1.54,
-              "count": 152,
-              "countPct": 32.9
+              "employee": "Julian Meisner",
+              "durationTotal": 5.8,
+              "durationInCall": 3.95,
+              "count": 458,
+              "countPct": 37.3
             },
             {
-              "employee": "Julian Meisner",
-              "durationTotal": 1.74,
-              "durationInCall": 1.15,
-              "count": 152,
-              "countPct": 32.9
+              "employee": "Sean Detschermitsch",
+              "durationTotal": 4.05,
+              "durationInCall": 2.91,
+              "count": 357,
+              "countPct": 29.1
             },
             {
               "employee": "Ian Gindhart",
-              "durationTotal": 1.27,
-              "durationInCall": 0.98,
-              "count": 79,
-              "countPct": 17.1
+              "durationTotal": 3.45,
+              "durationInCall": 2.57,
+              "count": 222,
+              "countPct": 18.1
             },
             {
               "employee": "Mark Ruiz",
-              "durationTotal": 0.76,
-              "durationInCall": 0.61,
-              "count": 44,
-              "countPct": 9.5
+              "durationTotal": 2.34,
+              "durationInCall": 1.92,
+              "count": 122,
+              "countPct": 9.9
             },
             {
               "employee": "Maralisa Dictor",
-              "durationTotal": 0.5,
-              "durationInCall": 0.47,
-              "count": 17,
-              "countPct": 3.7
-            },
-            {
-              "employee": "Bailey Pixton",
-              "durationTotal": 0.31,
-              "durationInCall": 0.29,
-              "count": 6,
-              "countPct": 1.3
-            },
-            {
-              "employee": "Steven Peralta Cornejo",
-              "durationTotal": 0.54,
-              "durationInCall": 0.52,
-              "count": 5,
-              "countPct": 1.1
+              "durationTotal": 1.09,
+              "durationInCall": 1.04,
+              "count": 29,
+              "countPct": 2.4
             },
             {
               "employee": "Angelique Cervera",
-              "durationTotal": 0.13,
-              "durationInCall": 0.11,
-              "count": 4,
-              "countPct": 0.9
+              "durationTotal": 0.48,
+              "durationInCall": 0.44,
+              "count": 12,
+              "countPct": 1.0
+            },
+            {
+              "employee": "Bailey Pixton",
+              "durationTotal": 0.58,
+              "durationInCall": 0.55,
+              "count": 10,
+              "countPct": 0.8
+            },
+            {
+              "employee": "Steven Peralta Cornejo",
+              "durationTotal": 0.62,
+              "durationInCall": 0.58,
+              "count": 9,
+              "countPct": 0.7
+            },
+            {
+              "employee": "Luke Bosick",
+              "durationTotal": 0.83,
+              "durationInCall": 0.81,
+              "count": 5,
+              "countPct": 0.4
+            },
+            {
+              "employee": "Ryan Smith",
+              "durationTotal": 0.04,
+              "durationInCall": 0.03,
+              "count": 3,
+              "countPct": 0.2
             },
             {
               "employee": "Claudia Aculteco",
               "durationTotal": 0.0,
               "durationInCall": 0.0,
               "count": 1,
-              "countPct": 0.2
-            },
-            {
-              "employee": "Ryan Smith",
-              "durationTotal": 0.0,
-              "durationInCall": 0.0,
-              "count": 1,
-              "countPct": 0.2
-            },
-            {
-              "employee": "Luke Bosick",
-              "durationTotal": 0.02,
-              "durationInCall": 0.01,
-              "count": 1,
-              "countPct": 0.2
+              "countPct": 0.1
             }
           ],
           "grandTotal": {
-            "durationTotal": 7.29,
-            "durationInCall": 5.69,
-            "count": 462,
+            "durationTotal": 19.28,
+            "durationInCall": 14.8,
+            "count": 1228,
             "countPct": 100.0
           },
           "countLabel": "OB (total)",
@@ -785,93 +966,93 @@
           "rows": [
             {
               "employee": "Julian Meisner",
-              "durationTotal": 4.89,
-              "durationInCall": 4.2,
-              "count": 207,
-              "countPct": 31.6
+              "durationTotal": 14.56,
+              "durationInCall": 12.37,
+              "count": 633,
+              "countPct": 35.1
             },
             {
               "employee": "Sean Detschermitsch",
-              "durationTotal": 4.7,
-              "durationInCall": 4.15,
-              "count": 195,
-              "countPct": 29.7
+              "durationTotal": 11.87,
+              "durationInCall": 10.48,
+              "count": 481,
+              "countPct": 26.7
             },
             {
               "employee": "Ian Gindhart",
-              "durationTotal": 1.64,
-              "durationInCall": 1.33,
-              "count": 85,
-              "countPct": 13.0
+              "durationTotal": 5.47,
+              "durationInCall": 4.5,
+              "count": 256,
+              "countPct": 14.2
             },
             {
               "employee": "Mark Ruiz",
-              "durationTotal": 3.2,
-              "durationInCall": 2.98,
-              "count": 81,
-              "countPct": 12.3
+              "durationTotal": 8.88,
+              "durationInCall": 8.25,
+              "count": 226,
+              "countPct": 12.5
             },
             {
               "employee": "Maralisa Dictor",
-              "durationTotal": 1.32,
-              "durationInCall": 1.25,
-              "count": 36,
-              "countPct": 5.5
+              "durationTotal": 3.25,
+              "durationInCall": 3.1,
+              "count": 77,
+              "countPct": 4.3
             },
             {
               "employee": "[No associated user]",
-              "durationTotal": 0.11,
+              "durationTotal": 0.37,
               "durationInCall": 0.0,
-              "count": 19,
-              "countPct": 2.9
+              "count": 57,
+              "countPct": 3.2
             },
             {
               "employee": "Steven Peralta Cornejo",
-              "durationTotal": 2.11,
-              "durationInCall": 2.07,
-              "count": 13,
-              "countPct": 2.0
+              "durationTotal": 2.97,
+              "durationInCall": 2.88,
+              "count": 28,
+              "countPct": 1.6
             },
             {
               "employee": "Bailey Pixton",
-              "durationTotal": 0.79,
-              "durationInCall": 0.76,
-              "count": 12,
-              "countPct": 1.8
+              "durationTotal": 1.21,
+              "durationInCall": 1.16,
+              "count": 19,
+              "countPct": 1.1
             },
             {
               "employee": "Angelique Cervera",
-              "durationTotal": 0.13,
-              "durationInCall": 0.11,
-              "count": 4,
-              "countPct": 0.6
+              "durationTotal": 0.48,
+              "durationInCall": 0.44,
+              "count": 12,
+              "countPct": 0.7
             },
             {
               "employee": "Luke Bosick",
-              "durationTotal": 0.12,
-              "durationInCall": 0.11,
-              "count": 2,
-              "countPct": 0.3
+              "durationTotal": 1.02,
+              "durationInCall": 0.99,
+              "count": 8,
+              "countPct": 0.4
+            },
+            {
+              "employee": "Ryan Smith",
+              "durationTotal": 0.04,
+              "durationInCall": 0.03,
+              "count": 3,
+              "countPct": 0.2
             },
             {
               "employee": "Claudia Aculteco",
               "durationTotal": 0.0,
               "durationInCall": 0.0,
               "count": 1,
-              "countPct": 0.2
-            },
-            {
-              "employee": "Ryan Smith",
-              "durationTotal": 0.0,
-              "durationInCall": 0.0,
-              "count": 1,
-              "countPct": 0.2
+              "countPct": 0.1
             }
           ],
           "grandTotal": {
-            "durationTotal": 19.02,
-            "durationInCall": 16.96,
-            "count": 656,
+            "durationTotal": 50.12,
+            "durationInCall": 44.2,
+            "count": 1801,
             "countPct": 100.0
           },
           "countLabel": "Total Calls",
@@ -1175,12 +1356,12 @@
       "today": {
         "points": [
           {
-            "date": "2026-11-08",
-            "inboundDurationTotal": 15.0,
+            "date": "2026-11-22",
+            "inboundDurationTotal": 118.0,
             "inboundDurationInCall": 0.0,
             "outboundDurationTotal": 0,
             "outboundDurationInCall": 0,
-            "totalDurationTotal": 15.0,
+            "totalDurationTotal": 118.0,
             "totalDurationInCall": 0.0
           }
         ]
@@ -1188,12 +1369,12 @@
       "yesterday": {
         "points": [
           {
-            "date": "2026-11-07",
-            "inboundDurationTotal": 12.0,
+            "date": "2026-11-21",
+            "inboundDurationTotal": 100.0,
             "inboundDurationInCall": 0.0,
             "outboundDurationTotal": 0,
             "outboundDurationInCall": 0,
-            "totalDurationTotal": 12.0,
+            "totalDurationTotal": 100.0,
             "totalDurationInCall": 0.0
           }
         ]
@@ -1201,198 +1382,72 @@
       "last7": {
         "points": [
           {
-            "date": "2026-11-09",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
+            "date": "2026-11-16",
+            "inboundDurationTotal": 4215.0,
+            "inboundDurationInCall": 3970.0,
+            "outboundDurationTotal": 3686.0,
+            "outboundDurationInCall": 2790.0,
+            "totalDurationTotal": 7901.0,
+            "totalDurationInCall": 6760.0
           },
           {
-            "date": "2026-11-10",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
+            "date": "2026-11-17",
+            "inboundDurationTotal": 8846.0,
+            "inboundDurationInCall": 8521.0,
+            "outboundDurationTotal": 5323.0,
+            "outboundDurationInCall": 4571.0,
+            "totalDurationTotal": 14169.0,
+            "totalDurationInCall": 13092.0
           },
           {
-            "date": "2026-11-11",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
+            "date": "2026-11-18",
+            "inboundDurationTotal": 9858.0,
+            "inboundDurationInCall": 9529.0,
+            "outboundDurationTotal": 6280.0,
+            "outboundDurationInCall": 4992.0,
+            "totalDurationTotal": 16138.0,
+            "totalDurationInCall": 14521.0
           },
           {
-            "date": "2026-11-12",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
+            "date": "2026-11-19",
+            "inboundDurationTotal": 5520.0,
+            "inboundDurationInCall": 5190.0,
+            "outboundDurationTotal": 3850.0,
+            "outboundDurationInCall": 2866.0,
+            "totalDurationTotal": 9370.0,
+            "totalDurationInCall": 8056.0
           },
           {
-            "date": "2026-11-13",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
+            "date": "2026-11-20",
+            "inboundDurationTotal": 5558.0,
+            "inboundDurationInCall": 5325.0,
+            "outboundDurationTotal": 5013.0,
+            "outboundDurationInCall": 3977.0,
+            "totalDurationTotal": 10571.0,
+            "totalDurationInCall": 9302.0
           },
           {
-            "date": "2026-11-14",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
+            "date": "2026-11-21",
+            "inboundDurationTotal": 100.0,
+            "inboundDurationInCall": 0.0,
             "outboundDurationTotal": 0,
             "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
+            "totalDurationTotal": 100.0,
+            "totalDurationInCall": 0.0
           },
           {
-            "date": "2026-11-15",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
+            "date": "2026-11-22",
+            "inboundDurationTotal": 118.0,
+            "inboundDurationInCall": 0.0,
             "outboundDurationTotal": 0,
             "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
+            "totalDurationTotal": 118.0,
+            "totalDurationInCall": 0.0
           }
         ]
       },
       "last30": {
         "points": [
-          {
-            "date": "2026-10-10",
-            "inboundDurationTotal": 93.0,
-            "inboundDurationInCall": 0.0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 93.0,
-            "totalDurationInCall": 0.0
-          },
-          {
-            "date": "2026-10-11",
-            "inboundDurationTotal": 0,
-            "inboundDurationInCall": 0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 0,
-            "totalDurationInCall": 0
-          },
-          {
-            "date": "2026-10-12",
-            "inboundDurationTotal": 4961.0,
-            "inboundDurationInCall": 4719.0,
-            "outboundDurationTotal": 5006.0,
-            "outboundDurationInCall": 3914.0,
-            "totalDurationTotal": 9967.0,
-            "totalDurationInCall": 8633.0
-          },
-          {
-            "date": "2026-10-13",
-            "inboundDurationTotal": 6870.0,
-            "inboundDurationInCall": 6430.0,
-            "outboundDurationTotal": 2116.0,
-            "outboundDurationInCall": 1587.0,
-            "totalDurationTotal": 8986.0,
-            "totalDurationInCall": 8017.0
-          },
-          {
-            "date": "2026-10-14",
-            "inboundDurationTotal": 7005.0,
-            "inboundDurationInCall": 6722.0,
-            "outboundDurationTotal": 2685.0,
-            "outboundDurationInCall": 1925.0,
-            "totalDurationTotal": 9690.0,
-            "totalDurationInCall": 8647.0
-          },
-          {
-            "date": "2026-10-15",
-            "inboundDurationTotal": 5857.0,
-            "inboundDurationInCall": 5647.0,
-            "outboundDurationTotal": 3216.0,
-            "outboundDurationInCall": 2593.0,
-            "totalDurationTotal": 9073.0,
-            "totalDurationInCall": 8240.0
-          },
-          {
-            "date": "2026-10-16",
-            "inboundDurationTotal": 6357.0,
-            "inboundDurationInCall": 6108.0,
-            "outboundDurationTotal": 4674.0,
-            "outboundDurationInCall": 3596.0,
-            "totalDurationTotal": 11031.0,
-            "totalDurationInCall": 9704.0
-          },
-          {
-            "date": "2026-10-17",
-            "inboundDurationTotal": 79.0,
-            "inboundDurationInCall": 0.0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 79.0,
-            "totalDurationInCall": 0.0
-          },
-          {
-            "date": "2026-10-18",
-            "inboundDurationTotal": 57.0,
-            "inboundDurationInCall": 0.0,
-            "outboundDurationTotal": 0,
-            "outboundDurationInCall": 0,
-            "totalDurationTotal": 57.0,
-            "totalDurationInCall": 0.0
-          },
-          {
-            "date": "2026-10-19",
-            "inboundDurationTotal": 6895.0,
-            "inboundDurationInCall": 6403.0,
-            "outboundDurationTotal": 9815.0,
-            "outboundDurationInCall": 7707.0,
-            "totalDurationTotal": 16710.0,
-            "totalDurationInCall": 14110.0
-          },
-          {
-            "date": "2026-10-20",
-            "inboundDurationTotal": 11453.0,
-            "inboundDurationInCall": 10961.0,
-            "outboundDurationTotal": 4788.0,
-            "outboundDurationInCall": 3860.0,
-            "totalDurationTotal": 16241.0,
-            "totalDurationInCall": 14821.0
-          },
-          {
-            "date": "2026-10-21",
-            "inboundDurationTotal": 8769.0,
-            "inboundDurationInCall": 8420.0,
-            "outboundDurationTotal": 3212.0,
-            "outboundDurationInCall": 2597.0,
-            "totalDurationTotal": 11981.0,
-            "totalDurationInCall": 11017.0
-          },
-          {
-            "date": "2026-10-22",
-            "inboundDurationTotal": 10640.0,
-            "inboundDurationInCall": 10137.0,
-            "outboundDurationTotal": 2521.0,
-            "outboundDurationInCall": 1902.0,
-            "totalDurationTotal": 13161.0,
-            "totalDurationInCall": 12039.0
-          },
-          {
-            "date": "2026-10-23",
-            "inboundDurationTotal": 6223.0,
-            "inboundDurationInCall": 5909.0,
-            "outboundDurationTotal": 4875.0,
-            "outboundDurationInCall": 3886.0,
-            "totalDurationTotal": 11098.0,
-            "totalDurationInCall": 9795.0
-          },
           {
             "date": "2026-10-24",
             "inboundDurationTotal": 93.0,
@@ -1536,6 +1591,132 @@
             "outboundDurationInCall": 0,
             "totalDurationTotal": 15.0,
             "totalDurationInCall": 0.0
+          },
+          {
+            "date": "2026-11-09",
+            "inboundDurationTotal": 6628.0,
+            "inboundDurationInCall": 6217.0,
+            "outboundDurationTotal": 3822.0,
+            "outboundDurationInCall": 2289.0,
+            "totalDurationTotal": 10450.0,
+            "totalDurationInCall": 8506.0
+          },
+          {
+            "date": "2026-11-10",
+            "inboundDurationTotal": 5563.0,
+            "inboundDurationInCall": 5223.0,
+            "outboundDurationTotal": 4693.0,
+            "outboundDurationInCall": 3834.0,
+            "totalDurationTotal": 10256.0,
+            "totalDurationInCall": 9057.0
+          },
+          {
+            "date": "2026-11-11",
+            "inboundDurationTotal": 6959.0,
+            "inboundDurationInCall": 6737.0,
+            "outboundDurationTotal": 2575.0,
+            "outboundDurationInCall": 2063.0,
+            "totalDurationTotal": 9534.0,
+            "totalDurationInCall": 8800.0
+          },
+          {
+            "date": "2026-11-12",
+            "inboundDurationTotal": 8652.0,
+            "inboundDurationInCall": 8205.0,
+            "outboundDurationTotal": 5562.0,
+            "outboundDurationInCall": 4010.0,
+            "totalDurationTotal": 14214.0,
+            "totalDurationInCall": 12215.0
+          },
+          {
+            "date": "2026-11-13",
+            "inboundDurationTotal": 6738.0,
+            "inboundDurationInCall": 6321.0,
+            "outboundDurationTotal": 2380.0,
+            "outboundDurationInCall": 1427.0,
+            "totalDurationTotal": 9118.0,
+            "totalDurationInCall": 7748.0
+          },
+          {
+            "date": "2026-11-14",
+            "inboundDurationTotal": 12.0,
+            "inboundDurationInCall": 0.0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 12.0,
+            "totalDurationInCall": 0.0
+          },
+          {
+            "date": "2026-11-15",
+            "inboundDurationTotal": 0,
+            "inboundDurationInCall": 0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 0,
+            "totalDurationInCall": 0
+          },
+          {
+            "date": "2026-11-16",
+            "inboundDurationTotal": 4215.0,
+            "inboundDurationInCall": 3970.0,
+            "outboundDurationTotal": 3686.0,
+            "outboundDurationInCall": 2790.0,
+            "totalDurationTotal": 7901.0,
+            "totalDurationInCall": 6760.0
+          },
+          {
+            "date": "2026-11-17",
+            "inboundDurationTotal": 8846.0,
+            "inboundDurationInCall": 8521.0,
+            "outboundDurationTotal": 5323.0,
+            "outboundDurationInCall": 4571.0,
+            "totalDurationTotal": 14169.0,
+            "totalDurationInCall": 13092.0
+          },
+          {
+            "date": "2026-11-18",
+            "inboundDurationTotal": 9858.0,
+            "inboundDurationInCall": 9529.0,
+            "outboundDurationTotal": 6280.0,
+            "outboundDurationInCall": 4992.0,
+            "totalDurationTotal": 16138.0,
+            "totalDurationInCall": 14521.0
+          },
+          {
+            "date": "2026-11-19",
+            "inboundDurationTotal": 5520.0,
+            "inboundDurationInCall": 5190.0,
+            "outboundDurationTotal": 3850.0,
+            "outboundDurationInCall": 2866.0,
+            "totalDurationTotal": 9370.0,
+            "totalDurationInCall": 8056.0
+          },
+          {
+            "date": "2026-11-20",
+            "inboundDurationTotal": 5558.0,
+            "inboundDurationInCall": 5325.0,
+            "outboundDurationTotal": 5013.0,
+            "outboundDurationInCall": 3977.0,
+            "totalDurationTotal": 10571.0,
+            "totalDurationInCall": 9302.0
+          },
+          {
+            "date": "2026-11-21",
+            "inboundDurationTotal": 100.0,
+            "inboundDurationInCall": 0.0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 100.0,
+            "totalDurationInCall": 0.0
+          },
+          {
+            "date": "2026-11-22",
+            "inboundDurationTotal": 118.0,
+            "inboundDurationInCall": 0.0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 118.0,
+            "totalDurationInCall": 0.0
           }
         ]
       },
@@ -1611,6 +1792,132 @@
             "outboundDurationTotal": 0,
             "outboundDurationInCall": 0,
             "totalDurationTotal": 15.0,
+            "totalDurationInCall": 0.0
+          },
+          {
+            "date": "2026-11-09",
+            "inboundDurationTotal": 6628.0,
+            "inboundDurationInCall": 6217.0,
+            "outboundDurationTotal": 3822.0,
+            "outboundDurationInCall": 2289.0,
+            "totalDurationTotal": 10450.0,
+            "totalDurationInCall": 8506.0
+          },
+          {
+            "date": "2026-11-10",
+            "inboundDurationTotal": 5563.0,
+            "inboundDurationInCall": 5223.0,
+            "outboundDurationTotal": 4693.0,
+            "outboundDurationInCall": 3834.0,
+            "totalDurationTotal": 10256.0,
+            "totalDurationInCall": 9057.0
+          },
+          {
+            "date": "2026-11-11",
+            "inboundDurationTotal": 6959.0,
+            "inboundDurationInCall": 6737.0,
+            "outboundDurationTotal": 2575.0,
+            "outboundDurationInCall": 2063.0,
+            "totalDurationTotal": 9534.0,
+            "totalDurationInCall": 8800.0
+          },
+          {
+            "date": "2026-11-12",
+            "inboundDurationTotal": 8652.0,
+            "inboundDurationInCall": 8205.0,
+            "outboundDurationTotal": 5562.0,
+            "outboundDurationInCall": 4010.0,
+            "totalDurationTotal": 14214.0,
+            "totalDurationInCall": 12215.0
+          },
+          {
+            "date": "2026-11-13",
+            "inboundDurationTotal": 6738.0,
+            "inboundDurationInCall": 6321.0,
+            "outboundDurationTotal": 2380.0,
+            "outboundDurationInCall": 1427.0,
+            "totalDurationTotal": 9118.0,
+            "totalDurationInCall": 7748.0
+          },
+          {
+            "date": "2026-11-14",
+            "inboundDurationTotal": 12.0,
+            "inboundDurationInCall": 0.0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 12.0,
+            "totalDurationInCall": 0.0
+          },
+          {
+            "date": "2026-11-15",
+            "inboundDurationTotal": 0,
+            "inboundDurationInCall": 0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 0,
+            "totalDurationInCall": 0
+          },
+          {
+            "date": "2026-11-16",
+            "inboundDurationTotal": 4215.0,
+            "inboundDurationInCall": 3970.0,
+            "outboundDurationTotal": 3686.0,
+            "outboundDurationInCall": 2790.0,
+            "totalDurationTotal": 7901.0,
+            "totalDurationInCall": 6760.0
+          },
+          {
+            "date": "2026-11-17",
+            "inboundDurationTotal": 8846.0,
+            "inboundDurationInCall": 8521.0,
+            "outboundDurationTotal": 5323.0,
+            "outboundDurationInCall": 4571.0,
+            "totalDurationTotal": 14169.0,
+            "totalDurationInCall": 13092.0
+          },
+          {
+            "date": "2026-11-18",
+            "inboundDurationTotal": 9858.0,
+            "inboundDurationInCall": 9529.0,
+            "outboundDurationTotal": 6280.0,
+            "outboundDurationInCall": 4992.0,
+            "totalDurationTotal": 16138.0,
+            "totalDurationInCall": 14521.0
+          },
+          {
+            "date": "2026-11-19",
+            "inboundDurationTotal": 5520.0,
+            "inboundDurationInCall": 5190.0,
+            "outboundDurationTotal": 3850.0,
+            "outboundDurationInCall": 2866.0,
+            "totalDurationTotal": 9370.0,
+            "totalDurationInCall": 8056.0
+          },
+          {
+            "date": "2026-11-20",
+            "inboundDurationTotal": 5558.0,
+            "inboundDurationInCall": 5325.0,
+            "outboundDurationTotal": 5013.0,
+            "outboundDurationInCall": 3977.0,
+            "totalDurationTotal": 10571.0,
+            "totalDurationInCall": 9302.0
+          },
+          {
+            "date": "2026-11-21",
+            "inboundDurationTotal": 100.0,
+            "inboundDurationInCall": 0.0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 100.0,
+            "totalDurationInCall": 0.0
+          },
+          {
+            "date": "2026-11-22",
+            "inboundDurationTotal": 118.0,
+            "inboundDurationInCall": 0.0,
+            "outboundDurationTotal": 0,
+            "outboundDurationInCall": 0,
+            "totalDurationTotal": 118.0,
             "totalDurationInCall": 0.0
           }
         ]
@@ -1906,136 +2213,166 @@
         "rows": [
           {
             "tag": "-",
-            "total": 1,
+            "total": 2,
             "pctOfTotal": 100.0
           }
         ],
-        "grandTotal": 1
+        "grandTotal": 2
       },
       "yesterday": {
         "rows": [
           {
             "tag": "-",
-            "total": 1,
+            "total": 6,
             "pctOfTotal": 100.0
           }
         ],
-        "grandTotal": 1
+        "grandTotal": 6
       },
       "last7": {
         "rows": [
           {
+            "tag": "Biz Dev Follow Up",
+            "total": 184,
+            "pctOfTotal": 35.25
+          },
+          {
             "tag": "-",
-            "total": 623,
-            "pctOfTotal": 100.0
+            "total": 180,
+            "pctOfTotal": 34.48
+          },
+          {
+            "tag": "New Business Outreach",
+            "total": 113,
+            "pctOfTotal": 21.65
+          },
+          {
+            "tag": "Other",
+            "total": 23,
+            "pctOfTotal": 4.41
+          },
+          {
+            "tag": "Order Placed",
+            "total": 7,
+            "pctOfTotal": 1.34
+          },
+          {
+            "tag": "Proof",
+            "total": 6,
+            "pctOfTotal": 1.15
+          },
+          {
+            "tag": "Customer Question",
+            "total": 5,
+            "pctOfTotal": 0.96
+          },
+          {
+            "tag": "Graphic Design",
+            "total": 4,
+            "pctOfTotal": 0.77
           }
         ],
-        "grandTotal": 623
+        "grandTotal": 522
       },
       "last30": {
         "rows": [
           {
             "tag": "-",
-            "total": 890,
-            "pctOfTotal": 37.02
+            "total": 924,
+            "pctOfTotal": 37.87
           },
           {
             "tag": "Biz Dev Follow Up",
-            "total": 744,
-            "pctOfTotal": 30.95
+            "total": 710,
+            "pctOfTotal": 29.1
           },
           {
             "tag": "New Business Outreach",
-            "total": 491,
-            "pctOfTotal": 20.42
+            "total": 570,
+            "pctOfTotal": 23.36
           },
           {
             "tag": "Other",
-            "total": 113,
-            "pctOfTotal": 4.7
+            "total": 101,
+            "pctOfTotal": 4.14
           },
           {
             "tag": "Order Placed",
-            "total": 53,
-            "pctOfTotal": 2.2
-          },
-          {
-            "tag": "Proof",
-            "total": 42,
-            "pctOfTotal": 1.75
-          },
-          {
-            "tag": "Graphic Design",
-            "total": 31,
-            "pctOfTotal": 1.29
+            "total": 37,
+            "pctOfTotal": 1.52
           },
           {
             "tag": "Tradeshow Follow Up",
-            "total": 23,
-            "pctOfTotal": 0.96
+            "total": 35,
+            "pctOfTotal": 1.43
+          },
+          {
+            "tag": "Proof",
+            "total": 28,
+            "pctOfTotal": 1.15
+          },
+          {
+            "tag": "Graphic Design",
+            "total": 20,
+            "pctOfTotal": 0.82
           },
           {
             "tag": "Customer Question",
-            "total": 16,
-            "pctOfTotal": 0.67
-          },
-          {
-            "tag": "New Customer",
-            "total": 1,
-            "pctOfTotal": 0.04
+            "total": 15,
+            "pctOfTotal": 0.61
           }
         ],
-        "grandTotal": 2404
+        "grandTotal": 2440
       },
       "thisMonth": {
         "rows": [
           {
             "tag": "-",
-            "total": 249,
-            "pctOfTotal": 37.96
+            "total": 668,
+            "pctOfTotal": 37.09
           },
           {
             "tag": "Biz Dev Follow Up",
-            "total": 197,
-            "pctOfTotal": 30.03
+            "total": 568,
+            "pctOfTotal": 31.54
           },
           {
             "tag": "New Business Outreach",
-            "total": 137,
-            "pctOfTotal": 20.88
+            "total": 395,
+            "pctOfTotal": 21.93
           },
           {
             "tag": "Other",
-            "total": 24,
-            "pctOfTotal": 3.66
+            "total": 61,
+            "pctOfTotal": 3.39
           },
           {
             "tag": "Tradeshow Follow Up",
-            "total": 23,
-            "pctOfTotal": 3.51
-          },
-          {
-            "tag": "Proof",
-            "total": 12,
-            "pctOfTotal": 1.83
-          },
-          {
-            "tag": "Graphic Design",
-            "total": 7,
-            "pctOfTotal": 1.07
+            "total": 35,
+            "pctOfTotal": 1.94
           },
           {
             "tag": "Order Placed",
-            "total": 5,
-            "pctOfTotal": 0.76
+            "total": 25,
+            "pctOfTotal": 1.39
+          },
+          {
+            "tag": "Proof",
+            "total": 21,
+            "pctOfTotal": 1.17
+          },
+          {
+            "tag": "Graphic Design",
+            "total": 16,
+            "pctOfTotal": 0.89
           },
           {
             "tag": "Customer Question",
-            "total": 2,
-            "pctOfTotal": 0.3
+            "total": 12,
+            "pctOfTotal": 0.67
           }
         ],
-        "grandTotal": 656
+        "grandTotal": 1801
       },
       "lastMonth": {
         "rows": [
@@ -2108,12 +2445,91 @@
         "maxCell": 0
       },
       "last7": {
-        "rowOrder": [],
-        "colOrder": [],
-        "matrix": {},
-        "colTotals": {},
-        "grandTotal": 0,
-        "maxCell": 0
+        "rowOrder": [
+          "Biz Dev Follow Up",
+          "New Business Outreach",
+          "Other",
+          "Order Placed",
+          "Proof",
+          "Customer Question",
+          "Graphic Design"
+        ],
+        "colOrder": [
+          "JM",
+          "IG",
+          "MR",
+          "SD",
+          "BP",
+          "SPC"
+        ],
+        "matrix": {
+          "Biz Dev Follow Up": {
+            "JM": 42,
+            "IG": 79,
+            "MR": 23,
+            "SD": 40,
+            "BP": 0,
+            "SPC": 0
+          },
+          "New Business Outreach": {
+            "JM": 91,
+            "IG": 0,
+            "MR": 17,
+            "SD": 5,
+            "BP": 0,
+            "SPC": 0
+          },
+          "Other": {
+            "JM": 0,
+            "IG": 0,
+            "MR": 20,
+            "SD": 3,
+            "BP": 0,
+            "SPC": 0
+          },
+          "Order Placed": {
+            "JM": 4,
+            "IG": 0,
+            "MR": 3,
+            "SD": 0,
+            "BP": 0,
+            "SPC": 0
+          },
+          "Proof": {
+            "JM": 0,
+            "IG": 0,
+            "MR": 6,
+            "SD": 0,
+            "BP": 0,
+            "SPC": 0
+          },
+          "Customer Question": {
+            "JM": 0,
+            "IG": 0,
+            "MR": 5,
+            "SD": 0,
+            "BP": 0,
+            "SPC": 0
+          },
+          "Graphic Design": {
+            "JM": 0,
+            "IG": 0,
+            "MR": 1,
+            "SD": 0,
+            "BP": 2,
+            "SPC": 1
+          }
+        },
+        "colTotals": {
+          "JM": 137,
+          "IG": 79,
+          "MR": 75,
+          "SD": 48,
+          "BP": 2,
+          "SPC": 1
+        },
+        "grandTotal": 342,
+        "maxCell": 91
       },
       "last30": {
         "rowOrder": [
@@ -2121,11 +2537,10 @@
           "New Business Outreach",
           "Other",
           "Order Placed",
+          "Tradeshow Follow Up",
           "Proof",
           "Graphic Design",
-          "Tradeshow Follow Up",
-          "Customer Question",
-          "New Customer"
+          "Customer Question"
         ],
         "colOrder": [
           "JM",
@@ -2133,114 +2548,104 @@
           "MR",
           "IG",
           "BP",
+          "SPC",
           "LB",
-          "MD",
-          "SPC"
+          "MD"
         ],
         "matrix": {
           "Biz Dev Follow Up": {
-            "JM": 260,
-            "SD": 188,
-            "MR": 35,
-            "IG": 261,
+            "JM": 103,
+            "SD": 253,
+            "MR": 56,
+            "IG": 298,
             "BP": 0,
+            "SPC": 0,
             "LB": 0,
-            "MD": 0,
-            "SPC": 0
+            "MD": 0
           },
           "New Business Outreach": {
-            "JM": 261,
-            "SD": 117,
-            "MR": 109,
-            "IG": 4,
+            "JM": 434,
+            "SD": 65,
+            "MR": 71,
+            "IG": 0,
             "BP": 0,
+            "SPC": 0,
             "LB": 0,
-            "MD": 0,
-            "SPC": 0
+            "MD": 0
           },
           "Other": {
-            "JM": 2,
-            "SD": 20,
-            "MR": 83,
+            "JM": 3,
+            "SD": 18,
+            "MR": 76,
             "IG": 0,
-            "BP": 4,
+            "BP": 2,
+            "SPC": 1,
             "LB": 0,
-            "MD": 3,
-            "SPC": 1
+            "MD": 1
           },
           "Order Placed": {
-            "JM": 16,
-            "SD": 5,
-            "MR": 29,
-            "IG": 2,
-            "BP": 1,
-            "LB": 0,
-            "MD": 0,
-            "SPC": 0
-          },
-          "Proof": {
-            "JM": 1,
+            "JM": 14,
             "SD": 4,
-            "MR": 37,
+            "MR": 19,
             "IG": 0,
             "BP": 0,
+            "SPC": 0,
             "LB": 0,
-            "MD": 0,
-            "SPC": 0
-          },
-          "Graphic Design": {
-            "JM": 0,
-            "SD": 3,
-            "MR": 5,
-            "IG": 0,
-            "BP": 20,
-            "LB": 3,
-            "MD": 0,
-            "SPC": 0
+            "MD": 0
           },
           "Tradeshow Follow Up": {
             "JM": 0,
             "SD": 0,
-            "MR": 23,
+            "MR": 35,
             "IG": 0,
             "BP": 0,
+            "SPC": 0,
             "LB": 0,
-            "MD": 0,
-            "SPC": 0
+            "MD": 0
+          },
+          "Proof": {
+            "JM": 1,
+            "SD": 2,
+            "MR": 25,
+            "IG": 0,
+            "BP": 0,
+            "SPC": 0,
+            "LB": 0,
+            "MD": 0
+          },
+          "Graphic Design": {
+            "JM": 0,
+            "SD": 3,
+            "MR": 4,
+            "IG": 0,
+            "BP": 11,
+            "SPC": 1,
+            "LB": 1,
+            "MD": 0
           },
           "Customer Question": {
             "JM": 1,
             "SD": 0,
-            "MR": 15,
+            "MR": 14,
             "IG": 0,
             "BP": 0,
+            "SPC": 0,
             "LB": 0,
-            "MD": 0,
-            "SPC": 0
-          },
-          "New Customer": {
-            "JM": 0,
-            "SD": 0,
-            "MR": 0,
-            "IG": 0,
-            "BP": 1,
-            "LB": 0,
-            "MD": 0,
-            "SPC": 0
+            "MD": 0
           }
         },
         "colTotals": {
-          "JM": 541,
-          "SD": 337,
-          "MR": 336,
-          "IG": 267,
-          "BP": 26,
-          "LB": 3,
-          "MD": 3,
-          "SPC": 1
+          "JM": 556,
+          "SD": 345,
+          "MR": 300,
+          "IG": 298,
+          "BP": 13,
+          "SPC": 2,
+          "LB": 1,
+          "MD": 1
         },
-        "grandTotal": 1514,
-        "maxCell": 261
+        "grandTotal": 1516,
+        "maxCell": 434
       },
       "thisMonth": {
         "rowOrder": [
@@ -2248,9 +2653,9 @@
           "New Business Outreach",
           "Other",
           "Tradeshow Follow Up",
+          "Order Placed",
           "Proof",
           "Graphic Design",
-          "Order Placed",
           "Customer Question"
         ],
         "colOrder": [
@@ -2258,75 +2663,95 @@
           "SD",
           "IG",
           "MR",
-          "BP"
+          "BP",
+          "MD",
+          "SPC"
         ],
         "matrix": {
           "Biz Dev Follow Up": {
-            "JM": 23,
-            "SD": 84,
-            "IG": 79,
-            "MR": 11,
-            "BP": 0
+            "JM": 90,
+            "SD": 212,
+            "IG": 221,
+            "MR": 45,
+            "BP": 0,
+            "MD": 0,
+            "SPC": 0
           },
           "New Business Outreach": {
-            "JM": 107,
-            "SD": 23,
+            "JM": 310,
+            "SD": 47,
             "IG": 0,
-            "MR": 7,
-            "BP": 0
+            "MR": 38,
+            "BP": 0,
+            "MD": 0,
+            "SPC": 0
           },
           "Other": {
-            "JM": 1,
-            "SD": 4,
+            "JM": 3,
+            "SD": 9,
             "IG": 0,
-            "MR": 17,
-            "BP": 2
+            "MR": 46,
+            "BP": 2,
+            "MD": 1,
+            "SPC": 0
           },
           "Tradeshow Follow Up": {
             "JM": 0,
             "SD": 0,
             "IG": 0,
-            "MR": 23,
-            "BP": 0
+            "MR": 35,
+            "BP": 0,
+            "MD": 0,
+            "SPC": 0
+          },
+          "Order Placed": {
+            "JM": 9,
+            "SD": 3,
+            "IG": 0,
+            "MR": 13,
+            "BP": 0,
+            "MD": 0,
+            "SPC": 0
           },
           "Proof": {
             "JM": 0,
             "SD": 0,
             "IG": 0,
-            "MR": 12,
-            "BP": 0
+            "MR": 21,
+            "BP": 0,
+            "MD": 0,
+            "SPC": 0
           },
           "Graphic Design": {
             "JM": 0,
-            "SD": 1,
+            "SD": 2,
             "IG": 0,
-            "MR": 0,
-            "BP": 6
-          },
-          "Order Placed": {
-            "JM": 1,
-            "SD": 0,
-            "IG": 0,
-            "MR": 4,
-            "BP": 0
+            "MR": 2,
+            "BP": 11,
+            "MD": 0,
+            "SPC": 1
           },
           "Customer Question": {
             "JM": 1,
             "SD": 0,
             "IG": 0,
-            "MR": 1,
-            "BP": 0
+            "MR": 11,
+            "BP": 0,
+            "MD": 0,
+            "SPC": 0
           }
         },
         "colTotals": {
-          "JM": 133,
-          "SD": 112,
-          "IG": 79,
-          "MR": 75,
-          "BP": 8
+          "JM": 413,
+          "SD": 273,
+          "IG": 221,
+          "MR": 211,
+          "BP": 13,
+          "MD": 1,
+          "SPC": 1
         },
-        "grandTotal": 407,
-        "maxCell": 107
+        "grandTotal": 1133,
+        "maxCell": 310
       },
       "lastMonth": {
         "rowOrder": [
@@ -2458,846 +2883,6 @@
   },
   "dailyRaw": {
     "calls": [
-      {
-        "date": "2026-05-13",
-        "employee": "Ian Gindhart",
-        "direction": "inbound",
-        "durationTotal": 2815.0,
-        "durationInCall": 2701.0,
-        "count": 11
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Mark Ruiz",
-        "direction": "outbound",
-        "durationTotal": 475.0,
-        "durationInCall": 381.0,
-        "count": 10
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Bailey Pixton",
-        "direction": "inbound",
-        "durationTotal": 1178.0,
-        "durationInCall": 1124.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 500.0,
-        "durationInCall": 359.0,
-        "count": 9
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Ian Gindhart",
-        "direction": "outbound",
-        "durationTotal": 969.0,
-        "durationInCall": 840.0,
-        "count": 12
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Mark Ruiz",
-        "direction": "inbound",
-        "durationTotal": 2889.0,
-        "durationInCall": 2781.0,
-        "count": 12
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 4050.0,
-        "durationInCall": 3960.0,
-        "count": 10
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "inbound",
-        "durationTotal": 2112.0,
-        "durationInCall": 2062.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 59.0,
-        "durationInCall": 0.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Bailey Pixton",
-        "direction": "outbound",
-        "durationTotal": 847.0,
-        "durationInCall": 794.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Maralisa Dictor",
-        "direction": "outbound",
-        "durationTotal": 34.0,
-        "durationInCall": 25.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-13",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 59.0,
-        "durationInCall": 51.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 1885.0,
-        "durationInCall": 1262.0,
-        "count": 43
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 2244.0,
-        "durationInCall": 2167.0,
-        "count": 8
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 2104.0,
-        "durationInCall": 1742.0,
-        "count": 18
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Mark Ruiz",
-        "direction": "outbound",
-        "durationTotal": 176.0,
-        "durationInCall": 115.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Maralisa Dictor",
-        "direction": "outbound",
-        "durationTotal": 45.0,
-        "durationInCall": 24.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 1527.0,
-        "durationInCall": 1464.0,
-        "count": 10
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Mark Ruiz",
-        "direction": "inbound",
-        "durationTotal": 2266.0,
-        "durationInCall": 2172.0,
-        "count": 10
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Ian Gindhart",
-        "direction": "outbound",
-        "durationTotal": 1158.0,
-        "durationInCall": 944.0,
-        "count": 14
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Luke Bosick",
-        "direction": "outbound",
-        "durationTotal": 674.0,
-        "durationInCall": 657.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Luke Bosick",
-        "direction": "inbound",
-        "durationTotal": 175.0,
-        "durationInCall": 162.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Ian Gindhart",
-        "direction": "inbound",
-        "durationTotal": 1846.0,
-        "durationInCall": 1802.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 544.0,
-        "durationInCall": 510.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Bailey Pixton",
-        "direction": "inbound",
-        "durationTotal": 75.0,
-        "durationInCall": 70.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "inbound",
-        "durationTotal": 774.0,
-        "durationInCall": 761.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 76.0,
-        "durationInCall": 0.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "outbound",
-        "durationTotal": 78.0,
-        "durationInCall": 57.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "employee": "Jose Soto",
-        "direction": "outbound",
-        "durationTotal": 49.0,
-        "durationInCall": 39.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-15",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 664.0,
-        "durationInCall": 554.0,
-        "count": 9
-      },
-      {
-        "date": "2026-05-15",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 4148.0,
-        "durationInCall": 4037.0,
-        "count": 14
-      },
-      {
-        "date": "2026-05-15",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 3604.0,
-        "durationInCall": 3497.0,
-        "count": 16
-      },
-      {
-        "date": "2026-05-15",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 1659.0,
-        "durationInCall": 1503.0,
-        "count": 13
-      },
-      {
-        "date": "2026-05-15",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 1370.0,
-        "durationInCall": 1304.0,
-        "count": 9
-      },
-      {
-        "date": "2026-05-15",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 106.0,
-        "durationInCall": 0.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-15",
-        "employee": "Maralisa Dictor",
-        "direction": "outbound",
-        "durationTotal": 718.0,
-        "durationInCall": 704.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-16",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 145.0,
-        "durationInCall": 0.0,
-        "count": 5
-      },
-      {
-        "date": "2026-05-17",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 99.0,
-        "durationInCall": 0.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 735.0,
-        "durationInCall": 556.0,
-        "count": 10
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 4338.0,
-        "durationInCall": 4188.0,
-        "count": 17
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 5572.0,
-        "durationInCall": 5367.0,
-        "count": 30
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Maralisa Dictor",
-        "direction": "outbound",
-        "durationTotal": 2406.0,
-        "durationInCall": 2341.0,
-        "count": 10
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 1755.0,
-        "durationInCall": 1591.0,
-        "count": 13
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 921.0,
-        "durationInCall": 872.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "outbound",
-        "durationTotal": 772.0,
-        "durationInCall": 710.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 19.0,
-        "durationInCall": 0.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-18",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "inbound",
-        "durationTotal": 393.0,
-        "durationInCall": 375.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 67.0,
-        "durationInCall": 32.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 8338.0,
-        "durationInCall": 8205.0,
-        "count": 15
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 2966.0,
-        "durationInCall": 2851.0,
-        "count": 17
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "outbound",
-        "durationTotal": 366.0,
-        "durationInCall": 284.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 2458.0,
-        "durationInCall": 2150.0,
-        "count": 19
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 2092.0,
-        "durationInCall": 2007.0,
-        "count": 11
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 175.0,
-        "durationInCall": 0.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-19",
-        "employee": "Maralisa Dictor",
-        "direction": "outbound",
-        "durationTotal": 401.0,
-        "durationInCall": 356.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 3920.0,
-        "durationInCall": 3788.0,
-        "count": 17
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 1354.0,
-        "durationInCall": 1254.0,
-        "count": 12
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 3360.0,
-        "durationInCall": 3236.0,
-        "count": 16
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 1005.0,
-        "durationInCall": 814.0,
-        "count": 12
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "inbound",
-        "durationTotal": 476.0,
-        "durationInCall": 455.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Maralisa Dictor",
-        "direction": "outbound",
-        "durationTotal": 581.0,
-        "durationInCall": 574.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 1147.0,
-        "durationInCall": 1093.0,
-        "count": 5
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 14.0,
-        "durationInCall": 0.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-20",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "outbound",
-        "durationTotal": 149.0,
-        "durationInCall": 140.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Mark Ruiz",
-        "direction": "outbound",
-        "durationTotal": 746.0,
-        "durationInCall": 677.0,
-        "count": 6
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 1523.0,
-        "durationInCall": 1282.0,
-        "count": 14
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 191.0,
-        "durationInCall": 0.0,
-        "count": 7
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Ian Gindhart",
-        "direction": "outbound",
-        "durationTotal": 1037.0,
-        "durationInCall": 998.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 4187.0,
-        "durationInCall": 4045.0,
-        "count": 15
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Luke Bosick",
-        "direction": "outbound",
-        "durationTotal": 866.0,
-        "durationInCall": 850.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 1551.0,
-        "durationInCall": 1272.0,
-        "count": 22
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Ian Gindhart",
-        "direction": "inbound",
-        "durationTotal": 1328.0,
-        "durationInCall": 1279.0,
-        "count": 5
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Mark Ruiz",
-        "direction": "inbound",
-        "durationTotal": 377.0,
-        "durationInCall": 351.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 3802.0,
-        "durationInCall": 3677.0,
-        "count": 18
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Luke Bosick",
-        "direction": "inbound",
-        "durationTotal": 598.0,
-        "durationInCall": 579.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 343.0,
-        "durationInCall": 328.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-21",
-        "employee": "Maralisa Dictor",
-        "direction": "outbound",
-        "durationTotal": 77.0,
-        "durationInCall": 25.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 2359.0,
-        "durationInCall": 2257.0,
-        "count": 13
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Ian Gindhart",
-        "direction": "outbound",
-        "durationTotal": 126.0,
-        "durationInCall": 85.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 2496.0,
-        "durationInCall": 1852.0,
-        "count": 48
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Mark Ruiz",
-        "direction": "outbound",
-        "durationTotal": 578.0,
-        "durationInCall": 500.0,
-        "count": 6
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "inbound",
-        "durationTotal": 980.0,
-        "durationInCall": 951.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 1877.0,
-        "durationInCall": 1814.0,
-        "count": 8
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 2040.0,
-        "durationInCall": 1930.0,
-        "count": 12
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Mark Ruiz",
-        "direction": "inbound",
-        "durationTotal": 818.0,
-        "durationInCall": 777.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Ian Gindhart",
-        "direction": "inbound",
-        "durationTotal": 270.0,
-        "durationInCall": 254.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Maralisa Dictor",
-        "direction": "inbound",
-        "durationTotal": 204.0,
-        "durationInCall": 194.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 158.0,
-        "durationInCall": 0.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-22",
-        "employee": "Luke Bosick",
-        "direction": "outbound",
-        "durationTotal": 125.0,
-        "durationInCall": 96.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-23",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 106.0,
-        "durationInCall": 0.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-24",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 244.0,
-        "durationInCall": 0.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-25",
-        "employee": "[No associated user]",
-        "direction": "inbound",
-        "durationTotal": 295.0,
-        "durationInCall": 0.0,
-        "count": 5
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Bailey Pixton",
-        "direction": "inbound",
-        "durationTotal": 735.0,
-        "durationInCall": 722.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Julian Meisner",
-        "direction": "outbound",
-        "durationTotal": 1205.0,
-        "durationInCall": 834.0,
-        "count": 29
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Julian Meisner",
-        "direction": "inbound",
-        "durationTotal": 2004.0,
-        "durationInCall": 1926.0,
-        "count": 10
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Bikus Rodriguez",
-        "direction": "inbound",
-        "durationTotal": 2882.0,
-        "durationInCall": 2780.0,
-        "count": 13
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Mark Ruiz",
-        "direction": "inbound",
-        "durationTotal": 2614.0,
-        "durationInCall": 2555.0,
-        "count": 7
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Ian Gindhart",
-        "direction": "inbound",
-        "durationTotal": 544.0,
-        "durationInCall": 517.0,
-        "count": 4
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Bikus Rodriguez",
-        "direction": "outbound",
-        "durationTotal": 326.0,
-        "durationInCall": 268.0,
-        "count": 6
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Luke Bosick",
-        "direction": "inbound",
-        "durationTotal": 560.0,
-        "durationInCall": 549.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Mark Ruiz",
-        "direction": "outbound",
-        "durationTotal": 472.0,
-        "durationInCall": 453.0,
-        "count": 3
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Bailey Pixton",
-        "direction": "outbound",
-        "durationTotal": 50.0,
-        "durationInCall": 24.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "inbound",
-        "durationTotal": 431.0,
-        "durationInCall": 412.0,
-        "count": 2
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Luke Bosick",
-        "direction": "outbound",
-        "durationTotal": 182.0,
-        "durationInCall": 170.0,
-        "count": 1
-      },
-      {
-        "date": "2026-05-26",
-        "employee": "Steven Peralta Cornejo",
-        "direction": "outbound",
-        "durationTotal": 49.0,
-        "durationInCall": 44.0,
-        "count": 1
-      },
       {
         "date": "2026-05-27",
         "employee": "Julian Meisner",
@@ -16193,729 +15778,1017 @@
         "durationTotal": 15.0,
         "durationInCall": 0.0,
         "count": 1
-      }
-    ],
-    "tags": [
-      {
-        "date": "2026-05-13",
-        "tag": "-",
-        "initial": "IG",
-        "count": 13
       },
       {
-        "date": "2026-05-13",
-        "tag": "Biz Dev Follow Up",
-        "initial": "MR",
-        "count": 8
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "Graphic Design",
-        "initial": "BP",
-        "count": 5
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
-        "count": 9
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "Biz Dev Follow Up",
-        "initial": "IG",
-        "count": 10
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "Other",
-        "initial": "MR",
-        "count": 13
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "Other",
-        "initial": "BR",
-        "count": 9
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "-",
-        "initial": "SPC",
-        "count": 4
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "-",
-        "initial": "",
-        "count": 3
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "Other",
-        "initial": "BP",
-        "count": 1
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "-",
-        "initial": "MD",
-        "count": 2
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "-",
-        "initial": "MR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "-",
-        "initial": "BP",
-        "count": 2
-      },
-      {
-        "date": "2026-05-13",
-        "tag": "Customer Question",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 39
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Customer Question",
-        "initial": "BR",
-        "count": 3
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
-        "count": 17
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Biz Dev Follow Up",
-        "initial": "MR",
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "MD",
-        "count": 5
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "JM",
-        "count": 13
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Other",
-        "initial": "MR",
-        "count": 5
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "MR",
-        "count": 3
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Biz Dev Follow Up",
-        "initial": "IG",
-        "count": 10
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "LB",
-        "count": 3
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Other",
-        "initial": "JM",
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Order Placed",
-        "initial": "BR",
-        "count": 3
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Other",
-        "initial": "BR",
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "IG",
+        "date": "2026-11-09",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 164.0,
+        "durationInCall": 0.0,
         "count": 7
       },
       {
-        "date": "2026-05-14",
-        "tag": "Graphic Design",
-        "initial": "BP",
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "SPC",
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "",
-        "count": 4
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Graphic Design",
-        "initial": "SPC",
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Customer Question",
-        "initial": "MR",
-        "count": 2
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "-",
-        "initial": "JS",
-        "count": 1
-      },
-      {
-        "date": "2026-05-14",
-        "tag": "Other",
-        "initial": "IG",
-        "count": 1
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 7
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "Customer Question",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "-",
-        "initial": "JM",
-        "count": 18
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
-        "count": 13
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "-",
-        "initial": "MD",
-        "count": 11
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "Other",
-        "initial": "BR",
-        "count": 7
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "Proof",
-        "initial": "BR",
-        "count": 3
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "-",
-        "initial": "",
-        "count": 2
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "Order Placed",
-        "initial": "BR",
-        "count": 2
-      },
-      {
-        "date": "2026-05-15",
-        "tag": "-",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-16",
-        "tag": "-",
-        "initial": "",
-        "count": 5
-      },
-      {
-        "date": "2026-05-17",
-        "tag": "-",
-        "initial": "",
-        "count": 2
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 8
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "Other",
-        "initial": "BR",
-        "count": 9
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "-",
-        "initial": "JM",
-        "count": 32
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "-",
-        "initial": "MD",
-        "count": 14
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
-        "count": 9
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "Customer Question",
-        "initial": "BR",
-        "count": 5
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "Proof",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "-",
-        "initial": "SPC",
-        "count": 6
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "-",
-        "initial": "BR",
-        "count": 6
-      },
-      {
-        "date": "2026-05-18",
-        "tag": "-",
-        "initial": "",
-        "count": 3
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 3
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "-",
-        "initial": "BR",
-        "count": 24
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "-",
-        "initial": "JM",
-        "count": 18
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "-",
-        "initial": "SPC",
-        "count": 3
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "-",
-        "initial": "MD",
-        "count": 14
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
-        "count": 5
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "-",
-        "initial": "",
-        "count": 4
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "Customer Question",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "Proof",
-        "initial": "BR",
-        "count": 3
-      },
-      {
-        "date": "2026-05-19",
-        "tag": "Other",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "-",
-        "initial": "BR",
-        "count": 27
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "-",
-        "initial": "JM",
-        "count": 21
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 7
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "-",
-        "initial": "SPC",
-        "count": 3
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "-",
-        "initial": "MD",
-        "count": 7
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "-",
-        "initial": "",
-        "count": 1
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-20",
-        "tag": "Proof",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Biz Dev Follow Up",
-        "initial": "MR",
-        "count": 6
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "-",
-        "initial": "BR",
-        "count": 24
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "-",
-        "initial": "",
-        "count": 7
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "-",
-        "initial": "IG",
-        "count": 8
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Order Placed",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "-",
-        "initial": "LB",
-        "count": 4
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 18
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Other",
-        "initial": "MR",
-        "count": 2
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "-",
-        "initial": "JM",
-        "count": 22
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Proof",
-        "initial": "MR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
-        "count": 3
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Proof",
-        "initial": "BR",
-        "count": 1
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "-",
-        "initial": "MD",
-        "count": 5
-      },
-      {
-        "date": "2026-05-21",
-        "tag": "Biz Dev Follow Up",
-        "initial": "IG",
-        "count": 1
-      },
-      {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "JM",
-        "count": 19
-      },
-      {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "IG",
-        "count": 4
-      },
-      {
-        "date": "2026-05-22",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 42
-      },
-      {
-        "date": "2026-05-22",
-        "tag": "Biz Dev Follow Up",
-        "initial": "MR",
-        "count": 5
-      },
-      {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "SPC",
-        "count": 4
-      },
-      {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "BR",
+        "date": "2026-11-09",
+        "employee": "Mark Ruiz",
+        "direction": "outbound",
+        "durationTotal": 879.0,
+        "durationInCall": 622.0,
         "count": 20
       },
       {
-        "date": "2026-05-22",
-        "tag": "Other",
-        "initial": "MR",
-        "count": 4
+        "date": "2026-11-09",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 1593.0,
+        "durationInCall": 1533.0,
+        "count": 8
       },
       {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "MD",
+        "date": "2026-11-09",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 1503.0,
+        "durationInCall": 915.0,
+        "count": 38
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 2041.0,
+        "durationInCall": 1959.0,
+        "count": 12
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Maralisa Dictor",
+        "direction": "outbound",
+        "durationTotal": 30.0,
+        "durationInCall": 23.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 2123.0,
+        "durationInCall": 2048.0,
+        "count": 10
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Luke Bosick",
+        "direction": "outbound",
+        "durationTotal": 128.0,
+        "durationInCall": 102.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1088.0,
+        "durationInCall": 480.0,
+        "count": 31
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 591.0,
+        "durationInCall": 573.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 116.0,
+        "durationInCall": 104.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "outbound",
+        "durationTotal": 92.0,
+        "durationInCall": 56.0,
         "count": 2
       },
       {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "",
-        "count": 4
-      },
-      {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "LB",
+        "date": "2026-11-09",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 102.0,
+        "durationInCall": 91.0,
         "count": 1
       },
       {
-        "date": "2026-05-22",
-        "tag": "-",
-        "initial": "MR",
-        "count": 1
+        "date": "2026-11-10",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 998.0,
+        "durationInCall": 931.0,
+        "count": 8
       },
       {
-        "date": "2026-05-23",
-        "tag": "-",
-        "initial": "",
-        "count": 3
+        "date": "2026-11-10",
+        "employee": "Luke Bosick",
+        "direction": "outbound",
+        "durationTotal": 581.0,
+        "durationInCall": 568.0,
+        "count": 2
       },
       {
-        "date": "2026-05-24",
-        "tag": "-",
-        "initial": "",
-        "count": 4
-      },
-      {
-        "date": "2026-05-25",
-        "tag": "-",
-        "initial": "",
-        "count": 5
-      },
-      {
-        "date": "2026-05-26",
-        "tag": "Graphic Design",
-        "initial": "BP",
-        "count": 3
-      },
-      {
-        "date": "2026-05-26",
-        "tag": "Biz Dev Follow Up",
-        "initial": "JM",
-        "count": 28
-      },
-      {
-        "date": "2026-05-26",
-        "tag": "-",
-        "initial": "JM",
+        "date": "2026-11-10",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 1379.0,
+        "durationInCall": 1297.0,
         "count": 11
       },
       {
-        "date": "2026-05-26",
-        "tag": "-",
-        "initial": "BR",
+        "date": "2026-11-10",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 1305.0,
+        "durationInCall": 1136.0,
+        "count": 19
+      },
+      {
+        "date": "2026-11-10",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1469.0,
+        "durationInCall": 1130.0,
+        "count": 33
+      },
+      {
+        "date": "2026-11-10",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 1248.0,
+        "durationInCall": 1182.0,
+        "count": 8
+      },
+      {
+        "date": "2026-11-10",
+        "employee": "Luke Bosick",
+        "direction": "inbound",
+        "durationTotal": 158.0,
+        "durationInCall": 150.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "employee": "Mark Ruiz",
+        "direction": "outbound",
+        "durationTotal": 398.0,
+        "durationInCall": 315.0,
+        "count": 7
+      },
+      {
+        "date": "2026-11-10",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 913.0,
+        "durationInCall": 679.0,
         "count": 15
       },
       {
-        "date": "2026-05-26",
-        "tag": "Other",
-        "initial": "MR",
+        "date": "2026-11-10",
+        "employee": "Maralisa Dictor",
+        "direction": "outbound",
+        "durationTotal": 27.0,
+        "durationInCall": 6.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 811.0,
+        "durationInCall": 783.0,
         "count": 5
       },
       {
-        "date": "2026-05-26",
-        "tag": "-",
-        "initial": "IG",
-        "count": 4
-      },
-      {
-        "date": "2026-05-26",
-        "tag": "Graphic Design",
-        "initial": "LB",
-        "count": 1
-      },
-      {
-        "date": "2026-05-26",
-        "tag": "Other",
-        "initial": "BR",
+        "date": "2026-11-10",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 247.0,
+        "durationInCall": 228.0,
         "count": 2
       },
       {
-        "date": "2026-05-26",
-        "tag": "Biz Dev Follow Up",
-        "initial": "MR",
+        "date": "2026-11-10",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "inbound",
+        "durationTotal": 665.0,
+        "durationInCall": 652.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 57.0,
+        "durationInCall": 0.0,
         "count": 3
       },
       {
-        "date": "2026-05-26",
-        "tag": "-",
-        "initial": "SPC",
+        "date": "2026-11-11",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 429.0,
+        "durationInCall": 303.0,
+        "count": 10
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 2986.0,
+        "durationInCall": 2910.0,
+        "count": 9
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 120.0,
+        "durationInCall": 102.0,
         "count": 2
       },
       {
-        "date": "2026-05-26",
-        "tag": "-",
-        "initial": "LB",
+        "date": "2026-11-11",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 1260.0,
+        "durationInCall": 1231.0,
+        "count": 5
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "inbound",
+        "durationTotal": 448.0,
+        "durationInCall": 424.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1145.0,
+        "durationInCall": 822.0,
+        "count": 28
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 1172.0,
+        "durationInCall": 1116.0,
+        "count": 8
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 219.0,
+        "durationInCall": 181.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Maralisa Dictor",
+        "direction": "outbound",
+        "durationTotal": 646.0,
+        "durationInCall": 632.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 831.0,
+        "durationInCall": 816.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-11",
+        "employee": "Bailey Pixton",
+        "direction": "inbound",
+        "durationTotal": 142.0,
+        "durationInCall": 138.0,
         "count": 1
       },
       {
-        "date": "2026-05-26",
-        "tag": "Graphic Design",
-        "initial": "MR",
+        "date": "2026-11-11",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "outbound",
+        "durationTotal": 136.0,
+        "durationInCall": 125.0,
         "count": 1
       },
       {
-        "date": "2026-05-26",
-        "tag": "-",
-        "initial": "MR",
+        "date": "2026-11-11",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 0.0,
+        "durationInCall": 0.0,
         "count": 1
       },
       {
-        "date": "2026-05-26",
-        "tag": "Order Placed",
-        "initial": "BR",
+        "date": "2026-11-12",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 117.0,
+        "durationInCall": 0.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 2614.0,
+        "durationInCall": 2543.0,
+        "count": 10
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 727.0,
+        "durationInCall": 354.0,
+        "count": 45
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 1938.0,
+        "durationInCall": 1878.0,
+        "count": 9
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 3472.0,
+        "durationInCall": 3307.0,
+        "count": 22
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Mark Ruiz",
+        "direction": "outbound",
+        "durationTotal": 658.0,
+        "durationInCall": 525.0,
+        "count": 10
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1571.0,
+        "durationInCall": 1098.0,
+        "count": 31
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "inbound",
+        "durationTotal": 106.0,
+        "durationInCall": 97.0,
         "count": 1
       },
       {
-        "date": "2026-05-26",
-        "tag": "Biz Dev Follow Up",
-        "initial": "BR",
+        "date": "2026-11-12",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "outbound",
+        "durationTotal": 79.0,
+        "durationInCall": 47.0,
         "count": 1
       },
       {
-        "date": "2026-05-26",
-        "tag": "Graphic Design",
-        "initial": "SPC",
+        "date": "2026-11-12",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 2121.0,
+        "durationInCall": 1591.0,
+        "count": 35
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Angelique Cervera",
+        "direction": "outbound",
+        "durationTotal": 295.0,
+        "durationInCall": 293.0,
         "count": 1
       },
+      {
+        "date": "2026-11-12",
+        "employee": "Bailey Pixton",
+        "direction": "outbound",
+        "durationTotal": 111.0,
+        "durationInCall": 102.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-12",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 405.0,
+        "durationInCall": 380.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Angelique Cervera",
+        "direction": "outbound",
+        "durationTotal": 176.0,
+        "durationInCall": 166.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 1097.0,
+        "durationInCall": 682.0,
+        "count": 46
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 877.0,
+        "durationInCall": 396.0,
+        "count": 30
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 4316.0,
+        "durationInCall": 4146.0,
+        "count": 24
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 1269.0,
+        "durationInCall": 1194.0,
+        "count": 8
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 132.0,
+        "durationInCall": 122.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "inbound",
+        "durationTotal": 427.0,
+        "durationInCall": 409.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Bailey Pixton",
+        "direction": "inbound",
+        "durationTotal": 390.0,
+        "durationInCall": 376.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 86.0,
+        "durationInCall": 74.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 230.0,
+        "durationInCall": 183.0,
+        "count": 6
+      },
+      {
+        "date": "2026-11-13",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 118.0,
+        "durationInCall": 0.0,
+        "count": 4
+      },
+      {
+        "date": "2026-11-14",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 12.0,
+        "durationInCall": 0.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-22",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 118.0,
+        "durationInCall": 0.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-21",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 100.0,
+        "durationInCall": 0.0,
+        "count": 6
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Mark Ruiz",
+        "direction": "outbound",
+        "durationTotal": 1437.0,
+        "durationInCall": 1064.0,
+        "count": 33
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 2410.0,
+        "durationInCall": 2292.0,
+        "count": 15
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 2340.0,
+        "durationInCall": 2257.0,
+        "count": 12
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Maralisa Dictor",
+        "direction": "outbound",
+        "durationTotal": 137.0,
+        "durationInCall": 130.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Angelique Cervera",
+        "direction": "outbound",
+        "durationTotal": 629.0,
+        "durationInCall": 569.0,
+        "count": 4
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1657.0,
+        "durationInCall": 1455.0,
+        "count": 16
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 218.0,
+        "durationInCall": 204.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 590.0,
+        "durationInCall": 572.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 1132.0,
+        "durationInCall": 742.0,
+        "count": 23
+      },
+      {
+        "date": "2026-11-20",
+        "employee": "Ryan Smith",
+        "direction": "outbound",
+        "durationTotal": 21.0,
+        "durationInCall": 17.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 2124.0,
+        "durationInCall": 2068.0,
+        "count": 7
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 715.0,
+        "durationInCall": 634.0,
+        "count": 8
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 607.0,
+        "durationInCall": 559.0,
+        "count": 7
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 1519.0,
+        "durationInCall": 1467.0,
+        "count": 7
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Mark Ruiz",
+        "direction": "outbound",
+        "durationTotal": 199.0,
+        "durationInCall": 84.0,
+        "count": 5
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Ryan Smith",
+        "direction": "outbound",
+        "durationTotal": 93.0,
+        "durationInCall": 71.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 835.0,
+        "durationInCall": 595.0,
+        "count": 11
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 87.0,
+        "durationInCall": 0.0,
+        "count": 4
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 468.0,
+        "durationInCall": 462.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 681.0,
+        "durationInCall": 651.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1713.0,
+        "durationInCall": 1146.0,
+        "count": 34
+      },
+      {
+        "date": "2026-11-19",
+        "employee": "Bailey Pixton",
+        "direction": "outbound",
+        "durationTotal": 329.0,
+        "durationInCall": 319.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 3227.0,
+        "durationInCall": 3135.0,
+        "count": 11
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 802.0,
+        "durationInCall": 601.0,
+        "count": 14
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 367.0,
+        "durationInCall": 349.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Angelique Cervera",
+        "direction": "outbound",
+        "durationTotal": 172.0,
+        "durationInCall": 147.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 2368.0,
+        "durationInCall": 2307.0,
+        "count": 8
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "inbound",
+        "durationTotal": 1030.0,
+        "durationInCall": 997.0,
+        "count": 4
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 2013.0,
+        "durationInCall": 1384.0,
+        "count": 41
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Maralisa Dictor",
+        "direction": "outbound",
+        "durationTotal": 252.0,
+        "durationInCall": 232.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 1979.0,
+        "durationInCall": 1898.0,
+        "count": 11
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 883.0,
+        "durationInCall": 843.0,
+        "count": 4
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Mark Ruiz",
+        "direction": "outbound",
+        "durationTotal": 2089.0,
+        "durationInCall": 2079.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 4.0,
+        "durationInCall": 0.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 952.0,
+        "durationInCall": 549.0,
+        "count": 24
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 90.0,
+        "durationInCall": 0.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 1741.0,
+        "durationInCall": 1705.0,
+        "count": 4
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 3595.0,
+        "durationInCall": 3523.0,
+        "count": 10
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1855.0,
+        "durationInCall": 1440.0,
+        "count": 32
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Steven Peralta Cornejo",
+        "direction": "inbound",
+        "durationTotal": 115.0,
+        "durationInCall": 107.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 516.0,
+        "durationInCall": 486.0,
+        "count": 4
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 862.0,
+        "durationInCall": 818.0,
+        "count": 7
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 1927.0,
+        "durationInCall": 1882.0,
+        "count": 5
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Ian Gindhart",
+        "direction": "outbound",
+        "durationTotal": 926.0,
+        "durationInCall": 652.0,
+        "count": 21
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 193.0,
+        "durationInCall": 140.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Maralisa Dictor",
+        "direction": "outbound",
+        "durationTotal": 139.0,
+        "durationInCall": 135.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "employee": "Luke Bosick",
+        "direction": "outbound",
+        "durationTotal": 2210.0,
+        "durationInCall": 2204.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Mark Ruiz",
+        "direction": "outbound",
+        "durationTotal": 51.0,
+        "durationInCall": 48.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Sean Detschermitsch",
+        "direction": "inbound",
+        "durationTotal": 791.0,
+        "durationInCall": 745.0,
+        "count": 7
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Luke Bosick",
+        "direction": "inbound",
+        "durationTotal": 148.0,
+        "durationInCall": 141.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Maralisa Dictor",
+        "direction": "inbound",
+        "durationTotal": 307.0,
+        "durationInCall": 300.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Sean Detschermitsch",
+        "direction": "outbound",
+        "durationTotal": 970.0,
+        "durationInCall": 597.0,
+        "count": 31
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Mark Ruiz",
+        "direction": "inbound",
+        "durationTotal": 309.0,
+        "durationInCall": 285.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Julian Meisner",
+        "direction": "inbound",
+        "durationTotal": 2501.0,
+        "durationInCall": 2402.0,
+        "count": 14
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Julian Meisner",
+        "direction": "outbound",
+        "durationTotal": 1241.0,
+        "durationInCall": 753.0,
+        "count": 30
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "[No associated user]",
+        "direction": "inbound",
+        "durationTotal": 48.0,
+        "durationInCall": 0.0,
+        "count": 3
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Bailey Pixton",
+        "direction": "outbound",
+        "durationTotal": 555.0,
+        "durationInCall": 524.0,
+        "count": 2
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Maralisa Dictor",
+        "direction": "outbound",
+        "durationTotal": 869.0,
+        "durationInCall": 868.0,
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "employee": "Ian Gindhart",
+        "direction": "inbound",
+        "durationTotal": 111.0,
+        "durationInCall": 97.0,
+        "count": 1
+      }
+    ],
+    "tags": [
       {
         "date": "2026-05-27",
         "tag": "Biz Dev Follow Up",
@@ -27834,6 +27707,1062 @@
         "date": "2026-11-08",
         "tag": "-",
         "initial": "",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "-",
+        "initial": "",
+        "count": 7
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "New Business Outreach",
+        "initial": "MR",
+        "count": 7
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Biz Dev Follow Up",
+        "initial": "MR",
+        "count": 3
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "-",
+        "initial": "MD",
+        "count": 9
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Tradeshow Follow Up",
+        "initial": "MR",
+        "count": 10
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "-",
+        "initial": "SD",
+        "count": 12
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 24
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "New Business Outreach",
+        "initial": "SD",
+        "count": 11
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "-",
+        "initial": "JM",
+        "count": 10
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "-",
+        "initial": "LB",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 30
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Customer Question",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Order Placed",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Other",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Other",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "-",
+        "initial": "IG",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "-",
+        "initial": "SPC",
+        "count": 2
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Graphic Design",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-09",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Other",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "LB",
+        "count": 3
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 18
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Other",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 19
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Order Placed",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Customer Question",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 12
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "MD",
+        "count": 8
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Biz Dev Follow Up",
+        "initial": "MR",
+        "count": 8
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "JM",
+        "count": 8
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "IG",
+        "count": 2
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "SPC",
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "SD",
+        "count": 7
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Other",
+        "initial": "MD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 17
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "Other",
+        "initial": "JM",
+        "count": 1
+      },
+      {
+        "date": "2026-11-10",
+        "tag": "-",
+        "initial": "",
+        "count": 3
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 7
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "-",
+        "initial": "SD",
+        "count": 10
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "New Business Outreach",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Order Placed",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "-",
+        "initial": "MD",
+        "count": 5
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Order Placed",
+        "initial": "MR",
+        "count": 3
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "-",
+        "initial": "SPC",
+        "count": 3
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 21
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "-",
+        "initial": "JM",
+        "count": 9
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 3
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "-",
+        "initial": "IG",
+        "count": 2
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Graphic Design",
+        "initial": "BP",
+        "count": 1
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Proof",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 6
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "Graphic Design",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-11",
+        "tag": "-",
+        "initial": "",
+        "count": 1
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "-",
+        "initial": "",
+        "count": 3
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Proof",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 26
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "-",
+        "initial": "SD",
+        "count": 24
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "New Business Outreach",
+        "initial": "SD",
+        "count": 4
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "-",
+        "initial": "JM",
+        "count": 23
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "New Business Outreach",
+        "initial": "MR",
+        "count": 7
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Tradeshow Follow Up",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 26
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Other",
+        "initial": "MR",
+        "count": 5
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Order Placed",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "-",
+        "initial": "SPC",
+        "count": 2
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Customer Question",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 34
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "-",
+        "initial": "AC",
+        "count": 1
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Graphic Design",
+        "initial": "BP",
+        "count": 1
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "-",
+        "initial": "IG",
+        "count": 3
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Other",
+        "initial": "JM",
+        "count": 1
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Order Placed",
+        "initial": "JM",
+        "count": 2
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 1
+      },
+      {
+        "date": "2026-11-12",
+        "tag": "-",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "AC",
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "SD",
+        "count": 37
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 13
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 18
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "JM",
+        "count": 29
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "New Business Outreach",
+        "initial": "SD",
+        "count": 3
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 5
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "IG",
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "SPC",
+        "count": 2
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "BP",
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "Graphic Design",
+        "initial": "BP",
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "Order Placed",
+        "initial": "JM",
+        "count": 2
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 6
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "Order Placed",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-13",
+        "tag": "-",
+        "initial": "",
+        "count": 4
+      },
+      {
+        "date": "2026-11-14",
+        "tag": "-",
+        "initial": "",
+        "count": 1
+      },
+      {
+        "date": "2026-11-22",
+        "tag": "-",
+        "initial": "",
+        "count": 2
+      },
+      {
+        "date": "2026-11-21",
+        "tag": "-",
+        "initial": "",
+        "count": 6
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Biz Dev Follow Up",
+        "initial": "MR",
+        "count": 21
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Other",
+        "initial": "MR",
+        "count": 9
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "-",
+        "initial": "JM",
+        "count": 13
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "-",
+        "initial": "MD",
+        "count": 4
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "-",
+        "initial": "AC",
+        "count": 4
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Order Placed",
+        "initial": "JM",
+        "count": 2
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 13
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "-",
+        "initial": "IG",
+        "count": 2
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Proof",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "New Business Outreach",
+        "initial": "MR",
+        "count": 12
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 23
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "-",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Customer Question",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "Order Placed",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-20",
+        "tag": "-",
+        "initial": "RS",
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "SD",
+        "count": 7
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "IG",
+        "count": 8
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "JM",
+        "count": 12
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Other",
+        "initial": "MR",
+        "count": 4
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "New Business Outreach",
+        "initial": "MR",
+        "count": 5
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "RS",
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 11
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "",
+        "count": 4
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 2
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "MD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 15
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Other",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 14
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Proof",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "Customer Question",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-19",
+        "tag": "-",
+        "initial": "BP",
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Graphic Design",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "SD",
+        "count": 10
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 11
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "MD",
+        "count": 6
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "AC",
+        "count": 2
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Other",
+        "initial": "MR",
+        "count": 4
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "SPC",
+        "count": 3
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 30
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Customer Question",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "JM",
+        "count": 14
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 8
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "IG",
+        "count": 4
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Biz Dev Follow Up",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "",
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Order Placed",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 24
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Proof",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "-",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Graphic Design",
+        "initial": "SPC",
+        "count": 1
+      },
+      {
+        "date": "2026-11-18",
+        "tag": "Other",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "",
+        "count": 3
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Order Placed",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "SD",
+        "count": 9
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "SPC",
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "MD",
+        "count": 5
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "JM",
+        "count": 11
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "IG",
+        "count": 5
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Biz Dev Follow Up",
+        "initial": "IG",
+        "count": 21
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "-",
+        "initial": "LB",
+        "count": 1
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 27
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 4
+      },
+      {
+        "date": "2026-11-17",
+        "tag": "Proof",
+        "initial": "MR",
+        "count": 2
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "Biz Dev Follow Up",
+        "initial": "MR",
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "Other",
+        "initial": "SD",
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "-",
+        "initial": "LB",
+        "count": 1
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "-",
+        "initial": "MD",
+        "count": 2
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "-",
+        "initial": "SD",
+        "count": 9
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "New Business Outreach",
+        "initial": "SD",
+        "count": 5
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "Biz Dev Follow Up",
+        "initial": "SD",
+        "count": 23
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "Other",
+        "initial": "MR",
+        "count": 3
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "-",
+        "initial": "JM",
+        "count": 17
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "New Business Outreach",
+        "initial": "JM",
+        "count": 20
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "Biz Dev Follow Up",
+        "initial": "JM",
+        "count": 5
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "-",
+        "initial": "",
+        "count": 3
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "Graphic Design",
+        "initial": "BP",
+        "count": 2
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "Order Placed",
+        "initial": "JM",
+        "count": 2
+      },
+      {
+        "date": "2026-11-16",
+        "tag": "-",
+        "initial": "IG",
         "count": 1
       }
     ]
